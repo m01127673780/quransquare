@@ -175,6 +175,20 @@
   </li>
  <!-- ============================ -->
 
+  <!-- ============================ -->
+   <li class="treeview {{ active_menu('testimonial')[0] }}">
+    <a href="#">
+      <i class="fa fa-sort-numeric-asc"></i> <span>{{ trans('admin.testimonial') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('testimonial')[1] }}">
+      <li class=""><a href="{{ aurl('testimonial') }}"><i class="fa  fa-sort-numeric-asc"></i> {{ trans('admin.testimonial') }}</a></li>
+      <li class=""><a href="{{ aurl('testimonial/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
+
 
  
 

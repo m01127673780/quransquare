@@ -808,48 +808,19 @@
     <div class="overlay-bg sec-padding">
       <div class=" ">
         <div class="owl-carousel owl-theme one-catousel-custom">
-        
-          <div class="single-review">
-    <div class="carousel-item active">
-        <div class=" our-tteam-inf  ">
-     <div class="bak-g-c-inf"></div>
-            <div class=" pic-inf  ">
-             <img src="{{ url('design/style') }}/img/test-monlis/fold-4tem/team1.jpg">
-             </div><!-- pic-->
-              <div class=" team-content-inf  ">
-               <h5 class="title-inf"> المهندس محمد الصياد</h5>
-               <p class="post-inf">weab devolper</p>
-               <p class=" ">
-                <i class="fa fa-star fa-spin"></i>
-                <i class="fa fa-star fa-spin"></i>
-                <i class="fa fa-star fa-spin"></i>
-                <i class="fa fa-star fa-spin"></i>
-                <i class="fa fa-star fa-spin"></i>
-              </p>
-              <p class="post-inf">
-              شكرا اطلب  موقع جميل جدا وينجز المطلوب با اعلى دقه واسرع وقت انا
-              شكرا اطلب  موقع جميل جدا وينجز المطلوب با اعلى دقه واسرع وقت انا
-              سعيد جد بالتعامل معكم  وان شاء الله ديما  مع موقع اطلب               </p>
-              <p class="p-ul-inf ">
-              <span class="">
-              <i class="fa fa-star fa-spin"></i>
-              المملكه العربيه السعوديه
-              </span>
-              </p>
-             </div><!--team-content -->
-       </div><!-- test-info-->
-    </div><!--/.carousel-item-->
-          </div>
+           
+         <!-- ---------------------- -->
+             @foreach( $testimonial as $test)
             <div class="single-review">
              <div class="carousel-item active">
                <div class=" our-tteam-inf  ">
                  <div class="bak-g-c-inf"></div>
               <div class=" pic-inf  ">
-               <img src="{{ url('design/style') }}/img/test-monlis/fold-4tem/team2.jpg">
+               <img src="storage/{{$test->img}}">
                </div><!-- pic-->
                       <div class=" team-content-inf  ">
-                       <h5 class="title-inf"> المهندس محمد الصياد</h5>
-                       <p class="post-inf">weab devolper</p>
+                       <h5 class="title-inf">{{$test->name_en}}</h5>
+                       <p class="post-inf">{{$test->job_en}}</p>
                        <p class=" ">
                         <i class="fa fa-star fa-spin"></i>
                         <i class="fa fa-star fa-spin"></i>
@@ -858,50 +829,21 @@
                         <i class="fa fa-star fa-spin"></i>
                      </p>
                       <p class="post-inf">
-                      شكرا اطلب  موقع جميل جدا وينجز المطلوب با اعلى دقه واسرع وقت انا
-                      شكرا اطلب  موقع جميل جدا وينجز المطلوب با اعلى دقه واسرع وقت انا
-                      سعيد جد بالتعامل معكم  وان شاء الله ديما  مع موقع اطلب  
+                       {{$test->text_en}}
                        </p>
                       <p class="p-ul-inf ">
                       <span class="">
                     <i class="fa fa-star fa-spin"></i>
-                     المملكه العربيه السعوديه
+                    {{$test->country_en}}
                    </span>
                     </p>
                   </div><!--team-content -->
                 </div><!-- test-info-->
              </div><!--/.carousel-item-->
           </div>
-             <div class="single-review">
-               <div class="carousel-item active">
-                  <div class=" our-tteam-inf  ">
-                    <div class="bak-g-c-inf"></div>
-                  <div class=" pic-inf  ">
-                   <img src="{{ url('design/style') }}/img/m1.jpg">
-                   </div><!-- pic-->
-                    <div class=" team-content-inf  ">
-                         <h5 class="title-inf"> Eng :MOhamed Elsayade</h5>
-                         <p class="post-inf">weab devolper</p>
-                         <p class=" ">
-                          <i class="fa fa-star fa-spin"></i>
-                          <i class="fa fa-star fa-spin"></i>
-                          <i class="fa fa-star fa-spin"></i>
-                          <i class="fa fa-star fa-spin"></i>
-                          <i class="fa fa-star fa-spin"></i>
-                        </p>
-                        <p class="post-inf">كرا اطلب  موقع جميل جدا وينجز المطلوب با اعلى دقه واسرع وقت انا
-                       سعيد جد بالتعامل معكم  وان شاء الله ديما  مع موقع اطلب               </p>
-                        <p class="p-ul-inf ">
-                       <span class="">
-                      <i class="fa fa-star fa-spin"></i>
-                    المملكه العربيه السعوديه
-                      </span>
-                      </p>
-                   </div><!--team-content -->
-               </div><!-- test-info-->
-            </div><!--/.carousel-item-->
-          </div>
-        </div>
+        @endforeach  
+         <!-- ---------------------- -->         
+         </div>
       </div>
     </div>
   </section>

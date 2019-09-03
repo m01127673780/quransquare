@@ -8,6 +8,7 @@ use App\Model\Courses;
 use App\Model\Videos;
 use App\Model\Teachers;
 use App\Model\Stat;
+use App\Model\Testimonial;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -26,12 +27,14 @@ class WhyusStyle extends Controller
 	   $videos =Videos::all();
 	   $teachers =Teachers::all();
      $stat =Stat::all();
+     $testimonial =Testimonial::all();
       return view ('style.index',[
       	'whyus' => $whyus,
       	'courses'=>$courses,
       	'videos'=>$videos,
       	'teachers'=>$teachers,
         'stat'=>$stat,
+        'testimonial'=>$testimonial,
       ]);
  
     }

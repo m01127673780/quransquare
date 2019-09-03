@@ -33,6 +33,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
    Route::resource('stat', 'StatController');
    Route::delete('stat/destroy/all', 'StatController@multi_delete');
 
+   Route::resource('testimonial', 'TestimonialController');
+   Route::delete('testimonial/destroy/all', 'TestimonialController@multi_delete');
+
 
 
   // ----------------------------
