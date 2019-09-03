@@ -930,43 +930,22 @@
      <div class="data-n">
         <div class="container">
          <div class="row"> 
+         <!-- ------------------------------------------ -->
+            @foreach($stat as $st)
             <div  class="col-sm-6 col-lg-3">
             <div class="stats wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
               <div class="contant">
-              <i class="icon-sta   icon-toolbox  "></i>
-               <span class="nuumber coutn-tow"> 15652 </span>
-                <p class="p-p-statst">Happy clients </p>
+              <i class="{{$st->font_awesome}} icon-sta"></i>
+                <img src="storage/{{$st->img}}" class="icon-sta">
+               <span class="nuumber coutn-tow">{{$st->number}}</span>
+                <p class="p-p-statst">{{$st->head_ar}} </p>
                 </div><!-- contant -->
               </div><!-- col-sm-6 -->
             </div><!-- col-sm-6 -->
-            <div  class="col-sm-6 col-lg-3">
-            <div class="stats wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.7s; animation-name: fadeInUp;">
-              <div class="contant">
-              <i class="icon-sta  icon-trophy   "></i>
-               <span class="nuumber coutn-tow"> 15652 </span>
-                <p class="p-p-statst">Happy clients </p>
-                </div><!-- contant -->
-              </div><!-- col-sm-6 -->
-            </div><!-- col-sm-6 -->
-            <div  class="col-sm-6 col-lg-3">
-            <div class="stats wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s" style="visibility: visible; animation-duration:3s; animation-delay: 0.9s; animation-name: fadeInUp;">
-              <div class="contant">
-              <i class="icon-sta icon-video"></i>
-               <span class="nuumber coutn-tow"> 15652 </span>
-                <p class="p-p-statst">Happy clients </p>
-                </div><!-- contant -->
-              </div><!-- col-sm-6 -->
-            </div><!-- col-sm-6 -->
-            <div  class="col-sm-6 col-lg-3">
-            <div class="stats wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.11s" style="visibility: visible; animation-duration: 4s; animation-delay: 0.11s; animation-name: fadeInUp;">
-              <div class="contant">
-              <i class="icon-sta  icon-happy"></i>
-               <span class="nuumber coutn-tow"> 15652 </span>
-                <p class="p-p-statst">Happy clients </p>
-                </div><!-- contant -->
-              </div><!-- col-sm-6 -->
-            </div><!-- col-sm-6 -->
-           </div><!-- row" -->
+           @endforeach
+
+ <!-- ------------------------------------------ -->
+          
          </div><!--  container -->
        </div><!--  data-n -->
 </section><!--End section  -->

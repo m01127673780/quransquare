@@ -30,6 +30,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
    Route::resource('teachers', 'TeachersController');
    Route::delete('teachers/destroy/all', 'TeachersController@multi_delete');
 
+   Route::resource('stat', 'StatController');
+   Route::delete('stat/destroy/all', 'StatController@multi_delete');
+
 
 
   // ----------------------------

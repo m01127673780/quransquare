@@ -161,6 +161,19 @@
     </ul>
   </li>
  <!-- ============================ -->
+  <!-- ============================ -->
+   <li class="treeview {{ active_menu('stat')[0] }}">
+    <a href="#">
+      <i class="fa fa-sort-numeric-asc"></i> <span>{{ trans('admin.stat') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('stat')[1] }}">
+      <li class=""><a href="{{ aurl('stat') }}"><i class="fa  fa-sort-numeric-asc"></i> {{ trans('admin.stat') }}</a></li>
+      <li class=""><a href="{{ aurl('stat/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
 
 
  
