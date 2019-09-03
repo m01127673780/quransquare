@@ -32,7 +32,11 @@
 <div class="bod"  >
     <div class="blur" id="particles-js"></div>
     <form method="post" >
-        <img class='img-login' src="{{ url('design')}}/img/login/admin-img.jpg" class="img-circle" alt="User Image">
+        <img class='img-login' src="{{ url('design')}}/img\login\admin-img.jpg" class="img-circle" alt="User Image">
+
+
+
+        <!-- public\design\img\login -->
 <!--         <img class='img-login' src="http://localhost/work-php/55/10/admin/images/login.jpg" class="img-circle" alt="User Image">
  -->      {!! csrf_field() !!}
         <h2 class="text-center heading-login" >{{ trans('admin.supervisor-name') }}</h2>

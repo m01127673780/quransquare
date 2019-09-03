@@ -295,14 +295,14 @@
      <div id="whyus ">
         <div class="container">
          <div class="row"> 
-@foreach($courses as $courses)
+@foreach($whyus as $why)
  <div  class="col-sm-6 col-lg-3  col-lg-padding">
               <div class="  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility:    visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
                     <div class=" text-center">
-                   <img src="storage/{{$courses->icon}}"class="img-whyus">
+                   <img src="storage/{{$why->icon}}"class="img-whyus">
 
-                <h2 class="h2-whyus">{{$courses->head_ar}}</h2>  
-                       <h4 class="h4-whyus">{{$courses->text_en}} <span class="span-whyus">  {{$courses->color_diffe_en}} </span> </h4>
+                <h2 class="h2-whyus">{{$why->head_ar}}</h2>  
+                       <h4 class="h4-whyus">{{$why->text_en}} <span class="span-whyus">  {{$why->color_diffe_en}} </span> </h4>
                   </div><!-- contant -->
               </div><!-- col-sm-6 -->
             </div><!-- col-sm-6 -->

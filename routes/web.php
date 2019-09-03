@@ -3,9 +3,9 @@
 Route::group(['middleware' => 'Maintenance'], function () {
 
 // -----------------
+					Route::get('/','WhyusStyle@show');
 
-					Route::get('/','WhyusStyle@test');
-					Route::get('/','CoursesStyle@test');
+ 					// Route::get('/','CoursesStyle@test');
 
 
 //------------------
