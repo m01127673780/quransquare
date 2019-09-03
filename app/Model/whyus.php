@@ -9,7 +9,7 @@ class Whyus extends Model{
 
 	public $table    = 'whyus';
 	public $fillable = [
-	        'head_ar',
+	      'head_ar',
             'head_en',
             'text_ar',
             'text_en',

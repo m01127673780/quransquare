@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 
 use App\Model\Whyus;
 use App\Model\Courses;
+use App\Model\Videos;
+use App\Model\Teachers;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -20,7 +22,14 @@ class WhyusStyle extends Controller
 // echo $var;
 	   $whyus =Whyus::all();
 	   $courses =Courses::all();
-      return view ('style.index',['whyus' => $whyus,'courses'=>$courses]);
+	   $videos =Videos::all();
+	   $teachers =Teachers::all();
+      return view ('style.index',[
+      	'whyus' => $whyus,
+      	'courses'=>$courses,
+      	'videos'=>$videos,
+      	'teachers'=>$teachers,
+      ]);
  
     }
 }

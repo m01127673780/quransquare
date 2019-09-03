@@ -135,6 +135,32 @@
     </ul>
   </li>
  <!-- ============================ -->
+ <!-- ============================ -->
+   <li class="treeview {{ active_menu('videos')[0] }}">
+    <a href="#">
+      <i class="fa fa-video-camera"></i> <span>{{ trans('admin.videos') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('videos')[1] }}">
+      <li class=""><a href="{{ aurl('videos') }}"><i class="fa  fa-video-camera"></i> {{ trans('admin.videos') }}</a></li>
+      <li class=""><a href="{{ aurl('videos/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
+  <!-- ============================ -->
+   <li class="treeview {{ active_menu('teachers')[0] }}">
+    <a href="#">
+      <i class="fa fa-users"></i> <span>{{ trans('admin.teachers') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('teachers')[1] }}">
+      <li class=""><a href="{{ aurl('teachers') }}"><i class="fa  fa-users"></i> {{ trans('admin.teachers') }}</a></li>
+      <li class=""><a href="{{ aurl('teachers/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
 
 
  

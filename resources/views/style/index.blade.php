@@ -222,54 +222,7 @@
     <div class="after-img border-img"></div>
   </section> 
 <!--====== End Slider =============================== -->
-
-
-<!--====== start Why Choose Us ?=============================== -->
- <!----------------start  section title---------------------->
-<section class=" title" >
-    <div class="container ">
-        <div class="section-header text-center">
-          <span class="span-title">quransquare</span>
-               <h2 class="h2-section-title" id="whyus">
-              Why Choose Us ?
-               </h2>
-              <div class="line">
-            </div><!--/.heazder-->
-          <span class="span-border"></span>
-          </div><!--/.cont div-title-->
-    </div><!--/.line-->
-</section><!--/.sec-title-->
-<!----------------End section title------------------------->
-
-
- <!-- ===================================== -->
- <!--start section  statistk-->
- <section>
-     <div id="whyus ">
-        <div class="container">
-         <div class="row"> 
-@foreach($courses as $course)
- <div  class="col-sm-6 col-lg-3  col-lg-padding">
-              <div class="  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility:    visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
-                    <div class=" text-center">
-                   <img src="storage/{{$course->icon}}"class="img-whyus">
-
-                <h2 class="h2-whyus">{{$course->head_ar}}</h2>  
-                       <h4 class="h4-whyus">{{$course->text_en}} <span class="span-whyus">  {{$course->color_diffe_en}} </span> </h4>
-                  </div><!-- contant -->
-              </div><!-- col-sm-6 -->
-            </div><!-- col-sm-6 -->
-@endforeach  
-
-         </div><!-- row" -->
-       </div><!--  container -->
-     </div><!--  data-n -->
-</section><!--End section  -->
-<!--End section stitstk -->
- <!--====== start Why Choose Us ?=============================== -->
-
-
-
+ 
 
 <!--====== start Why Choose Us ?=============================== -->
  <!----------------start  section title---------------------->
@@ -317,39 +270,7 @@
 
 
 
-<div class="container">
-  <h2>Small Modal</h2>
-  <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    Open modal
-  </button>
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-</div>
+ 
       <!-- ==============start section All courses================= -->
       <!----------------start  section title---------------------->
       <section class=" title " id="courses">
@@ -372,99 +293,32 @@
      <div class=" ">
         <div class="container">
          <div class="row"> 
-    <!----------------------------------->
-        <div  class="col-sm-6 col-lg-3">
-           <div class="  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
-                <div class="contant">
-                <div class="wrapper">
-                       <div class="card cardhover">
-                          <img src="{{ url('design/style') }}/img/courses/1.jpg">
-                              <div class="descriptions">
-                                <h1>John Wick 3</h1>
-                                  <p class="item-description" align="justify">
-                            1. Reading  <br>
-                             2. Memorization  <br>
-                             3. Tafseer Quran <br> 
-                             4. Tajweed(Beginners)<br> 
-                             5. Tajweed(Advanced) <br>
-                          </p>
-                              <button> <i class="fa  fa-youtube"></i>Play  YouTube</button>
-                           </div><!-- descriptions -->
-                       </div><!-- card cardhover -->
-                  </div><!-- wrapper -->
-              </div><!--contant -->
-            </div><!-- wow -->
-          </div><!-- col-sm-6" -->
+   
         <!----------------------------------->    <!----------------------------------->
+        @foreach($courses as $course)
+
         <div  class="col-sm-6 col-lg-3">
            <div class="  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
                 <div class="contant">
                 <div class="wrapper">
                        <div class="card cardhover">
-                          <img src="{{ url('design/style') }}/img/courses/2.jpg">
+                           <img src="storage/{{$course->icon}}"class="img-whyus">
                               <div class="descriptions">
-                                <h1>John Wick 3</h1>
+                                <h1>{{$course->head_en}}</h1>
                                   <p class="item-description" align="justify">
-                            1. Reading  <br>
-                             2. Memorization  <br>
-                             3. Tafseer Quran <br> 
-                             4. Tajweed(Beginners)<br> 
-                             5. Tajweed(Advanced) <br>
+                          {{$course->text_en}}
                           </p>
-                              <button> <i class="fa  fa-youtube"></i>Play  YouTube</button>
+                              <button> <i class="fa  fa-youtube"></i>{{$course->color_diffe_en}}</button>
                            </div><!-- descriptions -->
                        </div><!-- card cardhover -->
                   </div><!-- wrapper -->
               </div><!--contant -->
             </div><!-- wow -->
           </div><!-- col-sm-6" -->
+          @endforeach  
+    
+
         <!----------------------------------->    <!----------------------------------->
-        <div  class="col-sm-6 col-lg-3">
-           <div class="  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
-                <div class="contant">
-                <div class="wrapper">
-                       <div class="card cardhover">
-                          <img src="{{ url('design/style') }}/img/courses/3.jpg">
-                              <div class="descriptions">
-                                <h1>John Wick 3</h1>
-                                  <p class="item-description" align="justify">
-                            1. Reading  <br>
-                             2. Memorization  <br>
-                             3. Tafseer Quran <br> 
-                             4. Tajweed(Beginners)<br> 
-                             5. Tajweed(Advanced) <br>
-                          </p>
-                              <button> <i class="fa  fa-youtube"></i>Play  YouTube</button>
-                           </div><!-- descriptions -->
-                       </div><!-- card cardhover -->
-                  </div><!-- wrapper -->
-              </div><!--contant -->
-            </div><!-- wow -->
-          </div><!-- col-sm-6" -->
-        <!----------------------------------->    <!----------------------------------->
-        <div  class="col-sm-6 col-lg-3">
-           <div class="  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
-                <div class="contant">
-                <div class="wrapper">
-                       <div class="card cardhover">
-                          <img src="{{ url('design/style') }}/img/courses/4.jpg">
-                              <div class="descriptions">
-                                <h1>John Wick 3</h1>
-                                  <p class="item-description" align="justify">
-                            1. Reading  <br>
-                             2. Memorization  <br>
-                             3. Tafseer Quran <br> 
-                             4. Tajweed(Beginners)<br> 
-                             5. Tajweed(Advanced) <br>
-                          </p>
-                              <button> <i class="fa  fa-youtube"></i>Play  YouTube</button>
-                           </div><!-- descriptions -->
-                       </div><!-- card cardhover -->
-                  </div><!-- wrapper -->
-              </div><!--contant -->
-            </div><!-- wow -->
-          </div><!-- col-sm-6" -->
-        <!----------------------------------->
  
            </div><!-- row" -->
          </div><!--  container -->
@@ -505,25 +359,8 @@
               </ul>
                           <!-- The slideshow -->
               <div class="carousel-inner">
-                   <!---------------->
-                    <div class="carousel-item ">
-                    <img class="img-slider-vido" src="{{ url('design/style') }}/img/slider-vido/1.jpg" alt="Chicago"> 
-                    <a  class="video-icon " href= 
-                    "https://www.youtube.com/watch?v=d7J2Si5601Y"
-                    data-lity="">
-                    <i class=" fa-ico-play icon-video" ></i>
-                    </a>
-                  </div>
-                  <!---------------->
-                  <div class="carousel-item  ">
-                  <img class="img-slider-vido" src="{{ url('design/style') }}/img/slider-vido/3.PNG" alt="Chicago" > 
-                  <a  class="video-icon " href= 
-                  "https://www.youtube.com/watch?v=w0QZ6MkV_QE"
-                  data-lity="">
-                  <i class=" fa-ico-play  icon-video"   ></i>
-                  </a>
-                  </div>
-                 <!---------------->
+              
+           
                   <div class="carousel-item  ">
                   <img class="img-slider-vido" src="{{ url('design/style') }}/img/slider-vido/4.PNG" alt="Chicago" >
                   <a  class="video-icon " href= 
@@ -541,6 +378,23 @@
                   <i class=" fa-ico-play fa fa-youtube-play" ></i>
                   </a>
                   </div>
+                 <!---------------->
+                  <!---------------->
+                  @foreach($videos as $video)  
+             
+
+
+                  <div class="carousel-item   ">
+                  <img class="img-slider-vido" src="storage/{{$video->img}}" alt="Chicago" style=" ">  
+                  <a  class="video-icon " href= 
+                  " {{$video->link}}"
+                  data-lity="">
+                  <i class=" fa-ico-play fa fa-youtube-play" ></i>
+                  </a>
+                  </div>
+                 @endforeach  
+                 <!---------------->
+
                 </div>
                 <!-- Left and right controls -->
                 <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -580,13 +434,13 @@
         <!----------------End section title------------------------->
           </section>
         <div class="app-review-carousel owl-theme owl-carousel wow fadeInUp" data-wow-duration="2s"   data-wow-offset="100">
-             <!------------------>
+       @foreach($teachers as $teacher)
           <div class="item">
           <div class="d-hover">
              <div class="d-ul ">
                <div class=" d-img-teme">
-                   <img src="{{ url('design/style') }}/img/teacher/1.jpg">
-                         <div class="c-img-video video ">Fares Abbad
+                    <img src="storage/{{$teacher->img}}">
+                         <div class="c-img-video video ">{{$teacher->name}}
                      </div><!--./col-8-->
                    </div>
                   <ul class="ul-icon-det ">
@@ -596,7 +450,7 @@
                             Teacher of Quran    
                         <a  
                         class="video-icon" href= 
-                        "https://www.youtube.com/watch?v=HwuIqnZwLaM"
+                        "{{$teacher->link}}"
                         data-lity="">
                        <i class="fa fa-play record-icon"></i>
                     </a>
@@ -608,122 +462,9 @@
              </div>
             </div>
           </div><!--itm-->
-      <!------------------>
-          <div class="item">
-          <div class="d-hover">
-             <div class="d-ul ">
-               <div class=" d-img-teme">
-                    <img src="{{ url('design/style') }}/img/teacher/2.jpg">
-                         <div class="c-img-video video ">Fares Abbad
-                     </div><!--./col-8-->
-                   </div>
-                  <ul class="ul-icon-det ">
-                     <li style="">
-                      <a href="#">
-                      <i class="fa fa-Teacher-record">
-                            Teacher of Quran    
-                        <a  
-                        class="video-icon" href= 
-                        "https://www.youtube.com/watch?v=jchDUG9d_Zo"
-                        data-lity="">
-                       <i class="fa fa-play record-icon"></i>
-                    </a>
-                    </i>
-                    </a>
-                 </li>
-                 <span class="back-g"> </span>
-                </ul>
-             </div>
-            </div>
-          </div><!--itm-->
-      <!------------------>
-      <!------------------>
-          <div class="item">
-          <div class="d-hover">
-             <div class="d-ul ">
-               <div class=" d-img-teme">
-                     <img src="{{ url('design/style') }}/img/teacher/3.jpg">
-                         <div class="c-img-video video ">Fares Abbad
-                     </div><!--./col-8-->
-                   </div>
-                  <ul class="ul-icon-det ">
-                     <li style="">
-                      <a href="#">
-                      <i class="fa fa-Teacher-record">
-                            Teacher of Quran    
-                        <a  
-                        class="video-icon" href= 
-                        "https://www.youtube.com/watch?v=6Hzk5uPDaJk"
-                        data-lity="">
-                       <i class="fa fa-play record-icon"></i>
-                    </a>
-                    </i>
-                    </a>
-                 </li>
-                 <span class="back-g"> </span>
-                </ul>
-             </div>
-            </div>
-          </div><!--itm-->
-      <!------------------>
-      <!------------------>
-          <div class="item">
-          <div class="d-hover">
-             <div class="d-ul ">
-               <div class=" d-img-teme">
-                    <img src="{{ url('design/style') }}/img/teacher/4.jpg">
-                         <div class="c-img-video video ">Fares Abbad
-                     </div><!--./col-8-->
-                   </div>
-                  <ul class="ul-icon-det ">
-                     <li style="">
-                      <a href="#">
-                      <i class="fa fa-Teacher-record">
-                            Teacher Arabic    
-                        <a  
-                        class="video-icon" href= 
-                        "https://www.youtube.com/watch?v=UyPKw_mFxvI"
-                        data-lity="">
-                       <i class="fa fa-play record-icon"></i>
-                    </a>
-                    </i>
-                    </a>
-                 </li>
-                 <span class="back-g"> </span>
-                </ul>
-             </div>
-            </div>
-          </div><!--itm-->
-      <!------------------>
-       <!------------------>
-          <div class="item">
-          <div class="d-hover">
-             <div class="d-ul ">
-               <div class=" d-img-teme">
-                  <img src="{{ url('design/style') }}/img/teacher/5.jpg">
-                         <div class="c-img-video video ">Fares Abbad
-                     </div><!--./col-8-->
-                   </div>
-                  <ul class="ul-icon-det ">
-                     <li style="">
-                      <a href="#">
-                      <i class="fa fa-Teacher-record">
-                            Teacher Arabic    
-                        <a  
-                        class="video-icon" href= 
-                        "https://www.youtube.com/watch?v=jOxehEa--C8"
-                        data-lity="">
-                       <i class="fa fa-play record-icon"></i>
-                    </a>
-                    </i>
-                    </a>
-                 </li>
-                 <span class="back-g"> </span>
-                </ul>
-             </div>
-            </div>
-          </div><!--itm-->
-      <!------------------>
+
+    @endforeach  
+
      </div><!-- /.app-review-carousel owl-theme owl-carousel -->
    </div><!-- /.thm-container -->
 </section><!-- /.app-review -->
