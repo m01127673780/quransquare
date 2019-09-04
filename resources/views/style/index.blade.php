@@ -919,108 +919,45 @@
 <section class="app-review" id="review">
   <div class="thm-container"> 
       <div class=" blog owl-theme owl-carousel wow fadeInUp" data-wow-duration="2s" data-wow-offset="100">
-          <!-- ------------------------------------>
-           <div class="item">
-            <div class="card ">  
-               <div class ="background-f4">  
-                <img class="card-img-top" src="{{ url('design/style') }}/img/team1.jpg"     alt="Card image cap">
-                </div>
-                  <div class="card-body">
-                     <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur  </h4>
-                     <article class="article-subtitle" > 
-                      <i class="icon-calendar"></i>  
-                      <span class="card-subtitle "> 10 October,2017 </span>
-                      <i class="icon-chat"></i> 
-                        <span class="card-subtitle  ">  100comments </span>
-                    </article><!-- article-subtitle-->
-                    <p class="card-text section-desc text-left">Lorem ipsum dolor sit amet,  r adipiscing elit.  F  semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptentadipiscing elit.  F  semper    </p>
-                      <a href="#" class="a-img-Ather ">
-              <span class="span-a-bolog"> 
-              <i>View More</i>
-              <i class="fa fa-long-arrow-right"></i>
-              </span>
-                  </a>
-                  <hr>
-              <a href="#" class="a-img-Ather ">
-              <img  src="{{ url('design/style') }}/img/team1.jpg" alt="">
-                   <span class="span-Author"> 
-                <span >
-                <span class="name-Author" >Moh amed </span>
-                <author>(Author)</author>
-                </span>
-              </span>
-            </a>
-           </div>
-          </div>
-        </div><!--  itm-->
+  
         <!-- ------------------------------------>
+           @foreach( $beststudent as $best)
            <div class="item">
             <div class="card ">  
                <div class ="background-f4">  
-                <img class="card-img-top" src="{{ url('design/style') }}/img/team2.jpg"     alt="Card image cap">
+                <img class="card-img-top" src="storage/{{$test->img}}"    alt="Card image cap">
                 </div>
                   <div class="card-body">
-                     <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur  </h4>
-                     <article class="article-subtitle" > 
+                     <h4 class="card-title">{{$best->name_en}} </h4>
+             <!--          <article class="article-subtitle" > 
                       <i class="icon-calendar"></i>  
                       <span class="card-subtitle "> 10 October,2017 </span>
                       <i class="icon-chat"></i> 
                         <span class="card-subtitle  ">  100comments </span>
-                    </article><!-- article-subtitle-->
-                    <p class="card-text section-desc text-left">Lorem ipsum dolor sit amet,  r adipiscing elit.  F  semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptentadipiscing elit.  F  semper    </p>
-                      <a href="#" class="a-img-Ather ">
+                    </article> article-subtitle --> 
+                    <p class="card-text section-desc text-left">  {{$best->text_en}} </p>
+                      <a href="#Package" class="a-img-Ather ">
               <span class="span-a-bolog"> 
-              <i>View More</i>
+              <i>sunup</i>
               <i class="fa fa-long-arrow-right"></i>
               </span>
                   </a>
                   <hr>
               <a href="#" class="a-img-Ather ">
-              <img  src="{{ url('design/style') }}/img/team2.jpg" alt="">
+              <img  src="storage/{{$test->img}}" alt="">
                    <span class="span-Author"> 
                 <span >
-                <span class="name-Author" >Moh amed </span>
-                <author>(Author)</author>
-                </span>
+                <span class="name-Author" >{{$best->name_Teacher_en}}</span>
+<!--                 <author>(Author)</author>
+ -->                </span>
               </span>
             </a>
            </div>
           </div>
         </div><!--  itm-->
+                @endforeach  
+
         <!-- ------------------------------------>
-           <div class="item">
-            <div class="card ">  
-               <div class ="background-f4">  
-                <img class="card-img-top" src="{{ url('design/style') }}/img/team3.jpg"     alt="Card image cap">
-                </div>
-                  <div class="card-body">
-                     <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur  </h4>
-                     <article class="article-subtitle" > 
-                      <i class="icon-calendar"></i>  
-                      <span class="card-subtitle "> 10 October,2017 </span>
-                      <i class="icon-chat"></i> 
-                        <span class="card-subtitle  ">  100comments </span>
-                    </article><!-- article-subtitle-->
-                    <p class="card-text section-desc text-left">Lorem ipsum dolor sit amet,  r adipiscing elit.  F  semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptentadipiscing elit.  F  semper    </p>
-                      <a href="#" class="a-img-Ather ">
-              <span class="span-a-bolog"> 
-              <i>View More</i>
-              <i class="fa fa-long-arrow-right"></i>
-              </span>
-                  </a>
-                  <hr>
-              <a href="#" class="a-img-Ather ">
-              <img  src="{{ url('design/style') }}/img/team3.jpg" alt="">
-                   <span class="span-Author"> 
-                <span >
-                <span class="name-Author" >Moh amed </span>
-                <author>(Author)</author>
-                </span>
-              </span>
-            </a>
-           </div>
-          </div>
-        </div><!--  itm-->
         <!-- ------------------------------------>
            <div class="item">
             <div class="card ">  

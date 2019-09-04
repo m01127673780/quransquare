@@ -37,6 +37,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
    Route::delete('testimonial/destroy/all', 'TestimonialController@multi_delete');
 
 
+   Route::resource('beststudent', 'BestStudentController');
+   Route::delete('beststudent/destroy/all', 'BestStudentController@multi_delete');
+
+
 
   // ----------------------------
 

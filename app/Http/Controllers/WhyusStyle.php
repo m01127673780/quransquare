@@ -9,6 +9,7 @@ use App\Model\Videos;
 use App\Model\Teachers;
 use App\Model\Stat;
 use App\Model\Testimonial;
+use App\Model\BestStudent;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -27,6 +28,7 @@ class WhyusStyle extends Controller
 	   $videos =Videos::all();
 	   $teachers =Teachers::all();
      $stat =Stat::all();
+     $beststudent =BestStudent::all();
      $testimonial =Testimonial::all();
       return view ('style.index',[
       	'whyus' => $whyus,
@@ -34,6 +36,7 @@ class WhyusStyle extends Controller
       	'videos'=>$videos,
       	'teachers'=>$teachers,
         'stat'=>$stat,
+        'beststudent'=>$beststudent,
         'testimonial'=>$testimonial,
       ]);
  

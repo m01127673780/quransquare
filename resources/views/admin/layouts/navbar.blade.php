@@ -189,6 +189,20 @@
   </li>
  <!-- ============================ -->
 
+  <!-- ============================ -->
+   <li class="treeview {{ active_menu('beststudent')[0] }}">
+    <a href="#">
+      <i class="fa fa-user"></i> <span>{{ trans('admin.beststudent') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('beststudent')[1] }}">
+      <li class=""><a href="{{ aurl('beststudent') }}"><i class="fa  fa-user"></i> {{ trans('admin.beststudent') }}</a></li>
+      <li class=""><a href="{{ aurl('beststudent/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
+
 
  
 
