@@ -925,17 +925,17 @@
            <div class="item">
             <div class="card ">  
                <div class ="background-f4">  
-                <img class="card-img-top" src="storage/{{$test->img}}"    alt="Card image cap">
-                </div>
+                <img class="card-img-top" src="storage/{{$best->img}}"    alt="Card image cap">
+                 </div>
                   <div class="card-body">
                      <h4 class="card-title">{{$best->name_en}} </h4>
-             <!--          <article class="article-subtitle" > 
+                      <article class="article-subtitle" > 
                       <i class="icon-calendar"></i>  
-                      <span class="card-subtitle "> 10 October,2017 </span>
+                      <span class="card-subtitle">{{$best->date_en}} </span>
                       <i class="icon-chat"></i> 
-                        <span class="card-subtitle  ">  100comments </span>
-                    </article> article-subtitle --> 
-                    <p class="card-text section-desc text-left">  {{$best->text_en}} </p>
+                        <span class="card-subtitle">{{$best->Lecture_en}} </span>
+                    </article><!--  article-subtitle --> 
+                    <p class="card-text section-desc text-left">{{$best->text_en}} </p>
                       <a href="#Package" class="a-img-Ather ">
               <span class="span-a-bolog"> 
               <i>sunup</i>
@@ -944,12 +944,13 @@
                   </a>
                   <hr>
               <a href="#" class="a-img-Ather ">
-              <img  src="storage/{{$test->img}}" alt="">
-                   <span class="span-Author"> 
+               <img  src="storage/{{$best->img_Teacher}}" alt=""> 
+
+                  <span class="span-Author"> 
                 <span >
-                <span class="name-Author" >{{$best->name_Teacher_en}}</span>
-<!--                 <author>(Author)</author>
- -->                </span>
+                 <span class="name-Author" >{{$best->name_Teacher_en}}</span>
+                <author>({{$best->job_en}})</author>
+                </span>
               </span>
             </a>
            </div>

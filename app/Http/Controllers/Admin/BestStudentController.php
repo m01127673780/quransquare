@@ -43,18 +43,32 @@ class BestStudentController extends Controller {
 				'name_en'             => 'sometimes|nullable',
 				'name_Teacher_ar'     => 'sometimes|nullable',
 				'name_Teacher_en'     => 'sometimes|nullable',
+				'date_ar'             => 'sometimes|nullable',
+				'date_en'             => 'sometimes|nullable',
+				'Lecture_ar'             => 'sometimes|nullable',
+				'Lecture_en'             => 'sometimes|nullable',
+				'job_ar'             => 'sometimes|nullable',
+				'job_en'             => 'sometimes|nullable',
 				'text_ar'             => 'sometimes|nullable',
 				'text_en'             => 'sometimes|nullable',
-				'img'          => 'sometimes|nullable|'.v_image(),
+				'img'                 => 'sometimes|nullable|'.v_image(),
+				'img_Teacher'         => 'sometimes|nullable|'.v_image(),
  
 			], [], [
 				'name_ar'                     => trans('admin.name_ar'),
 				'name_en'                     => trans('admin.name_en'),
 				'name_Teacher_ar'             => trans('admin.name_Teacher_ar'),
 				'name_Teacher_en'             => trans('admin.name_Teacher_en'),
+				'date_ar'                     => trans('admin.date_ar'),
+				'date_en'                     => trans('admin.date_en'),
+				'Lecture_ar'                  => trans('admin.Lecture_ar'),
+				'Lecture_en'                  => trans('admin.Lecture_en'),
+				'job_ar'                      => trans('admin.job_ar'),
+				'job_en'                      => trans('admin.job_en'),
 				'text_ar'                     => trans('admin.text_ar'),
 				'text_en'                     => trans('admin.text_en'),
   				'img'                         => trans('admin.img'),
+  				'img_Teacher'                         => trans('admin.img_Teacher'),
 				 
 			]);
 
@@ -62,6 +76,14 @@ class BestStudentController extends Controller {
 			$data['img'] = up()->upload([
 					'file'        => 'img',
 					'path'        => 'beststudent',
+					'upload_type' => 'single',
+					'delete_file' => '',
+				]);
+		}		
+		if (request()->hasFile('img_Teacher')) {
+			$data['img_Teacher'] = up()->upload([
+					'file'        => 'img_Teacher',
+					'path'        => 'img_Teacher',
 					'upload_type' => 'single',
 					'delete_file' => '',
 				]);
@@ -104,33 +126,59 @@ class BestStudentController extends Controller {
 
 		
 		$data = $this->validate(request(),
-					[
+[
+
 				
-				'name_ar'                     => 'sometimes|nullable',
-				'name_en'                     => 'sometimes|nullable',
-				'name_Teacher_ar'             => 'sometimes|nullable',
-				'name_Teacher_en'             => 'sometimes|nullable',
-				'text_ar'                     => 'sometimes|nullable',
-				'text_en'                     => 'sometimes|nullable',
-				'img'                         => 'sometimes|nullable|'.v_image(),
+				'name_ar'             => 'sometimes|nullable',
+				'name_en'             => 'sometimes|nullable',
+				'name_Teacher_ar'     => 'sometimes|nullable',
+				'name_Teacher_en'     => 'sometimes|nullable',
+				'date_ar'             => 'sometimes|nullable',
+				'date_en'             => 'sometimes|nullable',
+				'Lecture_ar'             => 'sometimes|nullable',
+				'Lecture_en'             => 'sometimes|nullable',
+				'job_ar'             => 'sometimes|nullable',
+				'job_en'             => 'sometimes|nullable',
+				'text_ar'             => 'sometimes|nullable',
+				'text_en'             => 'sometimes|nullable',
+				'img'                 => 'sometimes|nullable|'.v_image(),
+				'img_Teacher'         => 'sometimes|nullable|'.v_image(),
+ 
 			], [], [
 				'name_ar'                     => trans('admin.name_ar'),
 				'name_en'                     => trans('admin.name_en'),
 				'name_Teacher_ar'             => trans('admin.name_Teacher_ar'),
 				'name_Teacher_en'             => trans('admin.name_Teacher_en'),
+				'date_ar'                     => trans('admin.date_ar'),
+				'date_en'                     => trans('admin.date_en'),
+				'Lecture_ar'                  => trans('admin.Lecture_ar'),
+				'Lecture_en'                  => trans('admin.Lecture_en'),
+				'job_ar'                      => trans('admin.job_ar'),
+				'job_en'                      => trans('admin.job_en'),
 				'text_ar'                     => trans('admin.text_ar'),
 				'text_en'                     => trans('admin.text_en'),
   				'img'                         => trans('admin.img'),
+  				'img_Teacher'                         => trans('admin.img_Teacher'),
 				 
 			]);
+
+
 		if (request()->hasFile('img')) {
 			$data['img'] = up()->upload([
 					'file'        => 'img',
 					'path'        => 'beststudent',
 					'upload_type' => 'single',
-					'delete_file' => BestStudent::find($id)->img,
+					'delete_file' => '',
 				]);
-		}
+		}		
+		if (request()->hasFile('img_Teacher')) {
+			$data['img_Teacher'] = up()->upload([
+					'file'        => 'img_Teacher',
+					'path'        => 'beststudent',
+					'upload_type' => 'single',
+					'delete_file' => '',
+				]);
+ 		}
 
 		BestStudent::where('id', $id)->update($data);
 		session()->flash('success', trans('admin.updated_record'));

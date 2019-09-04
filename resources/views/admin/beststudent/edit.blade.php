@@ -15,12 +15,36 @@
   <div class="form-group">
         {!! Form::label('name_ar',trans('admin.name_ar')) !!}
         {!! Form::text('name_ar',$beststudent->name_ar,['class'=>'form-control']) !!}
-     </div>
+  </div>
      <div class="form-group">
         {!! Form::label('name_en',trans('admin.name_en')) !!}
         {!! Form::text('name_en',$beststudent->name_en,['class'=>'form-control']) !!}
      </div> 
      <div class="form-group">
+        {!! Form::label('date_ar',trans('admin.date_ar')) !!}
+        {!! Form::text('date_ar',$beststudent->date_ar,['class'=>'form-control']) !!}
+     </div>
+     <div class="form-group">
+        {!! Form::label('date_en',trans('admin.date_en')) !!}
+        {!! Form::text('date_en',$beststudent->date_en,['class'=>'form-control']) !!}
+     </div>
+      <div class="form-group">
+        {!! Form::label('Lecture_ar',trans('admin.Lecture_ar')) !!}
+        {!! Form::text('Lecture_ar',$beststudent->Lecture_ar,['class'=>'form-control']) !!}
+     </div>
+     <div class="form-group">
+        {!! Form::label('Lecture_en',trans('admin.Lecture_en')) !!}
+        {!! Form::text('Lecture_en',$beststudent->Lecture_en,['class'=>'form-control']) !!}
+     </div>
+      <div class="form-group">
+        {!! Form::label('job_ar',trans('admin.job_ar')) !!}
+        {!! Form::text('job_ar',$beststudent->job_ar,['class'=>'form-control']) !!}
+     </div>
+     <div class="form-group">
+        {!! Form::label('text_en',trans('admin.text_en')) !!}
+        {!! Form::text('text_en',$beststudent->text_en,['class'=>'form-control']) !!}
+     </div>
+      <div class="form-group">
         {!! Form::label('text_ar',trans('admin.text_ar')) !!}
         {!! Form::text('text_ar',$beststudent->text_ar,['class'=>'form-control']) !!}
      </div>
@@ -37,6 +61,7 @@
         {!! Form::label('name_Teacher_en',trans('admin.name_Teacher_en')) !!}
         {!! Form::text('name_Teacher_en',$beststudent->name_Teacher_en,['class'=>'form-control']) !!}
      </div>
+     <!-- -------------- -->
      <div class="form-group">
         {!! Form::label('img',trans('admin.beststudent_flag')) !!}
         {!! Form::file('img',['class'=>'form-control']) !!}
@@ -44,7 +69,18 @@
        <img src="{{ Storage::url($beststudent->img) }}" style="width:50px;height: 50px;" />
       @endif
 
-     </div>
+     </div>  
+     <!-- -------------- --> 
+     <!-- -------------- -->
+     <div class="form-group">
+        {!! Form::label('img_Teacher',trans('admin.beststudent_flag')) !!}
+        {!! Form::file('img_Teacher',['class'=>'form-control']) !!}
+          @if(!empty($beststudent->img_Teacher))
+       <img src="{{ Storage::url($beststudent->img_Teacher) }}" style="width:50px;height: 50px;" />
+      @endif
+     </div> 
+     <!-- -------------- -->
+
 <!--     {{--================================================================== --}}
  -->
 

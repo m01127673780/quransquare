@@ -20,8 +20,15 @@ class CreateBestStudentTable extends Migration
             $table->string('name_Teacher_ar')->nullable();
             $table->string('name_Teacher_en')->nullable();
             $table->string('text_ar')->nullable();
-            $table->string('text_en')->nullable();
+            $table->string('text_en')->nullable();    
+            $table->string('date_ar')->nullable();
+            $table->string('date_en')->nullable();      
+            $table->string('Lecture_ar')->nullable();
+            $table->string('Lecture_en')->nullable();    
+            $table->string('job_ar')->nullable();
+            $table->string('job_en')->nullable();
             $table->string('img')->nullable();
+            $table->string('img_Teacher')->nullable();
             $table->timestamps();
         });
     }
