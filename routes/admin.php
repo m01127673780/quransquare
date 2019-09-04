@@ -40,6 +40,12 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
    Route::resource('beststudent', 'BestStudentController');
    Route::delete('beststudent/destroy/all', 'BestStudentController@multi_delete');
 
+   Route::resource('halfhour', 'HalfhourController');
+   Route::delete('halfhour/destroy/all', 'HalfhourController@multi_delete');
+
+   Route::resource('hour', 'HourController');
+   Route::delete('hour/destroy/all', 'HourController@multi_delete');
+
 
 
   // ----------------------------

@@ -505,44 +505,32 @@
               </aside>
                 <hr>
    <div class="row  half-an-hour" style="width: 100%;"> 
-  @foreach($halfhour as $half)
-   <div class="col-sm-6 col-lg-3">
-    <div class="superduper">
+     <div class="col-sm-6 col-lg-3">
+      <div class="superduper">
       <div class="price-package">
         <div class="package-name">
-         <h2>{{$half->head_en}}</h2>
+         <h2>super duper</h2>
           </div>
            <div class="package-price">
            <div class="package-arrow"></div>
           <div class="price">
-             <span>${{$half->number}}</span>
+            <sup>$</sup>
+            <span>99</span>
           </div>
           <div class="term">
-            <sup></sup>
-            <span>{{$half->dateshow_en}}</span>
+            <sup>.99</sup>
+            <span>/month</span>
           </div>
         <div class="package-features">
           <div class="package-arrow"></div>
           <ul>
-               <li><em>{{$half->content_en}}</em></li>
-
-               <li style="    padding: 0px 19px;"><em>{{$half->descount3_en}}
-                <span >(<span style="color:#ffcc00">{{$half->percentage3}}</span>)</span></em>
-               </li>
-                <!--  ------------->
-               <li style="    padding: 0px 19px;"><em>{{$half->descount6_en}}
-                <span >(<span style="color:#ffcc00">{{$half->percentage6}}</span>)</span></em>
-               </li>
-                <!--  ------------->
-               <li style="    padding: 0px 19px;"><em>{{$half->descount12_en}}
-                <span >(<span style="color:#ffcc00">{{$half->percentage12}}</span>)</span></em>
-               </li>
-                <!--  ------------->
-               <li><em>{{$half->percentage6}}</em></li>
-                  <li><em>{{$half->descount12_en}}</em></li>
-               <li><em>{{$half->percentage12}}</em></li>
-                   
-           </ul>
+            <li><em>Super Duper Feature</em></li>
+            <li>Special Feature 1</li>
+            <li>Special Feature 2</li>
+            <li>Average Feature 1</li>
+            <li>Average Feature 2</li>
+            <li>Average Feature 3</li>
+          </ul>
           <button class="sign-up">
             <h3>sign up now!</h3>
           </button>
@@ -551,47 +539,136 @@
     </div><!--price-package-->
   </div><!--superduper-->
  </div><!--col-->
-@endforeach
+   <div class="col-sm-6 col-lg-3">
+    <div class="superduper">
+      <div class="price-package">
+        <div class="package-name">
+         <h2>super duper</h2>
+          </div>
+           <div class="package-price">
+           <div class="package-arrow"></div>
+          <div class="price">
+            <sup>$</sup>
+            <span>99</span>
+          </div>
+          <div class="term">
+            <sup>.99</sup>
+            <span>/month</span>
+          </div>
+        <div class="package-features">
+          <div class="package-arrow"></div>
+          <ul>
+            <li><em>Super Duper Feature</em></li>
+            <li>Special Feature 1</li>
+            <li>Special Feature 2</li>
+            <li>Average Feature 1</li>
+            <li>Average Feature 2</li>
+            <li>Average Feature 3</li>
+          </ul>
+          <button class="sign-up">
+            <h3>sign up now!</h3>
+          </button>
+        </div><!--package-features-->
+      </div><!--package-price-->
+    </div><!--price-package-->
+  </div><!--superduper-->
+ </div><!--col-->
+   <div class="col-sm-6 col-lg-3">
+    <div class="superduper">
+      <div class="price-package">
+        <div class="package-name">
+         <h2>super duper</h2>
+          </div>
+           <div class="package-price">
+           <div class="package-arrow"></div>
+          <div class="price">
+            <sup>$</sup>
+            <span>99</span>
+          </div>
+          <div class="term">
+            <sup>.99</sup>
+            <span>/month</span>
+          </div>
+        <div class="package-features">
+          <div class="package-arrow"></div>
+          <ul>
+            <li><em>Super Duper Feature</em></li>
+            <li>Special Feature 1</li>
+            <li>Special Feature 2</li>
+            <li>Average Feature 1</li>
+            <li>Average Feature 2</li>
+            <li>Average Feature 3</li>
+          </ul>
+          <button class="sign-up">
+            <h3>sign up now!</h3>
+          </button>
+        </div><!--package-features-->
+      </div><!--package-price-->
+    </div><!--price-package-->
+  </div><!--superduper-->
+ </div><!--col-->
+   <div class="col-sm-6 col-lg-3">
+    <div class="superduper">
+      <div class="price-package">
+        <div class="package-name">
+         <h2>super duper</h2>
+          </div>
+           <div class="package-price">
+           <div class="package-arrow"></div>
+          <div class="price">
+            <sup>$</sup>
+            <span>99</span>
+          </div>
+          <div class="term">
+            <sup>.99</sup>
+            <span>/month</span>
+          </div>
+        <div class="package-features">
+          <div class="package-arrow"></div>
+          <ul>
+            <li><em>Super Duper Feature</em></li>
+            <li>Special Feature 1</li>
+            <li>Special Feature 2</li>
+            <li>Average Feature 1</li>
+            <li>Average Feature 2</li>
+            <li>Average Feature 3</li>
+          </ul>
+          <button class="sign-up">
+            <h3>sign up now!</h3>
+          </button>
+        </div><!--package-features-->
+      </div><!--package-price-->
+    </div><!--price-package-->
+  </div><!--superduper-->
+ </div><!--col-->
  </div> <!-- half-an-hour-->
   <div class="row one-hour" style="width: 100%;  display: none;"> 
-  @foreach($hour as $ho)
-   <div class="col-sm-6 col-lg-3">
+  <div class="col-sm-6 col-lg-3">
     <div class="superduper">
       <div class="price-package">
         <div class="package-name">
-         <h2>{{$ho->head_en}}</h2>
+         <h2>super duper</h2>
           </div>
            <div class="package-price">
            <div class="package-arrow"></div>
           <div class="price">
-             <span>${{$ho->number}}</span>
+            <sup>$</sup>
+            <span>99</span>
           </div>
           <div class="term">
-            <sup></sup>
-            <span>{{$ho->dateshow_en}}</span>
+            <sup>.99</sup>
+            <span>/month</span>
           </div>
         <div class="package-features">
           <div class="package-arrow"></div>
           <ul>
-               <li><em>{{$ho->content_en}}</em></li>
-
-               <li style="    padding: 0px 19px;"><em>{{$ho->descount3_en}}
-                <span >(<span style="color:#ffcc00">{{$ho->percentage3}}</span>)</span></em>
-               </li>
-                <!--  ------------->
-               <li style="    padding: 0px 19px;"><em>{{$ho->descount6_en}}
-                <span >(<span style="color:#ffcc00">{{$ho->percentage6}}</span>)</span></em>
-               </li>
-                <!--  ------------->
-               <li style="    padding: 0px 19px;"><em>{{$ho->descount12_en}}
-                <span >(<span style="color:#ffcc00">{{$ho->percentage12}}</span>)</span></em>
-               </li>
-                <!--  ------------->
-               <li><em>{{$ho->percentage6}}</em></li>
-                  <li><em>{{$ho->descount12_en}}</em></li>
-               <li><em>{{$ho->percentage12}}</em></li>
-                   
-           </ul>
+            <li><em>Super Duper Feature</em></li>
+            <li>Special Feature 1</li>
+            <li>Special Feature 2</li>
+            <li>Average Feature 1</li>
+            <li>Average Feature 2</li>
+            <li>Average Feature 3</li>
+          </ul>
           <button class="sign-up">
             <h3>sign up now!</h3>
           </button>
@@ -600,7 +677,108 @@
     </div><!--price-package-->
   </div><!--superduper-->
  </div><!--col-->
-@endforeach
+   <div class="col-sm-6 col-lg-3">
+    <div class="superduper">
+      <div class="price-package">
+        <div class="package-name">
+         <h2>super duper</h2>
+          </div>
+           <div class="package-price">
+           <div class="package-arrow"></div>
+          <div class="price">
+            <sup>$</sup>
+            <span>99</span>
+          </div>
+          <div class="term">
+            <sup>.99</sup>
+            <span>/month</span>
+          </div>
+        <div class="package-features">
+          <div class="package-arrow"></div>
+          <ul>
+            <li><em>Super Duper Feature</em></li>
+            <li>Special Feature 1</li>
+            <li>Special Feature 2</li>
+            <li>Average Feature 1</li>
+            <li>Average Feature 2</li>
+            <li>Average Feature 3</li>
+          </ul>
+          <button class="sign-up">
+            <h3>sign up now!</h3>
+          </button>
+        </div><!--package-features-->
+      </div><!--package-price-->
+    </div><!--price-package-->
+  </div><!--superduper-->
+ </div><!--col-->
+   <div class="col-sm-6 col-lg-3">
+    <div class="superduper">
+      <div class="price-package">
+        <div class="package-name">
+         <h2>super duper</h2>
+          </div>
+           <div class="package-price">
+           <div class="package-arrow"></div>
+          <div class="price">
+            <sup>$</sup>
+            <span>99</span>
+          </div>
+          <div class="term">
+            <sup>.99</sup>
+            <span>/month</span>
+          </div>
+        <div class="package-features">
+          <div class="package-arrow"></div>
+          <ul>
+            <li><em>Super Duper Feature</em></li>
+            <li>Special Feature 1</li>
+            <li>Special Feature 2</li>
+            <li>Average Feature 1</li>
+            <li>Average Feature 2</li>
+            <li>Average Feature 3</li>
+          </ul>
+          <button class="sign-up">
+            <h3>sign up now!</h3>
+          </button>
+        </div><!--package-features-->
+      </div><!--package-price-->
+    </div><!--price-package-->
+  </div><!--superduper-->
+ </div><!--col-->
+   <div class="col-sm-6 col-lg-3">
+    <div class="superduper">
+      <div class="price-package">
+        <div class="package-name">
+         <h2>super duper</h2>
+          </div>
+           <div class="package-price">
+           <div class="package-arrow"></div>
+          <div class="price">
+            <sup>$</sup>
+            <span>99</span>
+          </div>
+          <div class="term">
+            <sup>.99</sup>
+            <span>/month</span>
+          </div>
+        <div class="package-features">
+          <div class="package-arrow"></div>
+          <ul>
+            <li><em>Super Duper Feature</em></li>
+            <li>Special Feature 1</li>
+            <li>Special Feature 2</li>
+            <li>Average Feature 1</li>
+            <li>Average Feature 2</li>
+            <li>Average Feature 3</li>
+          </ul>
+          <button class="sign-up">
+            <h3>sign up now!</h3>
+                          </button>
+                        </div><!--package-features-->
+                      </div><!--package-price-->
+                    </div><!--price-package-->
+                  </div><!--superduper-->
+                 </div><!--col-->
               </div> <!--one-hour-->
           </div><!-- row" -->
      </div><!--  container -->

@@ -10,6 +10,8 @@ use App\Model\Teachers;
 use App\Model\Stat;
 use App\Model\Testimonial;
 use App\Model\BestStudent;
+use App\Model\Halfhour;
+use App\Model\Hour;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -30,6 +32,8 @@ class WhyusStyle extends Controller
      $stat =Stat::all();
      $beststudent =BestStudent::all();
      $testimonial =Testimonial::all();
+     $halfhour =Halfhour::all();
+     $hour     =Hour::all();
       return view ('style.index',[
       	'whyus' => $whyus,
       	'courses'=>$courses,
@@ -38,6 +42,8 @@ class WhyusStyle extends Controller
         'stat'=>$stat,
         'beststudent'=>$beststudent,
         'testimonial'=>$testimonial,
+        'hour'=>$hour,
+        'halfhour'=>$halfhour,
       ]);
  
     }

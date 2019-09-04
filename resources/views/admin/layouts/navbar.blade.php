@@ -202,6 +202,32 @@
     </ul>
   </li>
  <!-- ============================ -->
+  <!-- ============================ -->
+   <li class="treeview {{ active_menu('halfhour')[0] }}">
+    <a href="#">
+      <i class="fa fa-user"></i> <span>{{ trans('admin.halfhour') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('halfhour')[1] }}">
+      <li class=""><a href="{{ aurl('halfhour') }}"><i class="fa  fa-user"></i> {{ trans('admin.halfhour') }}</a></li>
+      <li class=""><a href="{{ aurl('halfhour/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ --> 
+  <!-- ============================ -->
+   <li class="treeview {{ active_menu('hour')[0] }}">
+    <a href="#">
+      <i class="fa fa-user"></i> <span>{{ trans('admin.hour') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('hour')[1] }}">
+      <li class=""><a href="{{ aurl('hour') }}"><i class="fa  fa-user"></i> {{ trans('admin.hour') }}</a></li>
+      <li class=""><a href="{{ aurl('hour/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
 
 
  
