@@ -26,9 +26,11 @@ class Footer extends Model{
                   'instagram',
                   'googel',
                   'youtube',
+                  'link_appstore',
+                  'link_googelplay',
                   'img_appstore',
                   'img_googelplay',
-                  
+
       ];
 
 }

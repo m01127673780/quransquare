@@ -11,7 +11,6 @@
     {!! Form::open(['url'=>aurl('footer/'.$footer->id),'method'=>'put','files'=>true ]) !!}
  
 <!--   {{--================================================================== --}} --> 
-    
 
   <div class="form-group">
         {!! Form::label('payment_ar',trans('admin.payment_ar')) !!}
@@ -38,21 +37,34 @@
         {!! Form::text('callus_en',$footer->callus_en,['class'=>'form-control']) !!}
      </div>
      <div class="form-group">
+        {!! Form::label('import_info_ar',trans('admin.import_info_ar')) !!}
+        {!! Form::text('import_info_ar',$footer->import_info_ar,['class'=>'form-control']) !!}
+     </div>
+     <div class="form-group">
+        {!! Form::label('import_info_en',trans('admin.import_info_en')) !!}
+        {!! Form::text('import_info_en',$footer->import_info_en,['class'=>'form-control']) !!}
+     </div>
+    <div class="form-group">
+        {!! Form::label('aboutus_ar',trans('admin.aboutus_ar')) !!}
+        {!! Form::text('aboutus_ar',$footer->aboutus_ar,['class'=>'form-control']) !!}
+     </div>
+     <div class="form-group">
+        {!! Form::label('aboutus_en',trans('admin.aboutus_en')) !!}
+        {!! Form::text('aboutus_en',$footer->aboutus_en,['class'=>'form-control']) !!}
+     </div>
+     <div class="form-group">
         {!! Form::label('emaill',trans('admin.emaill')) !!}
         {!! Form::email('emaill',$footer->emaill,['class'=>'form-control']) !!}
      </div>
    <div class="form-group">
-        {!! Form::label('fecebook',trans('admin.fecebook')) !!}
-        {!! Form::url('fecebook',$footer->fecebook,['class'=>'form-control']) !!}
+        {!! Form::label('facebook',trans('admin.facebook')) !!}
+        {!! Form::url('facebook',$footer->facebook,['class'=>'form-control']) !!}
      </div>
    <div class="form-group">
         {!! Form::label('twitter',trans('admin.twitter')) !!}
         {!! Form::url('twitter',$footer->twitter,['class'=>'form-control']) !!}
      </div>
-   <div class="form-group">
-        {!! Form::label('twitter',trans('admin.twitter')) !!}
-        {!! Form::url('twitter',$footer->twitter,['class'=>'form-control']) !!}
-     </div>
+ 
    <div class="form-group">
         {!! Form::label('instagram',trans('admin.instagram')) !!}
         {!! Form::url('instagram',$footer->instagram,['class'=>'form-control']) !!}
@@ -64,8 +76,7 @@
    <div class="form-group">
         {!! Form::label('youtube',trans('admin.youtube')) !!}
         {!! Form::url('youtube',$footer->youtube,['class'=>'form-control']) !!}
-     </div>
- 
+     </div>  
      <!-- ---------------- -->
      <div class="form-group">
         {!! Form::label('img_appstore',trans('admin.img_appstore')) !!}
@@ -74,8 +85,13 @@
        <img src="{{ Storage::url($footer->img_appstore) }}" style="width:50px;height: 50px;" />
       @endif
      </div>
-     <!-- ---------------- -->
-     <!-- ---------------- -->
+     <!-- ---------------- --> 
+        <div class="form-group">
+        {!! Form::label('link_appstore',trans('admin.link_appstore')) !!}
+        {!! Form::url('link_appstore',$footer->link_appstore,['class'=>'form-control']) !!}
+     </div>
+     <!-- ---------------- -->   
+
      <div class="form-group">
         {!! Form::label('img_googelplay',trans('admin.img_googelplay')) !!}
         {!! Form::file('img_googelplay',['class'=>'form-control']) !!}
@@ -83,7 +99,11 @@
        <img src="{{ Storage::url($footer->img_googelplay) }}" style="width:50px;height: 50px;" />
       @endif
      </div>
-     <!-- ---------------- -->
+     <!-- ---------------- --> 
+          <div class="form-group">
+        {!! Form::label('link_googelplay',trans('admin.link_googelplay')) !!}
+        {!! Form::url('link_googelplay',$footer->link_googelplay,['class'=>'form-control']) !!}
+     </div> 
 <!--{{--================================================================== --}}-->
      {!! Form::submit(trans('admin.save'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}

@@ -26,11 +26,13 @@ class CreateFooterTable extends Migration
             $table->string('import_info_en')->nullable();      
             $table->string('aboutus_ar')->nullable();
             $table->string('aboutus_en')->nullable();    
-            $table->string('fecebook')->nullable();
+            $table->string('facebook')->nullable();
             $table->string('twitter')->nullable();
             $table->string('instagram')->nullable();
             $table->string('googel')->nullable();
             $table->string('youtube')->nullable();
+            $table->string('link_appstore')->nullable();
+            $table->string('link_googelplay')->nullable();
             $table->string('img_appstore')->nullable();
             $table->string('img_googelplay')->nullable();
             $table->timestamps();

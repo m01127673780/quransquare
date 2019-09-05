@@ -14,6 +14,8 @@
       {!! Form::open(['route'=>['footer.destroy',$id],'method'=>'delete']) !!}
       <div class="modal-body">
         <h4>{{ trans('admin.delete_this',['name'=> session('lang') == 'ar'?$payment_ar:$payment_en ]) }}</h4>
+                   <img  src="{{ Storage::url($img_appstore) }}" style="width: 50px;height: 50px"></h4>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">{{ trans('admin.close') }}</button>

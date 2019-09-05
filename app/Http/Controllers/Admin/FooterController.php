@@ -38,7 +38,7 @@ class FooterController extends Controller {
 		$data = $this->validate(request(),
 [
 
-
+	
 				'payment_ar'             => 'sometimes|nullable',
 				'payment_en'             => 'sometimes|nullable',
 				'contact_ar'             => 'sometimes|nullable',
@@ -55,11 +55,31 @@ class FooterController extends Controller {
 				'instagram'             => 'sometimes|nullable',
 				'googel'             => 'sometimes|nullable',
 				'youtube'             => 'sometimes|nullable',
+				'link_appstore'             => 'sometimes|nullable',
+				'link_googelplay'             => 'sometimes|nullable',
  				'img_appstore'         => 'sometimes|nullable|'.v_image(),
 				'img_googelplay'         => 'sometimes|nullable|'.v_image(),
  
 			], [], [
-	
+				
+  				'payment_ar'                         => trans('admin.payment_ar'),
+  				'payment_en'                         => trans('admin.payment_en'),
+  				'contact_ar'                         => trans('admin.contact_ar'),
+  				'contact_en'                         => trans('admin.contact_en'),
+  				'callus_ar'                         => trans('admin.callus_ar'),
+  				'callus_en'                         => trans('admin.callus_en'),
+  				'emaill'                         => trans('admin.emaill'),
+  				'import_info_ar'                         => trans('admin.import_info_ar'),
+  				'import_info_en'                         => trans('admin.import_info_en'),
+  				'aboutus_ar'                         => trans('admin.aboutus_ar'),
+  				'aboutus_en'                         => trans('admin.aboutus_en'),
+  				'facebook'                         => trans('admin.facebook'),
+  				'twitter'                         => trans('admin.twitter'),
+  				'instagram'                         => trans('admin.instagram'),
+  				'googel'                         => trans('admin.googel'),
+  				'youtube'                         => trans('admin.youtube'),
+  				'link_appstore'                         => trans('admin.link_appstore'),
+  				'link_googelplay'                         => trans('admin.link_googelplay'),
   				'img_appstore'                         => trans('admin.img_appstore'),
   				'img_googelplay'                         => trans('admin.img_googelplay'),
 				 
@@ -120,7 +140,7 @@ class FooterController extends Controller {
 
 		
 		$data = $this->validate(request(),
-[
+				[
 
 	
 				'payment_ar'             => 'sometimes|nullable',
@@ -139,6 +159,8 @@ class FooterController extends Controller {
 				'instagram'             => 'sometimes|nullable',
 				'googel'             => 'sometimes|nullable',
 				'youtube'             => 'sometimes|nullable',
+				'link_appstore'             => 'sometimes|nullable',
+				'link_googelplay'             => 'sometimes|nullable',
  				'img_appstore'         => 'sometimes|nullable|'.v_image(),
 				'img_googelplay'         => 'sometimes|nullable|'.v_image(),
  
@@ -160,6 +182,8 @@ class FooterController extends Controller {
   				'instagram'                         => trans('admin.instagram'),
   				'googel'                         => trans('admin.googel'),
   				'youtube'                         => trans('admin.youtube'),
+  				'link_appstore'                         => trans('admin.link_appstore'),
+  				'link_googelplay'                         => trans('admin.link_googelplay'),
   				'img_appstore'                         => trans('admin.img_appstore'),
   				'img_googelplay'                         => trans('admin.img_googelplay'),
 				 
@@ -218,3 +242,4 @@ class FooterController extends Controller {
 		return redirect(aurl('footer'));
 	}
 }
+ 

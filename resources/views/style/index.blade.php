@@ -922,7 +922,9 @@
             <div class="widget-about">
          <h3 class="footer-title">About us</h3>
           <p align="justify" class="p-linhight">
-                      We are leading online Quran & Arabic teaching institute. We are expert in using state of the art technologies to teach online. We have teacher's who are certified by Al-Ahzar and also fluently speaks in english and well trained to teach online.
+                   @foreach($footer as $foot)
+                     {{$foot->aboutus_en}}
+                     @endforeach
                     </p>
             </div>
           </div>
@@ -933,35 +935,40 @@
                     <h3 class="footer-title">important links</h3>
                     <ul class="list-unstyled contact-info">
 
-                        <li><i class="fa fa-check-circle-o"></i> <a href="#" onclick="gotoSuccessStories()">Success Stories</a>  </li>
+                        <li><i class="fa fa-check-circle-o"></i> <br><a href="#">
+                     @foreach($footer as $foot)
+                     {{$foot->import_info_en}}
+                     @endforeach
+                      </a>  </li>
 
-                      <li><i class="fa fa-check-circle-o"></i> <a href="0,1);RegisterMe" target="_blank">Free Registration</a>  </li>
-
-                        <li><i class="fa fa-check-circle-o"></i> <a href="https://www.facebook.com/MyTJQuranArabic" target="_blank">Like us in Facebook</a> </li>
-
-                        <li><i class="fa fa-check-circle-o"></i> <a href="https://twitter.com/MyTJQuranArabic" target="_blank">Tweet us</a> </li>
-
-                        <li><i class="fa fa-check-circle-o"></i> <a href="https://vimeo.com/tareequljannah" target="_blank">Watch us our Vimeo Videos</a> </li>
-                        <li><i class="fa fa-check-circle-o"></i> <a href="https://vimeo.com/tareequljannah" target="_blank">Watch us our Vimeo Videos</a> </li>
-                        <li><i class="fa fa-check-circle-o"></i> <a href="https://vimeo.com/tareequljannah" target="_blank">Watch us our Vimeo Videos</a> </li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-lg-3 p-linhight-smol">
                     <h3 class="footer-title">Contact information</h3>
                     <!-- <p>Tel: 9892-62156 int 6126</p> -->
-                    <p class="p-linhight-smol">Head Office Location: Toronto, Canada </p>
-                     <p class="p-linhight-smol">Branch Office Location: Cairo, Egypt</p>
-                     <p class="p-linhight-smol">Call Us: <font color="orange" size="3">1-888-698-5221<br>
-                     1-888-MYTJCA-1</font></p>
-                    <p class="p-linhight-smol">Support Email: <font color="orange">support@tareequljannah.com</font></p>
+                    <p class="p-linhight-smol">
+                     @foreach($footer as $foot)
+                     {{$foot->contact_en}}
+                     @endforeach
+                   </p>
+                      <p class="p-linhight-smol">Call Us: <font color="orange" size="3">
+                     @foreach($footer as $foot)
+                     {{$foot->callus_en}}
+                     @endforeach
+                   </font></p>
+                    <p class="p-linhight-smol">Support Email: <font color="orange"> 
+                      @foreach($footer as $foot)
+                     {{$foot->emaill}}
+                     @endforeach
+                   </font></p>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <h3 class="footer-title">payments</h3>
                     <p align="justify"> 
                     @foreach($footer as $foot)
-
                      {{$foot->payment_en}}
-                     @endforeach</p>
+                     @endforeach
+                   </p>
                     <ul class="pay list-unstyled">
                         <span><img src="https://www.tareequljannah.com/resources/img/visa.png" alt="//"></span>
                         <span><img src="https://www.tareequljannah.com/resources/img/discov.png" alt="//"></span>
@@ -979,13 +986,16 @@
       <div class="container">
               <span> 
                <span class="s-medie">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-google"></i></a>
-                  <a href="#"><i class="fa fa-youtube"></i></a>
+                  <a href="{{$foot->twitter}} " target="_blank"  ><i class="fa fa-twitter"></i></a>
+                  <a href="{{$foot->facebook}} " target="_blank"  ><i class="fa fa-facebook"></i></a>
+                  <a href="{{$foot->googel}}  " target="_blank"  ><i class="fa fa-google"></i></a>
+                  <a href="{{$foot->youtube}} " target="_blank"  ><i class="fa fa-youtube"></i></a>
                   </span>
-                  <img class="img-downlode-app " src="https://www.tareequljannah.com/resources/img/getitongoogleplay.png">
-                    <img class="img-downlode-app " src="https://www.tareequljannah.com/resources/img/appbutton.png">
+      @foreach($footer as $foot)
+                  
+              <a href="{{$foot->link_appstore}}" target="_blank">   <img class="img-downlode-app " src="storage/{{$foot->img_appstore}}"></a>
+              <a href="{{$foot->link_googelplay}}" target="_blank"> <img class="img-downlode-app " src="storage/{{$foot->img_googelplay}}"></a> 
+                 @endforeach
                   </div>
                 </span>
                   <br><br><br> 
@@ -1001,11 +1011,13 @@
                   </span>
                   </span>
                 <span class="s-medie by-me">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-google"></i></a>
-                  <a href="#"><i class="fa fa-youtube"></i></a>
-                  <a href="#"><i class="fa fa-youtube"></i></a>
+                  @foreach($footer as $foot)
+                  <a href="{{$foot->twitter}}"><i class="fa fa-twitter"></i></a>
+                  <a href="{{$foot->facebook}}"><i class="fa fa-facebook"></i></a>
+                  <a href="{{$foot->youtube}}"><i class="fa fa-google"></i></a>
+                  <a href="{{$foot->youtube}}"><i class="fa fa-youtube"></i></a>
+                   @endforeach
+
                   </span>
                   </span>
                </p>

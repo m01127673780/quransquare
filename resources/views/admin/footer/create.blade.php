@@ -57,8 +57,12 @@
         {!! Form::email('emaill',old('emaill'),['class'=>'form-control']) !!}
      </div>
      <div class="form-group">
+        {!! Form::label('facebook',trans('admin.facebook')) !!}
+        {!! Form::url('facebook',old('facebook'),['class'=>'form-control']) !!}
+     </div>  
+        <div class="form-group">
         {!! Form::label('twitter',trans('admin.twitter')) !!}
-        {!! Form::text('twitter',old('twitter'),['class'=>'form-control']) !!}
+        {!! Form::url('twitter',old('twitter'),['class'=>'form-control']) !!}
      </div>
 
        <div class="form-group">
@@ -72,7 +76,8 @@
          <div class="form-group">
         {!! Form::label('youtube',trans('admin.youtube')) !!}
         {!! Form::url('youtube',old('youtube'),['class'=>'form-control']) !!}
-     </div>
+     </div> 
+
 
       <!-- -------------- -->
      <div class="form-group">
@@ -83,7 +88,11 @@
      <div class="form-group">
        <img name="img" class="image" src="{{ asset( 'storage/img_appstore/No_Image.jpg')}} "   > 
      </div>
-  <!-- -------------- -->   
+  <!-- -------------- -->  
+    <div class="form-group">
+        {!! Form::label('link_appstore',trans('admin.link_appstore')) !!}
+        {!! Form::url('link_appstore',old('link_appstore'),['class'=>'form-control']) !!}
+     </div>
   <!-- -------------- -->
      <div class="form-group">
         {!! Form::label('img_googelplay',trans('admin.img_googelplay')) !!}
@@ -92,6 +101,10 @@
      </div>
      <div class="form-group">
        <img name="img_googelplay" class="image" src="{{ asset( 'storage/footer/img_googelplay/No_Image.jpg')}} "   > 
+     </div> 
+        <div class="form-group">
+        {!! Form::label('link_googelplay',trans('admin.link_googelplay')) !!}
+        {!! Form::url('link_googelplay',old('link_googelplay'),['class'=>'form-control']) !!}
      </div>
 <!-- -------------- -->
      {!! Form::submit(trans('admin.add'),['class'=>'btn btn-primary']) !!}
