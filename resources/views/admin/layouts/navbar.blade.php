@@ -241,6 +241,19 @@
     </ul>
   </li>
  <!-- ============================ -->
+  <!-- ============================ -->
+   <li class="treeview {{ active_menu('slider')[0] }}">
+    <a href="#">
+      <i class="fa fa-sliders"></i> <span>{{ trans('admin.slider') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('slider')[1] }}">
+      <li class=""><a href="{{ aurl('slider') }}"><i class="fa  fa-sliders"></i> {{ trans('admin.slider') }}</a></li>
+      <li class=""><a href="{{ aurl('slider/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
 
 
  

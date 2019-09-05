@@ -13,6 +13,7 @@ use App\Model\BestStudent;
 use App\Model\Halfhour;
 use App\Model\Hour;
 use App\Model\Footer;
+use App\Model\Slider;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -36,6 +37,7 @@ class WhyusStyle extends Controller
      $halfhour =Halfhour::all();
      $hour     =Hour::all();
      $footer     =Footer::all();
+     $Slider     =Slider::all();
       return view ('style.index',[
       	'whyus' => $whyus,
       	'courses'=>$courses,
@@ -47,6 +49,7 @@ class WhyusStyle extends Controller
         'hour'=>$hour,
         'halfhour'=>$halfhour,
         'footer'=>$footer,
+        'Slider'=>$Slider,
       ]);
  
     }

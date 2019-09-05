@@ -50,6 +50,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
    Route::resource('footer', 'FooterController');
    Route::delete('footer/destroy/all', 'FooterController@multi_delete');
 
+   Route::resource('slider', 'SliderController');
+   Route::delete('slider/destroy/all', 'SliderController@multi_delete');
+
 
 
   // ----------------------------

@@ -193,7 +193,7 @@ class FooterController extends Controller {
 		if (request()->hasFile('img_appstore')) {
 			$data['img_appstore'] = up()->upload([
 					'file'        => 'img_appstore',
-					'path'        => 'img_appstore',
+					'path'        => 'footer',
 					'upload_type' => 'single',
 					'delete_file' => '',
 				]);
@@ -201,7 +201,7 @@ class FooterController extends Controller {
 		if (request()->hasFile('img_googelplay')) {
 			$data['img_googelplay'] = up()->upload([
 					'file'        => 'img_googelplay',
-					'path'        => 'img_googelplay',
+					'path'        => 'footer',
 					'upload_type' => 'single',
 					'delete_file' => '',
 				]);
@@ -220,7 +220,8 @@ class FooterController extends Controller {
 	 */
 	public function destroy($id) {
 		$footer = Footer::find($id);
-		Storage::delete($footer->img);
+		Storage::delete($footer->footer);
+		Storage::delete($footer->footer);
 		$footer->delete();
 		session()->flash('success', trans('admin.deleted_record'));
 		return redirect(aurl('footer'));
@@ -230,16 +231,17 @@ class FooterController extends Controller {
 		if (is_array(request('item'))) {
 			foreach (request('item') as $id) {
 				$footer = Footer::find($id);
-				Storage::delete($footer->img);
+				Storage::delete($footer->footer);
+				Storage::delete($footer->footer);
 				$footer->delete();
 			}
 		} else {
 			$footer = Footer::find(request('item'));
-			Storage::delete($footer->img);
+			Storage::delete($footer->footer);
+			Storage::delete($footer->footer);
 			$footer->delete();
 		}
 		session()->flash('success', trans('admin.deleted_record'));
 		return redirect(aurl('footer'));
 	}
 }
- 
