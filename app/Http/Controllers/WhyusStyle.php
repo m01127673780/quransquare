@@ -12,6 +12,7 @@ use App\Model\Testimonial;
 use App\Model\BestStudent;
 use App\Model\Halfhour;
 use App\Model\Hour;
+use App\Model\Footer;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -34,6 +35,7 @@ class WhyusStyle extends Controller
      $testimonial =Testimonial::all();
      $halfhour =Halfhour::all();
      $hour     =Hour::all();
+     $footer     =Footer::all();
       return view ('style.index',[
       	'whyus' => $whyus,
       	'courses'=>$courses,
@@ -44,6 +46,7 @@ class WhyusStyle extends Controller
         'testimonial'=>$testimonial,
         'hour'=>$hour,
         'halfhour'=>$halfhour,
+        'footer'=>$footer,
       ]);
  
     }

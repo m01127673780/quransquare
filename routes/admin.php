@@ -47,6 +47,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
    Route::delete('hour/destroy/all', 'HourController@multi_delete');
 
 
+   Route::resource('footer', 'FooterController');
+   Route::delete('footer/destroy/all', 'FooterController@multi_delete');
+
+
 
   // ----------------------------
 

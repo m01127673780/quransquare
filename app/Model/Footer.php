@@ -4,10 +4,10 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class BestStudent extends Model{
+class Footer extends Model{
  
 
-      public $table    = 'BestStudent';
+      public $table    = 'Footer';
       public $fillable = [
 
                   'payment_ar',
@@ -28,7 +28,7 @@ class BestStudent extends Model{
                   'youtube',
                   'img_appstore',
                   'img_googelplay',
-   
+                  
       ];
 
 }

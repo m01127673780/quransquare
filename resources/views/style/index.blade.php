@@ -11,7 +11,6 @@
    <link rel="stylesheet" href="{{ url('design/style') }}/css/style.css">
  </head> 
 <body class=" ">
-
 <!--====== start Slider =============================== -->
 <!--------------start section Welcom 1 ------------->
      <header class="header-nav " style="    background: #f8f9fa;">
@@ -927,6 +926,7 @@
                     </p>
             </div>
           </div>
+
           <!-- Ends: .footer-widget -->
         </div> <!-- end /.col-md-4 -->
             <div class="col-sm-6 col-lg-3">
@@ -957,7 +957,11 @@
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <h3 class="footer-title">payments</h3>
-                    <p align="justify">Our payments are securely processed by paypal. We gurantee you that we don't store your credit card info in our database.</p>
+                    <p align="justify"> 
+                    @foreach($footer as $foot)
+
+                     {{$foot->payment_en}}
+                     @endforeach</p>
                     <ul class="pay list-unstyled">
                         <span><img src="https://www.tareequljannah.com/resources/img/visa.png" alt="//"></span>
                         <span><img src="https://www.tareequljannah.com/resources/img/discov.png" alt="//"></span>

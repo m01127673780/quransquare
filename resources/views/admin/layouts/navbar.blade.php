@@ -216,6 +216,19 @@
   </li>
  <!-- ============================ --> 
   <!-- ============================ -->
+   <li class="treeview {{ active_menu('footer')[0] }}">
+    <a href="#">
+      <i class="fa fa-user"></i> <span>{{ trans('admin.footer') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('footer')[1] }}">
+      <li class=""><a href="{{ aurl('footer') }}"><i class="fa  fa-user"></i> {{ trans('admin.footer') }}</a></li>
+      <li class=""><a href="{{ aurl('footer/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
+  <!-- ============================ -->
    <li class="treeview {{ active_menu('hour')[0] }}">
     <a href="#">
       <i class="fa fa-user"></i> <span>{{ trans('admin.hour') }}</span>
