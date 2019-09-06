@@ -253,6 +253,46 @@
       <li class=""><a href="{{ aurl('slider/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
     </ul>
   </li>
+ <!-- ============================ --> 
+  <!-- ============================ -->
+   <li class="treeview {{ active_menu('news')[0] }}">
+    <a href="#">
+      <i class="fa fa-newss"></i> <span>{{ trans('admin.news') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('news')[1] }}">
+      <li class=""><a href="{{ aurl('news') }}"><i class="fa  fa-newss"></i> {{ trans('admin.news') }}</a></li>
+      <li class=""><a href="{{ aurl('news/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
+
+  <!-- ============================ -->
+   <li class="treeview {{ active_menu('contact')[0] }}">
+    <a href="#">
+      <i class="fa fa-users"></i> <span>{{ trans('admin.contact') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('contact')[1] }}">
+      <li class=""><a href="{{ aurl('contact') }}"><i class="fa  fa-contacts"></i> {{ trans('admin.contact') }}</a></li>
+      <li class=""><a href="{{ aurl('contact/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
+  <!-- ============================ -->
+   <li class="treeview {{ active_menu('student')[0] }}">
+    <a href="#">
+      <i class="fa fa-users"></i> <span>{{ trans('admin.student') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('student')[1] }}">
+      <li class=""><a href="{{ aurl('student') }}"><i class="fa  fa-students"></i> {{ trans('admin.student') }}</a></li>
+      <li class=""><a href="{{ aurl('student/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
  <!-- ============================ -->
 
 

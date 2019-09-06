@@ -10,7 +10,8 @@ class News extends Model{
 	public $table    = 'News';
 	public $fillable = [
 	      'name',
-            'password',
+          'password',
+          'icon',
 
 	];
 

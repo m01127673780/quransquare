@@ -16,11 +16,12 @@ use App\Model\Footer;
 use App\Model\Slider;
 use App\Model\News;
 use App\Model\Contact;
+use App\Model\Student;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class WhyusStyle extends Controller
+class StudentStyle extends Controller
 {
     public function show (){
 
@@ -40,7 +41,7 @@ class WhyusStyle extends Controller
      $hour     =Hour::all();
      $footer     =Footer::all();
      $Slider     =Slider::all();
-      return view ('style.index',[
+      return view ('style.student',[
       	'whyus' => $whyus,
       	'courses'=>$courses,
       	'videos'=>$videos,
@@ -63,8 +64,8 @@ class WhyusStyle extends Controller
       return back();
 }
 
-    public function insert_contact (){
-      $add = new Contact;
+    public function insert_student (){
+      $add = new Student;
       $add->name = request('name');
       $add->email = request('email');
       $add->subject = request('subject');
@@ -76,14 +77,6 @@ class WhyusStyle extends Controller
       return back();
 
 
-  if (request()->hasFile('icon')) {
-      $data['icon'] = up()->upload([
-          'file'        => 'icon',
-          'path'        => 'contact',
-          'upload_type' => 'single',
-          'delete_file' => '',
-        ]);
-       
-    }
+ 
 }
 }

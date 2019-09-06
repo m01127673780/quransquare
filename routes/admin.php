@@ -53,6 +53,17 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
    Route::resource('slider', 'SliderController');
    Route::delete('slider/destroy/all', 'SliderController@multi_delete');
 
+   Route::resource('news', 'NewsAdminController');
+   Route::delete('news/destroy/all', 'NewsAdminController@multi_delete');
+
+   Route::resource('contact', 'ContactAdminController');
+   Route::delete('contact/destroy/all', 'ContactAdminController@multi_delete');
+
+   Route::resource('student', 'StudentAdminController');
+   Route::delete('student/destroy/all', 'StudentAdminController@multi_delete');
+
+
+  
 
 
   // ----------------------------

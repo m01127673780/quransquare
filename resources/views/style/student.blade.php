@@ -235,7 +235,7 @@
 </section><!--/.sec-title-->
 <!----------------End section title------------------------->
 
- <!-- Button to Open the Modal -->
+ <!-- Button to Open the Modal ------------------------------------------------------------------ -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
   Open modal
 </button>
@@ -254,7 +254,7 @@
       <!-- Modal body -->
       <div class="modal-body">
 
- <form method="post" action ="{{url('user/register')}}" >
+ <form method="post" action ="{{url('insert/student')}}" >
   <input type="hidden" name="_token" value="{{ csrf_token ()}}">  <div class="row">
     <div class="col-lg-6 left-3-input">
       <input type="text" class="form-control"  name="name"    placeholder="name">

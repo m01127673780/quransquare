@@ -20,7 +20,7 @@ use App\Model\Contact;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class WhyusStyle extends Controller
+class RegisterStyle extends Controller
 {
     public function show (){
 
@@ -40,7 +40,7 @@ class WhyusStyle extends Controller
      $hour     =Hour::all();
      $footer     =Footer::all();
      $Slider     =Slider::all();
-      return view ('style.index',[
+      return view ('style.student',[
       	'whyus' => $whyus,
       	'courses'=>$courses,
       	'videos'=>$videos,
@@ -63,7 +63,7 @@ class WhyusStyle extends Controller
       return back();
 }
 
-    public function insert_contact (){
+    public function insert_student (){
       $add = new Contact;
       $add->name = request('name');
       $add->email = request('email');
@@ -75,15 +75,9 @@ class WhyusStyle extends Controller
         $add->save();
       return back();
 
-
-  if (request()->hasFile('icon')) {
-      $data['icon'] = up()->upload([
-          'file'        => 'icon',
-          'path'        => 'contact',
-          'upload_type' => 'single',
-          'delete_file' => '',
-        ]);
-       
-    }
+ 
 }
+
+
+
 }
