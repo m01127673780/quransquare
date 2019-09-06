@@ -14,15 +14,16 @@ use App\Model\Halfhour;
 use App\Model\Hour;
 use App\Model\Footer;
 use App\Model\Slider;
+use App\Model\News;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class WhyusStyle extends Controller
 {
-    public function show ()
-    {
+    public function show (){
 
+    
 
 // $var = Courses::all();
 
@@ -53,4 +54,13 @@ class WhyusStyle extends Controller
       ]);
  
     }
+    public function insert (){
+      $add = new News;
+      $add->name = request('name');
+      $add->password  =  request ('password');
+      $add->save();
+      return back();
+}
+
+
 }

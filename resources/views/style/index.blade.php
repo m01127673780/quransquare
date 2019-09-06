@@ -222,7 +222,28 @@
   </section> 
 <!--====== End Slider =============================== -->
  
+<!-- ==================================== -->
 
+ <center>
+<!-- <form method="post" action ="{{url('insert/news')}}">
+  <input type="text" name="titel">
+  <input type="text" name="desc">
+ </form> -->
+
+ <form method="post" action ="{{url('insert/news')}}" >
+  <input type="hidden" name="_token" value="{{ csrf_token ()}}">
+  <div class="form-group" style="width: 50%">
+    <label for="title">Email address</label>
+    <input type="text" class="form-control" name="name" placeholder="name@example.com">
+  </div>
+   <div class="form-group" style="width: 50%">
+    <label for="desc">Example textarea</label>
+    <textarea class="form-control" name="password" rows="3"></textarea>
+  </div>
+  <input type="submit" name="">
+</form>
+</center>
+<!-- ==================================== -->
 
    <!-- =======start Videos ========================= --> 
       <!----------------start  section title---------------------->
@@ -389,8 +410,14 @@
                               <div class="descriptions">
                                 <h1>{{$course->head_en}}</h1>
                                   <p class="item-description" align="justify">
-                          {{$course->text_en}}
-                          </p>
+ 
+                     <?php  $str =$course->text_en ?>
+                     <?php
+                      $arr = explode("," , $str);
+                      for ($i = 0; $i < count($arr); $i ++) {
+                      echo    $arr[$i] .'<br>';
+                     }?> 
+                           </p>
                               <button> <i class="fa  fa-youtube"></i>{{$course->color_diffe_en}}</button>
                            </div><!-- descriptions -->
                        </div><!-- card cardhover -->
@@ -607,8 +634,13 @@
         <div class="package-features">
           <div class="package-arrow"></div>
           <ul>
-               <li><em>{{$half->content_en}}</em></li>
-
+               
+                      <?php  $str =$half->content_en ?>
+                     <?php
+                      $arr = explode("," , $str);
+                      for ($i = 0; $i < count($arr); $i ++) {
+                      echo   '<li><em>'. $arr[$i] .'</em></li>';
+                     }?> 
                <li style="    padding: 0px 19px;"><em>{{$half->descount3_en}}
                 <span >(<span style="color:#ffcc00">{{$half->percentage3}}</span>)</span></em>
                </li>
@@ -656,8 +688,12 @@
         <div class="package-features">
           <div class="package-arrow"></div>
           <ul>
-               <li><em>{{$ho->content_en}}</em></li>
-
+    <?php  $str =$ho->content_en ?>
+                     <?php
+                      $arr = explode("," , $str);
+                      for ($i = 0; $i < count($arr); $i ++) {
+                      echo   '<li><em>'. $arr[$i] .'</em></li>';
+                     }?> 
                <li style="    padding: 0px 19px;"><em>{{$ho->descount3_en}}
                 <span >(<span style="color:#ffcc00">{{$ho->percentage3}}</span>)</span></em>
                </li>
@@ -903,97 +939,7 @@
 </section><!-- /.app-review -->
 <!--=======End latest-posts plog=========================-->
 
-
-
-
-
-<!--=======start exprets========================================-->
-     <!----------------start  section title---------------------->
-<section class=" title">
-    <div class="container ">
-        <div class="section-header text-center">
-          <span class="span-title">What We Do</span>
-               <h2 class="h2-section-title">
-              exprets Us
-              </h2>
-              <div class="line">
-            </div><!--/.heazder-->
-          <span class="span-border"></span>
-          </div><!--/.cont div-title-->
-    </div><!--/.line-->
-</section><!--/.sec-title-->
-<!----------------End section title------------------------->
- <!--------------------------------------------------------->
-<section class=" exprets" style="display: block;">
-    <div class="container">
-         <div class="row">
-             <!-- ---------------------------------- -->
-            <div class="col-lg-3 col-md-6 col-sm-12">
-               <div class="progress-content">
-                     <div class="progress blue">
-                      <span class="progress-left">
-                      <span class="progress-bar"> </span>
-                      </span>
-                      <span class="progress-right"><span class="progress-bar"> </span></span>
-                      <span class="progress-value">90%</span>
-                        </div><!--/.progress-->
-                        <div class="title">PHP&amp;Mysql 
-                 </div><!--/.title-->
-               </div><!--/.progress-content-->
-             </div><!--/.col-lg-3 -->
-            <!-- ---------------------------------- -->
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="progress-content">
-                    <div class="progress yellow">
-                      <span class="progress-left">
-                      <span class="progress-bar"> </span>
-                      </span>
-                      <span class="progress-right">
-                      <span class="progress-bar"> </span>
-                      </span>
-                      <span class="progress-value"> 70% </span>
-                    </div><!--/.progress-->
-                       <div class="title"> Wordpress</div><!--/.title-->
-                  </div><!--/.cont progress-content-->  
-                 </div><!--/.cont col-->
-            <!-- ---------------------------------- -->
-              <div class="col-lg-3 col-md-6 col-sm-12">
-               <div class="progress-content">
-                     <div class="progress blue">
-                      <span class="progress-left">
-                      <span class="progress-bar"> </span>
-                      </span>
-                      <span class="progress-right"><span class="progress-bar"> </span></span>
-                      <span class="progress-value">90%</span>
-                        </div><!--/.progress-->
-                        <div class="title">Laravel+Vuejs 
-                 </div><!--/.title-->
-               </div><!--/.progress-content-->
-             </div><!--/.col-lg-3 -->
-             <!-- ---------------------------------- -->
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="progress-content">
-                    <div class="progress yellow">
-                      <span class="progress-left">
-                      <span class="progress-bar"> </span>
-                      </span>
-                      <span class="progress-right">
-                      <span class="progress-bar"> </span>
-                      </span>
-                      <span class="progress-value"> 70% </span>
-                    </div><!--/.progress-->
-                       <div class="title"> python</div><!--/.title-->
-                  </div><!--/.cont progress-content-->  
-                 </div><!--/.cont col-->
-          <!-- ---------------------------------- -->
-             </div><!--/.row -->
-           </div><!--./container-->
-       </section>
-     </div>
-  </section>
-</section>
-<!-- =====End exprets======================================== -->
-
+ 
 
 <!-- =====Start footer======================================== -->
  <footer class="footer-area footer--light">
@@ -1017,15 +963,17 @@
         </div> <!-- end /.col-md-4 -->
             <div class="col-sm-6 col-lg-3">
                     <h3 class="footer-title">important links</h3>
-                    <ul class="list-unstyled contact-info">
-
-                        <li><i class="fa fa-check-circle-o"></i> <br><a href="#">
-                     @foreach($footer as $foot)
-                     {{$foot->import_info_en}}
-                     @endforeach
-                      </a>  </li>
-
-                    </ul>
+                    <ul class="list-unstyled contact-info text-left" >
+                    @foreach($footer as $foot)
+                    <?php   $str =$foot->import_info_en ?>
+                    <?php
+                    $arr = explode("," , $str);
+                    for ($i = 0; $i < count($arr); $i ++) {
+                    echo "  <p style='color:#c1c4c6;'> <i class='fa fa-check-circle-o'></i>". $arr[$i]."</p>";
+                    }?> 
+                 @endforeach
+   </li>
+</ul>
                 </div>
                 <div class="col-sm-6 col-lg-3 p-linhight-smol">
                     <h3 class="footer-title">Contact information</h3>
