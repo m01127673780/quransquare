@@ -18,7 +18,7 @@
       </div>
     <div class="form-group">
         {!! Form::label('name_en',trans('admin.name_en')) !!}
-        {!! Form::text('name_en',$teachers->namehead_en,['class'=>'form-control']) !!}
+        {!! Form::text('name_en',$teachers->name_en,['class'=>'form-control']) !!}
       </div>
          <div class="form-group">
         {!! Form::label('head_ar',trans('admin.head_ar')) !!}

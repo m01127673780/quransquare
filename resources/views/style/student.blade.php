@@ -70,7 +70,154 @@
             </nav>
           </header><!-- </header>-->
 
+ <!--======================================================-->
+<!-- start slider-->
+<div class="slider-top">
+   <div class="overlay over-slider" id="particles-js" ></div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators indicators-Heder"> 
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">.</li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="1">.</li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="2">.</li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="3">.</li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="4">.</li>
+   </ol>
+  <div class="carousel-inner">
+   
+    <div class="carousel-item carousel-one active">
+      </div>
+    <div class="carousel-item  carousel-toow carousel-three">
+     </div>
+       <div class="carousel-item  carousel-four">
+     </div>
+    <div class="carousel-item  carousel-five">
+     </div>
+   </div>
+  <a class="carousel-control-prev top" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true">
+ </span>
+    <span class="sr-only sr-only-left">  </span>
+  </a>
+   <a class="carousel-control-next top" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only"> </span>
+  </a>
+</div>
+</div>
+<!--End slider--> 
+      <a href="#one-sec">   
+           <i data-brackets-id="2485" class=" man   fa fa-angle-down" id=""></i>
+           </a>
+    <div class="after-img border-img"></div>
+  </section> 
+<!--====== End Slider =============================== -->
  
+<!-- ==================================== -->
+
+ <center>
+<!-- <form method="post" action ="{{url('insert/news')}}">
+  <input type="text" name="titel">
+  <input type="text" name="desc">
+ </form> -->
+
+ <form method="post" action ="{{url('insert/news')}}" >
+  <input type="hidden" name="_token" value="{{ csrf_token ()}}">
+  <div class="form-group" style="width: 50%">
+    <label for="title">Email address</label>
+    <input type="text" class="form-control" name="name" placeholder="name@example.com">
+  </div>
+   <div class="form-group" style="width: 50%">
+    <label for="desc">Example textarea</label>
+    <textarea class="form-control" name="password" rows="3"></textarea>
+  </div>
+  <input type="submit" name="">
+</form>
+</center>
+<!-- ==================================== -->
+
+   <!-- =======start Videos ========================= --> 
+      <!----------------start  section title---------------------->
+<section class=" title" id="Videos">
+    <div class="container-fluid ">
+        <div class="section-header text-center">
+          <span class="span-title">quransquare</span>
+               <h2 class="h2-section-title">
+             Slader
+
+              </h2>
+              <div class="line">
+            </div><!--/.heazder-->
+          <span class="span-border"></span>
+          </div><!--/.cont div-title-->
+    </div><!--/.line-->
+</section><!--/.sec-title-->
+<!----------------End section title------------------------->
+    <section class="   ">
+        <div class="container-fluid " style="overflow: hidden;;padding: 0!important; margin: 0!important">
+          <div class="row "> 
+            <div class="  container-fluid"  >
+                 <div class="overlay over-slider" id="particles-js" ></div>
+
+              <div id="demo" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+                          <!-- The slideshow -->
+              <div class="carousel-inner">
+              
+           
+                  <div class="carousel-item  ">
+                  <img class="img-slider-vido" src="{{ url('design/style') }}/img/slider-vido/4.PNG" alt="Chicago" >
+                  <a  class="video-icon " href= 
+                  "https://www.youtube.com/watch?v=9yb8BjGuWxE"
+                  data-lity="">
+                  <i class=" fa-ico-play  icon-video" ></i>
+                  </a>
+                  </div>
+                  <!---------------->
+                  <div class="carousel-item active ">
+                  <img class="img-slider-vido" src="{{ url('design/style') }}/img/slider-vido/3.PNG" alt="Chicago" style=" ">  
+                  <a  class="video-icon " href= 
+                  "https://www.youtube.com/watch?v=gyI6XXYaAIc"
+                  data-lity="">
+                  <i class=" fa-ico-play fa fa-youtube-play" ></i>
+                  </a>
+                  </div>
+                 <!---------------->
+                  <!---------------->
+                  @foreach($Slider as $Slid)  
+             
+
+
+                  <div class="carousel-item   ">
+                  <img class="img-slider-vido" src="storage/{{$Slid->img}}" alt="Chicago" style=" ">  
+                  <a  class="video-icon " href= 
+                  " {{$Slid->link}}"
+                  data-lity="">
+                  <i class=" fa-ico-play fa fa-youtube-play" ></i>
+                  </a>
+                  </div>
+                 @endforeach  
+                 <!---------------->
+
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+               <span class="carousel-control-prev-icon"></span>
+               </a>
+               <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+       </div>
+    </div>
+  </div>
+</div>
+</section>
+ <!-- =======End Videos ========================= --> 
+
 <!--====== start Why Choose Us ?=============================== -->
  <!----------------start  section title---------------------->
 <section class=" title" >
@@ -87,7 +234,6 @@
     </div><!--/.line-->
 </section><!--/.sec-title-->
 <!----------------End section title------------------------->
-
 
  <!-- Button to Open the Modal ------------------------------------------------------------------ -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
@@ -159,260 +305,600 @@
   </div>
 </div>
 </div>
- <!-- -------------------------------------------------------------------------------- -->
+ <!-- ===================================== -->
+ <!--start section  statistk-->
+ <section>
+     <div id="whyus ">
+        <div class="container">
+         <div class="row"> 
+@foreach($whyus as $why)
+ <div  class="col-sm-6 col-lg-3  col-lg-padding">
+              <div class="  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility:    visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <div class=" text-center">
+                   <img src="storage/{{$why->icon}}"class="img-whyus">
+
+                <h2 class="h2-whyus">{{$why->head_ar}}</h2>  
+                       <h4 class="h4-whyus">{{$why->text_en}} <span class="span-whyus">  {{$why->color_diffe_en}} </span> </h4>
+                  </div><!-- contant -->
+              </div><!-- col-sm-6 -->
+            </div><!-- col-sm-6 -->
+@endforeach  
+
+         </div><!-- row" -->
+       </div><!--  container -->
+     </div><!--  data-n -->
+</section><!--End section  -->
+<!--End section stitstk -->
+ <!--====== start Why Choose Us ?=============================== -->
+
+
+
  
- <!--------------------------------------------------------->
-<section class="  " style="margin: 100px 0">
-    <div class="container">
-         <div class="content-img-sunup">
-
-        <hr>
-
-<!-- ---------------------------------- -->
-<!-- partial:index.partial.html -->
-<div class="container my-5">
-  
-<h3>Bootstrap 4 HTML5 form validation demo</h3>
-  <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity">Learn more about form validation via MDN </a></p>
-  <p><a href="http://getbootstrap.com/docs/4.1/components/forms/#validation">Bootstrap 4 form validation class documentation </a></p>
-  
-  
-<hr>
-
-
-
-<hr>
-<div class ="container -fluid">
-  <div class="row ">
-    <div class="col-lg-7"> 
+      <!-- ==============start section All courses================= -->
+      <!----------------start  section title---------------------->
+      <section class=" title " id="courses">
+          <div class="container ">
+              <div class="section-header text-center">
+                <span class="span-title">quransquare</span>
+                     <h2 class="h2-section-title">
+                     All the Courses
+                    </h2>
+                    <div class="line">
+                  </div><!--/.heazder-->
+                <span class="span-border"></span>
+                </div><!--/.cont div-title-->
+          </div><!--/.line-->
+      </section><!--/.sec-title-->
+<!----------------End section title------------------------->
+ <!-- ===================================== -->
+ <!--start section All courses -->
+      <section  >
+     <div class=" ">
+        <div class="container">
+         <div class="row"> 
    
-  <div class="card bg-light">
-<form class="card-body" novalidate="" action="" method="" id="bootstrapForm">
-  
-    <div class="form-group">
-        <label class="h4 form-control-label" for="input1">Company name<abbr class="text-danger" title="This is required">*</abbr></label>
-        <input type="text" class="form-control" name="i1" id="input1" required>
-        <div class="valid-feedback">Company name looks good</div>
-        <div class="invalid-feedback">Please enter your company name. This field is required</div>
-    </div>
-  
-  
-  
-  
-    <div class="form-group">
-        <label class="h4 form-control-label" for="input3">Website<abbr class="text-danger" title="This is required">*</abbr></label>
-        <input type="url" placeholder="https://" class="form-control" name="i3" id="input3" required>
-        <div class="valid-feedback">Website looks good.</div>
-        <div class="invalid-feedback">Please enter a valid URL. This field is required.</div>
-    </div>
-  
-    <div class="form-group">
-        <label class="h4 form-control-label" for="input1">Company name<abbr class="text-danger" title="This is required">*</abbr></label>
-        <input type="text" class="form-control" name="i1" id="input1" required>
-        <div class="valid-feedback">Company name looks good</div>
-        <div class="invalid-feedback">Please enter your company name. This field is required</div>
-    </div>
-  
-  
-  
-  
-    <div class="form-group">
-        <label class="h4 form-control-label" for="input3">Website<abbr class="text-danger" title="This is required">*</abbr></label>
-        <input type="url" placeholder="https://" class="form-control" name="i3" id="input3" required>
-        <div class="valid-feedback">Website looks good.</div>
-        <div class="invalid-feedback">Please enter a valid URL. This field is required.</div>
-    </div>
-  
-    <div class="form-group">
-        <label class="h4 form-control-label" for="input1">Company name<abbr class="text-danger" title="This is required">*</abbr></label>
-        <input type="text" class="form-control" name="i1" id="input1" required>
-        <div class="valid-feedback">Company name looks good</div>
-        <div class="invalid-feedback">Please enter your company name. This field is required</div>
-    </div>
-  
-  
-  
-  
-    <div class="form-group">
-        <label class="h4 form-control-label" for="input3">Website<abbr class="text-danger" title="This is required">*</abbr></label>
-        <input type="url" placeholder="https://" class="form-control" name="i3" id="input3" required>
-        <div class="valid-feedback">Website looks good.</div>
-        <div class="invalid-feedback">Please enter a valid URL. This field is required.</div>
-    </div>
-  
-    <div class="form-group">
-        <label class="h4 form-control-label" for="input1">Company name<abbr class="text-danger" title="This is required">*</abbr></label>
-        <input type="text" class="form-control" name="i1" id="input1" required>
-        <div class="valid-feedback">Company name looks good</div>
-        <div class="invalid-feedback">Please enter your company name. This field is required</div>
-    </div>
-  
-  
-  
-  
-    <div class="form-group">
-        <label class="h4 form-control-label" for="input3">Website<abbr class="text-danger" title="This is required">*</abbr></label>
-        <input type="url" placeholder="https://" class="form-control" name="i3" id="input3" required>
-        <div class="valid-feedback">Website looks good.</div>
-        <div class="invalid-feedback">Please enter a valid URL. This field is required.</div>
-    </div>
+        <!----------------------------------->    <!----------------------------------->
+        @foreach($courses as $course)
 
-  
-  
-    <div>
-        <button type="submit" class="btn btn-secondary">Send Form</button>
-    </div>  
-  
-</form>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
- <form role="form" id="arooly_cform">
+        <div  class="col-sm-6 col-lg-3">
+           <div class="  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="contant">
+                <div class="wrapper">
+                       <div class="card cardhover">
+                           <img src="storage/{{$course->icon}}"class="img-whyus">
+                              <div class="descriptions">
+                                <h1>{{$course->head_en}}</h1>
+                                  <p class="item-description" align="justify">
+ 
+                     <?php  $str =$course->text_en ?>
+                     <?php
+                      $arr = explode("," , $str);
+                      for ($i = 0; $i < count($arr); $i ++) {
+                      echo    $arr[$i] .'<br>';
+                     }?> 
+                           </p>
+                              <button> <i class="fa  fa-youtube"></i>{{$course->color_diffe_en}}</button>
+                           </div><!-- descriptions -->
+                       </div><!-- card cardhover -->
+                  </div><!-- wrapper -->
+              </div><!--contant -->
+            </div><!-- wow -->
+          </div><!-- col-sm-6" -->
+          @endforeach  
+    
 
-      <div class="form-group">
-        <label for="inputName">Name*</label>
-        <div class="input-group Name">
-          <span class="input-group-addon"><i class="fa fa-user"></i></span><input type="text" class="form-control" id="inputName" name="inputName" placeholder="Enter Name">
-        </div>
-      </div>
+        <!----------------------------------->    <!----------------------------------->
+ 
+           </div><!-- row" -->
+         </div><!--  container -->
+       </div><!--  data-n -->
+</section><!--End section   -->
 
-      <div class="form-group">
-        <label for="inputPhone">Phone Number*</label>
-        <div class="input-group phone">
-          <span class="input-group-addon"><i class="fa fa-phone"></i></span><input type="phone" class="form-control" id="inputPhone" name="inputPhone" placeholder="Enter Phone">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="inputEmail">Email address</label>
-        <div class="input-group email">
-          <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span><input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Enter email">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="inputDate">Schedule Preview Date</label>
-        <div class="input-group date">
-          <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="date" class="form-control" id="inputDate" name="inputDate" placeholder="Enter date">
-            </div>
-            </div>
-
-            <div class="form-group">
-            <label for="inputTime">When you are available</label>                
-            <div class="input-group clock">
-            <span class="input-group-addon">
-            <span class="fa fa-clock-o"></span>
-            </span>
-            <input type="text" class="form-control" value="Enter Time">
-            </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-
-            </form>
-</div>
-<!-- /.card -->
-</div>
-<!-- ----------------------------------------- -->
-
-<div class="col-lg-5" style="overflow: hidden;height: 500px;">
-     <!--  <img src="http://www.imgworlds.com/wp-content/uploads/2015/12/generic.jpg">
- -->
-  <div id="divRegFormVideo" style="border-style: outset;float: left; width: 560px; height: 435px">
-          <iframe width="560" height="435" src="https://www.youtube-nocookie.com/embed/AK-XFoz1ZXY?rel=0&amp;autoplay=1&amp;mute=1" frameborder="0" allowfullscreen></iframe>       
-        </div><!-- my-video-player -->
-
- <!--my-video-player -->
-
-<div class="my-video-player"></div>
-<!-- my-video-player -->
-
-<style type="text/css"></style>
-</div><!-- col-lg-4-->
-
-</div>
-<!-- /.container -->
-<!-- partial -->
-<style type="text/css">
-  body {
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 2rem;
-  
-    line-height: 1.5;
-   
-}
-
-.form-valid  {
-  opacity:0.5;
-}
-
-.form-control-label abbr {
-  text-decoration: none;
-  font-weight: normal;
-}
-
-.input-group-addon .fa{
-    padding: 6px 12px;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 1;
-    color: #555;
-    text-align: center;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    /* border-radius: 4px; */
-    border-radius-left-top: 62;
-    border-bottom-right-radius: 0;
-    margin-left: 1px;
-}
-</style>
-<script type="text/javascript">
-  
+ <!-- ==============End  section All courses================= -->
 
 
-</script>
-        <hr>
-      </div>
+
+
+   <!-- =======start Videos ========================= --> 
+      <!----------------start  section title---------------------->
+<section class=" title" id="Videos">
+    <div class="container ">
+        <div class="section-header text-center">
+          <span class="span-title">quransquare</span>
+               <h2 class="h2-section-title">
+              All our Training Videos
+
+              </h2>
+              <div class="line">
+            </div><!--/.heazder-->
+          <span class="span-border"></span>
+          </div><!--/.cont div-title-->
+    </div><!--/.line-->
+</section><!--/.sec-title-->
+<!----------------End section title------------------------->
+    <section class="   ">
+        <div class="container ">
+          <div class="row "> 
+            <div class="  container"  ><div id="demo" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+                          <!-- The slideshow -->
+              <div class="carousel-inner">
+              
+           
+                  <div class="carousel-item  ">
+                  <img class="img-slider-vido" src="{{ url('design/style') }}/img/slider-vido/4.PNG" alt="Chicago" >
+                  <a  class="video-icon " href= 
+                  "https://www.youtube.com/watch?v=9yb8BjGuWxE"
+                  data-lity="">
+                  <i class=" fa-ico-play  icon-video" ></i>
+                  </a>
+                  </div>
+                  <!---------------->
+                  <div class="carousel-item active ">
+                  <img class="img-slider-vido" src="{{ url('design/style') }}/img/slider-vido/3.PNG" alt="Chicago" style=" ">  
+                  <a  class="video-icon " href= 
+                  "https://www.youtube.com/watch?v=gyI6XXYaAIc"
+                  data-lity="">
+                  <i class=" fa-ico-play fa fa-youtube-play" ></i>
+                  </a>
+                  </div>
+                 <!---------------->
+                  <!---------------->
+                  @foreach($videos as $video)  
+             
+
+
+                  <div class="carousel-item   ">
+                  <img class="img-slider-vido" src="storage/{{$video->img}}" alt="Chicago" style=" ">  
+                  <a  class="video-icon " href= 
+                  " {{$video->link}}"
+                  data-lity="">
+                  <i class=" fa-ico-play fa fa-youtube-play" ></i>
+                  </a>
+                  </div>
+                 @endforeach  
+                 <!---------------->
+
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+               <span class="carousel-control-prev-icon"></span>
+               </a>
+               <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+       </div>
     </div>
   </div>
 </div>
- 
-<!--=======start exprets========================================-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             </div><!--/.row -->
-           </div><!--./container-->
-       </section>
-     </div>
-  </section>
 </section>
-<!-- =====End exprets======================================== -->
+ <!-- =======End Videos ========================= --> 
 
-<style type="text/css">
+ 
+ <!--============start Teachers=================================-->
+ 
+ 
+ <!--============start Teachers=================================-->
+  <section class="app-review " id="review ">
+  <div class="thm-container" id="Teachers"> 
+      <section class="custm-head">
+        <!----------------start  section title---------------------->
+        <section class=" title">
+            <div class="container ">
+                <div class="section-header text-center">
+                  <span class="span-title">teacher We Do</span>
+                       <h2 class="h2-section-title">
+                      Our teacher</h2>
+                      <div class="line">
+                    </div><!--/.heazder-->
+                  <span class="span-border"></span>
+                  </div><!--/.cont div-title-->
+            </div><!--/.line-->
+        </section><!--/.sec-title-->
+        <!----------------End section title------------------------->
+          </section>
+        <div class="app-review-carousel owl-theme owl-carousel wow fadeInUp" data-wow-duration="2s"   data-wow-offset="100">
+       @foreach($teachers as $teacher)
+          <div class="item">
+          <div class="d-hover">
+             <div class="d-ul ">
+               <div class=" d-img-teme">
+                    <img src="storage/{{$teacher->img}}">
+                         <div class="c-img-video video ">{{$teacher->name}}
+                     </div><!--./col-8-->
+                   </div>
+                  <ul class="ul-icon-det ">
+                     <li style="">
+                      <a href="#">
+                      <i class="fa fa-Teacher-record">
+                            Teacher of Quran    
+                        <a  
+                        class="video-icon" href= 
+                        "{{$teacher->link}}"
+                        data-lity="">
+                       <i class="fa fa-play record-icon"></i>
+                    </a>
+                    </i>
+                    </a>
+                 </li>
+                 <span class="back-g"> </span>
+                </ul>
+             </div>
+            </div>
+          </div><!--itm-->
+
+    @endforeach  
+
+     </div><!-- /.app-review-carousel owl-theme owl-carousel -->
+   </div><!-- /.thm-container -->
+</section><!-- /.app-review -->
+  <!--============End  Teachers ( )=================================-->
+
+ 
+  <!--============End  Teachers ( )=================================-->
+
+
+
+
+ 
+ <!-- =================start  sectionPackage ==================== --> 
+      <!----------------start  section title---------------------->
+<section class=" title"  id="Package-Pricing">
+    <div class="container ">
+        <div class="section-header text-center">
+          <span class="span-title">quransquare</span>
+               <h2 class="h2-section-title">
+             Package-Pricing
+              </h2>
+              <div class="line">
+            </div><!--/.heazder-->
+          <span class="span-border"></span>
+          </div><!--/.cont div-title-->
+    </div><!--/.line-->
+</section><!--/.sec-title-->
+<!----------------End section title------------------------->
+    <section id="Package" class="prices generic" >
+       <div class="container" >
+         <div class="row" >
+            <aside class="asid-title-price" style="font-size: 22px">
+               <div class="prograss_bar">
+                   <button class="pull-left btn-danger price-minus" style="font-size: 22px">-</button>
+                     <span class="text-center price_value" >30 Mins</span>
+                       <button class="pull-right btn-success price-plus" style="font-size: 22px">+</button>
+                    </div>
+              </aside>
+                <hr>
+   <div class="row  half-an-hour" style="width: 100%;"> 
+  @foreach($halfhour as $half)
+   <div class="col-sm-6 col-lg-3">
+    <div class="superduper">
+      <div class="price-package">
+        <div class="package-name">
+         <h2>{{$half->head_en}}</h2>
+          </div>
+           <div class="package-price">
+           <div class="package-arrow"></div>
+          <div class="price">
+             <span>${{$half->number}}</span>
+          </div>
+          <div class="term">
+            <sup></sup>
+            <span>{{$half->dateshow_en}}</span>
+          </div>
+        <div class="package-features">
+          <div class="package-arrow"></div>
+          <ul>
+               
+                      <?php  $str =$half->content_en ?>
+                     <?php
+                      $arr = explode("," , $str);
+                      for ($i = 0; $i < count($arr); $i ++) {
+                      echo   '<li><em>'. $arr[$i] .'</em></li>';
+                     }?> 
+               <li style="    padding: 0px 19px;"><em>{{$half->descount3_en}}
+                <span >(<span style="color:#ffcc00">{{$half->percentage3}}</span>)</span></em>
+               </li>
+                <!--  ------------->
+               <li style="    padding: 0px 19px;"><em>{{$half->descount6_en}}
+                <span >(<span style="color:#ffcc00">{{$half->percentage6}}</span>)</span></em>
+               </li>
+                <!--  ------------->
+               <li style="    padding: 0px 19px;"><em>{{$half->descount12_en}}
+                <span >(<span style="color:#ffcc00">{{$half->percentage12}}</span>)</span></em>
+               </li>
+                <!--  ------------->
+               <li><em>{{$half->percentage6}}</em></li>
+                  <li><em>{{$half->descount12_en}}</em></li>
+               <li><em>{{$half->percentage12}}</em></li>
+                   
+           </ul>
+          <button class="sign-up">
+            <h3>sign up now!</h3>
+          </button>
+        </div><!--package-features-->
+      </div><!--package-price-->
+    </div><!--price-package-->
+  </div><!--superduper-->
+ </div><!--col-->
+@endforeach
+ </div> <!-- half-an-hour-->
+  <div class="row one-hour" style="width: 100%;  display: none;"> 
+  @foreach($hour as $ho)
+   <div class="col-sm-6 col-lg-3">
+    <div class="superduper">
+      <div class="price-package">
+        <div class="package-name">
+         <h2>{{$ho->head_en}}</h2>
+          </div>
+           <div class="package-price">
+           <div class="package-arrow"></div>
+          <div class="price">
+             <span>${{$ho->number}}</span>
+          </div>
+          <div class="term">
+            <sup></sup>
+            <span>{{$ho->dateshow_en}}</span>
+          </div>
+        <div class="package-features">
+          <div class="package-arrow"></div>
+          <ul>
+    <?php  $str =$ho->content_en ?>
+                     <?php
+                      $arr = explode("," , $str);
+                      for ($i = 0; $i < count($arr); $i ++) {
+                      echo   '<li><em>'. $arr[$i] .'</em></li>';
+                     }?> 
+               <li style="    padding: 0px 19px;"><em>{{$ho->descount3_en}}
+                <span >(<span style="color:#ffcc00">{{$ho->percentage3}}</span>)</span></em>
+               </li>
+                <!--  ------------->
+               <li style="    padding: 0px 19px;"><em>{{$ho->descount6_en}}
+                <span >(<span style="color:#ffcc00">{{$ho->percentage6}}</span>)</span></em>
+               </li>
+                <!--  ------------->
+               <li style="    padding: 0px 19px;"><em>{{$ho->descount12_en}}
+                <span >(<span style="color:#ffcc00">{{$ho->percentage12}}</span>)</span></em>
+               </li>
+                <!--  ------------->
+               <li><em>{{$ho->percentage6}}</em></li>
+                  <li><em>{{$ho->descount12_en}}</em></li>
+               <li><em>{{$ho->percentage12}}</em></li>
+                   
+           </ul>
+          <button class="sign-up">
+            <h3>sign up now!</h3>
+          </button>
+        </div><!--package-features-->
+      </div><!--package-price-->
+    </div><!--price-package-->
+  </div><!--superduper-->
+ </div><!--col-->
+@endforeach
+              </div> <!--one-hour-->
+          </div><!-- row" -->
+     </div><!--  container -->
+  </section>
+ <!--=====================================s=================-->
+
+
+  <!--=====================================s=================-->
+     <!----------------start  section title---------------------->
+<section class=" title" id="testimonial">
+    <div class="container ">
+        <div class="section-header text-center">
+          <span class="span-title">quransquare</span>
+               <h2 class="h2-section-title">
+               testimonial
+              </h2>
+              <div class="line">
+            </div><!--/.heazder-->
+          <span class="span-border"></span>
+          </div><!--/.cont div-title-->
+    </div><!--/.line-->
+</section><!--/.sec-title-->
+<!----------------End section title------------------------->
+ <!--============= start section teestmonls (9)============ --> 
+         <!-- testimonials -->
+  <section class="testimonials p-relative text-center">
+    <div class="overlay-bg sec-padding">
+      <div class=" ">
+        <div class="owl-carousel owl-theme one-catousel-custom">
+           
+         <!-- ---------------------- -->
+             @foreach( $testimonial as $test)
+            <div class="single-review">
+             <div class="carousel-item active">
+               <div class=" our-tteam-inf  ">
+                 <div class="bak-g-c-inf"></div>
+              <div class=" pic-inf  ">
+               <img src="storage/{{$test->img}}">
+               </div><!-- pic-->
+                      <div class=" team-content-inf  ">
+                       <h5 class="title-inf">{{$test->name_en}}</h5>
+                       <p class="post-inf">{{$test->job_en}}</p>
+                       <p class=" ">
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                     </p>
+                      <p class="post-inf">
+                       {{$test->text_en}}
+                       </p>
+                      <p class="p-ul-inf ">
+                      <span class="">
+                    <i class="fa fa-star fa-spin"></i>
+                    {{$test->country_en}}
+                   </span>
+                    </p>
+                  </div><!--team-content -->
+                </div><!-- test-info-->
+             </div><!--/.carousel-item-->
+          </div>
+        @endforeach  
+         <!-- ---------------------- -->         
+         </div>
+      </div>
+    </div>
+  </section>
+ <!--============= End section teestmonls (10?)============ -->
+
+
+ <!--=========================Start Statistics =================-->
+ <!----------------start  section title---------------------->
+<section class=" title">
+    <div class="container ">
+        <div class="section-header text-center">
+          <span class="span-title">quransquare</span>
+               <h2 class="h2-section-title">
+                Statistics
+              </h2>
+              <div class="line">
+            </div><!--/.heazder-->
+          <span class="span-border"></span>
+          </div><!--/.cont div-title-->
+    </div><!--/.line-->
+</section><!--/.sec-title-->
+<!----------------End section title------------------------->
+ <!-- ===================================== -->
+ <!--start section  statistk-->
+      <section class="statistics-n   " id="statistics">
+     <div class="data-n">
+        <div class="container">
+         <div class="row"> 
+         <!-- ------------------------------------------ -->
+            @foreach($stat as $st)
+            <div  class="col-sm-6 col-lg-3">
+            <div class="stats wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <div class="contant">
+              <i class="{{$st->font_awesome}} icon-sta"></i>
+                <img src="storage/{{$st->img}}" class="icon-sta">
+               <span class="nuumber coutn-tow">{{$st->number}}</span>
+                <p class="p-p-statst">{{$st->head_ar}} </p>
+                </div><!-- contant -->
+              </div><!-- col-sm-6 -->
+            </div><!-- col-sm-6 -->
+           @endforeach
+
+ <!-- ------------------------------------------ -->
+          
+         </div><!--  container -->
+       </div><!--  data-n -->
+</section><!--End section  -->
+<!--==============End section stitstk  ===================-->
+
+
+
+ <!--==============Start the perfect student blog ===================-->
+<!----------------start  section title---------------------->
+<section class=" title">
+    <div class="container ">
+        <div class="section-header text-center">
+          <span class="span-title">quransquare</span>
+               <h2 class="h2-section-title">
+                the perfect student
+              </h2>
+              <div class="line">
+            </div><!--/.heazder-->
+          <span class="span-border"></span>
+          </div><!--/.cont div-title-->
+    </div><!--/.line-->
+</section><!--/.sec-title-->
+<!----------------End section title------------------------->
+ <br>
+  <section class="wandiw text-center">
+    <section class="section-all-fotar">
+          <div class="statstk">
+ <!--=======startlatest-posts plog=========================-->
+<section class="app-review" id="review">
+  <div class="thm-container"> 
+      <div class=" blog owl-theme owl-carousel wow fadeInUp" data-wow-duration="2s" data-wow-offset="100">
   
-.div-img {
-        margin-bottom:15px;
-    overflow: hidden;
- }
-</style>
-<!-- =====Start footer======================================== -->
+        <!-- ------------------------------------>
+           @foreach( $beststudent as $best)
+           <div class="item">
+            <div class="card ">  
+               <div class ="background-f4">  
+                <img class="card-img-top" src="storage/{{$best->img}}"    alt="Card image cap">
+                 </div>
+                  <div class="card-body">
+                     <h4 class="card-title">{{$best->name_en}} </h4>
+                      <article class="article-subtitle" > 
+                      <i class="icon-calendar"></i>  
+                      <span class="card-subtitle">{{$best->date_en}} </span>
+                      <i class="icon-chat"></i> 
+                        <span class="card-subtitle">{{$best->Lecture_en}} </span>
+                    </article><!--  article-subtitle --> 
+                    <p class="card-text section-desc text-left">{{$best->text_en}} </p>
+                      <a href="#Package" class="a-img-Ather ">
+              <span class="span-a-bolog"> 
+              <i>sunup</i>
+              <i class="fa fa-long-arrow-right"></i>
+              </span>
+                  </a>
+                  <hr>
+              <a href="#" class="a-img-Ather ">
+               <img  src="storage/{{$best->img_Teacher}}" alt=""> 
+
+                  <span class="span-Author"> 
+                <span >
+                 <span class="name-Author" >{{$best->name_Teacher_en}}</span>
+                <author>({{$best->job_en}})</author>
+                </span>
+              </span>
+            </a>
+           </div>
+          </div>
+        </div><!--  itm-->
+       @endforeach  
+        <!-- ------------------------------------>
+        <!-- ------------------------------------>
+           <div class="item">
+            <div class="card ">  
+               <div class ="background-f4">  
+                <img class="card-img-top" src="{{ url('design/style') }}/img/team4.jpg"     alt="Card image cap">
+                </div>
+                  <div class="card-body">
+                     <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur  </h4>
+                     <article class="article-subtitle" > 
+                      <i class="icon-calendar"></i>  
+                      <span class="card-subtitle "> 10 October,2017 </span>
+                      <i class="icon-chat"></i> 
+                        <span class="card-subtitle  ">  100comments </span>
+                    </article><!-- article-subtitle-->
+                    <p class="card-text section-desc text-left">Lorem ipsum dolor sit amet,  r adipiscing elit.  F  semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptentadipiscing elit.  F  semper    </p>
+                      <a href="#" class="a-img-Ather ">
+              <span class="span-a-bolog"> 
+              <i>View More</i>
+              <i class="fa fa-long-arrow-right"></i>
+              </span>
+                  </a>
+                  <hr>
+              <a href="#" class="a-img-Ather ">
+              <img  src="{{ url('design/style') }}/img/team4.jpg" alt="">
+                   <span class="span-Author"> 
+                <span >
+                <span class="name-Author" >Moh amed </span>
+                <author>(Author)</author>
+                </span>
+              </span>
+            </a>
+           </div>
+          </div>
+        </div><!--  itm-->
+        <!-- ------------------------------------>
+    </div><!-- /.app-review-carousel owl-theme owl-carousel -->
+  </div><!-- /.thm-container -->
+</section><!-- /.app-review -->
+<!--=======End latest-posts plog=========================-->
+
+ 
 
 <!-- =====Start footer======================================== -->
  <footer class="footer-area footer--light">
