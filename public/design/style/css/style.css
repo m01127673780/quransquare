@@ -1,5 +1,5 @@
 
-@import url(vendrs/Animate-Headline222.css.css);
+@import url(vendrs/Animate-Headline222.css);
  @import url(vendrs/bootstrip-slider/bootstrap.min.css);
 @import url(vendrs/lity.min.css);
  @import url(vendrs/font-awesome.min.css);
@@ -21,11 +21,14 @@ header{
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: rgba(128,128,128,1);
+  color: #fff;
   text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,0.67) ;
+ }
+
+.nav-link {
+  
+    color: #fff;
 }
-
-
 
 /*======================Start ow crsoul 22========================*/
 
@@ -570,7 +573,8 @@ a{text-decoration:none;}
     /* border-bottom-left-radius: 100%; */
     text-align: right!important;
      -webkit-transition:All .5s ease-in-out;
-         padding-bottom: 80px
+         padding-bottom: 80px;
+         overflow: hidden;
 
 }
 .cardhover:hover .descriptions  {
@@ -2021,4 +2025,136 @@ display:  ;
 
 /*-------------------------------------*/
 
+/*-------------------------------------*/
+ slider-top 
+
+ /*-------------------------------------*/
+.container-fluid.slider-face {
+    width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+ 
+ .section-slider-face{
+    margin-top: 90px;
+     }
+ #demo-video-slider-face {
+    /* width: 840px; */
+    height: 500px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    background: #111;
+    border: 3px solid white;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0px 0px 5px #000;
+    overflow: hidden;
+    width: 100%;
+}
+/*-------------------------*/
+
+.slider .carousel-inner h1 {
+  position: absolute;
+  color: #FFF;
+  z-index: 3;
+  font-size: 70px;
+  max-width: 900px;
+  left: 100px;
+  line-height: 1.5
+}
+
+@media (max-width: 768px) {
+  .slider .carousel-inner h1 {
+    font-size: 40px;
+    max-width: 100%;
+    left: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider .carousel-inner h1 {
+    font-size: 50px
+  }
+}
+
+.slider .carousel-inner h1 span {
+  background-color:  ;
+  color: #FFF;
+  display: inline-block;
+  padding: 2px 10px;
+}
+
+.slider .carousel-inner .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 2;
+}
+
+.slider .carousel-item {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slider .carousel-one {
+  background-image: url('../img/slider01.jpg')
+}
+
+.slider .carousel-two {
+  background-image: url('../img/slider02.jpg')
+}
+
+.slider .carousel-three {
+  background-image: url('../img/slider03.jpg')
+}
+
+.slider .carousel-indicators li {
+     height: 8px;
+    cursor: pointer;
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: rgba(255,255,255,.5);
+    top: -30px;
+}
+
+ .text-slader{
+
+}
+
+
+.slider .carousel-inner h1 {
+    position: absolute;
+    color: #FFF;
+    z-index: 3;
+    font-size: 70px;
+     left: 100px;
+    line-height: 1.5;
+        font-size: 26px;
+    top: 58%; 
+/*       white-space: nowrap;
+*/
+}
+/*.slider .carousel-inner {
+ 
+       white-space: nowrap;
+
+}*/
+  
+/* End Slider */
  

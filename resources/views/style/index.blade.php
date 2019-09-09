@@ -8,14 +8,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo/logon.PNG">
     <meta name="msapplication-TileColor" content="#ffffff">
  
-   <link rel="stylesheet" href="{{ url('design/style') }}/css/style.css">
+    <link rel="stylesheet" href="{{ url('design/style') }}/css/style.css">
  </head> 
 <body class=" ">
 <!--====== start Slider =============================== -->
 <!--------------start section Welcom 1 ------------->
-     <header class="header-nav " style="    background: #f8f9fa;">
+<section style="height: 100vh">
+       <header class="header-nav " style="    background: #f8f9fa;">
           <!--start nav Bar--> 
-        <nav class="navbar navbar-expand-lg navbar-light   fixed-top  navbar-light bg-light  ">
+        <nav class="navbar navbar-expand-lg    fixed-top   ">
           <div class="container">
            <a class="navbar-brand" href="#"> 
               <img src="https://www.tareequljannah.com/resources/img/logo.png" style="width: 100px;"></a> 
@@ -69,50 +70,72 @@
               </div>
             </nav>
           </header><!-- </header>-->
-
- <!--======================================================-->
-<!-- start slider-->
-<div class="slider-top">
-   <div class="overlay over-slider" id="particles-js" ></div>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators indicators-Heder"> 
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">.</li>
-   <li data-target="#carouselExampleIndicators" data-slide-to="1">.</li>
-   <li data-target="#carouselExampleIndicators" data-slide-to="2">.</li>
-   <li data-target="#carouselExampleIndicators" data-slide-to="3">.</li>
-   <li data-target="#carouselExampleIndicators" data-slide-to="4">.</li>
-   </ol>
-  <div class="carousel-inner">
-   
-    <div class="carousel-item slider-bootstrap carousel-one active">
-      </div>
-    <div class="carousel-item slider-bootstrap  carousel-toow carousel-three">
-     </div>
-       <div class="carousel-item slider-bootstrap  carousel-four">
-     </div>
-    <div class="carousel-item slider-bootstrap  carousel-five">
-     </div>
-   </div>
-  <a class="carousel-control-prev top" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true">
- </span>
-    <span class="sr-only sr-only-left">  </span>
-  </a>
-   <a class="carousel-control-next top" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only"> </span>
-  </a>
-</div>
-</div>
-<!--End slider--> 
-      <a href="#one-sec">   
-           <i data-brackets-id="2485" class=" man   fa fa-angle-down" id=""></i>
-           </a>
-    <div class="after-img border-img"></div>
-  </section> 
-<!--====== End Slider =============================== -->
+ 
  
 <!-- ==================================== -->
+<!----------------End section title------------------------->
+<!--Carousel Wrapper-->
+<section class="overlay" style=" ">
+<div class="slider" style="height:100vh">
+      <div id="main-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <h1  class="text-slader"  > 
+     <div class="text-colip">   
+ <span  class="span-clip-title wow   ">Welcom Frind In My Websit</span> 
+  <section class="  wow bounceIn">
+      <span class="span-clip-title  ">My favourite  </span>
+          <span class="cd-headline clip is-full-width">
+      <span class="cd-words-wrapper  wow bounceIn  ">
+        <b class="is-visible   bold">Lorem ipsum dolor  </b>
+        <b class="  bold">Lorem ipsum dolor  </b>
+        <b class=" ">Lorem ipsum dolor sit   </b>
+      </span>
+    </span>
+  </section> <!-- cd-intro -->
+  </div> <!-- text-colip -->
+ </h1>
+          <div class="overlay"></div>
+          <div class="carousel-item carousel-one" style="height:100vh">
+             <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/d1d2b90e-abca-42be-9159-71fa145c3711.jpg"
+        alt="Third slide">
+          </div>
+          <div class="carousel-item carousel-two active" style="height:100vh">
+             <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/d1d2b90e-abca-42be-9159-71fa145c3711.jpg"
+        alt="Third slide">
+          </div>
+             <!--/Second slide-->
+    <!--Third slide-->
+    <div class="carousel-item carousel-two  " style="height:100vh">
+             <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/7c83e456-b749-4503-8da9-754d8aa8f165.jpg"
+        alt="Third slide">
+          </div>
+    <!--/Third slide-->
+  </div>
+  <!--/.Slides-->
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#main-slider" data-slide-to="0" class=""></li>
+          <li data-target="#main-slider" data-slide-to="1" class="active"></li>
+          <li data-target="#main-slider" data-slide-to="2" class=""></li>
+        </ol>
+          <a class="carousel-control-prev" href="#main-slider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#main-slider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+ 
+
+      </div>
+    </div>
+</section>
+<!--/.Carousel Wrapper-->
+ <!-- =======End Videos ========================= --> 
+
+
+</section>
 <!-- ==================================== -->
  
 <!--====== start Why Choose Us ?=============================== -->
@@ -200,6 +223,7 @@
   </div>
 </div>
 </div>
+ 
  <!-- ===================================== -->
  <!--start section  statistk-->
  <section>
@@ -333,7 +357,8 @@
     <section class="   ">
         <div class="container ">
           <div class="row "> 
-            <div class="  container"  ><div id="demo-video" class="carousel slide" data-ride="carousel">
+            <div class="  container" 
+             ><div id="demo-video" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ul class="carousel-indicators">
                 <li data-target="#demo-video" data-slide-to="0" class="active"></li>
@@ -1133,5 +1158,7 @@ function addZero(a){
 <script src="{{ url('design/style') }}/js/vendrs/wow.min.js"></script>
 <script src="{{ url('design/style') }}/js/bootstrip-slider/bootstrap.min.js"></script>
 <script src="{{ url('design/style') }}/js/vendrs/lity.min.js"></script>
+<script src="{{ url('design/style') }}/js/vendrs/Animated-Headilines2.js"></script>
  <script src="{{ url('design/style') }}/js/script.js"></script>
  </html>
+ 
