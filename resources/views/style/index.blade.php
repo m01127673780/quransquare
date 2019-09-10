@@ -101,6 +101,8 @@
   </section> <!-- cd-intro -->
   </div> <!-- text-colip -->
  </h1>
+ <a href="#one"><i data-brackets-id="2485" class=" man   fa fa-angle-down" ></i></a>
+
           <div class="overlay"></div>
           <div class="carousel-item carousel-one" style="height:100vh">
              <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/d1d2b90e-abca-42be-9159-71fa145c3711.jpg"
@@ -136,8 +138,7 @@
  
 
       </div>
-    </div>
-</section>
+ </section>
 <!--/.Carousel Wrapper-->
  <!-- =======End Videos ========================= --> 
 
@@ -147,12 +148,12 @@
  
 <!--====== start Why Choose Us ?=============================== -->
  <!----------------start  section title---------------------->
-<section class=" title" >
+<section class=" title" id="one">
     <div class="container ">
         <div class="section-header text-center">
            
                <h2 class="h2-section-title" id="whyus">
-              Why Choose Us ?
+              Why Choose Us <i class="fa fa-question-circle-o"></i>
                </h2>
               <div class="line">
             </div><!--/.heazder-->
@@ -235,7 +236,7 @@
  <!--start section  statistk-->
  <section>
  
-     <div id="whyus" class="div-whyus">
+     <div id="whyus" class="div-whyus" >
         <div class="container">
          <div class="row"> 
 @foreach($whyus as $why)
@@ -992,169 +993,10 @@ $( document ).ready(function() {
 
 
 
-
-
-
-
-    console.log( "ready!" );
-
-
-$('.price-minus').on('click',function(){
-$('.half-an-hour').slideDown(1000);
-$('.one-hour').slideUp(1000); 
-$(".price_value").html('30 Mins');
-
- });
-$('.price-plus').on('click',function(){
-$('.half-an-hour').slideUp(1000);
-$('.one-hour').slideDown(1000); 
-$(".price_value").html('60 Mins');
-
- });
-
-
-
-
-  $('.topbar').click(function() {
-    if ($('.topbar').hasClass("isUp")) {
-    $('.topbar').animate({top: '45px'}, 1000);
-    $('.nav').animate({top: '0px'}, 1000);
-    $('.topbar').removeClass("isUp");
-    }
-  
-    else {
-      $('.topbar').animate({top: '0px'}, 1000);
-      $('.nav').animate({top: '-50px'}, 1000);
-      $('.topbar').addClass("isUp");
-    }  
-  });
-
-
-$( ".up" ).click(function() {
-  $( ".section-bartop" ).slideToggle( "slow", function() {
-    // Animation complete.
-  });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$('#newsTicker15').breakingNews({
-    // position : 'fixed-top',
-    // borderWidth: 3,
-    // height: 45,
-    // themeColor: '#ce2525'
-  }); 
-//  $( ".up" ).click(function() {
-//   alert( "Handler for .click() called." );
-// });
-
-
-
-$( ".up" ).click(function() {
-  $( ".section-bartop" ).slideToggle( "slow", function() {
-    // Animation complete.
-  });
-});
-
-
-
-
-
-
-
-
-/*
- *By Suleyman Tekin 02/07/2017
- */
-
-var minute, hour, sec;
-function setup(){
-  var date = new Date();
-  sec = addZero(date.getSeconds());
-  minute = addZero(date.getMinutes());
-  hour = addZero(date.getHours());
-  showSecond();
-  if(sec==00){
-    showMinute();
-    if(minute == 59){
-      showHour();
-    }
-  }
-}
-
-function showSecond(){
-  $('.card.effect.secondEf').hasClass( "flipped" )  === true ? $('.card.effect.secondEf').removeClass("flipped") : $('.card.effect.secondEf').addClass("flipped");
-  $('.second').text(sec);
- 
-}
-
-function showMinute(){
-  $('.card.effect.minuteEf').hasClass( "flipped" )  === true ?      $('.card.effect.minuteEf').removeClass("flipped") :     $('.card.effect.minuteEf').addClass("flipped");
-  if($('.minuteEf .front').is(':visible')) {
-      $('.back .minute').text(minute);
-      $('.front .minute').text(addZero(minute-1));
-  }else{
-      $('.front .minute').text(minute);
-      $('.back .minute').text(addZero(minute-1));
-  }  
-}
-
-function showHour(){
-   
-  $('.card.effect.hourEf').hasClass( "flipped" )  === true ? $('.card.effect.hourEf').removeClass("flipped") : $('.card.effect.hourEf').addClass("flipped");
-  $('.hour').text(hour);
-}
-
-setup();
-setInterval(setup, 500);
-showSecond();
-showMinute();
-showHour();
-
-function addZero(a){
-  if(a == -1){return "00";}
-  if(a <10){
-    return "0" + a;
-  }
-  return a;
-}
-
-
-
-
-
-
-
-
-
-
-
 // -----------------------------
 
 
-
-
-
-
-
-  });
+ 
 
 
 </script>
