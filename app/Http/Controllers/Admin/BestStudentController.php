@@ -162,7 +162,6 @@ class BestStudentController extends Controller {
 				 
 			]);
 
-
 		if (request()->hasFile('img')) {
 			$data['img'] = up()->upload([
 					'file'        => 'img',

@@ -52,10 +52,7 @@
         {!! Form::label('text_ar',trans('admin.text_ar')) !!}
         {!! Form::text('text_ar',$beststudent->text_ar,['class'=>'form-control']) !!}
      </div>
-     <div class="form-group">
-        {!! Form::label('text_en',trans('admin.text_en')) !!}
-        {!! Form::text('text_en',$beststudent->text_en,['class'=>'form-control']) !!}
-     </div>
+ 
  
  <div class="form-group">
         {!! Form::label('name_Teacher_ar',trans('admin.name_Teacher_ar')) !!}

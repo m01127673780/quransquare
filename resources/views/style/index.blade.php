@@ -9,7 +9,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
  
     <link rel="stylesheet" href="{{ url('design/style') }}/css/style.css">
- </head> 
+     <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&amp;subset=arabic,latin-ext" rel="stylesheet">
+     <style type="text/css">
+          html,body ,h1,h2,h3,h4,h5,h6{
+      font-family: 'Cairo', sans-serif;
+    }
+
+     </style>
+ </head>
 <body class=" ">
 <!--====== start Slider =============================== -->
 <!--------------start section Welcom 1 ------------->
@@ -522,9 +529,9 @@
          <div class="row" >
             <aside class="asid-title-price" style="font-size: 22px">
                <div class="prograss_bar">
-                   <button class="pull-left btn-danger price-minus" style="font-size: 22px">-</button>
-                     <span class="text-center price_value" >30 Mins</span>
-                       <button class="pull-right btn-success price-plus" style="font-size: 22px">+</button>
+                   <button class="pull-left btn-danger price-minus" style="font-size: 22px"><i class="fa fa-minus"></i></button>
+                     <span class="text-center price_value text-mins" >30 Mins</span>
+                       <button class="pull-right btn-success price-plus" style="font-size: 22px"><i class="fa fa-plus"></i></button>
                     </div>
               </aside>
                 <hr>
@@ -539,11 +546,12 @@
            <div class="package-price">
            <div class="package-arrow"></div>
           <div class="price">
-             <span>${{$half->number}}</span>
+             <span >${{$half->number}}</span>
+    
           </div>
           <div class="term">
             <sup></sup>
-            <span>{{$half->dateshow_en}}</span>
+            <span style="text-decoration: line-through;">{{$half->dateshow_en}}</span>
           </div>
         <div class="package-features">
           <div class="package-arrow"></div>
@@ -660,8 +668,9 @@
  <!--============= start section teestmonls (9)============ --> 
          <!-- testimonials -->
   <section class="testimonials p-relative text-center">
-    <div class="overlay-bg sec-padding">
-      <div class=" ">
+
+    <div class=" sec-padding">
+      <div class="  ">
         <div class="owl-carousel owl-theme one-catousel-custom">
            
          <!-- ---------------------- -->
@@ -683,7 +692,7 @@
                         <i class="fa fa-star fa-spin"></i>
                         <i class="fa fa-star fa-spin"></i>
                      </p>
-                      <p class="post-inf">
+                      <p class="post-inf text-post-inf">
                        {{$test->text_en}}
                        </p>
                       <p class="p-ul-inf ">
@@ -852,8 +861,7 @@
 <!-- =====Start footer======================================== -->
 <section class="footer-svg"  >
 
-    <img class="img-wave-footer" src="https://raw.githubusercontent.com/m01127673780/otlop-project/master/All/img/wave.png">
-
+ 
     <svg  preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="curveUpColor">
         <path class="paths-setionpath-footre" sty d="M0 100 C 20 0 50 0 100 100 Z"></path>
     </svg>
@@ -880,13 +888,13 @@
         </div> <!-- end /.col-md-4 -->
             <div class="col-md-6 col-lg-3 col-sm-12">
                     <h3 class="footer-title">important links</h3>
-                    <ul class="list-unstyled contact-info text-left" >
+                    <ul class="list-unstyled contact-info text-left ul-import-info" >
                     @foreach($footer as $foot)
                     <?php   $str =$foot->import_info_en ?>
                     <?php
                     $arr = explode("," , $str);
                     for ($i = 0; $i < count($arr); $i ++) {
-                    echo "  <p style='color:#c1c4c6;'> <i class='fa fa-check-circle-o'></i>". $arr[$i]."</p>";
+                    echo "  <p style=' '> <i class='fa fa-check-circle-o'></i>". $arr[$i]."</p>";
                     }?> 
                  @endforeach
    </li>
