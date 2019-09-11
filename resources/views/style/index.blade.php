@@ -86,37 +86,34 @@
 <div class="slider" style="height:100vh">
       <div id="main-slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <h1  class="text-slader"  > 
+          <h1 class="text-slader"> 
      <div class="text-colip">   
- <span  class="span-clip-title wow   ">Welcom Frind In My Websit</span> 
-  <section class="  wow bounceIn">
+ <span class="span-clip-title wow    animated" style="visibility: visible;">Welcom Frind In My Websit</span> 
+  <section class="wow bounceIn" style="visibility: visible; animation-name: bounceIn;">
       <span class="span-clip-title  ">My favourite  </span>
           <span class="cd-headline clip is-full-width">
-      <span class="cd-words-wrapper  wow bounceIn  ">
-        <b class="is-visible   bold">Lorem ipsum dolor  </b>
-        <b class="  bold">Lorem ipsum dolor  </b>
-        <b class=" ">Lorem ipsum dolor sit   </b>
+      <span class="cd-words-wrapper  wow bounceIn" style="width: 52.1313px; visibility: visible; animation-name: bounceIn; overflow: hidden;">
+        <b class="bold is-visible">Lorem ipsum dolor  </b>
+        <b class="bold is-hidden">Lorem ipsum dolor  </b>
+        <b class="is-hidden">Lorem ipsum dolor sit   </b>
       </span>
     </span>
   </section> <!-- cd-intro -->
   </div> <!-- text-colip -->
  </h1>
- <a href="#one"><i data-brackets-id="2485" class=" man   fa fa-angle-down" ></i></a>
+ <a href="#one"><i data-brackets-id="2485" class=" man   fa fa-angle-down"></i></a>
 
           <div class="overlay"></div>
           <div class="carousel-item carousel-one" style="height:100vh">
-             <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/d1d2b90e-abca-42be-9159-71fa145c3711.jpg"
-        alt="Third slide">
+             <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/d1d2b90e-abca-42be-9159-71fa145c3711.jpg" alt="Third slide">
           </div>
-          <div class="carousel-item carousel-two active" style="height:100vh">
-             <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/d1d2b90e-abca-42be-9159-71fa145c3711.jpg"
-        alt="Third slide">
+          <div class="carousel-item carousel-two active carousel-item-left" style="height:100vh">
+             <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/d1d2b90e-abca-42be-9159-71fa145c3711.jpg" alt="Third slide">
           </div>
              <!--/Second slide-->
     <!--Third slide-->
-    <div class="carousel-item carousel-two  " style="height:100vh">
-             <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/7c83e456-b749-4503-8da9-754d8aa8f165.jpg"
-        alt="Third slide">
+    <div class="carousel-item carousel-two carousel-item-next carousel-item-left" style="height:100vh">
+             <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/7c83e456-b749-4503-8da9-754d8aa8f165.jpg" alt="Third slide">
           </div>
     <!--/Third slide-->
   </div>
@@ -167,7 +164,7 @@
       <div class="footer"><a href="#">Forgot your password?</a></div>
     </form>
   </div>
-  <div class="card card-form-effecte alt">
+  <div class="card card_form_effecte alt">
     <div class="toggle"></div>
     <h1 class="title">Register
       <div class="close"></div>
