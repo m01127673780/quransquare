@@ -1,117 +1,134 @@
-  "use strict"; // Start of use strict
 
-	
-//	console.log($(".statistics").offset().top)
-//	$(window).scroll(function(){
-//	var sc = $(this).scrollTop();
+ "use strict"; // Start of use strict
+
+    
+//  console.log($(".statistics").offset().top)
+//  $(window).scroll(function(){
+//  var sc = $(this).scrollTop();
 //
-//	});
+//  });
 
 /*=========================== =========*/
-	
-//	console.log($(".statistics").offset().top)
-	$(window).scroll(function(){
-	var sc = $(this).scrollTop();
- 	if(sc > 501){
- 	$('.timer').countTo();
-		
-		 
+     /*=========================== =========*/
+    
+ $('.toggle').on('click', function() {
+  $('.container').stop().addClass('active');
+});
+
+$('.close').on('click', function() {
+  $('.container').stop().removeClass('active');
+});
+//  console.log($(".statistics").offset().top)
+    $(window).scroll(function(){
+    var sc = $(this).scrollTop();
+    if(sc > 501){
+    $('.timer').countTo();
+        
+         
  $('.coutn-one').countTo({
-	from:10,
-	to :10000,
-	speed:12000,
-	refreshInterval:80 
+    from:10,
+    to :10000,
+    speed:12000,
+    refreshInterval:80 
 });
-	 $('.coutn-tow').countTo({
-	from:0,
-	to :15652,
-	speed:13000,
-	refreshInterval:80 
-});
-
-	 $('.coutn-thre').countTo({
-	from:0,
-	to :80550,
-	speed:12000,
-	refreshInterval:80 
+     $('.coutn-tow').countTo({
+    from:0,
+    to :15652,
+    speed:13000,
+    refreshInterval:80 
 });
 
-	 $('.coutn-four').countTo({
-	from:0,
-	to :75000,
-	speed:12500,
-	refreshInterval:80 
+     $('.coutn-thre').countTo({
+    from:0,
+    to :80550,
+    speed:12000,
+    refreshInterval:80 
+});
+
+     $('.coutn-four').countTo({
+    from:0,
+    to :75000,
+    speed:12500,
+    refreshInterval:80 
 });
  
-		$(window).off("scroll");
-		
-	}	
-		//  تغير  الbackground- للناف بار 
-		if(sc >100)
-	{
-		console.log("window Max top")
-			$("header") .addClass("sticky");
-	}
-		else
-		{
-		$("header") .removeClass("sticky");
+        $(window).off("scroll");
+        
+    }   
+        //  تغير  الbackground- للناف بار 
+        if(sc >100)
+    {
+        console.log("window Max top")
+            $("header") .addClass("sticky");
+    }
+        else
+        {
+        $("header") .removeClass("sticky");
 
-	    } 
-		
-		if(sc >2000)
-	  {
-		console.log("window Max top")
-			$(".exprets") .css({
-			display:"block"
- 			});
-   	 }
-		else
-		{
-			$(".exprets") .removeClass("show-section-stat");
+        } 
+        
+        if(sc >2000)
+      {
+        console.log("window Max top")
+            $(".exprets") .css({
+            display:"block"
+            });
+     }
+        else
+        {
+            $(".exprets") .removeClass("show-section-stat");
 
-	    } 
-	});
-	
-	
+        } 
+    });
+    
+    
  
-	
+    
 /*start shufil portofile */ //بديل لى plugin    shaflue .js
 $(".buttons button").click(function() {
-	
-	$(this).addClass("active-btn").siblings().removeClass("active-btn");
-	
-	var cssFilter = $(this).attr('id');
-	
+    
+    $(this).addClass("active-btn").siblings().removeClass("active-btn");
+    
+    var cssFilter = $(this).attr('id');
+    
     if( cssFilter === "all" ) {
-	$(".images > div").fadeIn();
-	$(".red-more").not($(".red-more").fadeIn(".red-more").fadeOut());
- 	} else {
- 	 $(".images > div ") .fadeOut(100);
-		
-	 $(".images").contents().filter("." + cssFilter).fadeIn(300);
+    $(".images > div").fadeIn();
+    $(".red-more").not($(".red-more").fadeIn(".red-more").fadeOut());
+    } else {
+     $(".images > div ") .fadeOut(100);
+        
+     $(".images").contents().filter("." + cssFilter).fadeIn(300);
 
-	}
-	
+    }
+    
 
 });
-	$(".red-more").fadeOut();
- 	$(".more").click(function() {
-	$(".red-more").fadeToggle(100);
+    $(".red-more").fadeOut();
+    $(".more").click(function() {
+    $(".red-more").fadeToggle(100);
 });
 /*End shufil portofile */
-	
-	//--------------//
+    
+    //--------------//
 
 
 
- 
-	
-	
-	/*start mag nfcal puoup  video*/  // plugin VideoPou
+/*start chooseo Us content */           // همليه فلتره والىيشه ال DataRol ده هاتو fadeIn
+ $(".c-panel li").click(function() {
+  var p = $(this).data('role');
+     $(".content > div").hide();
+     $(".content").contents().filter('#' + p).fadeIn();
+    $(this).addClass("active-btn").siblings().removeClass("active-btn");
+  });
+/*End chooseo Us content */
+    
+    
+    
+    /*start mag nfcal puoup  video*/  // plugin VideoPou
  
  /*End mag nfcal puoup  video*/
-	
-	
+    
+    
 
 
 function backgroundSlider () {
@@ -182,10 +199,33 @@ function thmMailchimp() {
     };
 }
 
- 
+function priceFilter() {
+    if ($('.range-slider-price').length) {
+
+        var priceRange = document.getElementById('range-slider-price');
+
+        noUiSlider.create(priceRange, {
+            start: [30, 150],
+            limit: 200,
+            behaviour: 'drag',
+            connect: true,
+            range: {
+                'min': 10,
+                'max': 200
+            }
+        });
+
+        var limitFieldMin = document.getElementById('min-value-rangeslider');
+        var limitFieldMax = document.getElementById('max-value-rangeslider');
+
+        priceRange.noUiSlider.on('update', function(values, handle) {
+            (handle ? $(limitFieldMax) : $(limitFieldMin)).text(values[handle]);
+        });
+    };
+}
 
 function thmOwlCarousel() {
-	
+    
     if ($('.blog').length) {
         $('.blog').owlCarousel({
             loop: true,
@@ -367,19 +407,87 @@ function thmOwlCarousel() {
     };    
 }
 
- 
+function cartTouchSpin() {
+    if ($('.quantity-spinner').length) {
+        $("input.quantity-spinner").TouchSpin({
+            verticalbuttons: true
+        });
+    }
+}
+
 
 function galleryMasonaryLayout() {
- 
+    if ($('.masonary-layout').length) {
+        $('.masonary-layout').isotope({
+            layoutMode: 'masonry'
+        });
+    }
 
-  
- 
+    if ($('.post-filter').length) {
+        $('.post-filter li').children('span').on('click', function() {
+            var Self = $(this);
+            var selector = Self.parent().attr('data-filter');
+            $('.post-filter li').children('span').parent().removeClass('active');
+            Self.parent().addClass('active');
+
+
+            $('.filter-layout').isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 500,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            return false;
+        });
+    }
+
+    if ($('.post-filter.has-dynamic-filter-counter').length) {
+        // var allItem = $('.single-filter-item').length;
+
+        var activeFilterItem = $('.post-filter.has-dynamic-filter-counter').find('li');
+
+        activeFilterItem.each(function() {
+            var filterElement = $(this).data('filter');
+            console.log(filterElement);
+            var count = $('.gallery-content').find(filterElement).length;
+
+            $(this).children('span').append('<span class="count"><b>' + count + '</b></span>');
+        });
+    };
 }
-  
-	/* testimonials slider */
- 
-	
-	/* blog-area slider */
+    var $grid = $('.grid').isotope({
+      // options
+    });
+    // filter items on button click
+    $('.filtering').on( 'click', 'span', function() {
+
+        var filterValue = $(this).attr('data-filter');
+
+        $grid.isotope({ filter: filterValue });
+
+    });
+
+    $('.filtering').on( 'click', 'span', function() {
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+    });
+
+
+    /* testimonials slider */
+    $('.testimonials .owl-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 2800,
+        autoplayHoverPause: true,
+        smartSpeed: 650,
+    });
+    
+    /* blog-area slider */
 function thmbxSlider() {
     if ($('.feature-carousel-box').length) {
         $('.feature-carousel-box').bxSlider({
@@ -395,8 +503,49 @@ function thmbxSlider() {
 
 
 
- 
- 
+function stickyHeader() {
+    if ($('.stricky').length) {
+        var strickyScrollPos = 100;
+        if ($(window).scrollTop() > strickyScrollPos) {
+            $('.stricky').removeClass('slideIn animated');
+            $('.stricky').addClass('stricky-fixed slideInDown animated');
+            $('.scroll-to-top').fadeIn(500);
+        } else if ($(this).scrollTop() <= strickyScrollPos) {
+            $('.stricky').removeClass('stricky-fixed slideInDown animated');
+            $('.stricky').addClass('slideIn animated');
+            $('.scroll-to-top').fadeOut(500);
+        }
+    };
+}
+
+
+function thmLightBox() {
+    if ($('.img-popup').length) {
+        var groups = {};
+        $('.img-popup').each(function() {
+            var id = parseInt($(this).attr('data-group'), 10);
+
+            if (!groups[id]) {
+                groups[id] = [];
+            }
+
+            groups[id].push(this);
+        });
+
+
+        $.each(groups, function() {
+
+            $(this).magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                closeBtnInside: false,
+                gallery: { enabled: true }
+            });
+
+        });
+
+    };
+}
 
 function thmCounter() {
     if ($('.counter').length) {
@@ -407,7 +556,14 @@ function thmCounter() {
     };
 }
 
- 
+function thmScrollAnim() {
+    if ($('.wow').length) {
+        var wow = new WOW({
+            mobile: true
+        });
+        wow.init();
+    };
+}
 
 function contactFormValidation() {
     if ($('.contact-form').length) {
@@ -693,32 +849,5 @@ showPasswordButton.addEventListener('click', event => {
       hand.classList.add('peek');
     });
   }
-  // --------------------------
-  $('.price-minus').on('click',function(){
-$('.half-an-hour').slideDown(1000);
-$('.one-hour').slideUp(1000); 
-$(".price_value").html('30 Mins');
-
- });
-$('.price-plus').on('click',function(){
-$('.half-an-hour').slideUp(1000);
-$('.one-hour').slideDown(1000); 
-$(".price_value").html('60 Mins');
-
- });
-
-
- 
- 
-
-$( ".up" ).click(function() {
-  $( ".section-bartop" ).slideToggle( "slow", function() {
-    // Animation complete.
-  });
-
 });
- 
-  // --------------------------
-});
-
 

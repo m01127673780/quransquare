@@ -146,6 +146,60 @@
 </section>
 <!-- ==================================== -->
  
+ <div class="container  content_form_effecte">
+  <div class="card" ></div>
+  <div class="card" style="display: none;">
+    <h1 class="title">Login</h1>
+    <form>
+      <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}">Username</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <button><span>Go</span></button>
+      </div>
+      <div class="footer"><a href="#">Forgot your password?</a></div>
+    </form>
+  </div>
+  <div class="card card-form-effecte alt">
+    <div class="toggle"></div>
+    <h1 class="title">Register
+      <div class="close"></div>
+    </h1>
+    <form>
+      <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}">Username</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="#{type}" id="#{label}" required="required"/>
+        <label for="#{label}">Repeat Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <button><span>Next</span></button>
+      </div>
+    </form>
+  </div>
+</div>
+<!--=======================================================--> 
+<!-- ------------------- Mixins-- ------------------->
+<!-- Pen Title-->
+
+<!-- ------------------- Mixins-- ------------------->
+<!--=======================================================--> 
 <!--====== start Why Choose Us ?=============================== -->
  <!----------------start  section title---------------------->
 <section class=" title" id="one">
@@ -985,21 +1039,7 @@
  </section>
 <!--=======================================================--> 
 </body>
-
-<script type="text/javascript">
-  
-$( document ).ready(function() {
-
-
-
-
-// -----------------------------
-
-
  
-
-
-</script>
  <script src="{{ url('design/style') }}/js/vendrs/jquery.js"></script>
  <script src="{{ url('design/style') }}/js/vendrs/owl.carousel.min.js"></script>
 <!-- isopte -->

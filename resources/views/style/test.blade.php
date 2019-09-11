@@ -104,7 +104,7 @@
  
  <div class="container  content_form_effecte">
   <div class="card" ></div>
-  <div class="card" style=" ">
+  <div class="card" style="display: none;">
     <h1 class="title">Login</h1>
     <form>
       <div class="input-container">
