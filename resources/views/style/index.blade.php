@@ -335,7 +335,7 @@
      <div class="scetionpath-courses">
            <!----------------start  section title---------------------->
       <section class=" title " id="courses">
-          <div class="container ">
+          <div class="container " >
               <div class="section-header text-center">
                  
                      <h2 class="h2-section-title">
@@ -348,7 +348,7 @@
           </div><!--/.line-->
       </section><!--/.sec-title-->
 <!----------------End section title------------------------->
-        <div class="container">
+        <div class="container "style="margin-top: 50px">
          <div class="row"> 
    
         <!----------------------------------->
@@ -630,7 +630,7 @@
             <span style="text-decoration: line-through;">{{$half->dateshow_en}}</span>
           </div>
         <div class="package-features">
-          <div class="package-arrow"></div>
+          <div class="package-arrow back-too"></div>
           <ul>
                
                       <?php  $str =$half->content_en ?>
@@ -907,7 +907,7 @@
                       <i class="icon-chat"></i> 
                         <span class="card-subtitle">{{$best->Lecture_en}} </span>
                     </article><!--  article-subtitle --> 
-                    <p class="card-text section-desc text-left">{{$best->text_en}} </p>
+                    <p class="card-text section-desc text-left myBox">{{$best->text_en}} </p>
                       <a href="#Package" class="a-img-Ather ">
               <span class="span-a-bolog"> 
               <i>sunup</i>
