@@ -9,8 +9,8 @@
 @import url(vendrs/owl.theme.default.min.css);
 /*  stare style componnt by ME------------------------------------------------*/
 body {
-   background: #f3f3f3;
-}
+/*   background: #f3f3f3;
+*/}
 h3, h5 {
     font-size: 18px!important;
 }
@@ -509,14 +509,14 @@ a{text-decoration:none;}
     width: 100%;
     /* height: 50%; */
     z-index: 48;
-    background-color: red;
+    background-color: #444444;
     border-bottom-left-radius: 100%;
     /* border-bottom-right-radius: 100%; */
     background-image: url();
     color: white;
     padding: 3.125rem;
-    background: linear-gradient(80deg, #f321d6, #5121f3);
-    /* border-bottom-left-radius: 100%; */
+/*    background: linear-gradient(80deg, #f321d6, #5121f3);
+*/    /* border-bottom-left-radius: 100%; */
     /* padding: 3.125rem; */
     /* background: linear-gradient(90deg, #f321d6, #5121f3); */
     /* border-bottom-left-radius: 100%; */
@@ -1181,10 +1181,11 @@ font-size: 20px
   padding-left: 10px;
 }
 .our-tteam-inf{
- background-color:#5780ac;
-/* background-color:#f3f3f3;*/
+/* background-color:#00bbf2;
+*//* background-color:#f3f3f3;*/
   overflow: hidden;
   color:#fff;
+  background-image: url(https://quranacademy.io/assets/img/sub-bg.png);
 }
 
 .bak-g-c-inf
@@ -1313,7 +1314,7 @@ margin-top: -63px;
   padding: 5px 5px;
 }
 
- .carousel-control-next, .carousel-control-prev  {
+ #demo-video .carousel-control-next, #demo-video .carousel-control-prev  {
      top: 40%  ;
     width: 51px ;
     z-index: 2 ;
@@ -1844,15 +1845,15 @@ margin-right: 10px;
 
 
 .paths-setionpath-courses {
-    fill: #e74534;
-    stroke: #E24231;
+  fill: #f3f3f3;
+    stroke: #f3f3f3;
 }
  
 .scetionpath-courses {
   
          margin-top: -7px;
         padding-bottom: 50px;
-            background: #e74534;
+            background:#f3f3f3;
 }
 .paths-app-review {
     fill: #f3f3f3;
@@ -1878,13 +1879,7 @@ footer {
     font-family: 'Lato', sans-serif;
 margin-top: -4px;
 }
-/*.img-wave-footer {
-   margin-bottom: -150px;
-    background: #2a333b;
-    -ms-transform: rotate(20deg);
-    -webkit-transform: rotate(20deg);
-    transform: rotate(180deg);
-}*/
+ 
 
 
 .footer-svg {
@@ -1916,31 +1911,15 @@ width:90%;
 
  .app-review .thm-container{
     
-    background-color: #f3f3f3!important;
      margin-top: -6px;
-     margin-bottom:120px;
+     margin-bottom:0px;
 }
  .app-review {
      margin-top: -6px;
+         background-color: #f3f3f3;
+         padding-bottom: 10px;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2072,7 +2051,7 @@ top: 7px;
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, .6);
-  z-index: 2;
+  z-index: 1;
 }
 
 .slider .carousel-item {
@@ -2134,6 +2113,7 @@ top: 7px;
 }*/
   
 /* End Slider */
+
  
   a>.fa-facebook:hover{
 background: #3b5999;
@@ -2457,25 +2437,23 @@ background: #da552f;
   color: #bababa;
 }
 .card.alt {
-  position: absolute;
-  top: 40px;
-  right: -70px;
-  z-index: 10;
-  width: 140px;
-  height: 140px;
-  background: none;
-  border-radius: 100%;
-  box-shadow: none;
-  padding: 0;
-  transition: .3s ease;
-  /* Toggle */
-  /* Title */
-  /* Input */
-  /* Button */
+position: absolute;
+    top: 40px;
+    /* right: -70px; */
+    z-index: 10;
+    width: 140px;
+    height: 140px;
+    background: none;
+    border-radius: 100%;
+    box-shadow: none;
+    padding: 0;
+    transition: .3s ease;
+    /* display: none; */
+    border: navajowhite;
 }
  
 .card.alt .toggle:before {
-  content: '\f040';
+  content: "\f03a";
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -2573,19 +2551,14 @@ background: #da552f;
     top: -422%;
     left: 75%;
     margin: 6px;
+    left: 132%;
    }
    /*--------------------------------*/ 
-
-.carousel-control-next-icon.nextsilder-top {
-    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E);
-     margin-top: -653%;
-     /* background: red; */
-    z-index: 99999999999;
-    width: 30px;
-    display: inline-block;
-   }
-   #main-slider .carousel-control-next, .carousel-control-prev {
-    font-style: normal;
+ 
+     /*--------------------------------*/
+#main-slider .carousel-control-next  {
+ 
+     font-style: normal;
     background: #2a333b!important;
     color: #fff;
     border-radius: 50%;
@@ -2606,6 +2579,271 @@ background: #da552f;
     opacity: 1;
     color: #000;
     z-index: 999;
-    
 }
-     /*--------------------------------*/
+ 
+.carousel-control-next-icon.nextsilder-top {
+    position: relative;
+    bottom: 778%;
+    z-index: 9999;
+}
+ 
+ .carousel-control-next:hover, .carousel-control-prev:hover {
+      background:none;  
+} 
+  .carousel-control-prev-slider-main {
+   top: 38%!important;
+    width: 51px;
+    z-index: 2;
+    height: 45px;
+    z-index: 99999999!important;
+    margin-left: 49px;
+    bottom: 1px;
+    margin-top: 9px;
+}
+ #main-slider .carousel-control-next, #demo-video .carousel-control-prev  {
+     top: 40%  ;
+    width: 51px ;
+    z-index: 2 ;
+ } 
+     /*===================================icon whatsapp===============*/  
+
+.icon-whatsapp-bootom {
+    cursor: pointer;
+    width: 40px;
+     color: #444;
+    position: fixed;
+     
+    bottom: 9px;
+    margin-right: 0;
+    background: none;
+    text-align: center;
+    left: 25px;
+    z-index: 222;
+}
+.icon-whatsapp-bootom:hover {
+      background: none;
+
+}
+
+.fixed-top {
+ 
+    z-index: 2;
+}
+.carousel-control-next {
+    right: 0;
+    height: 45px;
+    top: 94%;
+    z-index: 999999!important;
+}
+.carousel-control-next, .carousel-control-prev {
+ opacity: 1;
+}
+
+
+        /*===================================icon whatsapp===============*/
+        /*-------------navbar------------*/    
+        .navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #ed2553;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #fff;
+    background-image: url();
+} 
+ 
+@media(max-width:968px){
+.fixed-top {
+ 
+    background: #ed2553!important;
+    z-index: 999999999!important;
+}
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+    outline: navajowhite;
+}
+            /*-------------navbar------------*/
+            .dropdown-item {
+    display: block;
+    /* width: 100%; */
+    padding: .25rem 1.5rem;
+    /* clear: both; */
+    /* font-weight: 400; */
+    color: #010103;
+    /* text-align: inherit; */
+    width: auto;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    font-family: none;
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
+  theme Name:otolop Aount A to Z
+  progect:
+  firstColors : #1558832;
+  lastColors : #1558832;
+  */
+  /*================================start upper-bar==================================*/
+ 
+  
+  /*-----------------dorowb dowen-------------------------------*/
+ 
+  .mega-menu  .container .item ul li {
+  list-style: none;
+  background:  #fff;
+  color: #fff;
+  margin-left: -107px;
+  }
+ 
+  .dropdown-item{
+  text-align: left;
+  }
+  .dropdown-item:hover{
+  background:#262c38;
+  color: #fff;
+  font-weight: bold;
+  transition: padding-left .5s ease;
+  padding-left: 20px;
+
+
+  }
+  .dropdown-item {
+  font-weight: bold;
+  transition: padding-left .5s ease;
+  }
+
+.w-100 {
+    width: 100%!important;
+    height: 100%;
+}
+  .form-contact  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 15px;
+}
+ .form-contact textarea {
+    border: 1px dashed #ced4da!important;
+    padding-left: 8px!important;
+  }
+ .form-contact .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-top: 6px;
+}
+  /*--------------------------------------------------------*/
+ @media(max-width: 922px){
+  .fa-angle-down.man {
+ 
+    margin-bottom: 11%;
+  }
+ }
+    .back-fff {
+ 
+background: #fff!important;
+  }   
+   .collor-fff {
+ 
+color: #fff!important;
+  }
+   
+  /*================= End nav bar ================================*/
+  /*-----------start slider--------*/
+
+
+ 

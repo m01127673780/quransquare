@@ -5,7 +5,7 @@
     <title>quransquare</title>
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/logo/logon.PNG">
+    <link rel="icon" type="image/png" sizes="16x16" href="blob:https://web.whatsapp.com/7e436eb7-f0b4-4524-b2a8-3aca9893df9c">
     <meta name="msapplication-TileColor" content="#ffffff">
  
     <link rel="stylesheet" href="{{ url('design/style') }}/css/style.css">
@@ -23,13 +23,13 @@
 <section style="height: 100vh">
        <header class="header-nav " style="    background: #f8f9fa;">
           <!--start nav Bar--> 
-        <nav class="navbar navbar-expand-lg    fixed-top   ">
+        <nav class="navbar navbar-expand-lg    fixed-top  ">
           <div class="container">
            <a class="navbar-brand" href="#"> 
-              <img src="https://www.tareequljannah.com/resources/img/logo.png" style="width: 100px;"></a> 
+              <img src="{{ url('design/style') }}/img/logo/logo.PNG" style="width: 50px;    margin-top: 9px;"></a> 
               <span class="tybime"></span>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"> <i class="fa faifacebook fa-2x"></i></span>
+                <span class="navbar-toggler-icon"> <i class="fa fa-list  fa-2x"></i></span>
                 </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                    <ul class="navbar-nav ml-auto">
@@ -50,42 +50,52 @@
                 </li> 
                     <li class="nav-item"  >
                 <a class="nav-link" href="#Package">Package</a>
-                </li>  
+                </li>
+
                   <li class="nav-item">
                   <a class="nav-link" href="#testimonial" target="_self">testimonial</a>
                       </li> 
                       <li class="nav-item">
                         <a class="nav-link" href="#statistics">statistics</a>
                      </li>  
-                      <li class="nav-item">
-                        <a style="display: inline-block;" class="nav-link" href="#">
+            <li class="nav-item">
+                        <a class="nav-link"  data-toggle="modal" data-target="#myModal" >contact</a>
+                     </li>  
 
+       <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     login as 
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">  student</a>
+      <a class="dropdown-item" href="#">  teacher</a>
+      
+  </li> 
+       <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     sunup as 
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">  student</a>
+      <a class="dropdown-item" href="#">  teacher</a>
+      
+  </li> 
 
-
-                       
-
-
-  <a  class="  " data-toggle="modal" data-target="#myModal">
-    contact/
-  </a>
-                      </a>
-                        <a  style="display: inline-block;" class="nav-link" href="sunup.html">sunup/</a>
-
-                     </li> 
+   
                   </ul>
                 </div>
               </div>
             </nav>
           </header><!-- </header>-->
  
- 
+        
 <!-- ==================================== -->
 <!----------------End section title------------------------->
 <!--Carousel Wrapper-->
 <section class="overlay" style=" ">
 <div class="slider" style="height:100vh">
       <div id="main-slider" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="">
           <h1 class="text-slader"> 
      <div class="text-colip">   
  <span class="span-clip-title wow    animated" style="visibility: visible;">Welcom Frind In My Websit</span> 
@@ -123,12 +133,12 @@
           <li data-target="#main-slider" data-slide-to="1" class="active"></li>
           <li data-target="#main-slider" data-slide-to="2" class=""></li>
         </ol>
-          <a class="carousel-control-prev" href="#main-slider" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <a class="carousel-control-prev carousel-control-prev-slider-main  " href="#main-slider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon main-slider-prev" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next " href="#main-slider" role="button" data-slide="next">
-    <span class="carousel-control-next-icon nextsilder-top " aria-hidden="true"></span>
+    <span class="carousel-control-next-icon nextsilder-top main-slider-next" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
  
@@ -141,8 +151,9 @@
 
 </section>
 <!-- ==================================== -->
- 
- <div class="container  content_form_effecte">
+  
+<article>
+   <div class="container  content_form_effecte">
   <div class="card card-form_effecte " ></div>
   <div class="" style="display: none;">
     <h1 class="title">Login</h1>
@@ -189,7 +200,8 @@
       </div>
     </form>
   </div>
-</div>
+</div>  
+</article>
 <!--=======================================================--> 
 <!-- ------------------- Mixins-- ------------------->
 <!-- Pen Title-->
@@ -198,7 +210,7 @@
 <!--=======================================================--> 
 <!--====== start Why Choose Us ?=============================== -->
  <!----------------start  section title---------------------->
-<section class=" title" id="one">
+<section class=" title back-fff" id="one">
     <div class="container ">
         <div class="section-header text-center">
            
@@ -230,7 +242,7 @@
       <!-- Modal body -->
       <div class="modal-body">
 
- <form method="post" action ="{{url('user/register')}}" >
+ <form method="post"  class="form-contact"action ="{{url('user/register')}}" >
   <input type="hidden" name="_token" value="{{ csrf_token ()}}">  <div class="row">
     <div class="col-lg-6 left-3-input">
       <input type="text" class="form-control"  name="name"    placeholder="name">
@@ -286,7 +298,7 @@
  <!--start section  statistk-->
  <section>
  
-     <div id="whyus" class="div-whyus" >
+     <div id="whyus" class="div-whyus back-fff" >
         <div class="container">
          <div class="row"> 
 @foreach($whyus as $why)
@@ -412,11 +424,12 @@
     </div><!--/.line-->
 </section><!--/.sec-title-->
 <!----------------End section title------------------------->
-    <section class="   ">
-        <div class="container ">
+    <section class="   " >
+        <div class="container " 
+ >
           <div class="row "> 
             <div class="  container" 
-             ><div id="demo-video" class="carousel slide" data-ride="carousel">
+             ><div id="demo-video" class=" demo-video carousel slide" data-ride="carousel" >
               <!-- Indicators -->
               <ul class="carousel-indicators">
                 <li data-target="#demo-video" data-slide-to="0" class="active"></li>
@@ -480,6 +493,18 @@
  <!--============start Teachers=================================-->
  
  
+
+
+
+
+<section style="background: #f3f3f3!important">
+  
+
+
+
+
+
+
  <!--============start Teachers=================================-->
 <!--     <svg preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="curveUpColor">
         <path class="paths-app-review" sty d="M0 100 C 20 0 50 0 100 100 Z"></path>
@@ -700,71 +725,6 @@
  <!--=====================================s=================-->
 
 
-  <!--=====================================s=================-->
-     <!----------------start  section title---------------------->
-<section class=" title" id="testimonial">
-    <div class="container ">
-        <div class="section-header text-center">
-           
-               <h2 class="h2-section-title">
-               testimonial
-              </h2>
-              <div class="line">
-            </div><!--/.heazder-->
-          <span class="span-border"></span>
-          </div><!--/.cont div-title-->
-    </div><!--/.line-->
-</section><!--/.sec-title-->
-<!----------------End section title------------------------->
- <!--============= start section teestmonls (9)============ --> 
-         <!-- testimonials -->
-  <section class="testimonials p-relative text-center">
-
-    <div class=" sec-padding">
-      <div class="  ">
-        <div class="owl-carousel owl-theme one-catousel-custom">
-           
-         <!-- ---------------------- -->
-             @foreach( $testimonial as $test)
-            <div class="single-review">
-             <div class="carousel-item active">
-               <div class=" our-tteam-inf  ">
-                 <div class="bak-g-c-inf"></div>
-              <div class=" pic-inf  ">
-               <img src="storage/{{$test->img}}">
-               </div><!-- pic-->
-                      <div class=" team-content-inf  ">
-                       <h5 class="title-inf">{{$test->name_en}}</h5>
-                       <p class="post-inf">{{$test->job_en}}</p>
-                       <p class=" ">
-                        <i class="fa fa-star fa-spin"></i>
-                        <i class="fa fa-star fa-spin"></i>
-                        <i class="fa fa-star fa-spin"></i>
-                        <i class="fa fa-star fa-spin"></i>
-                        <i class="fa fa-star fa-spin"></i>
-                     </p>
-                      <p class="post-inf text-post-inf">
-                       {{$test->text_en}}
-                       </p>
-                      <p class="p-ul-inf ">
-                      <span class="">
-                    <i class="fa fa-star fa-spin"></i>
-                    {{$test->country_en}}
-                   </span>
-                    </p>
-                  </div><!--team-content -->
-                </div><!-- test-info-->
-             </div><!--/.carousel-item-->
-          </div>
-        @endforeach  
-         <!-- ---------------------- -->         
-         </div>
-      </div>
-    </div>
-  </section>
- <!--============= End section teestmonls (10?)============ -->
-
-
  <!--=========================Start Statistics =================-->
  <!----------------start  section title---------------------->
 <section class=" title">
@@ -830,6 +790,79 @@
        </div><!--  data-n -->
 </section><!--End section  -->
 <!--==============End section stitstk  ===================-->
+
+
+
+
+
+
+
+  <!--=====================================s=================-->
+     <!----------------start  section title---------------------->
+<section class=" title" id="testimonial">
+    <div class="container ">
+        <div class="section-header text-center">
+           
+               <h2 class="h2-section-title">
+               testimonial
+              </h2>
+              <div class="line">
+            </div><!--/.heazder-->
+          <span class="span-border"></span>
+          </div><!--/.cont div-title-->
+    </div><!--/.line-->
+</section><!--/.sec-title-->
+<!----------------End section title------------------------->
+ <!--============= start section teestmonls (9)============ --> 
+         <!-- testimonials -->
+  <section class="testimonials p-relative text-center">
+
+    <div class=" sec-padding">
+      <div class="  ">
+        <div class="owl-carousel owl-theme one-catousel-custom">
+           
+         <!-- ---------------------- -->
+             @foreach( $testimonial as $test)
+            <div class="single-review">
+             <div class="carousel-item active">
+               <div class=" our-tteam-inf  ">
+                 <div class="bak-g-c-inf"></div>
+              <div class=" pic-inf  ">
+               <img src="storage/{{$test->img}}">
+               </div><!-- pic-->
+                      <div class=" team-content-inf  ">
+                       <h5 class="title-inf">{{$test->name_en}}</h5>
+                       <p class="post-inf">{{$test->job_en}}</p>
+                       <p class=" ">
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                     </p>
+                      <p class="post-inf text-post-inf">
+                       {{$test->text_en}}
+                       </p>
+                      <p class="p-ul-inf ">
+                      <span class="">
+                    <i class="fa fa-star fa-spin"></i>
+                    {{$test->country_en}}
+                   </span>
+                    </p>
+                  </div><!--team-content -->
+                </div><!-- test-info-->
+             </div><!--/.carousel-item-->
+          </div>
+        @endforeach  
+         <!-- ---------------------- -->         
+         </div>
+      </div>
+    </div>
+  </section>
+ <!--============= End section teestmonls (10?)============ -->
+
+
+
 
 
 
@@ -1010,7 +1043,7 @@
                  <div class="text-left">
                   
                   <a href="#"><i class="fa fa-angle-double-up icon-up-to-top  "></i></a>
-                  <p class="p-capy"> 
+                  <a href="https://wa.me/201140025208" id="callnowbutton" target="_blank"><i class="fa fa-whatsapp fa-5x icon-whatsapp-bootom"></i></a>                  <p class="p-capy"> 
                   <span class="color">
                     ©2019 .<sapn class="yellow"> All rights</sapn> reserved for <span class="copy"> quransquare.</span> 
                   <sapn class="yellow">© Developed by
@@ -1033,6 +1066,10 @@
   </article>
 </footer>
  </section>
+</section>
+
+
+
 <!--=======================================================--> 
 </body>
  
