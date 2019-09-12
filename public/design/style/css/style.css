@@ -1314,8 +1314,9 @@ margin-top: -63px;
 }
 
  .carousel-control-next, .carousel-control-prev  {
-     top: 40% !important;
-    width: 51px!important;
+     top: 40%  ;
+    width: 51px ;
+    z-index: 2 ;
  } 
  /*<!--============= End section teestmonls (9)============ -->*/
 
@@ -2262,6 +2263,9 @@ background: #da552f;
     background: #ed2553;
     right: 0;
     margin-top: -140%;
+
+    z-index: 99999;
+
 }
 
 .container.active .card.alt .toggle:before {
@@ -2292,7 +2296,7 @@ background: #da552f;
 }
 
 /* Card */
-.card {
+.card-form_effecte{
   position: relative;
   background: #ffffff;
   border-radius: 5px;
@@ -2305,10 +2309,11 @@ background: #da552f;
   /* Button */
   /* Footer */
   /* Alt Card */
+  display: none;
 }
 .card:first-child {
-  display: none;
-
+/*  display: none;
+*/
 }
 .card .title {
   position: relative;
@@ -2468,7 +2473,7 @@ background: #da552f;
   /* Input */
   /* Button */
 }
-
+ 
 .card.alt .toggle:before {
   content: '\f040';
   display: inline-block;
@@ -2558,23 +2563,49 @@ background: #da552f;
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    color: #ffffff;
+   color: #ffffff;
     font-size: 16px;
     line-height: 3;
     text-align: center;
     cursor: pointer;
-    /* position: absolute; */
-    left: 0;
-    /* right: 1px; */
-    /* margin-right: -9%; */
-    /* margin-left: 101%; */
-    /* margin-top: -118%; */
+     left: 0;
+    
     top: -422%;
     left: 75%;
     margin: 6px;
-    /* padding: 0; */
-    /* padding: 0; */
-    rig: 51%;
-    z-index: 9;
+   }
+   /*--------------------------------*/ 
+
+.carousel-control-next-icon.nextsilder-top {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E);
+     margin-top: -653%;
+     /* background: red; */
+    z-index: 99999999999;
+    width: 30px;
+    display: inline-block;
+   }
+   #main-slider .carousel-control-next, .carousel-control-prev {
+    font-style: normal;
+    background: #2a333b!important;
+    color: #fff;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    font-weight: 1000;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: -6px;
+    padding: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    color: #000;
+    z-index: 999;
+    
 }
+     /*--------------------------------*/

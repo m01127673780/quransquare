@@ -102,8 +102,7 @@
   </div> <!-- text-colip -->
  </h1>
  <a href="#one"><i data-brackets-id="2485" class=" man   fa fa-angle-down"></i></a>
-
-          <div class="overlay"></div>
+           <div class="overlay"></div>
           <div class="carousel-item carousel-one" style="height:100vh">
              <img class="d-block w-100" src="https://quranoasis.com/wp-content/uploads/2019/03/d1d2b90e-abca-42be-9159-71fa145c3711.jpg" alt="Third slide">
           </div>
@@ -128,8 +127,8 @@
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#main-slider" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <a class="carousel-control-next " href="#main-slider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon nextsilder-top " aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
  
@@ -144,8 +143,8 @@
 <!-- ==================================== -->
  
  <div class="container  content_form_effecte">
-  <div class="card" ></div>
-  <div class="card" style="display: none;">
+  <div class="card card-form_effecte " ></div>
+  <div class="" style="display: none;">
     <h1 class="title">Login</h1>
     <form>
       <div class="input-container">
