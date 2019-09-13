@@ -2882,6 +2882,11 @@ background: #fff!important;
  
 color: #fff!important;
   }
+
+  .modal {
+ 
+    z-index: 999999!important;
+}
    
   /*================= End nav bar ================================*/
   /*-----------start slider--------*/

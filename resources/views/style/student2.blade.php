@@ -108,27 +108,29 @@
       <form action="">
   <!--  General -->
   <div class="form-group">
-     <h1 class="head-h1"><span style="border-bottom: 2px  solid #444;">STUDENT</span> <span >INFORMATION</span> </h1> 
-
+    <h2 class="heading">Booking & contact</h2>
     <div class="controls">
       <input type="text" id="name" class="floatLabel" name="name">
-      <label for="name"> <i class="icon-happy  "></i> Name * </label>
+      <label for="name">Name * </label>
+    </div>    
+    <div class="controls">
+      <input type="text" id="quranSqour" class="floatLabel" name="quranSqour">
+      <label for="quranSqour">quranSqour * </label>
     </div>
-     <div class="controls">
+    <div class="controls">
       <input type="text" id="email" class="floatLabel" name="email">
-      <label for="email"><i class="fa fa-envelope-o"></i> Email * </label>
-    </div>
-         
+      <label for="email">Email * </label>
+    </div>       
     <div class="controls">
       <input type="tel" id="phone" class="floatLabel" name="phone">
-      <label for="phone"><i class="fa fa-mobile"></i> Phone * </label>
+      <label for="phone">Phone * </label>
     </div>
 
     <!-- /------------------------------------------ -->
       <br>
       <br>
-     <h1 class="head-h1 info-stud-insert"><span style="border-bottom: 2px  solid #444;">STUDENT</span> <span >INFORMATION</span> </h1> 
-       
+    <h1><span style="border-bottom: 2px  solid #444;">STUDENT</span> 
+      <span >INFORMATION</span> </h1>  
        <br>
       <br>
    <h3>   How many students will evaluate? *</h3>
@@ -138,14 +140,14 @@
 <form>
   <div class="row">
     <div class="col">
-   <div class="controls  label-copy">
-      <input type="text" id="text" class="floatLabel text " name="text">
-      <label for="text" >text * </label>
+   <div class="controls">
+      <input type="tel" id="phone" class="floatLabel" name="phone">
+      <label for="phone">Phone * </label>
     </div>    </div>
     <div class="col">
    <div class="controls">
-      <input type="text" id="text" class="floatLabel text" name="text">
-      <label for="text" class="label-copy">text * </label>
+      <input type="tel" id="phone" class="floatLabel" name="phone">
+      <label for="phone">Phone * </label>
     </div>
         </div>
   </div>
@@ -554,92 +556,91 @@
  <!--======================================================--> 
 
 
-
 <!--====================================================-->
-<section class="margin portfolio"  >
-   <div class="form-group">
-    <label for="exampleFormControlSelect1">How did you learn about us? *</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-   <option class="ui-timepicker-am">12:00 AM</option>
-  <option class="ui-timepicker-am">12:30 AM</option>
-  <option class="ui-timepicker-am">1:00 AM</option>
-  <option class="ui-timepicker-am">1:30 AM</option>
- <option class="ui-timepicker-am">2:00 AM</option>
- <option class="ui-timepicker-am">2:30 AM</option>
- <option class="ui-timepicker-am">3:00 AM</option>
- <option class="ui-timepicker-am">3:30 AM</option>
- <option class="ui-timepicker-am">4:00 AM</option>
- <option class="ui-timepicker-am">4:30 AM</option>
- <option class="ui-timepicker-am">5:00 AM</option>
- <option class="ui-timepicker-am">5:30 AM</option>
- <option class="ui-timepicker-am">6:00 AM</option>
- <option class="ui-timepicker-am">6:30 AM</option>
- <option class="ui-timepicker-am">7:00 AM</option>
- <option class="ui-timepicker-am">7:30 AM</option>
- <option class="ui-timepicker-am">8:00 AM</option>
- <option class="ui-timepicker-am">8:30 AM</option>
- <option class="ui-timepicker-am">9:00 AM</option>
- <option class="ui-timepicker-am">9:30 AM</option>
- <option class="ui-timepicker-am">10:00 AM</option>
- <option class="ui-timepicker-am">10:30 AM</option>
- <option class="ui-timepicker-am">11:00 AM</option>
- <option class="ui-timepicker-am">11:30 AM</option>
- <option class="ui-timepicker-pm">12:00 PM</option>
- <option class="ui-timepicker-pm">12:30 PM</option>
- <option class="ui-timepicker-pm">1:00 PM</option>
- <option class="ui-timepicker-pm">1:30 PM</option>
- <option class="ui-timepicker-pm">2:00 PM</option>
- <option class="ui-timepicker-pm">2:30 PM</option>
- <option class="ui-timepicker-pm">3:00 PM</option>
- <option class="ui-timepicker-pm">3:30 PM</option>
- <option class="ui-timepicker-pm">4:00 PM</option>
- <option class="ui-timepicker-pm">4:30 PM</option>
- <option class="ui-timepicker-pm">5:00 PM</option>
- <option class="ui-timepicker-pm">5:30 PM</option>
- <option class="ui-timepicker-pm">6:00 PM</option>
- <option class="ui-timepicker-pm">6:30 PM</option>
- <option class="ui-timepicker-pm">7:00 PM</option>
- <option class="ui-timepicker-pm">7:30 PM</option>
- <option class="ui-timepicker-pm">8:00 PM</option>
- <option class="ui-timepicker-pm">8:30 PM</option>
- <option class="ui-timepicker-pm">9:00 PM</option>
- <option class="ui-timepicker-pm">9:30 PM</option>
- <option class="ui-timepicker-pm">10:00 PM</option>
- <option class="ui-timepicker-pm">10:30 PM</option>
- <option class="ui-timepicker-pm">11:00 PM</option>
- <option class="ui-timepicker-pm">11:30 PM</option>
-</select>
-  </div>
-  </section><!--./portflio-->
- <!--======================================================--> 
+  
+ 
+  
+      <!-- ======================================================== -->
+
+
+
+
  
 
 
 
-  
 
 
 
+
+
+
+
+
+
+
+
+
+
+      <!-- ======================================================== -->
+  </div>
+  <!--  Details -->
   <div class="form-group">
     <h2 class="heading">Details</h2>
     <div class="grid">
-    <div class="col-lg-6">
+    <div class="col-1-4 col-1-4-sm">
       <div class="controls">
         <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
         <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
       </div>      
     </div>
-    <div class="col-lg-6">
+    <div class="col-1-4 col-1-4-sm">
       <div class="controls">
         <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
         <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
       </div>      
     </div>
       </div>
-  
-  </div> <!-- /.form-group -->
-  <!-- ============================= -->
-  <div class="grid">
+      <div class="grid">
+    <div class="col-1-3 col-1-3-sm">
+      <div class="controls">
+        <i class="fa fa-sort"></i>
+        <select class="floatLabel">
+          <option value="blank"></option>
+
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+        </select>
+        <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;People</label>
+      </div>      
+    </div>
+    <div class="col-1-3 col-1-3-sm">
+    <div class="controls">
+      <i class="fa fa-sort"></i>
+      <select class="floatLabel">
+        <option value="blank"></option>
+        <option value="deluxe" selected>With Bathroom</option>
+        <option value="Zuri-zimmer">Without Bathroom</option>
+      </select>
+      <label for="fruit">Room</label>
+     </div>     
+    </div>
+
+    <div class="col-1-3 col-1-3-sm">
+    <div class="controls">
+      <i class="fa fa-sort"></i>
+      <select class="floatLabel">
+        <option value="blank"></option>
+        <option value="single-bed">Zweibett</option>
+        <option value="double-bed" selected>Doppelbett</option>
+      </select>
+      <label for="fruit">Bedding</label>
+     </div>     
+    </div>
+      
+     </div>
+      <div class="grid">
         <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
         <br>
         <div class="controls">
@@ -647,25 +648,18 @@
           <label for="comments">Comments</label>
           </div>
             <button type="submit" value="Submit" class="col-1-4">Submit</button>
- </div>
-
+      </div>  
+  </div> <!-- /.form-group -->
 </form>
-
-      <!-- ======================================================== -->
-  </div>
-  <!--  Details -->
-
     </div>
-
-
-
     <div class="col-lg-5" style="overflow: hidden;height: 500px;">
      <!--  <img src="http://www.imgworlds.com/wp-content/uploads/2015/12/generic.jpg">
  -->
   <div id="divRegFormVideo" style="border-style: outset;float: left; width: 560px; height: 435px">
           <iframe width="560" height="435" src="https://www.youtube-nocookie.com/embed/AK-XFoz1ZXY?rel=0&amp;autoplay=1&amp;mute=1" frameborder="0" allowfullscreen="" __idm_id__="755771393"></iframe>       
         </div><!-- my-video-player -->
-  <!--my-video-player -->
+
+ <!--my-video-player -->
 
 <div class="my-video-player"></div>
 <!-- my-video-player -->
@@ -728,7 +722,6 @@
                     }?> 
                  @endforeach
    </li>
-
 </ul>
                 </div>
                 <div class="col-md-6 col-lg-3 col-sm-12 p-linhight-smol">

@@ -99,6 +99,7 @@ h2.heading {
 .controls {
   text-align: left;
   position: relative;
+ margin-bottom: 11px;
 }
 .controls input[type="text"],
 .controls input[type="email"],
@@ -124,8 +125,10 @@ h2.heading {
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  height: 45px;
 }
-.controls input[type="text"]:focus, .controls input[type="text"]:hover,
+.controls input[type="text"]:focus,
+.controls input[type="text"]:hover,
 .controls input[type="email"]:focus,
 .controls input[type="email"]:hover,
 .controls input[type="number"]:focus,
@@ -134,6 +137,10 @@ h2.heading {
 .controls input[type="date"]:hover,
 .controls input[type="tel"]:focus,
 .controls input[type="tel"]:hover,
+.controls input[type="text"]:focus,
+.controls input[type="text"]:hover,
+.controls .text:hover,
+.controls .text:focus,
 .controls textarea:focus,
 .controls textarea:hover,
 .controls button:focus,
@@ -143,7 +150,8 @@ h2.heading {
   outline: none;
   border-color: #9FB1C1;
 }
-.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+.controls input[type="text"]:focus + label,
+.controls input[type="text"]:hover + label,
 .controls input[type="email"]:focus + label,
 .controls input[type="email"]:hover + label,
 .controls input[type="number"]:focus + label,
@@ -152,6 +160,8 @@ h2.heading {
 .controls input[type="date"]:hover + label,
 .controls input[type="tel"]:focus + label,
 .controls input[type="tel"]:hover + label,
+.controls .text:focus + label,
+.controls .text:hover + label,
 .controls textarea:focus + label,
 .controls textarea:hover + label,
 .controls button:focus + label,
@@ -168,9 +178,10 @@ h2.heading {
   color: #999;
 }
 .controls select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding: 20px 0;
 }
 .controls label {
   position: absolute;
@@ -264,3 +275,26 @@ button:hover {
 .col-1-8 {
   width: 12.5%;
 }
+
+/*----------------------------------*/
+
+/*{
+      font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #2a333b;
+    margin-bottom: 51px;
+ 
+} */
+.head-h1{
+
+  margin-bottom: 40px;
+} 
+.head-h1.info-stud-insert {
+    margin-bottom: 5px;
+    margin-top: -22px;
+} 
+.controls.label-copy   {
+      top:-18px!important;
+    }
+/*----------------------------------*/
