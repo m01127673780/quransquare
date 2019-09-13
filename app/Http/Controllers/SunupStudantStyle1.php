@@ -16,11 +16,12 @@ use App\Model\Footer;
 use App\Model\Slider;
 use App\Model\News;
 use App\Model\Contact;
+use App\Model\Student;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class RegisterStyle extends Controller
+class SunupStudantStyle1 extends Controller
 {
     public function show (){
 
@@ -40,7 +41,7 @@ class RegisterStyle extends Controller
      $hour     =Hour::all();
      $footer     =Footer::all();
      $Slider     =Slider::all();
-      return view ('style.register',[
+      return view ('style.sunup_student',[
       	'whyus' => $whyus,
       	'courses'=>$courses,
       	'videos'=>$videos,
@@ -64,7 +65,7 @@ class RegisterStyle extends Controller
 }
 
     public function insert_student (){
-      $add = new Contact;
+      $add = new Student;
       $add->name = request('name');
       $add->email = request('email');
       $add->subject = request('subject');
@@ -75,9 +76,7 @@ class RegisterStyle extends Controller
         $add->save();
       return back();
 
+
  
 }
-
-
-
 }

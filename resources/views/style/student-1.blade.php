@@ -86,13 +86,15 @@
       <a class="dropdown-item" href="#">  student</a>
       <a class="dropdown-item" href="#">  teacher</a>
       
-              </li> 
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header><!-- </header>-->
+  </li> 
 
+   
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header><!-- </header>-->
+ 
         
 <!-- ==================================== -->
 <!-- ==================================== -->
@@ -111,122 +113,27 @@
     <h2 class="heading">Booking & contact</h2>
     <div class="controls">
       <input type="text" id="name" class="floatLabel" name="name">
-      <label for="name">Name * </label>
-    </div>    
-    <div class="controls">
-      <input type="text" id="quranSqour" class="floatLabel" name="quranSqour">
-      <label for="quranSqour">quranSqour * </label>
+      <label for="name">Name</label>
     </div>
     <div class="controls">
       <input type="text" id="email" class="floatLabel" name="email">
-      <label for="email">Email * </label>
+      <label for="email">Email</label>
     </div>       
     <div class="controls">
       <input type="tel" id="phone" class="floatLabel" name="phone">
-      <label for="phone">Phone * </label>
+      <label for="phone">Phone</label>
     </div>
-
-    <!-- /------------------------------------------ -->
-      <br>
-      <br>
-    <h1><span style="border-bottom: 2px  solid #444;">STUDENT</span> 
-      <span >INFORMATION</span> </h1>  
-       <br>
-      <br>
-   <h3>   How many students will evaluate? *</h3>
-      <br>
-      <br>
-     <!-- /------------------------------------------ -->
-
-
-<!-- ============================================================= -->
-<!--====================================================-->
-<section class="margin portfolio"  >
-       <!--start section title-->
-       <div class="container"> 
-           <!--End section title-->
-            <div class="portfoli">
-            <div class="buttons">
-         <div class="controls">
-        <i class="fa fa-sort"></i>
-             <select class="custom-select floatLabel" multiple>
-              <br>
-                <option    class="option one"   id="one" value="3" style="margin-top: 11px;">1</option>
-                <option  class="option tow"     id="tow" value="3">2</option>
-                <option    class="option thre"  id="thre"value="2">3</option>
-                <option    class="option four"  id="four"value="1">4</option>
-                <option    class="option five"   id="five" value="five">5</option>
-        </select>
-        <label for="fruit"><i class="fa fa-male"></i>;STUDENT</label>
-      </div>      
-             </div><!--/.buttons-->
-          <div class="images row "  >
-              <!-- ------------------------- -->
-           <div class=" one   ">
-            1
-           
-            </div><!--/.col-->
-           <!-- ------------------------- -->
-            
-            <!-- ------------------------- -->
-           <div class=" none tow    ">
-            <br>1  
-            <br>2
-            
-          </div><!--/.col-->
-           <!-- ------------------------- -->
-           
-            <!-- ------------------------- -->
-           <div class=" none thre    "> 
-            <br>1  
-            <br>2
-            <br>3
-           </div> 
-           
-           <!-- ------------------------- -->
-           
-            <!-- ------------------------- -->
-           <div class=" none four    "> 
-            <br>1  
-            <br>2
-            <br>3
-            <br>4
-             </div>
-            
-            <!-- ------------------------- -->
-           
-            <!-- ------------------------- -->
-           <div class=" none five    "> 
-             
-              <br>1  
-            <br>2
-            <br>3
-            <br>4
-            <br>5
-          </div><!--/.col-->
-           <!-- ------------------------- -->
-            </div><!--/.row-->
-    </div><!--/.portfoli-->
-   </div><!--./container-->
-</section><!--./portflio-->
- <!--======================================================--> 
-
-
-<!-- ============================================================= -->
-
-
-
       <div class="grid">
         <div class=" ">
           <div class="controls">
-           <input type="text" id="street" class="floatLabel" name=" ">
-           <label for="street">Street * </label>
+           <input type="text" id="street" class="floatLabel" name="street">
+           <label for="street">Street</label>
           </div>          
         </div>
         <div class="col-1-3">
           <div class="controls">
-            <input type="number" id="street-number" class="floatLabel" name=" ">
-            <label for="street-number">Number * </label>
+            <input type="number" id="street-number" class="floatLabel" name="street-number">
+            <label for="street-number">Number</label>
           </div>          
         </div>
       </div>
@@ -255,6 +162,314 @@
 
 
 
+
+<!--====================================================-->
+<section class="margin portfolio"  >
+ 
+<!--start section title-->
+<div class="container"> 
+ <!--End section title-->
+  <div class="portfoli">
+  <div class="buttons">
+ 
+  <select class="custom-select" multiple>
+  <option    class="option one"   id="one" value="3">1</option>
+  <option  class="option tow"     id="tow" value="3">2</option>
+  <option    class="option thre"  id="thre"value="2">3</option>
+  <option    class="option four"  id="four"value="1">4</option>
+  <option    class="option five"   id="five" value="five">5</option>
+ </select>
+ 
+    </div><!--/.buttons-->
+<div class="images row "  >
+
+
+ 
+  <!-- ------------------------- -->
+ <div class=" one   ">1
+  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>
+ </div><!--/.col-->
+ <!-- ------------------------- -->
+  
+  <!-- ------------------------- -->
+ <div class=" none tow    ">2
+ 
+   <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>
+
+</div><!--/.col-->
+ <!-- ------------------------- -->
+ 
+  <!-- ------------------------- -->
+ <div class=" none thre    ">3
+  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>
+</div><!--/.col-->
+ <!-- ------------------------- -->
+ 
+  <!-- ------------------------- -->
+ <div class=" none four    ">4
+   <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>
+</div><!--/.col-->
+ <!-- ------------------------- -->
+ 
+  <!-- ------------------------- -->
+ <div class=" none five    ">5
+  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr> 
+   <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>  <form>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  </form>
+  <hr>
+ 
+</div><!--/.col-->
+ <!-- ------------------------- -->
+ 
+
+</div><!--/.row-->
+    </div><!--/.portfoli-->
+    <button class="more">high level</button>
+
+ 
+      </div><!--./container-->
+ </section><!--./portflio-->
+ 
+ 
+  <!--======================================================--> 
 
 
 

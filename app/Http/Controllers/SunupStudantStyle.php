@@ -20,7 +20,7 @@ use App\Model\Contact;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class RegisterStyle extends Controller
+class SunupStudantStyle extends Controller
 {
     public function show (){
 
@@ -40,7 +40,7 @@ class RegisterStyle extends Controller
      $hour     =Hour::all();
      $footer     =Footer::all();
      $Slider     =Slider::all();
-      return view ('style.register',[
+      return view ('style.sunup_student',[
       	'whyus' => $whyus,
       	'courses'=>$courses,
       	'videos'=>$videos,
@@ -63,7 +63,7 @@ class RegisterStyle extends Controller
       return back();
 }
 
-    public function insert_student (){
+    public function insert_contact (){
       $add = new Contact;
       $add->name = request('name');
       $add->email = request('email');
@@ -75,9 +75,15 @@ class RegisterStyle extends Controller
         $add->save();
       return back();
 
- 
+
+  if (request()->hasFile('icon')) {
+      $data['icon'] = up()->upload([
+          'file'        => 'icon',
+          'path'        => 'contact',
+          'upload_type' => 'single',
+          'delete_file' => '',
+        ]);
+       
+    }
 }
-
-
-
 }
