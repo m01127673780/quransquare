@@ -2649,16 +2649,15 @@ position: absolute;
      /*===================================icon whatsapp===============*/  
 
 .icon-whatsapp-bootom {
-    cursor: pointer;
+     cursor: pointer;
     width: 40px;
-     color: #444;
+    color: #444;
     position: fixed;
-     
-    bottom: 9px;
+    bottom: 23px;
     margin-right: 0;
     background: none;
     text-align: center;
-    left: 25px;
+    left: -12px;
     z-index: 222;
 }
 .icon-whatsapp-bootom:hover {
