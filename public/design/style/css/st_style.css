@@ -314,7 +314,7 @@ padding-left: 26px;
     }
 
 select.form-control:not([size]):not([multiple]) {
-    height: 50px!important;
+    height: 48px!important;
     font-size: 15px;
 }
 textarea {
@@ -372,5 +372,16 @@ label {
     .head-h1.PREFERRED {
     margin: 60px 0;
 }
-  }
-/*----------------------------------*/
+label.head-smol {
+    display: inline-block;
+     margin-bottom: 20px!important;
+}
+#divRegFormVideo {
+position: fixed;
+z-index: 99999;     
+}
+.col-lg-7-box-shadow{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+}
+
+   /*----------------------------------*/

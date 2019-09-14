@@ -10,7 +10,8 @@
  
     <link rel="stylesheet" href="{{ url('design/style') }}/css/st_style.css">
     <link rel="stylesheet" href="{{ url('design/style') }}/css/style.css">
-     <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&amp;subset=arabic,latin-ext" rel="stylesheet">
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     
      <style type="text/css">
           html,body ,h1,h2,h3,h4,h5,h6{
       font-family: 'Cairo', sans-serif;
@@ -100,10 +101,9 @@
 
 
 
-
 <div class="container-flud" style="padding-right: 55px;">
   <div class="row">
-    <div class="col-lg-7">
+    <div class="col-lg-7 col-lg-7-box-shadow " >
       
       <form action="">
   <!--  General -->
@@ -156,36 +156,46 @@
                 <option    class="option four"  id="four"value="1">4</option>
                 <option    class="option five"   id="five" value="five">5</option>
         </select>
-        <label for="fruit"><i class="fa fa-male"></i> STUDENT</label>
       </div>      
              </div><!--/.buttons-->
           <div class="images row "  >
          <!-- ============================================================= -->
            <div class=" one  width-full ">
+         <!-- --------------------------------------------- --> 
           <h3 class="head-studant one-head"><span>Student 1</span> </h3> 
+                <!-- ============================================================= -->         
         <!-- --------------------------------------------- --> 
                  <div class="row">  
+ 
                   <div class="col">
                  <div class="controls  label-copy">
+
                     <input type="text" id="text" class="floatLabel text " name="text">
                     <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
                   </div> 
-                     </div>    <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text1" class="floatLabel text1" name="text1">
-                    <label for="text1" > <i class="fa fa-address-card-o"></i> Last * </label>
-                  </div> 
-                     </div>
+                     </div> 
+                <div class="col col-margin-bottom">
+                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
+                      <select class="form-control" id="exampleFormControlSelect1"    >
+                       <option value="Female">Female</option>
+                      <option value="Male">Male</option>
+                      </select> 
+  
+                     </div> 
                 </div>
         <!-- --------------------------------------------- --> 
 
         <!-- --------------------------------------------- --> 
                  <div class="row ">
                   <div class="col col-margin-bottom">
-                     <label for="text" > <i class="fa fa-male"></i> <i class="fa fa-female"></i>    Gender * </label>
+                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
 
                       <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">Female</option><option value="Male">Male</option>
+                      <option value="Female">..............</option>
+                      <option value="Female">Quran Courses</option>
+                      <option value="Male">Islamic Studies</option>
+                      <option value="Male">Arabic Courses</option>
+                      <option value="Male">Ijaazah Programs</option>
                       </select> 
   
                      </div> 
@@ -265,13 +275,24 @@
                         <option value="72">72</option>
                         <option value="73">73</option>
                         <option value="74">74</option>
-                        <option value="75+">75+</option>
+                        <option value="74">75</option>
+                        <option value="75">74</option>
+                        <option value="76">76</option>
+                        <option value="76">76</option>
+                        <option value="77">77</option>
+                        <option value="78">78</option>
+                        <option value="79">79</option>
+                        <option value="80">80</option>
+                        <option value="81">81</option>
+                        <option value="82">82</option>
+                        <option value="83">83</option>
+                        <option value="84">84</option>
+                        <option value="85+">85+</option>
                       </select>
                        </div>
                  </div>
         <!-- --------------------------------------------- --> 
-  
-  <!-- ============================================================= -->
+   <!-- ============================================================= -->   <!-- ============================================================= -->
             </div><!--/.col-->
            <!-- ------------------------- -->
             
@@ -1325,7 +1346,8 @@
                        </div>
                  </div>
         <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->    <!-- ============================================================= -->         
+   <!-- ============================================================= -->
+       <!-- ============================================================= -->         
         <!-- --------------------------------------------- --> 
           <h3 class="head-studant one-head"><span>Student 4</span> </h3> 
 
@@ -1849,7 +1871,8 @@
                        </div>
                  </div>
         <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->    <!-- ============================================================= -->         
+   <!-- ============================================================= -->
+       <!-- ============================================================= -->         
         <!-- --------------------------------------------- --> 
           <h3 class="head-studant one-head"><span>Student 4</span> </h3> 
 
@@ -2191,7 +2214,7 @@
 <!--====================================================-->
 <section class="margin portfolio"    >
                 <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
+    <label for="exampleFormControlSelect1" class="head-smol">Example select</label>
     <select class="form-control" id="exampleFormControlSelect1">
 <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
             <option value="(GMT -11:00) Midway Island, Samoa">(GMT -11:00) Midway Island, Samoa</option>
@@ -2499,7 +2522,7 @@
 <!--====================================================-->
 <section class=" Example select"  >
    <div class="form-group">
-    <label for="exampleFormControlSelect1">How did you learn about us? *</label>
+    <label for="exampleFormControlSelect1" class="head-smol">How did you learn about us? *</label>
     <select class="form-control" id="exampleFormControlSelect1">
   <option value="Word of mouth">Word of mouth</option>
 <option value="Facebook">Facebook</option>
@@ -2514,13 +2537,12 @@
 
 
 
- <br><br>
-
+ 
   
 
   <div class="grid">
         <p class="info-text"></p>
-     <h1 class="head-h1"><span style="border-bottom: 2px  solid #444;">Leave</span> <span >   us a message
+     <label for="exampleFormControlSelect1" class="head-smol">    Leave   us a message</label>
 </span> </h1> 
         <br>
         <div class="controls">
