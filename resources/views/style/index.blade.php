@@ -76,7 +76,7 @@
      sunup as 
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="#">  student</a>
+      <a class="dropdown-item" href="student" target="_blank">  student</a>
       <a class="dropdown-item" href="#">  teacher</a>
       
   </li> 

@@ -88,6 +88,9 @@
       <a class="dropdown-item" href="#">  teacher</a>
       
               </li> 
+                    <li class="nav-item"  >
+                <a class="nav-link" href="admin" target="_blank">ADMIN</a>
+                </li>
             </ul>
           </div>
         </div>
@@ -103,7 +106,7 @@
 
 <div class="container-flud" style="padding-right: 55px;">
   <div class="row">
-    <div class="col-lg-7 col-lg-7-box-shadow " >
+   <div class="col-lg-7 col-lg-7-box-shadow " >
       
       <form action="">
   <!--  General -->
@@ -112,7 +115,7 @@
 
     <div class="controls">
       <input type="text" id="name" class="floatLabel" name="name">
-      <label for="name"> <i class="icon-happy  "></i> Name * </label>
+      <label for="name"> <i class="icon-happy fa fa-smile-o "></i> Name * </label>
     </div>
      <div class="controls">
       <input type="text" id="email" class="floatLabel" name="email">
@@ -156,20 +159,19 @@
                 <option    class="option four"  id="four"value="1">4</option>
                 <option    class="option five"   id="five" value="five">5</option>
         </select>
+        <label for="fruit"><i class="fa fa-male"></i> STUDENT</label>
       </div>      
              </div><!--/.buttons-->
           <div class="images row "  >
          <!-- ============================================================= -->
            <div class=" one  width-full ">
-         <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 1</span> </h3> 
-                <!-- ============================================================= -->         
+         <!-- ============================================================= -->
         <!-- --------------------------------------------- --> 
+          <h3 class="head-studant one-head"><span>Student  </span> </h3> 
+
                  <div class="row">  
- 
                   <div class="col">
                  <div class="controls  label-copy">
-
                     <input type="text" id="text" class="floatLabel text " name="text">
                     <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
                   </div> 
@@ -292,7 +294,9 @@
                        </div>
                  </div>
         <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->   <!-- ============================================================= -->
+   <!-- ============================================================= -->    <!-- ============================================================= -->         
+          
+   <!-- ============================================================= --> 
             </div><!--/.col-->
            <!-- ------------------------- -->
             
@@ -2557,9 +2561,7 @@
       <!-- ======================================================== -->
   </div>
   <!--  Details -->
-
     </div>
-
 
 
     <div class="col-lg-5" style="overflow: hidden;height: 500px;">
