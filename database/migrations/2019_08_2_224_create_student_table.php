@@ -17,10 +17,14 @@ class CreateStudentTable extends Migration
              $table->increments('id');
              $table->string('name')->nullable(); 
              $table->string('email')->nullable(); 
-             $table->string('subject')->nullable(); 
              $table->string('phone')->nullable(); 
              $table->string('message')->nullable(); 
-              $table->string('icon')->nullable(); 
+             $table->string('how_aboutus')->nullable(); 
+             $table->string('location')->nullable(); 
+             $table->string('timezone')->nullable(); 
+             $table->string('date')->nullable(); 
+             $table->string('time')->nullable(); 
+               $table->string('icon')->nullable(); 
              $table->timestamps();
         });
     }

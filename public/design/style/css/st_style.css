@@ -213,7 +213,7 @@ h2.heading {
   background-color: white;
 }
 .controls label.active {
-  top: -11px;
+  top: -22px;
   color: #555;
   background-color: white;
   width: auto;
@@ -221,6 +221,7 @@ h2.heading {
 .controls textarea {
   resize: none;
   height: 200px;
+  padding: 50px;
 }
 
 button {

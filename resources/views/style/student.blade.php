@@ -108,8 +108,8 @@
   <div class="row">
    <div class="col-lg-7 col-lg-7-box-shadow " >
       
-      <form action="">
-  <!--  General -->
+ <form method="post"  action ="{{url('student/register')}}" >
+  <input type="hidden" name="_token" value="{{ csrf_token ()}}">   
   <div class="form-group">
      <h1 class="head-h1"><span style="border-bottom: 2px  solid #444;">STUDENT</span> <span >INFORMATION</span> </h1> 
 
@@ -2219,7 +2219,7 @@
 <section class="margin portfolio"    >
                 <div class="form-group">
     <label for="exampleFormControlSelect1" class="head-smol">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" id="exampleFormControlSelect1" name="subject">
 <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
             <option value="(GMT -11:00) Midway Island, Samoa">(GMT -11:00) Midway Island, Samoa</option>
             <option value="(GMT -10:00) Hawaii">(GMT -10:00) Hawaii</option>
@@ -2261,7 +2261,7 @@
 <section class="   "  >
                 <div class="form-group">
     <label for="exampleFormControlSelect1">Select your timezone *</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control"name="timezone">
  <option value="Australia">Australia</option>
  <option value="Canada">Canada</option>
  <option value="France">France</option>
@@ -2527,7 +2527,7 @@
 <section class=" Example select"  >
    <div class="form-group">
     <label for="exampleFormControlSelect1" class="head-smol">How did you learn about us? *</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" id="e " name="How"><br><br>
   <option value="Word of mouth">Word of mouth</option>
 <option value="Facebook">Facebook</option>
 <option value="Instagram">Instagram</option>
@@ -2550,7 +2550,7 @@
 </span> </h1> 
         <br>
         <div class="controls">
-          <textarea name="comments" class="floatLabel" id="comments"></textarea>
+          <textarea name="message" class="floatLabel" id="message"></textarea>
           <label for="comments"> <i class="fa-commenting fa"></i> message</label>
           </div>
             <button type="submit" value="Submit" class="col-1-4">Submit</button>
