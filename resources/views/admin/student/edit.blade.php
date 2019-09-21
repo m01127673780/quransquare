@@ -48,24 +48,26 @@
  </style>
 
     <div class="row"  >
-              <!-- ---============================================--- --> 
-  <!-- ---============================================--- -->  <!-- ---============================================--- --> 
+         <!-- ---============================================--- -->          <!-- ---============================================--- -->  
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.name')) !!}   </h3>  </center>
             <div class="col-lg-6">
                  {!! Form::label('st1_name',trans('admin.name')) !!}
-                 {!! Form::text('st1_name',old('st1_name'),['class'=>'form-control']) !!}
+                 {!! Form::text('st1_name',$student->st1_name,['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st1_name',trans('admin.Gender')) !!}
-                    <select class="form-control" value="<?php echo $student->st1_Gender ; ?>"    >
-                    <option value="Female">Male</option>
+                    <select class="form-control" name="st1_Gender ">
+                    <option value="<?php echo $student->st1_Gender ; ?>" selected="selected"><?php echo $student->st1_Gender ; ?></option>
+                    <option value="...............">...............</option>
+                    <option value="Female" slected="slected">Male</option>
                     <option value="Male">Female</option>
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st1_name',trans('admin.Gender')) !!}
-                      <select class="form-control" name="st1_course" value="<?php echo $student->st1_course ; ?>">
-                      <option value="Female">..............</option>
+                      {!! Form::label('st1_course',trans('admin.course')) !!}
+                      <select class="form-control" name="st1_course ">
+                      <option value="<?php echo $student->st1_course ; ?>" selected="selected"><?php echo $student->st1_course ; ?></option>
+                      <option value="...............">...............</option>
                       <option value="Female">Quran Courses</option>
                       <option value="Male">Islamic Studies</option>
                       <option value="Male">Arabic Courses</option>
@@ -73,8 +75,10 @@
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st1_name',trans('admin.Gender')) !!}
-                        <select class="form-control"   value="<?php echo $student->st1_age ; ?>">
+                      {!! Form::label('st1_age',trans('admin.age')) !!}
+                      <select class="form-control" name="st1_age ">
+                      <option value="<?php echo $student->st1_age ; ?>" selected="selected"><?php echo $student->st1_age ; ?></option>
+                      <option value="...............">...............</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -162,23 +166,27 @@
                       </select>
              </div><!-- ./col-lg-6-->  
         <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- -->  <!-- ---============================================--- -->  <!-- ---============================================--- --> 
+          
+         <!-- ---============================================--- --> <!-- ---============================================--- -->  <!-- ---============================================--- -->          <!-- ---============================================--- -->  
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.name')) !!}   </h3>  </center>
             <div class="col-lg-6">
                  {!! Form::label('st2_name',trans('admin.name')) !!}
-                 {!! Form::text('st2_name',old('st2_name'),['class'=>'form-control']) !!}
+                 {!! Form::text('st2_name',$student->st2_name,['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st2_name',trans('admin.Gender')) !!}
-                    <select class="form-control" value="<?php echo $student->st2_Gender ; ?>"    >
-                    <option value="Female">Male</option>
+                    <select class="form-control" name="st2_Gender ">
+                    <option value="<?php echo $student->st2_Gender ; ?>" selected="selected"><?php echo $student->st2_Gender ; ?></option>
+                    <option value="...............">...............</option>
+                    <option value="Female" slected="slected">Male</option>
                     <option value="Male">Female</option>
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st2_name',trans('admin.Gender')) !!}
-                      <select class="form-control" name="st2_course" value="<?php echo $student->st2_course ; ?>">
-                      <option value="Female">..............</option>
+                      {!! Form::label('st2_course',trans('admin.course')) !!}
+                      <select class="form-control" name="st2_course ">
+                      <option value="<?php echo $student->st2_course ; ?>" selected="selected"><?php echo $student->st2_course ; ?></option>
+                      <option value="...............">...............</option>
                       <option value="Female">Quran Courses</option>
                       <option value="Male">Islamic Studies</option>
                       <option value="Male">Arabic Courses</option>
@@ -186,8 +194,10 @@
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st2_name',trans('admin.Gender')) !!}
-                        <select class="form-control"   value="<?php echo $student->st2_age ; ?>">
+                      {!! Form::label('st2_age',trans('admin.age')) !!}
+                      <select class="form-control" name="st2_age ">
+                      <option value="<?php echo $student->st2_age ; ?>" selected="selected"><?php echo $student->st2_age ; ?></option>
+                      <option value="...............">...............</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -275,23 +285,27 @@
                       </select>
              </div><!-- ./col-lg-6-->  
         <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- -->  <!-- ---============================================--- -->  <!-- ---============================================--- --> 
+          
+         <!-- ---============================================--- --> <!-- ---============================================--- -->  <!-- ---============================================--- -->          <!-- ---============================================--- -->  
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.name')) !!}   </h3>  </center>
             <div class="col-lg-6">
                  {!! Form::label('st3_name',trans('admin.name')) !!}
-                 {!! Form::text('st3_name',old('st3_name'),['class'=>'form-control']) !!}
+                 {!! Form::text('st3_name',$student->st3_name,['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st3_name',trans('admin.Gender')) !!}
-                    <select class="form-control" value="<?php echo $student->st3_Gender ; ?>"    >
-                    <option value="Female">Male</option>
+                    <select class="form-control" name="st3_Gender ">
+                    <option value="<?php echo $student->st3_Gender ; ?>" selected="selected"><?php echo $student->st3_Gender ; ?></option>
+                    <option value="...............">...............</option>
+                    <option value="Female" slected="slected">Male</option>
                     <option value="Male">Female</option>
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st3_name',trans('admin.Gender')) !!}
-                      <select class="form-control" name="st3_course" value="<?php echo $student->st3_course ; ?>">
-                      <option value="Female">..............</option>
+                      {!! Form::label('st3_course',trans('admin.course')) !!}
+                      <select class="form-control" name="st3_course ">
+                      <option value="<?php echo $student->st3_course ; ?>" selected="selected"><?php echo $student->st3_course ; ?></option>
+                      <option value="...............">...............</option>
                       <option value="Female">Quran Courses</option>
                       <option value="Male">Islamic Studies</option>
                       <option value="Male">Arabic Courses</option>
@@ -299,8 +313,10 @@
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st3_name',trans('admin.Gender')) !!}
-                        <select class="form-control"   value="<?php echo $student->st3_age ; ?>">
+                      {!! Form::label('st3_age',trans('admin.age')) !!}
+                      <select class="form-control" name="st3_age ">
+                      <option value="<?php echo $student->st3_age ; ?>" selected="selected"><?php echo $student->st3_age ; ?></option>
+                      <option value="...............">...............</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -388,23 +404,27 @@
                       </select>
              </div><!-- ./col-lg-6-->  
         <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- -->  <!-- ---============================================--- -->  <!-- ---============================================--- --> 
+          
+         <!-- ---============================================--- --> <!-- ---============================================--- -->  <!-- ---============================================--- -->          <!-- ---============================================--- -->  
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.name')) !!}   </h3>  </center>
             <div class="col-lg-6">
                  {!! Form::label('st4_name',trans('admin.name')) !!}
-                 {!! Form::text('st4_name',old('st4_name'),['class'=>'form-control']) !!}
+                 {!! Form::text('st4_name',$student->st4_name,['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st4_name',trans('admin.Gender')) !!}
-                    <select class="form-control" value="<?php echo $student->st4_Gender ; ?>"    >
-                    <option value="Female">Male</option>
+                    <select class="form-control" name="st4_Gender ">
+                    <option value="<?php echo $student->st4_Gender ; ?>" selected="selected"><?php echo $student->st4_Gender ; ?></option>
+                    <option value="...............">...............</option>
+                    <option value="Female" slected="slected">Male</option>
                     <option value="Male">Female</option>
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st4_name',trans('admin.Gender')) !!}
-                      <select class="form-control" name="st4_course" value="<?php echo $student->st4_course ; ?>">
-                      <option value="Female">..............</option>
+                      {!! Form::label('st4_course',trans('admin.course')) !!}
+                      <select class="form-control" name="st4_course ">
+                      <option value="<?php echo $student->st4_course ; ?>" selected="selected"><?php echo $student->st4_course ; ?></option>
+                      <option value="...............">...............</option>
                       <option value="Female">Quran Courses</option>
                       <option value="Male">Islamic Studies</option>
                       <option value="Male">Arabic Courses</option>
@@ -412,8 +432,10 @@
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st4_name',trans('admin.Gender')) !!}
-                        <select class="form-control"   value="<?php echo $student->st4_age ; ?>">
+                      {!! Form::label('st4_age',trans('admin.age')) !!}
+                      <select class="form-control" name="st4_age ">
+                      <option value="<?php echo $student->st4_age ; ?>" selected="selected"><?php echo $student->st4_age ; ?></option>
+                      <option value="...............">...............</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -501,23 +523,27 @@
                       </select>
              </div><!-- ./col-lg-6-->  
         <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- -->  <!-- ---============================================--- -->  <!-- ---============================================--- --> 
+          
+         <!-- ---============================================--- --> <!-- ---============================================--- -->  <!-- ---============================================--- -->          <!-- ---============================================--- -->  
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.name')) !!}   </h3>  </center>
             <div class="col-lg-6">
                  {!! Form::label('st5_name',trans('admin.name')) !!}
-                 {!! Form::text('st5_name',old('st5_name'),['class'=>'form-control']) !!}
+                 {!! Form::text('st5_name',$student->st5_name,['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st5_name',trans('admin.Gender')) !!}
-                    <select class="form-control" value="<?php echo $student->st5_Gender ; ?>"    >
-                    <option value="Female">Male</option>
+                    <select class="form-control" name="st5_Gender ">
+                    <option value="<?php echo $student->st5_Gender ; ?>" selected="selected"><?php echo $student->st5_Gender ; ?></option>
+                    <option value="...............">...............</option>
+                    <option value="Female" slected="slected">Male</option>
                     <option value="Male">Female</option>
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st5_name',trans('admin.Gender')) !!}
-                      <select class="form-control" name="st5_course" value="<?php echo $student->st5_course ; ?>">
-                      <option value="Female">..............</option>
+                      {!! Form::label('st5_course',trans('admin.course')) !!}
+                      <select class="form-control" name="st5_course ">
+                      <option value="<?php echo $student->st5_course ; ?>" selected="selected"><?php echo $student->st5_course ; ?></option>
+                      <option value="...............">...............</option>
                       <option value="Female">Quran Courses</option>
                       <option value="Male">Islamic Studies</option>
                       <option value="Male">Arabic Courses</option>
@@ -525,8 +551,10 @@
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st5_name',trans('admin.Gender')) !!}
-                        <select class="form-control"   value="<?php echo $student->st5_age ; ?>">
+                      {!! Form::label('st5_age',trans('admin.age')) !!}
+                      <select class="form-control" name="st5_age ">
+                      <option value="<?php echo $student->st5_age ; ?>" selected="selected"><?php echo $student->st5_age ; ?></option>
+                      <option value="...............">...............</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -614,7 +642,9 @@
                       </select>
              </div><!-- ./col-lg-6-->  
         <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- --> 
+          
+         <!-- ---============================================--- --> <!-- ---============================================--- --> 
+
 </div><!-- ./ ROW -->
 
 
@@ -640,7 +670,7 @@
     <section class=" Example select"  >
       <div class="form-group">
         <label for="exampleFormControlSelect1" class="head-smol">How did you learn about us? *</label>
-          <select class="form-control" id="e " name="how_aboutus"  name="how_aboutus"><br><br>
+          <select class="form-control"  name="how_aboutus" ><br><br>
            <option value="<?php echo $student->timezone ; ?>"  selected="selected"><?php echo $student->timezone ; ?></option>
           <option value="...............">  ............... </option>
           <option value="Word of mouth">Word of mouth</option>
@@ -701,7 +731,7 @@
 <section class="   "  >
  <div class="form-group">
 <label for="location"></label>
- <select class="form-control"name="location">
+ <select class="form-control" name="location">
           <option   value="<?php echo $student->location ; ?>"  selected="selected"><?php echo $student->location ; ?></option>
  <option value="...................">................................... </option>  
  <option value="Australia">Australia</option>

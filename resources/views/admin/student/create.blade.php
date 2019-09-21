@@ -53,32 +53,32 @@
               
 
     <div class="row"  >
-              <!-- ---============================================--- --> 
+  <!-- ---============================================--- -->  <!-- ---============================================--- --> 
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  </center>
             <div class="col-lg-6">
                  {!! Form::label('st1_name',trans('admin.name')) !!}
                  {!! Form::text('st1_name',old('st1_name'),['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
-                 {!! Form::label('Gender',trans('admin.Gender')) !!}
-                    <select class="form-control" value="{{old('st1_Gender')}}"    >
-                    <option value="Female">Male</option>
-                    <option value="Male">Female</option>
+                 {!! Form::label('st1_name',trans('admin.Gender')) !!}
+                    <select class="form-control" name="st1_Gender" value="{{old('st1_Gender')}}"    >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st1_Gender',trans('admin.Gender')) !!}
+                      {!! Form::label('st1_name',trans('admin.Gender')) !!}
                       <select class="form-control" name="st1_course" value="{{old('st1_course')}}">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <option value=".............">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st1_age',trans('admin.age')) !!}
-                        <select class="form-control"  value="{{old('st1_age')}}">
+                        {!! Form::label('st1_name',trans('admin.Gender')) !!}
+                        <select class="form-control" name="st1_age" value="{{old('st1_age')}}">
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -166,7 +166,7 @@
                       </select>
              </div><!-- ./col-lg-6-->  
         <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- -->  <!-- ---============================================--- --> 
+         <!-- ---============================================--- -->   <!-- ---============================================--- -->  <!-- ---============================================--- --> 
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  </center>
             <div class="col-lg-6">
                  {!! Form::label('st2_name',trans('admin.name')) !!}
@@ -174,24 +174,24 @@
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st2_name',trans('admin.Gender')) !!}
-                    <select class="form-control" value="{{old('st2_Gender')}}"    >
-                    <option value="Female">Male</option>
-                    <option value="Male">Female</option>
+                    <select class="form-control" name="st2_Gender" value="{{old('st2_Gender')}}"    >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                     </select> 
             </div>    
             <div class="col-lg-6">
                       {!! Form::label('st2_name',trans('admin.Gender')) !!}
                       <select class="form-control" name="st2_course" value="{{old('st2_course')}}">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <option value=".............">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
                         {!! Form::label('st2_name',trans('admin.Gender')) !!}
-                        <select class="form-control"  value="{{old('st2_age')}}">
+                        <select class="form-control" name="st2_age" value="{{old('st2_age')}}">
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -279,7 +279,7 @@
                       </select>
              </div><!-- ./col-lg-6-->  
         <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- -->  <!-- ---============================================--- --> 
+         <!-- ---============================================--- -->   <!-- ---============================================--- -->  <!-- ---============================================--- --> 
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  </center>
             <div class="col-lg-6">
                  {!! Form::label('st3_name',trans('admin.name')) !!}
@@ -287,24 +287,24 @@
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st3_name',trans('admin.Gender')) !!}
-                    <select class="form-control" value="{{old('st3_Gender')}}"    >
-                    <option value="Female">Male</option>
-                    <option value="Male">Female</option>
+                    <select class="form-control" name="st3_Gender" value="{{old('st3_Gender')}}"    >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                     </select> 
             </div>    
             <div class="col-lg-6">
                       {!! Form::label('st3_name',trans('admin.Gender')) !!}
                       <select class="form-control" name="st3_course" value="{{old('st3_course')}}">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <option value=".............">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
                         {!! Form::label('st3_name',trans('admin.Gender')) !!}
-                        <select class="form-control"  value="{{old('st3_age')}}">
+                        <select class="form-control" name="st3_age" value="{{old('st3_age')}}">
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -392,7 +392,7 @@
                       </select>
              </div><!-- ./col-lg-6-->  
         <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- -->  <!-- ---============================================--- --> 
+         <!-- ---============================================--- -->   <!-- ---============================================--- -->  <!-- ---============================================--- --> 
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  </center>
             <div class="col-lg-6">
                  {!! Form::label('st4_name',trans('admin.name')) !!}
@@ -400,24 +400,24 @@
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st4_name',trans('admin.Gender')) !!}
-                    <select class="form-control" value="{{old('st4_Gender')}}"    >
-                    <option value="Female">Male</option>
-                    <option value="Male">Female</option>
+                    <select class="form-control" name="st4_Gender" value="{{old('st4_Gender')}}"    >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                     </select> 
             </div>    
             <div class="col-lg-6">
                       {!! Form::label('st4_name',trans('admin.Gender')) !!}
                       <select class="form-control" name="st4_course" value="{{old('st4_course')}}">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <option value=".............">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
                         {!! Form::label('st4_name',trans('admin.Gender')) !!}
-                        <select class="form-control"  value="{{old('st4_age')}}">
+                        <select class="form-control" name="st4_age" value="{{old('st4_age')}}">
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -505,6 +505,7 @@
                       </select>
              </div><!-- ./col-lg-6-->  
         <!-- --------------------------------------------- --> 
+         <!-- ---============================================--- --> 
          <!-- ---============================================--- -->  <!-- ---============================================--- --> 
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  </center>
             <div class="col-lg-6">
@@ -513,24 +514,24 @@
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st5_name',trans('admin.Gender')) !!}
-                    <select class="form-control" value="{{old('st5_Gender')}}"    >
-                    <option value="Female">Male</option>
-                    <option value="Male">Female</option>
+                    <select class="form-control" name="st5_Gender" value="{{old('st5_Gender')}}"    >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                     </select> 
             </div>    
             <div class="col-lg-6">
                       {!! Form::label('st5_name',trans('admin.Gender')) !!}
                       <select class="form-control" name="st5_course" value="{{old('st5_course')}}">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <option value=".............">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
                         {!! Form::label('st5_name',trans('admin.Gender')) !!}
-                        <select class="form-control"  value="{{old('st5_age')}}">
+                        <select class="form-control" name="st5_age" value="{{old('st5_age')}}">
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
