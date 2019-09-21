@@ -24,7 +24,7 @@ class CreateStudentTable extends Migration
              $table->string('timezone')->nullable(); 
              $table->string('date')->nullable(); 
              $table->string('time')->nullable(); 
-               $table->string('icon')->nullable(); 
+             $table->string('icon')->nullable(); 
              $table->timestamps();
         });
     }

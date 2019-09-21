@@ -7,8 +7,7 @@ use App\Model\Whyus;
 use App\Model\Courses;
 use App\Model\Videos;
 use App\Model\Teachers;
-use App\Model\Stat;
-use App\Model\Testimonial;
+ use App\Model\Testimonial;
 use App\Model\BestStudent;
 use App\Model\Halfhour;
 use App\Model\Hour;
@@ -34,8 +33,7 @@ class StudentStyle extends Controller
 	   $courses =Courses::all();
 	   $videos =Videos::all();
 	   $teachers =Teachers::all();
-     $stat =Stat::all();
-     $beststudent =BestStudent::all();
+      $beststudent =BestStudent::all();
      $testimonial =Testimonial::all();
      $halfhour =Halfhour::all();
      $hour     =Hour::all();
@@ -46,8 +44,7 @@ class StudentStyle extends Controller
       	'courses'=>$courses,
       	'videos'=>$videos,
       	'teachers'=>$teachers,
-        'stat'=>$stat,
-        'beststudent'=>$beststudent,
+         'beststudent'=>$beststudent,
         'testimonial'=>$testimonial,
         'hour'=>$hour,
         'halfhour'=>$halfhour,
@@ -68,8 +65,12 @@ class StudentStyle extends Controller
       $add = new Student;
       $add->name = request('name');
       $add->email = request('email');
-      $add->subject = request('subject');
       $add->phone = request('phone');
+      $add->how_aboutus= request('how_aboutus');
+      $add->location= request('location');
+      $add->timezone= request('timezone');
+      $add->date= request('date');
+      $add->time= request('time');
       $add->message = request('message');
       $add->icon = request('icon'.v_image());
  

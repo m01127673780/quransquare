@@ -2888,7 +2888,11 @@ color: #fff!important;
 }
    
   /*================= End nav bar ================================*/
-  /*-----------start slider--------*/
+  /*-----------student--------*/
+   .width-full-admin{
+    width: 102%;
+     margin-left: -1%;
+}
 
 
  

@@ -2007,8 +2007,7 @@
         <!-- --------------------------------------------- --> 
    <!-- ============================================================= -->    <!-- ============================================================= -->         
         <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 5</span> </h3> 
-
+          <h3 class="head-studant one-head"><span>Student 5</span> </h3>    
                  <div class="row">  
                   <div class="col">
                  <div class="controls  label-copy">
@@ -2142,84 +2141,82 @@
    </div><!--./container-->
 </section><!--./portflio-->
  <!--======================================================--> 
+ 
+ 
      <h1 class="head-h1 PREFERRED"><span style="border-bottom: 2px  solid #444;">PREFERRED </span> <span >EVALUATION TIME</span> </h1> 
 <!-- ============================================================= -->
-           <div class="width-full  ">
-
+<div class="width-full  ">
    <div class="form-group">
      <div class="grid">
     <div class="col-lg-6">
       <div class="controls">
-        <input type="date" id="arrive" class="floatLabel input-date" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+        <input type="date" id="arrive" class="floatLabel input-date" name="date" value="<?php echo date('Y-m-d'); ?>">
        </div>      
     </div>
     <div class="col-lg-6">
-  <select class="form-control" id="exampleFormControlSelect1">
-   <option class="ui-timepicker-am">12:00 AM</option>
-  <option class="ui-timepicker-am">12:30 AM</option>
-  <option class="ui-timepicker-am">1:00 AM</option>
-  <option class="ui-timepicker-am">1:30 AM</option>
- <option class="ui-timepicker-am">2:00 AM</option>
- <option class="ui-timepicker-am">2:30 AM</option>
- <option class="ui-timepicker-am">3:00 AM</option>
- <option class="ui-timepicker-am">3:30 AM</option>
- <option class="ui-timepicker-am">4:00 AM</option>
- <option class="ui-timepicker-am">4:30 AM</option>
- <option class="ui-timepicker-am">5:00 AM</option>
- <option class="ui-timepicker-am">5:30 AM</option>
- <option class="ui-timepicker-am">6:00 AM</option>
- <option class="ui-timepicker-am">6:30 AM</option>
- <option class="ui-timepicker-am">7:00 AM</option>
- <option class="ui-timepicker-am">7:30 AM</option>
- <option class="ui-timepicker-am">8:00 AM</option>
- <option class="ui-timepicker-am">8:30 AM</option>
- <option class="ui-timepicker-am">9:00 AM</option>
- <option class="ui-timepicker-am">9:30 AM</option>
- <option class="ui-timepicker-am">10:00 AM</option>
- <option class="ui-timepicker-am">10:30 AM</option>
- <option class="ui-timepicker-am">11:00 AM</option>
- <option class="ui-timepicker-am">11:30 AM</option>
- <option class="ui-timepicker-pm">12:00 PM</option>
- <option class="ui-timepicker-pm">12:30 PM</option>
- <option class="ui-timepicker-pm">1:00 PM</option>
- <option class="ui-timepicker-pm">1:30 PM</option>
- <option class="ui-timepicker-pm">2:00 PM</option>
- <option class="ui-timepicker-pm">2:30 PM</option>
- <option class="ui-timepicker-pm">3:00 PM</option>
- <option class="ui-timepicker-pm">3:30 PM</option>
- <option class="ui-timepicker-pm">4:00 PM</option>
- <option class="ui-timepicker-pm">4:30 PM</option>
- <option class="ui-timepicker-pm">5:00 PM</option>
- <option class="ui-timepicker-pm">5:30 PM</option>
- <option class="ui-timepicker-pm">6:00 PM</option>
- <option class="ui-timepicker-pm">6:30 PM</option>
- <option class="ui-timepicker-pm">7:00 PM</option>
- <option class="ui-timepicker-pm">7:30 PM</option>
- <option class="ui-timepicker-pm">8:00 PM</option>
- <option class="ui-timepicker-pm">8:30 PM</option>
- <option class="ui-timepicker-pm">9:00 PM</option>
- <option class="ui-timepicker-pm">9:30 PM</option>
- <option class="ui-timepicker-pm">10:00 PM</option>
- <option class="ui-timepicker-pm">10:30 PM</option>
- <option class="ui-timepicker-pm">11:00 PM</option>
- <option class="ui-timepicker-pm">11:30 PM</option>
-</select>    
-    </div>
+              <select class="form-control" id="exampleFormControlSelect1" name="time">
+              <option class="ui-timepicker-am">12:00 AM</option>
+              <option class="ui-timepicker-am">12:30 AM</option>
+              <option class="ui-timepicker-am">1:00 AM</option>
+              <option class="ui-timepicker-am">1:30 AM</option>
+             <option class="ui-timepicker-am">2:00 AM</option>
+             <option class="ui-timepicker-am">2:30 AM</option>
+             <option class="ui-timepicker-am">3:00 AM</option>
+             <option class="ui-timepicker-am">3:30 AM</option>
+             <option class="ui-timepicker-am">4:00 AM</option>
+             <option class="ui-timepicker-am">4:30 AM</option>
+             <option class="ui-timepicker-am">5:00 AM</option>
+             <option class="ui-timepicker-am">5:30 AM</option>
+             <option class="ui-timepicker-am">6:00 AM</option>
+             <option class="ui-timepicker-am">6:30 AM</option>
+             <option class="ui-timepicker-am">7:00 AM</option>
+             <option class="ui-timepicker-am">7:30 AM</option>
+             <option class="ui-timepicker-am">8:00 AM</option>
+             <option class="ui-timepicker-am">8:30 AM</option>
+             <option class="ui-timepicker-am">9:00 AM</option>
+             <option class="ui-timepicker-am">9:30 AM</option>
+             <option class="ui-timepicker-am">10:00 AM</option>
+             <option class="ui-timepicker-am">10:30 AM</option>
+             <option class="ui-timepicker-am">11:00 AM</option>
+             <option class="ui-timepicker-am">11:30 AM</option>
+             <option class="ui-timepicker-pm">12:00 PM</option>
+             <option class="ui-timepicker-pm">12:30 PM</option>
+             <option class="ui-timepicker-pm">1:00 PM</option>
+             <option class="ui-timepicker-pm">1:30 PM</option>
+             <option class="ui-timepicker-pm">2:00 PM</option>
+             <option class="ui-timepicker-pm">2:30 PM</option>
+             <option class="ui-timepicker-pm">3:00 PM</option>
+             <option class="ui-timepicker-pm">3:30 PM</option>
+             <option class="ui-timepicker-pm">4:00 PM</option>
+             <option class="ui-timepicker-pm">4:30 PM</option>
+             <option class="ui-timepicker-pm">5:00 PM</option>
+             <option class="ui-timepicker-pm">5:30 PM</option>
+             <option class="ui-timepicker-pm">6:00 PM</option>
+             <option class="ui-timepicker-pm">6:30 PM</option>
+             <option class="ui-timepicker-pm">7:00 PM</option>
+             <option class="ui-timepicker-pm">7:30 PM</option>
+             <option class="ui-timepicker-pm">8:00 PM</option>
+             <option class="ui-timepicker-pm">8:30 PM</option>
+             <option class="ui-timepicker-pm">9:00 PM</option>
+             <option class="ui-timepicker-pm">9:30 PM</option>
+             <option class="ui-timepicker-pm">10:00 PM</option>
+             <option class="ui-timepicker-pm">10:30 PM</option>
+             <option class="ui-timepicker-pm">11:00 PM</option>
+             <option class="ui-timepicker-pm">11:30 PM</option>
+            </select>    
+        </div>
       </div>
-  
   </div> <!-- /.form-group -->
-  <!-- ============================= -->
-
-           </div>
+ </div>
 <!-- ============================================================= -->
 
  
-
+ 
 <!--====================================================-->
 <section class="margin portfolio"    >
                 <div class="form-group">
-    <label for="exampleFormControlSelect1" class="head-smol">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1" name="subject">
+    <label for="exampleFormControlSelect1" class="head-smol"> select  your timezone</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="timezone">
 <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
             <option value="(GMT -11:00) Midway Island, Samoa">(GMT -11:00) Midway Island, Samoa</option>
             <option value="(GMT -10:00) Hawaii">(GMT -10:00) Hawaii</option>
@@ -2260,8 +2257,8 @@
 <!--====================================================-->
 <section class="   "  >
                 <div class="form-group">
-    <label for="exampleFormControlSelect1">Select your timezone *</label>
-    <select class="form-control"name="timezone">
+    <label for="exampleFormControlSelect1">Select your location *</label>
+    <select class="form-control"name="location">
  <option value="Australia">Australia</option>
  <option value="Canada">Canada</option>
  <option value="France">France</option>
@@ -2525,25 +2522,19 @@
 
 <!--====================================================-->
 <section class=" Example select"  >
-   <div class="form-group">
+  <div class="form-group">
     <label for="exampleFormControlSelect1" class="head-smol">How did you learn about us? *</label>
-    <select class="form-control" id="e " name="How"><br><br>
-  <option value="Word of mouth">Word of mouth</option>
-<option value="Facebook">Facebook</option>
-<option value="Instagram">Instagram</option>
-<option value="Google or other search">Google or other search</option>
-<option value="Advertisement">Advertisement</option>
-<option value="Other">Other</option>
-    </select>
+      <select class="form-control" id="e " name="How"  name="how_aboutus"><br><br>
+      <option value="Word of mouth">Word of mouth</option>
+      <option value="Facebook">Facebook</option>
+      <option value="Instagram">Instagram</option>
+      <option value="Google or other search">Google or other search</option>
+      <option value="Advertisement">Advertisement</option>
+      <option value="Other">Other</option>
+      </select>
   </div>
   </section><!--./portflio-->
  <!--======================================================--> 
-
-
-
- 
-  
-
   <div class="grid">
         <p class="info-text"></p>
      <label for="exampleFormControlSelect1" class="head-smol">    Leave   us a message</label>

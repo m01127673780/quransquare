@@ -11,9 +11,13 @@ class Student extends Model{
 	public $fillable = [
         'name',         
        'email',         
-       'subject',         
        'phone',         
        'message',         
+       'how_aboutus',
+       'location',
+       'timezone',
+       'date',
+       'time',
        'icon',
 	];
 

@@ -39,17 +39,25 @@ class StudentAdminController extends Controller {
 			[
 				'name'                => 'sometimes|nullable',
 				'email'               => 'sometimes|nullable',
-				'subject'             => 'sometimes|nullable',
 				'phone'               => 'sometimes|nullable',
 				'message'             => 'sometimes|nullable',
+				'how_aboutus'             => 'sometimes|nullable',
+				'location'             => 'sometimes|nullable',
+				'timezone'             => 'sometimes|nullable',
+				'date'             => 'sometimes|nullable',
+				'time'             => 'sometimes|nullable',
  				'icon'                => 'sometimes|nullable|'.v_image(),
  
 			], [], [
 				'name'             => trans('admin.name'),
 				'email'             => trans('admin.email'),
-				'subject'             => trans('admin.subject'),
 				'phone'             => trans('admin.phone'),
 				'message'             => trans('admin.message'),
+				'how_aboutus'             => trans('admin.how_aboutus'),
+				'location'             => trans('admin.location'),
+				'timezone'             => trans('admin.timezone'),
+				'date'             => trans('admin.date'),
+				'time'             => trans('admin.time'),
  				'icon'                => trans('admin.icon'),
 				 
 			]);
@@ -100,20 +108,28 @@ class StudentAdminController extends Controller {
 
 		
 		$data = $this->validate(request(),
-			[
+		[
 				'name'                => 'sometimes|nullable',
 				'email'               => 'sometimes|nullable',
-				'subject'             => 'sometimes|nullable',
 				'phone'               => 'sometimes|nullable',
 				'message'             => 'sometimes|nullable',
+				'how_aboutus'             => 'sometimes|nullable',
+				'location'             => 'sometimes|nullable',
+				'timezone'             => 'sometimes|nullable',
+				'date'             => 'sometimes|nullable',
+				'time'             => 'sometimes|nullable',
  				'icon'                => 'sometimes|nullable|'.v_image(),
  
 			], [], [
 				'name'             => trans('admin.name'),
 				'email'             => trans('admin.email'),
-				'subject'             => trans('admin.subject'),
 				'phone'             => trans('admin.phone'),
 				'message'             => trans('admin.message'),
+				'how_aboutus'             => trans('admin.how_aboutus'),
+				'location'             => trans('admin.location'),
+				'timezone'             => trans('admin.timezone'),
+				'date'             => trans('admin.date'),
+				'time'             => trans('admin.time'),
  				'icon'                => trans('admin.icon'),
 				 
 			]);
