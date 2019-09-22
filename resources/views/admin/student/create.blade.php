@@ -58,6 +58,7 @@
             <div class="col-lg-6">
                  {!! Form::label('st1_name',trans('admin.name')) !!}
                  {!! Form::text('st1_name',old('st1_name'),['class'=>'form-control']) !!}
+                 {!! Form::text('st1_name'),['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st1_name',trans('admin.Gender')) !!}
