@@ -41,7 +41,7 @@
   $('#two').click(function() {
     $('.two').slideDown(10 ,function(){
     $('.three,.four,.five').hide(10 ,function(){
-    $('.two,.one input').attr("required", "required");
+    $('.two,.one input,select').attr("required", "required");
 });
   });
   }); 
@@ -50,7 +50,7 @@
     $('#three').click(function() {
     $('.two,.three').slideDown(10,function(){
     $('.four,.five').hide(10 ,function(){
-    $('.one,.two,.three input').attr("required", "required");
+    $('.one,.two,.three input,select').attr("required", "required");
   });
   });
   });
@@ -58,13 +58,13 @@
     $('#four').click(function() {
     $('.two,.three,.four').slideDown(10,function(){
     $('.five').hide(10 ,function(){
-    $('.one,.two,.three,.four input').attr("required", "required");
+    $('.one,.two,.three,.four input,select').attr("required", "required");
 });
   });
   });
   
     $('#five').click(function() {
     $('.two,.three,.four,.five').slideDown(10 ,function(){
-    $('.one,.two,.three,.four,.five input').attr("required", "required");
+    $('one.two,.three,.four,.five input,select').attr("required", "required");
 });
   });

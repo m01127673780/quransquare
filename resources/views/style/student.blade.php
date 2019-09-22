@@ -177,8 +177,7 @@
                     <div class="col col-margin-bottom">
                       <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
                       <select class="form-control"  name="st1_Gender"  required="required" >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
+                      <option value="Male">Male</option><option value="Female">Female</option>
                       </select> 
                    </div> <!-- ./ col --> 
             </div><!-- ./ row --> 
@@ -188,11 +187,11 @@
                   <div class="col col-margin-bottom">
                      <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
                       <select class="form-control" name="st1_course" required="required">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <option value="">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select> 
                   </div> 
                      <div class="col col-margin-bottom">
@@ -301,8 +300,8 @@
                     <div class="col col-margin-bottom">
                       <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
                       <select class="form-control"  name="st2_Gender"  >
-                       <option value="Female">Female</option>
                       <option value="Male">Male</option>
+                      <option value="Female">Female</option>
                       </select> 
                    </div> <!-- ./ col --> 
             </div><!-- ./ row --> 
@@ -312,16 +311,17 @@
                   <div class="col col-margin-bottom">
                      <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
                       <select class="form-control" name="st2_course">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <option value="">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select> 
                   </div> 
                      <div class="col col-margin-bottom">
                         <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
                         <select class="form-control" name="st2_age" >
+                        <option value="4">4</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -426,8 +426,8 @@
                     <div class="col col-margin-bottom">
                       <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
                       <select class="form-control"  name="st3_Gender"  >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
+                      <option value="Male">Male</option><option value="Female">Female</option>
+
                       </select> 
                    </div> <!-- ./ col --> 
             </div><!-- ./ row --> 
@@ -437,11 +437,11 @@
                   <div class="col col-margin-bottom">
                      <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
                       <select class="form-control" name="st3_course">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <option value="">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select> 
                   </div> 
                      <div class="col col-margin-bottom">
@@ -550,8 +550,7 @@
                     <div class="col col-margin-bottom">
                       <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
                       <select class="form-control"  name="st4_Gender"  >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
+                      <option value="Male">Male</option><option value="Female">Female</option>
                       </select> 
                    </div> <!-- ./ col --> 
             </div><!-- ./ row --> 
@@ -561,11 +560,11 @@
                   <div class="col col-margin-bottom">
                      <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
                       <select class="form-control" name="st4_course">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                       <option value="">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select> 
                   </div> 
                      <div class="col col-margin-bottom">
@@ -674,8 +673,7 @@
                     <div class="col col-margin-bottom">
                       <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
                       <select class="form-control"  name="st5_Gender"  >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
+                      <option value="Male">Male</option><option value="Female">Female</option>
                       </select> 
                    </div> <!-- ./ col --> 
             </div><!-- ./ row --> 
@@ -685,11 +683,11 @@
                   <div class="col col-margin-bottom">
                      <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
                       <select class="form-control" name="st5_course">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <option value="">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select> 
                   </div> 
                      <div class="col col-margin-bottom">
