@@ -16,6 +16,7 @@ use App\Model\Footer;
 use App\Model\Slider;
 use App\Model\News;
 use App\Model\Contact;
+use App\Model\Studee;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;

@@ -53,13 +53,7 @@ class StudentStyle extends Controller
       ]);
  
     }
-    public function insert (){
-      $add = new News;
-      $add->name = request('name');
-      $add->password  =  request ('password');
-      $add->save();
-      return back();
-}
+ 
 
     public function insert_student (){
       $add = new Student;

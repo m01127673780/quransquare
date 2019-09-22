@@ -67,7 +67,7 @@ class StudentAdminController extends Controller {
 				'st5_course'          => 'sometimes|nullable',
 				'st5_age'             => 'sometimes|nullable',
  				'icon'                => 'sometimes|nullable|'.v_image(),
- 
+  
 			], [], [
 				'name'                => trans('admin.name'),
 				'email'               => trans('admin.email'),
@@ -211,7 +211,7 @@ class StudentAdminController extends Controller {
 				'st5_age'             => trans('admin.age'),
 				'st5_name'            => trans('admin.Gender'),
  				'icon'                => trans('admin.icon'),
-				 
+				  
 			]);
 		if (request()->hasFile('icon')) {
 			$data['icon'] = up()->upload([
