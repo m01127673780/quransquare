@@ -293,6 +293,19 @@
       <li class=""><a href="{{ aurl('student/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
     </ul>
   </li>
+ <!-- ============================ --> 
+ <!-- ============================ -->
+   <li class="treeview {{ active_menu('quick')[0] }}">
+    <a href="#">
+      <i class="fa fa-users"></i> <span>{{ trans('admin.quick') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('quick')[1] }}">
+      <li class=""><a href="{{ aurl('quick') }}"><i class="fa  fa-users"></i> {{ trans('admin.quick') }}</a></li>
+      <li class=""><a href="{{ aurl('quick/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
  <!-- ============================ -->
 
 

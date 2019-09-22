@@ -155,48 +155,32 @@
 <article>
    <div class="container  content_form_effecte">
   <div class="card card-form_effecte " ></div>
-  <div class="" style="display: none;">
-    <h1 class="title">Login</h1>
-    <form>
-      <div class="input-container">
-        <input type="#{type}" id="#{label}" required="required"/>
-        <label for="#{label}">Username</label>
-        <div class="bar"></div>
-      </div>
-      <div class="input-container">
-        <input type="#{type}" id="#{label}" required="required"/>
-        <label for="#{label}">Password</label>
-        <div class="bar"></div>
-      </div>
-      <div class="button-container">
-        <button><span>Go</span></button>
-      </div>
-      <div class="footer"><a href="#">Forgot your password?</a></div>
-    </form>
-  </div>
+ 
   <div class="card card_form_effecte alt">
     <div class="toggle"></div>
     <h1 class="title">Register
       <div class="close"></div>
     </h1>
-    <form>
-      <div class="input-container">
-        <input type="#{type}" id="#{label}" required="required"/>
+ <form method="post"  class="form-contact"action ="{{url('quick/register')}}" >
+  <input type="hidden" name="_token" value="{{ csrf_token ()}}"> 
+
+        <div class="input-container">
+        <input type="text" id="#{label}" required="required" name="name"    />
         <label for="#{label}">Username</label>
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="#{type}" id="#{label}" required="required"/>
-        <label for="#{label}">Password</label>
+        <input type="email" id="#{label}" required="required" name="email"    />
+        <label for="#{label}">email</label>
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="#{type}" id="#{label}" required="required"/>
-        <label for="#{label}">Repeat Password</label>
+        <input type="number" id="#{label}" required="required" name="phone"   />
+        <label for="phone">phone  </label>
         <div class="bar"></div>
       </div>
       <div class="button-container">
-        <button><span>Next</span></button>
+        <button><span>send</span></button>
       </div>
     </form>
   </div>
@@ -243,7 +227,8 @@
       <div class="modal-body">
 
  <form method="post"  class="form-contact"action ="{{url('user/register')}}" >
-  <input type="hidden" name="_token" value="{{ csrf_token ()}}">  <div class="row">
+  <input type="hidden" name="_token" value="{{ csrf_token ()}}"> 
+   <div class="row">
     <div class="col-lg-6 left-3-input">
       <input type="text" class="form-control"  name="name"    placeholder="name">
       <input type="email" class="form-control" name="email"   placeholder="email">

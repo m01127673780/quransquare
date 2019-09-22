@@ -6,6 +6,7 @@ Route::group(['middleware' => 'Maintenance'], function () {
 					Route::get('/','WhyusStyle@show');
 					Route::post('insert/news','WhyusStyle@insert');
 					Route::post('user/register','WhyusStyle@insert_contact');
+					Route::post('quick/register','WhyusStyle@insert_quick');
 					Route::get('student','StudentStyle@show');
 	
 					Route::get('test','TestStyle@show');
