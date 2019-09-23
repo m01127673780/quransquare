@@ -34,7 +34,7 @@
 
 
      <div class="form-group">
-        {!! Form::label('img',trans('admin.stat_flag')) !!}
+        {!! Form::label('img',trans('admin.image')) !!}
         {!! Form::file('img',['class'=>'form-control']) !!}
 
           @if(!empty($stat->img))

@@ -88,6 +88,9 @@
       <a class="dropdown-item" href="#">  teacher</a>
       
               </li> 
+                    <li class="nav-item"  >
+                <a class="nav-link" href="admin" target="_blank">ADMIN</a>
+                </li>
             </ul>
           </div>
         </div>
@@ -103,16 +106,16 @@
 
 <div class="container-flud" style="padding-right: 55px;">
   <div class="row">
-    <div class="col-lg-7 col-lg-7-box-shadow " >
+   <div class="col-lg-7 col-lg-7-box-shadow " >
       
-      <form action="">
-  <!--  General -->
+ <form method="post"  action ="{{url('student/register')}}" >
+  <input type="hidden" name="_token" value="{{ csrf_token ()}}">   
   <div class="form-group">
      <h1 class="head-h1"><span style="border-bottom: 2px  solid #444;">STUDENT</span> <span >INFORMATION</span> </h1> 
 
     <div class="controls">
       <input type="text" id="name" class="floatLabel" name="name">
-      <label for="name"> <i class="icon-happy  "></i> Name * </label>
+      <label for="name"> <i class="icon-happy fa fa-smile-o "></i> Name * </label>
     </div>
      <div class="controls">
       <input type="text" id="email" class="floatLabel" name="email">
@@ -137,9 +140,9 @@
       <br>
       <br>
      <!-- /------------------------------------------ -->
- 
-<!-- ============================================================= -->
-<!--====================================================-->
+  
+
+ <!--====================================================-->
 <section class="margin portfolio"  >
        <!--start section title-->
        <div class="container"> 
@@ -150,60 +153,50 @@
         <i class="fa fa-sort"></i>
              <select class="custom-select floatLabel" multiple>
               <br>
-                <option    class="option one"   id="one" value="3" style="margin-top: 11px;">1</option>
-                <option  class="option tow"     id="tow" value="3">2</option>
-                <option    class="option thre"  id="thre"value="2">3</option>
-                <option    class="option four"  id="four"value="1">4</option>
-                <option    class="option five"   id="five" value="five">5</option>
+           <option id="one"  >1</option>
+           <option id="two"  >2</option>
+           <option id="three" >3</option>
+           <option id="four"  >4</option>
+           <option id="five"  >5</option>
         </select>
+        <label for="fruit"><i class="fa fa-male"></i> STUDENT</label>
       </div>      
              </div><!--/.buttons-->
           <div class="images row "  >
          <!-- ============================================================= -->
            <div class=" one  width-full ">
-         <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 1</span> </h3> 
-                <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-                 <div class="row">  
- 
+        <!-- ==========================================-->    <!-- ========================================== --> 
+           <h3 class="head-studant one-head "><span>Student 1  </span> </h3> 
+            <div class="row">  
                   <div class="col">
-                 <div class="controls  label-copy">
-
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
+                      <div class="controls  label-copy">
+                        <input type="text" id="text" class="floatLabel text " name="st1_name" required="required">
+                        <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
+                      </div> 
+                    </div> <!-- ./ col --> 
+                    <div class="col col-margin-bottom">
                       <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
+                      <select class="form-control"  name="st1_Gender"  required="required" >
+                      <option value="Male">Male</option><option value="Female">Female</option>
                       </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
+                   </div> <!-- ./ col --> 
+            </div><!-- ./ row --> 
+              <!-- --------------------------------------------- --> 
+              <!-- --------------------------------------------- --> 
                  <div class="row ">
                   <div class="col col-margin-bottom">
                      <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <select class="form-control" name="st1_course" required="required">
+                      <option value="">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select> 
-  
-                     </div> 
+                  </div> 
                      <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
+                        <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
+                        <select class="form-control" name="st1_age" required="required" >
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -289,56 +282,46 @@
                         <option value="84">84</option>
                         <option value="85+">85+</option>
                       </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->   <!-- ============================================================= -->
-            </div><!--/.col-->
-           <!-- ------------------------- -->
-            
-            <!-- ------------------------- -->
-           <div class=" none tow   width-full  ">
-          <h3 class="head-studant one-head"><span>Student 1</span> </h3> 
-   <!-- ============================================================= -->         
-                 <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-                 <div class="row">  
+                       </div><!-- ./ col -->
+                 </div><!-- ./ row --> 
+               <!-- ------------------------- -->
+           </div><!--/. one width-full -->
+         <!-- ==========================================-->    <!-- ========================================== -->         
+           <div class=" none two  width-full "> 
+              <!-- --------------------------------------------- --> 
+           <h3 class="head-studant one-head"><span>Student 2  </span> </h3> 
+            <div class="row">  
                   <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
+                      <div class="controls  label-copy">
+                        <input type="text" id="text" class="floatLabel text " name="st2_name">
+                        <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
+                      </div> 
+                    </div> <!-- ./ col --> 
+                    <div class="col col-margin-bottom">
                       <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
+                      <select class="form-control"  name="st2_Gender"  >
                       <option value="Male">Male</option>
+                      <option value="Female">Female</option>
                       </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
+                   </div> <!-- ./ col --> 
+            </div><!-- ./ row --> 
+              <!-- --------------------------------------------- --> 
+              <!-- --------------------------------------------- --> 
                  <div class="row ">
                   <div class="col col-margin-bottom">
                      <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <select class="form-control" name="st2_course">
+                      <option value="">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select> 
-  
-                     </div> 
+                  </div> 
                      <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
+                        <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
+                        <select class="form-control" name="st2_age" >
+                        <option value="4">4</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -424,51 +407,46 @@
                         <option value="84">84</option>
                         <option value="85+">85+</option>
                       </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= --> 
-  <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 2</span> </h3> 
+                       </div><!-- ./ col -->
+                 </div><!-- ./ row --> 
+               <!-- ------------------------- -->
+           </div><!--/. tow width-full -->
+               <!-- ================================== --> <!-- ======================================= --> 
 
-                 <div class="row">  
+           <div class=" none three  width-full   "> 
+    <!-- --------------------------------------------- --> 
+           <h3 class="head-studant one-head"><span>Student 3  </span> </h3> 
+            <div class="row">  
                   <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
+                      <div class="controls  label-copy">
+                        <input type="text" id="text" class="floatLabel text " name="st3_name">
+                        <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
+                      </div> 
+                    </div> <!-- ./ col --> 
+                    <div class="col col-margin-bottom">
                       <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
+                      <select class="form-control"  name="st3_Gender"  >
+                      <option value="Male">Male</option><option value="Female">Female</option>
 
-        <!-- --------------------------------------------- --> 
+                      </select> 
+                   </div> <!-- ./ col --> 
+            </div><!-- ./ row --> 
+              <!-- --------------------------------------------- --> 
+              <!-- --------------------------------------------- --> 
                  <div class="row ">
                   <div class="col col-margin-bottom">
                      <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <select class="form-control" name="st3_course">
+                      <option value="">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select> 
-  
-                     </div> 
+                  </div> 
                      <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
+                        <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
+                        <select class="form-control" name="st3_age" >
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -554,452 +532,44 @@
                         <option value="84">84</option>
                         <option value="85+">85+</option>
                       </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->    
-           </div><!--/.col-->
-           <!-- ------------------------- -->
-           
-            <!-- ------------------------- -->
-           <div class=" none thre  width-full   "> 
-          <h3 class="head-studant one-head"><span>Student 1</span> </h3> 
-   <!-- ============================================================= -->         
-                 <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-                 <div class="row">  
-                  <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
-                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
-                 <div class="row ">
-                  <div class="col col-margin-bottom">
-                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
-                      </select> 
-  
-                     </div> 
-                     <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="74">75</option>
-                        <option value="75">74</option>
-                        <option value="76">76</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85+">85+</option>
-                      </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= --> 
-  <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 2</span> </h3> 
-
-                 <div class="row">  
-                  <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
-                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
-                 <div class="row ">
-                  <div class="col col-margin-bottom">
-                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
-                      </select> 
-  
-                     </div> 
-                     <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="74">75</option>
-                        <option value="75">74</option>
-                        <option value="76">76</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85+">85+</option>
-                      </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->  
-   <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 3</span> </h3> 
-
-                 <div class="row">  
-                  <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
-                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
-                 <div class="row ">
-                  <div class="col col-margin-bottom">
-                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
-                      </select> 
-  
-                     </div> 
-                     <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="74">75</option>
-                        <option value="75">74</option>
-                        <option value="76">76</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85+">85+</option>
-                      </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->  
-           </div> 
-           
-           <!-- ------------------------- -->
-           
-            <!-- ------------------------- -->
+                       </div><!-- ./ col -->
+                 </div><!-- ./ row --> 
+               <!-- ------------------------- -->
+           </div><!--/. three width-full -->
+              <!-- ==================================== --> <!-- =================================== -->
            <div class=" none four   width-full  "> 
-          <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 1</span> </h3> 
-
-                 <div class="row">  
+      <!-- --------------------------------------------- --> 
+           <h3 class="head-studant one-head"><span>Student 4 </span> </h3> 
+            <div class="row">  
                   <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
+                      <div class="controls  label-copy">
+                        <input type="text" id="text" class="floatLabel text " name="st4_name">
+                        <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
+                      </div> 
+                    </div> <!-- ./ col --> 
+                    <div class="col col-margin-bottom">
                       <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
+                      <select class="form-control"  name="st4_Gender"  >
+                      <option value="Male">Male</option><option value="Female">Female</option>
                       </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
+                   </div> <!-- ./ col --> 
+            </div><!-- ./ row --> 
+              <!-- --------------------------------------------- --> 
+              <!-- --------------------------------------------- --> 
                  <div class="row ">
                   <div class="col col-margin-bottom">
                      <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <select class="form-control" name="st4_course">
+                       <option value="">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select> 
-  
-                     </div> 
+                  </div> 
                      <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
+                        <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
+                        <select class="form-control" name="st4_age" >
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -1085,446 +655,44 @@
                         <option value="84">84</option>
                         <option value="85+">85+</option>
                       </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->    <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 2</span> </h3> 
-
-                 <div class="row">  
-                  <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
-                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
-                 <div class="row ">
-                  <div class="col col-margin-bottom">
-                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
-                      </select> 
-  
-                     </div> 
-                     <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="74">75</option>
-                        <option value="75">74</option>
-                        <option value="76">76</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85+">85+</option>
-                      </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->    <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 3</span> </h3> 
-
-                 <div class="row">  
-                  <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
-                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
-                 <div class="row ">
-                  <div class="col col-margin-bottom">
-                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
-                      </select> 
-  
-                     </div> 
-                     <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="74">75</option>
-                        <option value="75">74</option>
-                        <option value="76">76</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85+">85+</option>
-                      </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->
-       <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 4</span> </h3> 
-
-                 <div class="row">  
-                  <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
-                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
-                 <div class="row ">
-                  <div class="col col-margin-bottom">
-                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
-                      </select> 
-  
-                     </div> 
-                     <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="74">75</option>
-                        <option value="75">74</option>
-                        <option value="76">76</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85+">85+</option>
-                      </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= --> 
-             </div>
-            
-            <!-- ------------------------- -->
-           
-            <!-- ------------------------- -->
+                       </div><!-- ./ col -->
+                 </div><!-- ./ row --> 
+               <!-- ------------------------- -->
+           </div><!--/. four width-full -->
+          <!-- ==================================== --> <!-- =================================== -->
            <div class=" none five  width-full   "> 
-             
-               <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 1</span> </h3> 
-
-                 <div class="row">  
+   <!-- --------------------------------------------- --> 
+           <h3 class="head-studant one-head"><span>Student 5  </span> </h3> 
+            <div class="row">  
                   <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
+                      <div class="controls  label-copy">
+                        <input type="text" id="text" class="floatLabel text " name="st5_name">
+                        <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
+                      </div> 
+                    </div> <!-- ./ col --> 
+                    <div class="col col-margin-bottom">
                       <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
+                      <select class="form-control"  name="st5_Gender"  >
+                      <option value="Male">Male</option><option value="Female">Female</option>
                       </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
+                   </div> <!-- ./ col --> 
+            </div><!-- ./ row --> 
+              <!-- --------------------------------------------- --> 
+              <!-- --------------------------------------------- --> 
                  <div class="row ">
                   <div class="col col-margin-bottom">
                      <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
+                      <select class="form-control" name="st5_course">
+                      <option value="">..............</option>
+                      <option value="Quran">Quran Courses</option>
+                      <option value="Islamic">Islamic Studies</option>
+                      <option value="Arabic">Arabic Courses</option>
+                      <option value="Ijaazah">Ijaazah Programs</option>
                       </select> 
-  
-                     </div> 
+                  </div> 
                      <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
+                        <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
+                        <select class="form-control" name="st5_age" >
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -1610,612 +778,90 @@
                         <option value="84">84</option>
                         <option value="85+">85+</option>
                       </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->    <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 2</span> </h3> 
-
-                 <div class="row">  
-                  <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
-                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
-                 <div class="row ">
-                  <div class="col col-margin-bottom">
-                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
-                      </select> 
-  
-                     </div> 
-                     <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="74">75</option>
-                        <option value="75">74</option>
-                        <option value="76">76</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85+">85+</option>
-                      </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->    <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 3</span> </h3> 
-
-                 <div class="row">  
-                  <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
-                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
-                 <div class="row ">
-                  <div class="col col-margin-bottom">
-                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
-                      </select> 
-  
-                     </div> 
-                     <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="74">75</option>
-                        <option value="75">74</option>
-                        <option value="76">76</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85+">85+</option>
-                      </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->
-       <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 4</span> </h3> 
-
-                 <div class="row">  
-                  <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
-                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
-                 <div class="row ">
-                  <div class="col col-margin-bottom">
-                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
-                      </select> 
-  
-                     </div> 
-                     <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="74">75</option>
-                        <option value="75">74</option>
-                        <option value="76">76</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85+">85+</option>
-                      </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= -->    <!-- ============================================================= -->         
-        <!-- --------------------------------------------- --> 
-          <h3 class="head-studant one-head"><span>Student 5</span> </h3> 
-
-                 <div class="row">  
-                  <div class="col">
-                 <div class="controls  label-copy">
-                    <input type="text" id="text" class="floatLabel text " name="text">
-                    <label for="text" > <i class="fa fa-male"></i>    Name  * </label>
-                  </div> 
-                     </div> 
-                <div class="col col-margin-bottom">
-                      <label for="text" >   Gender   * <i class="fa fa-male"></i> <i class="fa fa-female"></i> </label>
-                      <select class="form-control" id="exampleFormControlSelect1"    >
-                       <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      </select> 
-  
-                     </div> 
-                </div>
-        <!-- --------------------------------------------- --> 
-
-        <!-- --------------------------------------------- --> 
-                 <div class="row ">
-                  <div class="col col-margin-bottom">
-                     <label for="text" >   <i class="fa fa-laptop"></i>   choose a course * </label>
-
-                      <select class="form-control" id="exampleFormControlSelect1">
-                      <option value="Female">..............</option>
-                      <option value="Female">Quran Courses</option>
-                      <option value="Male">Islamic Studies</option>
-                      <option value="Male">Arabic Courses</option>
-                      <option value="Male">Ijaazah Programs</option>
-                      </select> 
-  
-                     </div> 
-                     <div class="col col-margin-bottom">
-                      <label for="text" > <i class="fa fa-meh-o"></i>   Age * </label>
-
-                        <select class="form-control" id="exampleFormControlSelect1">
-                
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="74">75</option>
-                        <option value="75">74</option>
-                        <option value="76">76</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85+">85+</option>
-                      </select>
-                       </div>
-                 </div>
-        <!-- --------------------------------------------- --> 
-   <!-- ============================================================= --> 
-          </div><!--/.col-->
-           <!-- ------------------------- -->
-            </div><!--/.row-->
-    </div><!--/.portfoli-->
-   </div><!--./container-->
+                       </div><!-- ./ col -->
+                 </div><!-- ./ row --> 
+               <!-- ------------------------- -->
+                      </div><!--/.  fivewidth-full -->
+              <!-- ==================================== --> <!-- =================================== -->
+          </div><!--/.portfoli-->
+     </div><!--./container-->
 </section><!--./portflio-->
- <!--======================================================--> 
+ <!--======================================================-->  
+ 
      <h1 class="head-h1 PREFERRED"><span style="border-bottom: 2px  solid #444;">PREFERRED </span> <span >EVALUATION TIME</span> </h1> 
 <!-- ============================================================= -->
-           <div class="width-full  ">
-
+<div class="width-full  ">
    <div class="form-group">
      <div class="grid">
     <div class="col-lg-6">
       <div class="controls">
-        <input type="date" id="arrive" class="floatLabel input-date" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+        <input type="date" id="arrive" class="floatLabel input-date" name="date" value="<?php echo date('Y-m-d'); ?>">
        </div>      
     </div>
     <div class="col-lg-6">
-  <select class="form-control" id="exampleFormControlSelect1">
-   <option class="ui-timepicker-am">12:00 AM</option>
-  <option class="ui-timepicker-am">12:30 AM</option>
-  <option class="ui-timepicker-am">1:00 AM</option>
-  <option class="ui-timepicker-am">1:30 AM</option>
- <option class="ui-timepicker-am">2:00 AM</option>
- <option class="ui-timepicker-am">2:30 AM</option>
- <option class="ui-timepicker-am">3:00 AM</option>
- <option class="ui-timepicker-am">3:30 AM</option>
- <option class="ui-timepicker-am">4:00 AM</option>
- <option class="ui-timepicker-am">4:30 AM</option>
- <option class="ui-timepicker-am">5:00 AM</option>
- <option class="ui-timepicker-am">5:30 AM</option>
- <option class="ui-timepicker-am">6:00 AM</option>
- <option class="ui-timepicker-am">6:30 AM</option>
- <option class="ui-timepicker-am">7:00 AM</option>
- <option class="ui-timepicker-am">7:30 AM</option>
- <option class="ui-timepicker-am">8:00 AM</option>
- <option class="ui-timepicker-am">8:30 AM</option>
- <option class="ui-timepicker-am">9:00 AM</option>
- <option class="ui-timepicker-am">9:30 AM</option>
- <option class="ui-timepicker-am">10:00 AM</option>
- <option class="ui-timepicker-am">10:30 AM</option>
- <option class="ui-timepicker-am">11:00 AM</option>
- <option class="ui-timepicker-am">11:30 AM</option>
- <option class="ui-timepicker-pm">12:00 PM</option>
- <option class="ui-timepicker-pm">12:30 PM</option>
- <option class="ui-timepicker-pm">1:00 PM</option>
- <option class="ui-timepicker-pm">1:30 PM</option>
- <option class="ui-timepicker-pm">2:00 PM</option>
- <option class="ui-timepicker-pm">2:30 PM</option>
- <option class="ui-timepicker-pm">3:00 PM</option>
- <option class="ui-timepicker-pm">3:30 PM</option>
- <option class="ui-timepicker-pm">4:00 PM</option>
- <option class="ui-timepicker-pm">4:30 PM</option>
- <option class="ui-timepicker-pm">5:00 PM</option>
- <option class="ui-timepicker-pm">5:30 PM</option>
- <option class="ui-timepicker-pm">6:00 PM</option>
- <option class="ui-timepicker-pm">6:30 PM</option>
- <option class="ui-timepicker-pm">7:00 PM</option>
- <option class="ui-timepicker-pm">7:30 PM</option>
- <option class="ui-timepicker-pm">8:00 PM</option>
- <option class="ui-timepicker-pm">8:30 PM</option>
- <option class="ui-timepicker-pm">9:00 PM</option>
- <option class="ui-timepicker-pm">9:30 PM</option>
- <option class="ui-timepicker-pm">10:00 PM</option>
- <option class="ui-timepicker-pm">10:30 PM</option>
- <option class="ui-timepicker-pm">11:00 PM</option>
- <option class="ui-timepicker-pm">11:30 PM</option>
-</select>    
-    </div>
+              <select class="form-control" id="exampleFormControlSelect1" name="time">
+              <option class="ui-timepicker-am">12:00 AM</option>
+              <option class="ui-timepicker-am">12:30 AM</option>
+              <option class="ui-timepicker-am">1:00 AM</option>
+              <option class="ui-timepicker-am">1:30 AM</option>
+             <option class="ui-timepicker-am">2:00 AM</option>
+             <option class="ui-timepicker-am">2:30 AM</option>
+             <option class="ui-timepicker-am">3:00 AM</option>
+             <option class="ui-timepicker-am">3:30 AM</option>
+             <option class="ui-timepicker-am">4:00 AM</option>
+             <option class="ui-timepicker-am">4:30 AM</option>
+             <option class="ui-timepicker-am">5:00 AM</option>
+             <option class="ui-timepicker-am">5:30 AM</option>
+             <option class="ui-timepicker-am">6:00 AM</option>
+             <option class="ui-timepicker-am">6:30 AM</option>
+             <option class="ui-timepicker-am">7:00 AM</option>
+             <option class="ui-timepicker-am">7:30 AM</option>
+             <option class="ui-timepicker-am">8:00 AM</option>
+             <option class="ui-timepicker-am">8:30 AM</option>
+             <option class="ui-timepicker-am">9:00 AM</option>
+             <option class="ui-timepicker-am">9:30 AM</option>
+             <option class="ui-timepicker-am">10:00 AM</option>
+             <option class="ui-timepicker-am">10:30 AM</option>
+             <option class="ui-timepicker-am">11:00 AM</option>
+             <option class="ui-timepicker-am">11:30 AM</option>
+             <option class="ui-timepicker-pm">12:00 PM</option>
+             <option class="ui-timepicker-pm">12:30 PM</option>
+             <option class="ui-timepicker-pm">1:00 PM</option>
+             <option class="ui-timepicker-pm">1:30 PM</option>
+             <option class="ui-timepicker-pm">2:00 PM</option>
+             <option class="ui-timepicker-pm">2:30 PM</option>
+             <option class="ui-timepicker-pm">3:00 PM</option>
+             <option class="ui-timepicker-pm">3:30 PM</option>
+             <option class="ui-timepicker-pm">4:00 PM</option>
+             <option class="ui-timepicker-pm">4:30 PM</option>
+             <option class="ui-timepicker-pm">5:00 PM</option>
+             <option class="ui-timepicker-pm">5:30 PM</option>
+             <option class="ui-timepicker-pm">6:00 PM</option>
+             <option class="ui-timepicker-pm">6:30 PM</option>
+             <option class="ui-timepicker-pm">7:00 PM</option>
+             <option class="ui-timepicker-pm">7:30 PM</option>
+             <option class="ui-timepicker-pm">8:00 PM</option>
+             <option class="ui-timepicker-pm">8:30 PM</option>
+             <option class="ui-timepicker-pm">9:00 PM</option>
+             <option class="ui-timepicker-pm">9:30 PM</option>
+             <option class="ui-timepicker-pm">10:00 PM</option>
+             <option class="ui-timepicker-pm">10:30 PM</option>
+             <option class="ui-timepicker-pm">11:00 PM</option>
+             <option class="ui-timepicker-pm">11:30 PM</option>
+            </select>    
+        </div>
       </div>
-  
   </div> <!-- /.form-group -->
-  <!-- ============================= -->
-
-           </div>
+ </div>
 <!-- ============================================================= -->
 
  
-
+ 
 <!--====================================================-->
 <section class="margin portfolio"    >
                 <div class="form-group">
-    <label for="exampleFormControlSelect1" class="head-smol">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <label for="exampleFormControlSelect1" class="head-smol"> select  your timezone</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="timezone">
 <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
             <option value="(GMT -11:00) Midway Island, Samoa">(GMT -11:00) Midway Island, Samoa</option>
             <option value="(GMT -10:00) Hawaii">(GMT -10:00) Hawaii</option>
@@ -2256,8 +902,8 @@
 <!--====================================================-->
 <section class="   "  >
                 <div class="form-group">
-    <label for="exampleFormControlSelect1">Select your timezone *</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <label for="exampleFormControlSelect1">Select your location *</label>
+    <select class="form-control"name="location">
  <option value="Australia">Australia</option>
  <option value="Canada">Canada</option>
  <option value="France">France</option>
@@ -2521,32 +1167,26 @@
 
 <!--====================================================-->
 <section class=" Example select"  >
-   <div class="form-group">
+  <div class="form-group">
     <label for="exampleFormControlSelect1" class="head-smol">How did you learn about us? *</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-  <option value="Word of mouth">Word of mouth</option>
-<option value="Facebook">Facebook</option>
-<option value="Instagram">Instagram</option>
-<option value="Google or other search">Google or other search</option>
-<option value="Advertisement">Advertisement</option>
-<option value="Other">Other</option>
-    </select>
+      <select class="form-control" id="e "   name="how_aboutus"><br><br>
+      <option value="Word of mouth">Word of mouth</option>
+      <option value="Facebook">Facebook</option>
+      <option value="Instagram">Instagram</option>
+      <option value="Google or other search">Google or other search</option>
+      <option value="Advertisement">Advertisement</option>
+      <option value="Other">Other</option>
+      </select>
   </div>
   </section><!--./portflio-->
  <!--======================================================--> 
-
-
-
- 
-  
-
   <div class="grid">
         <p class="info-text"></p>
      <label for="exampleFormControlSelect1" class="head-smol">    Leave   us a message</label>
 </span> </h1> 
         <br>
         <div class="controls">
-          <textarea name="comments" class="floatLabel" id="comments"></textarea>
+          <textarea name="message" class="floatLabel" id="message"></textarea>
           <label for="comments"> <i class="fa-commenting fa"></i> message</label>
           </div>
             <button type="submit" value="Submit" class="col-1-4">Submit</button>
@@ -2557,9 +1197,7 @@
       <!-- ======================================================== -->
   </div>
   <!--  Details -->
-
     </div>
-
 
 
     <div class="col-lg-5" style="overflow: hidden;height: 500px;">
@@ -2722,8 +1360,48 @@
 
 <!--=======================================================--> 
 </body>
- <!-- <script  src="./script.js"></script> -->
+<script type="text/javascript">
+  $(document).ready(function() {
+//   $('#one').click(function() {
+//     $('.one').slideDown(10 ,function(){
+//     $('.two,.three,.four,.five').hide(10);
+//   });
+//   }); 
+   
+//   $('#two').click(function() {
+//     $('.two').slideDown(10 ,function(){
+//     $('.three,.four,.five').hide(10 ,function(){
+//     $('.two input').attr("required", "required");
+// });
+//   });
+//   }); 
+    
 
+//     $('#three').click(function() {
+//     $('.two,.three').slideDown(10,function(){
+//     $('.four,.five').hide(10 ,function(){
+//     $('.two,.three input').attr("required", "required");
+//   });
+//   });
+//   });
+  
+//     $('#four').click(function() {
+//     $('.two,.three,.four').slideDown(10,function(){
+//     $('.five').hide(10 ,function(){
+//     $('.two,.three,.four input').attr("required", "required");
+// });
+//   });
+//   });
+  
+//     $('#five').click(function() {
+//     $('.two,.three,.four,.five').slideDown(10 ,function(){
+//     $('.two,.three,.four,.five input').attr("required", "required");
+// });
+//   });
+});
+
+
+</script>
 
  <script src="{{ url('design/style') }}/js/vendrs/jquery.js"></script>
  <script src="{{ url('design/style') }}/js/vendrs/owl.carousel.min.js"></script>

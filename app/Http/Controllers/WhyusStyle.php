@@ -16,6 +16,7 @@ use App\Model\Footer;
 use App\Model\Slider;
 use App\Model\News;
 use App\Model\Contact;
+use App\Model\Quick;
  
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -86,4 +87,32 @@ class WhyusStyle extends Controller
        
     }
 }
+
+
+    public function insert_quick (){
+      $add = new Quick;
+      $add->name = request('name');
+      $add->email = request('email');
+      $add->subject = request('subject');
+      $add->phone = request('phone');
+      $add->message = request('message');
+      $add->icon = request('icon'.v_image());
+ 
+        $add->save();
+      return back();
+
+
+  if (request()->hasFile('icon')) {
+      $data['icon'] = up()->upload([
+          'file'        => 'icon',
+          'path'        => 'contact',
+          'upload_type' => 'single',
+          'delete_file' => '',
+        ]);
+       
+    }
+}
+
+
+
 }

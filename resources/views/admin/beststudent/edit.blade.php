@@ -64,7 +64,7 @@
      </div>
      <!-- -------------- -->
      <div class="form-group">
-        {!! Form::label('img',trans('admin.beststudent_flag')) !!}
+        {!! Form::label('img',trans('admin.image_st')) !!}
         {!! Form::file('img',['class'=>'form-control']) !!}
           @if(!empty($beststudent->img))
        <img src="{{ Storage::url($beststudent->img) }}" style="width:50px;height: 50px;" />
@@ -74,7 +74,7 @@
      <!-- -------------- --> 
      <!-- -------------- -->
      <div class="form-group">
-        {!! Form::label('img_Teacher',trans('admin.beststudent_flag')) !!}
+        {!! Form::label('img_Teacher',trans('admin.image_te')) !!}
         {!! Form::file('img_Teacher',['class'=>'form-control']) !!}
           @if(!empty($beststudent->img_Teacher))
        <img src="{{ Storage::url($beststudent->img_Teacher) }}" style="width:50px;height: 50px;" />

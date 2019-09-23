@@ -40,7 +40,7 @@
      </div>
 
      <div class="form-group">
-        {!! Form::label('icon',trans('admin.whyus')) !!}
+        {!! Form::label('icon',trans('admin.image')) !!}
         {!! Form::file('icon',['class'=>'form-control icon']) !!}
  
      </div>

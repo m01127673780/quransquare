@@ -37,7 +37,7 @@
 
 
      <div class="form-group">
-        {!! Form::label('img',trans('admin.teachers_flag')) !!}
+        {!! Form::label('img',trans('admin.image')) !!}
         {!! Form::file('img',['class'=>'form-control']) !!}
 
           @if(!empty($teachers->img))

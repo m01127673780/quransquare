@@ -93,22 +93,7 @@
       <li class=""><a href="{{ aurl('users') }}?level=company"><i class="fa fa-ship"></i> {{ trans('admin.company') }}</a></li>
     </ul>
   </li>
- 
- 
-  <li class="treeview {{ active_menu('departments')[0] }}">
-    <a href="#">
-      <i class="fa fa-th "></i> <span>{{ trans('admin.departments') }}</span>
-      <span class="pull-right-container">
-        
-      </span>
-    </a>
-    <ul class="treeview-menu" style="{{ active_menu('departments')[1] }}">
-      <li class=""><a href="{{ aurl('departments') }}"><i class="fa fa-th-large"></i> {{ trans('admin.departments') }}</a></li>
-      <li class=""><a href="{{ aurl('departments/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
-    </ul>
-  </li>
 
- 
 <!-- ============================ -->
    <li class="treeview {{ active_menu('whyus')[0] }}">
     <a href="#">
@@ -291,6 +276,33 @@
     <ul class="treeview-menu" style="{{ active_menu('student')[1] }}">
       <li class=""><a href="{{ aurl('student') }}"><i class="fa  fa-students"></i> {{ trans('admin.student') }}</a></li>
       <li class=""><a href="{{ aurl('student/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ --> 
+ <!-- ============================ -->
+   <li class="treeview {{ active_menu('quick')[0] }}">
+    <a href="#">
+      <i class="fa fa-users"></i> <span>{{ trans('admin.quick') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('quick')[1] }}">
+      <li class=""><a href="{{ aurl('quick') }}"><i class="fa  fa-users"></i> {{ trans('admin.quick') }}</a></li>
+      <li class=""><a href="{{ aurl('quick/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+    </ul>
+  </li>
+ <!-- ============================ -->
+
+ <!-- ============================ -->
+   <li class="treeview {{ active_menu('teachersignup')[0] }}">
+    <a href="#">
+      <i class="fa fa-users"></i> <span>{{ trans('admin.teachersignup') }}</span>
+      <span class="pull-right-container">
+       </span>
+    </a>
+    <ul class="treeview-menu" style="{{ active_menu('teachersignup')[1] }}">
+      <li class=""><a href="{{ aurl('teachersignup') }}"><i class="fa  fa-users"></i> {{ trans('admin.teachersignup') }}</a></li>
+      <li class=""><a href="{{ aurl('teachersignup/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
     </ul>
   </li>
  <!-- ============================ -->

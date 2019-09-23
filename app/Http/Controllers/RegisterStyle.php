@@ -7,8 +7,7 @@ use App\Model\Whyus;
 use App\Model\Courses;
 use App\Model\Videos;
 use App\Model\Teachers;
-use App\Model\Stat;
-use App\Model\Testimonial;
+ use App\Model\Testimonial;
 use App\Model\BestStudent;
 use App\Model\Halfhour;
 use App\Model\Hour;
@@ -33,8 +32,7 @@ class RegisterStyle extends Controller
 	   $courses =Courses::all();
 	   $videos =Videos::all();
 	   $teachers =Teachers::all();
-     $stat =Stat::all();
-     $beststudent =BestStudent::all();
+      $beststudent =BestStudent::all();
      $testimonial =Testimonial::all();
      $halfhour =Halfhour::all();
      $hour     =Hour::all();
@@ -45,8 +43,7 @@ class RegisterStyle extends Controller
       	'courses'=>$courses,
       	'videos'=>$videos,
       	'teachers'=>$teachers,
-        'stat'=>$stat,
-        'beststudent'=>$beststudent,
+         'beststudent'=>$beststudent,
         'testimonial'=>$testimonial,
         'hour'=>$hour,
         'halfhour'=>$halfhour,

@@ -59,8 +59,15 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
    Route::resource('contact', 'ContactAdminController');
    Route::delete('contact/destroy/all', 'ContactAdminController@multi_delete');
 
+   Route::resource('quick', 'QuickAdminController');
+   Route::delete('quick/destroy/all', 'QuickAdminController@multi_delete');
+
    Route::resource('student', 'StudentAdminController');
    Route::delete('student/destroy/all', 'StudentAdminController@multi_delete');
+
+
+   Route::resource('teachersignup', 'TeacherSignupAdminController');
+   Route::delete('teachersignup/destroy/all', 'TeacherSignupAdminController@multi_delete');
 
 
   

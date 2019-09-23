@@ -32,20 +32,39 @@
 // ----------------------------------
 // -----------------------------
 /*start shufil portofile */
-$(".buttons  .option").click(function() {
-  
-  // $(this).addClass("active-btn").siblings().removeClass("active-btn");
-  
-  var cssFilter = $(this).attr('id');
-  
-    if( cssFilter === "all" ) {
-  $(".images > div").fadeIn();
-  $(".red-more").not($(".red-more").fadeIn(".red-more").fadeOut());
-  } else {
-   $(".images > div ") .fadeOut(0);
-    
-   $(".images").contents().filter("." + cssFilter).fadeIn(0);
-
-  }
- 
+  $('#one').click(function() {
+    $('.one').slideDown(10 ,function(){
+    $('.two,.three,.four,.five').hide(10);
+  });
+  }); 
+   
+  $('#two').click(function() {
+    $('.two').slideDown(10 ,function(){
+    $('.three,.four,.five').hide(10 ,function(){
+    $('.two,.one input,select').attr("required", "required");
 });
+  });
+  }); 
+    
+
+    $('#three').click(function() {
+    $('.two,.three').slideDown(10,function(){
+    $('.four,.five').hide(10 ,function(){
+    $('.one,.two,.three input,select').attr("required", "required");
+  });
+  });
+  });
+  
+    $('#four').click(function() {
+    $('.two,.three,.four').slideDown(10,function(){
+    $('.five').hide(10 ,function(){
+    $('.one,.two,.three,.four input,select').attr("required", "required");
+});
+  });
+  });
+  
+    $('#five').click(function() {
+    $('.two,.three,.four,.five').slideDown(10 ,function(){
+    $('one.two,.three,.four,.five input,select').attr("required", "required");
+});
+  });

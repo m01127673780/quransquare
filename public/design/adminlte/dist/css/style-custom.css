@@ -153,3 +153,12 @@ margin-bottom: 20px}
   border-image-repeat: round round;
   border-image-source: url("https://mdn.mozillademos.org/files/6017/border-image-6.svg");
 }
+/*----------------------------student---------------------*/
+
+   
+  /*-----------*/
+   .head-h3{
+  margin: 50px 0;
+  border-bottom: 1px solid #000;
+ }
+ 
