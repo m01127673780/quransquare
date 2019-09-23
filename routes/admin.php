@@ -66,6 +66,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
    Route::delete('student/destroy/all', 'StudentAdminController@multi_delete');
 
 
+   Route::resource('teachersignup', 'TeacherSignupAdminController');
+   Route::delete('teachersignup/destroy/all', 'TeacherSignupAdminController@multi_delete');
+
+
   
 
 

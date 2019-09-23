@@ -21,6 +21,9 @@ Route::group(['middleware' => 'Maintenance'], function () {
 
 					Route::get('student','StudentStyle@show');
                     Route::post('student/register','StudentStyle@insert_student');
+
+ 					Route::get('teacher','TeacherSignupStyle@show');
+                    Route::post('teacher/register','TeacherSignupStyle@insert_teacher');
  
 
 

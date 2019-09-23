@@ -1169,7 +1169,7 @@
 <section class=" Example select"  >
   <div class="form-group">
     <label for="exampleFormControlSelect1" class="head-smol">How did you learn about us? *</label>
-      <select class="form-control" id="e " name="How"  name="how_aboutus"><br><br>
+      <select class="form-control" id="e "   name="how_aboutus"><br><br>
       <option value="Word of mouth">Word of mouth</option>
       <option value="Facebook">Facebook</option>
       <option value="Instagram">Instagram</option>
