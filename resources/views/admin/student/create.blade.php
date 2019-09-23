@@ -53,12 +53,11 @@
               
 
     <div class="row"  >
-  <!-- ---============================================--- -->  <!-- ---============================================--- --> 
-        <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  </center>
-            <div class="col-lg-6">
+      <!-- ======================================= --> <!-- ======================================= -->
+            <center> <h3 class="head-h3"> {!! Form::label('Student1',trans('admin.Student1')) !!}   </h3>  </center>
+      <div class="col-lg-6">
                  {!! Form::label('st1_name',trans('admin.name')) !!}
                  {!! Form::text('st1_name',old('st1_name'),['class'=>'form-control']) !!}
-                 {!! Form::text('st1_name'),['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st1_name',trans('admin.Gender')) !!}
@@ -68,7 +67,7 @@
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st1_name',trans('admin.Gender')) !!}
+                      {!! Form::label('st1_name',trans('admin.course')) !!}
                       <select class="form-control" name="st1_course" value="{{old('st1_course')}}">
                       <option value=".............">..............</option>
                       <option value="Quran">Quran Courses</option>
@@ -78,7 +77,7 @@
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st1_name',trans('admin.Gender')) !!}
+                        {!! Form::label('st1_name',trans('admin.age')) !!}
                         <select class="form-control" name="st1_age" value="{{old('st1_age')}}">
                         <option value="4">4</option>
                         <option value="5">5</option>
@@ -166,13 +165,12 @@
                         <option value="85+">85+</option>
                       </select>
              </div><!-- ./col-lg-6-->  
-        <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- -->   <!-- ---============================================--- -->  
-         <!-- ---============================================--- --> 
-        <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  </center>
-            <div class="col-lg-6">
+        <!-- --------------------------------------------- -->
+      <!-- ======================================= --> <!-- ======================================= -->
+             <center> <h3 class="head-h3"> {!! Form::label('Student3',trans('admin.Student2')) !!}   </h3>  </center>
+      <div class="col-lg-6">
                  {!! Form::label('st2_name',trans('admin.name')) !!}
-                 {!! Form::text('st2_name',old('st2_name'),['class'=>'form-control']) !!}
+                 {!! Form::text('st2_name',old('st1_name'),['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st2_name',trans('admin.Gender')) !!}
@@ -182,7 +180,7 @@
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st2_name',trans('admin.Gender')) !!}
+                      {!! Form::label('st2_name',trans('admin.course')) !!}
                       <select class="form-control" name="st2_course" value="{{old('st2_course')}}">
                       <option value=".............">..............</option>
                       <option value="Quran">Quran Courses</option>
@@ -192,7 +190,7 @@
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st2_name',trans('admin.Gender')) !!}
+                        {!! Form::label('st2_name',trans('admin.age')) !!}
                         <select class="form-control" name="st2_age" value="{{old('st2_age')}}">
                         <option value="4">4</option>
                         <option value="5">5</option>
@@ -280,12 +278,12 @@
                         <option value="85+">85+</option>
                       </select>
              </div><!-- ./col-lg-6-->  
-        <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- -->   <!-- ---============================================--- -->  <!-- ---============================================--- --> 
-        <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  </center>
-            <div class="col-lg-6">
+        <!-- --------------------------------------------- -->
+        <!-- ======================================= --> <!-- ======================================= -->
+             <center> <h3 class="head-h3"> {!! Form::label('Student1',trans('admin.Student3')) !!}   </h3>  </center>
+      <div class="col-lg-6">
                  {!! Form::label('st3_name',trans('admin.name')) !!}
-                 {!! Form::text('st3_name',old('st3_name'),['class'=>'form-control']) !!}
+                 {!! Form::text('st3_name',old('st1_name'),['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st3_name',trans('admin.Gender')) !!}
@@ -295,7 +293,7 @@
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st3_name',trans('admin.Gender')) !!}
+                      {!! Form::label('st3_name',trans('admin.course')) !!}
                       <select class="form-control" name="st3_course" value="{{old('st3_course')}}">
                       <option value=".............">..............</option>
                       <option value="Quran">Quran Courses</option>
@@ -305,7 +303,7 @@
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st3_name',trans('admin.Gender')) !!}
+                        {!! Form::label('st3_name',trans('admin.age')) !!}
                         <select class="form-control" name="st3_age" value="{{old('st3_age')}}">
                         <option value="4">4</option>
                         <option value="5">5</option>
@@ -393,12 +391,12 @@
                         <option value="85+">85+</option>
                       </select>
              </div><!-- ./col-lg-6-->  
-        <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- -->   <!-- ---============================================--- -->  <!-- ---============================================--- --> 
-        <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  </center>
-            <div class="col-lg-6">
+        <!-- --------------------------------------------- -->
+        <!-- ======================================= --> <!-- ======================================= -->
+             <center> <h3 class="head-h3"> {!! Form::label('Student1',trans('admin.Student4')) !!}   </h3>  </center>
+      <div class="col-lg-6">
                  {!! Form::label('st4_name',trans('admin.name')) !!}
-                 {!! Form::text('st4_name',old('st4_name'),['class'=>'form-control']) !!}
+                 {!! Form::text('st4_name',old('st1_name'),['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st4_name',trans('admin.Gender')) !!}
@@ -408,7 +406,7 @@
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st4_name',trans('admin.Gender')) !!}
+                      {!! Form::label('st4_name',trans('admin.course')) !!}
                       <select class="form-control" name="st4_course" value="{{old('st4_course')}}">
                       <option value=".............">..............</option>
                       <option value="Quran">Quran Courses</option>
@@ -418,7 +416,7 @@
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st4_name',trans('admin.Gender')) !!}
+                        {!! Form::label('st4_name',trans('admin.age')) !!}
                         <select class="form-control" name="st4_age" value="{{old('st4_age')}}">
                         <option value="4">4</option>
                         <option value="5">5</option>
@@ -506,13 +504,12 @@
                         <option value="85+">85+</option>
                       </select>
              </div><!-- ./col-lg-6-->  
-        <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- --> 
-         <!-- ---============================================--- -->  <!-- ---============================================--- --> 
-        <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  </center>
-            <div class="col-lg-6">
-                 {!! Form::label('st4_name',trans('admin.name')) !!}
-                 {!! Form::text('st5_name',old('st5_name'),['class'=>'form-control']) !!}
+        <!-- --------------------------------------------- -->
+        <!-- ======================================= --> <!-- ======================================= -->
+             <center> <h3 class="head-h3"> {!! Form::label('Student1',trans('admin.Student5')) !!}   </h3>  </center>
+      <div class="col-lg-6">
+                 {!! Form::label('st5_name',trans('admin.name')) !!}
+                 {!! Form::text('st5_name',old('st1_name'),['class'=>'form-control']) !!}
            </div>
             <div class="col-lg-6">
                  {!! Form::label('st5_name',trans('admin.Gender')) !!}
@@ -522,7 +519,7 @@
                     </select> 
             </div>    
             <div class="col-lg-6">
-                      {!! Form::label('st5_name',trans('admin.Gender')) !!}
+                      {!! Form::label('st5_name',trans('admin.course')) !!}
                       <select class="form-control" name="st5_course" value="{{old('st5_course')}}">
                       <option value=".............">..............</option>
                       <option value="Quran">Quran Courses</option>
@@ -532,7 +529,7 @@
                       </select>
              </div><!-- ./col-lg-6-->  
             <div class="col-lg-6">
-                        {!! Form::label('st5_name',trans('admin.Gender')) !!}
+                        {!! Form::label('st5_name',trans('admin.age')) !!}
                         <select class="form-control" name="st5_age" value="{{old('st5_age')}}">
                         <option value="4">4</option>
                         <option value="5">5</option>
@@ -620,8 +617,8 @@
                         <option value="85+">85+</option>
                       </select>
              </div><!-- ./col-lg-6-->  
-        <!-- --------------------------------------------- --> 
-         <!-- ---============================================--- --> 
+        <!-- --------------------------------------------- -->
+         <!-- ---===================================== -- -->   <!-- ---===================================== -- --> 
 </div><!-- ./ ROW -->
 
 
@@ -640,7 +637,7 @@
 <!--====================================================-->
 <section class=" Example select"  >
   <div class="form-group">
-    <label for="exampleFormControlSelect1" class="head-smol">How did you learn about us? *</label>
+    <label for="exampleFormControlSelect1" class="head-smol">  {{trans('admin.how_aboutus')}} </label>
       <select class="form-control" id="e " name="how_aboutus"  name="how_aboutus"><br><br>
       <option value="Word of mouth">Word of mouth</option>
       <option value="Facebook">Facebook</option>

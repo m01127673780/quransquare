@@ -40,7 +40,7 @@
   
 
      <div class="form-group">
-        {!! Form::label('icon',trans('admin.quick')) !!}
+        {!! Form::label('icon',trans('admin.image')) !!}
         {!! Form::file('icon',['class'=>'form-control']) !!}
 
           @if(!empty($quick->icon))

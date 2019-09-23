@@ -47,7 +47,7 @@
      </div>
 
      <div class="form-group">
-        {!! Form::label('img',trans('admin.testimonial')) !!}
+        {!! Form::label('img',trans('admin.image')) !!}
         {!! Form::file('img',['class'=>'form-control img']) !!}
  
      </div>

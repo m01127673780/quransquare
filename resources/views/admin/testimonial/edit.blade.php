@@ -46,7 +46,7 @@
         {!! Form::text('country_en',$testimonial->country_en,['class'=>'form-control']) !!}
      </div>
      <div class="form-group">
-        {!! Form::label('img',trans('admin.testimonial_flag')) !!}
+        {!! Form::label('img',trans('admin.image')) !!}
         {!! Form::file('img',['class'=>'form-control']) !!}
           @if(!empty($testimonial->img))
        <img src="{{ Storage::url($testimonial->img) }}" style="width:50px;height: 50px;" />

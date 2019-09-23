@@ -38,7 +38,7 @@
      
 
      <div class="form-group">
-        {!! Form::label('img',trans('admin.teachers')) !!}
+        {!! Form::label('img',trans('admin.image')) !!}
         {!! Form::file('img',['class'=>'form-control img','required'=>'required']) !!}
  
      </div>

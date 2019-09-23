@@ -64,7 +64,7 @@
      </div>
      <!-- -------------- -->
      <div class="form-group">
-        {!! Form::label('img',trans('admin.beststudent')) !!}
+        {!! Form::label('img',trans('admin.image_st')) !!}
         {!! Form::file('img',['class'=>'form-control img']) !!}
  
      </div>
@@ -74,7 +74,7 @@
   <!-- -------------- -->   
   <!-- -------------- -->
      <div class="form-group">
-        {!! Form::label('img_Teacher',trans('admin.beststudent')) !!}
+        {!! Form::label('img_Teacher',trans('admin.image_te')) !!}
         {!! Form::file('img_Teacher',['class'=>'form-control img']) !!}
  
      </div>
