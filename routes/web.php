@@ -7,7 +7,7 @@ Route::group(['middleware' => 'Maintenance'], function () {
 					Route::post('insert/news','WhyusStyle@insert');
 					Route::post('user/register','WhyusStyle@insert_contact');
 					Route::post('quick/register','WhyusStyle@insert_quick');
-					Route::get('student','StudentStyle@show');
+ 					Route::get('student','StudentStyle@show');
 	
 					Route::get('test','TestStyle@show');
 					// Route::post('insert/student','TestStyle@insert_student');
@@ -25,7 +25,7 @@ Route::group(['middleware' => 'Maintenance'], function () {
  					Route::get('teacher','TeacherSignupStyle@show');
                     Route::post('teacher/register','TeacherSignupStyle@insert_teacher');
  
-
+ 
 
 //------------------
 		

@@ -16,14 +16,29 @@
   @if(direction() == 'ltr')
   <link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/AdminLTE.min.css">
   @else
-  <link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/rtl/AdminLTE.min.css">
-  <link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/rtl/bootstrap-rtl.min.css">
-  <link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/rtl/rtl.css">
+<link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/rtl/rtl/AdminLTE-rtl.min.css">
+<link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/rtl/rtl/bootstrap-rtl.min.css">
+<link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/rtl/rtl/font-awesome-rtl.min.css">
+<link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/rtl/rtl/rtl.css">
+<link rel="stylesheet" href="{{ url('/') }}/design/adminlte/jstree/themes/default/style.css">
+<link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/tableRespons.css">
+<script src="{{ url('/design/adminlte/dist/js/myfunctions.js') }}"></script>
+  
+  
+  
+  
   <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&amp;subset=arabic,latin-ext" rel="stylesheet">
   <style type="text/css">
     html,body ,h1,h2,h3,h4,h5,h6{
       font-family: 'Cairo', sans-serif;
     }
+  .control-sidebar.control-sidebar-dark{
+    display: none;
+  }
+  .control-sidebar.control-sidebar-open, .control-sidebar.control-sidebar-open+.control-sidebar-bg {
+   display: none;
+ }
+ 
   </style>
   @endif
   <!-- AdminLTE Skins. Choose a skin from the css/skins
