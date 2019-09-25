@@ -209,9 +209,9 @@ return [
 	'Student4'              => '   الرابع',
 	'Student5'              => '  الخامس',
 	'how_aboutus'           => 'كيف عرفتنا  !؟ *',
-    
-	'create_videos'              =>'اضافه فديو ',
+ 	'create_videos'              =>'اضافه فديو ',
    	'save'              => 'حفظ ',
+   	'job'              => 'الوظيفه ',
    	'save'              => 'Seve ',
    	'save'              => 'Seve ',
    	'save'              => 'Seve ',
@@ -220,9 +220,8 @@ return [
    	'save'              => 'Seve ',
    	'save'              => 'Seve ',
    	'save'              => 'Seve ',
-   	'save'              => 'Seve ',
-    
-             
-   ];
+	'text'              => '  النص,
+	'Student'              => 'Student',
+    ];
 
  

@@ -87,6 +87,11 @@ class WhyusStyle extends Controller
        
     }
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> efbee0cc6b55447ca4f5f58966dfc98ec0ad49ac
     public function insert_quick (){
       $add = new Quick;
       $add->name = request('name');
@@ -110,9 +115,12 @@ class WhyusStyle extends Controller
        
     }
 }
+<<<<<<< HEAD
  
 
  
+=======
+>>>>>>> efbee0cc6b55447ca4f5f58966dfc98ec0ad49ac
 
 
 

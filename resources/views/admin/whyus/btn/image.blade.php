@@ -11,17 +11,6 @@ if (empty ($icon)){?>
 
 
 
-  <style type="text/css">
-  	
-#imgfalg{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;  
-    display: block;
-    /* text-align: center; */
-    margin: auto;
- 
-}
- </style>
+
 
  

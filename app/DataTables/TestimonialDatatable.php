@@ -99,14 +99,14 @@ class TestimonialDatatable extends DataTable {
 				'data'  => 'id',
 				'title' => '#',
 			],[
-				'name'  => 'job_ar',
-				'data'  => 'job_ar',
-				'title' => trans('admin.Job_ar'),
+				'name'  => 'job_'.session('lang'),
+				'data'  => 'job_'.session('lang'),
+				'title' => trans('admin.Job'),
 			],[
-				'name'  => 'name_en',
-				'data'  => 'name_en',
-				'title' => trans('admin.name_en'),
-			], [
+				'name'  => 'name_'.session('lang'),
+				'data'  => 'name_'.session('lang'),
+				'title' => trans('admin.name'),
+			],  [
 				'name'  => 'image',
 				'data'  => 'image',
 				'title' => trans('admin.image'),

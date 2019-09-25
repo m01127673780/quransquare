@@ -6,17 +6,14 @@
   </div>
   <!-- /.box-header -->
   <div class="box-body">
-  	{!! Form::open(['id'=>'form_data','url'=>aurl('testimonial/destroy/all'),'method'=>'delete']) !!}
+  	{!! Form::open(['id'=>'form_data','url'=>aurl('beststudent/destroy/all'),'method'=>'delete']) !!}
     {!! $dataTable->table(['class'=>'dataTable table table-striped table-hover  table-bordered'],true) !!}
     {!! Form::close() !!}
   </div>
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
-
-
 <!-- Trigger the modal with a button -->
-
 <!-- Modal -->
 <div id="mutlipleDelete" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -49,13 +46,10 @@
     </div>
   </div>
 </div>
-
-
 @push('js')
 <script>
 delete_all();
 </script>
 {!! $dataTable->scripts() !!}
 @endpush
-
 @endsection

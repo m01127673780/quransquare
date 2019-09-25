@@ -99,13 +99,9 @@ class StatDatatable extends DataTable {
 				'data'  => 'id',
 				'title' => '#',
 			],[
-				'name'  => 'head_ar',
-				'data'  => 'head_ar',
-				'title' => trans('admin.head_ar'),
-			],[
-				'name'  => 'head_en',
-				'data'  => 'head_en',
-				'title' => trans('admin.head_en'),
+				'name'  => 'head_'.session('lang'),
+				'data'  => 'head_'.session('lang'),
+				'title' => trans('admin.head'),
 			],[
 				'name'  => 'number',
 				'data'  => 'number',
@@ -131,10 +127,8 @@ class StatDatatable extends DataTable {
 				'orderable'  => false,
 				'searchable' => false,
 			],
-
 		];
 	}
-
 	/**
 	 * Get filename for export.
 	 *

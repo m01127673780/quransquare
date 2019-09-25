@@ -38,8 +38,7 @@
   .control-sidebar.control-sidebar-open, .control-sidebar.control-sidebar-open+.control-sidebar-bg {
    display: none;
  }
- 
-  </style>
+   </style>
   @endif
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
@@ -55,17 +54,9 @@
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{ url('/') }}/design/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <link rel="stylesheet" href="{{ url('/') }}/design/adminlte/jstree/themes/default/style.css">
-
-  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-
-
-  <script src="{{ url('/design/adminlte/dist/js/myfunctions.js') }}"></script>
-
-
- 
+  <script src="{{ url('/design/adminlte/dist/js/myfunctions.js') }}"></script> 
   <link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/style-baceend-custom.css">
-
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">

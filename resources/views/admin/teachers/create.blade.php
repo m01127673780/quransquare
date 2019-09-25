@@ -15,25 +15,25 @@
     
        <div class="form-group">
         {!! Form::label('link',trans('admin.link')) !!}
-        {!! Form::url('link',old('link'),['class'=>'form-control','pattern'=>'https?://.+']) !!}
+        {!! Form::url('link',old('link'),['class'=>'form-control','required'=>'required','pattern'=>'https?://.+']) !!}
       </div>  
 
        <div class="form-group">
         {!! Form::label('name_ar',trans('admin.name_ar')) !!}
-        {!! Form::text('name_ar',old('name_ar'),['class'=>'form-control']) !!}
+        {!! Form::text('name_ar',old('name_ar'),['class'=>'form-control','required'=>'required']) !!}
       </div>
       <div class="form-group">
         {!! Form::label('name_en',trans('admin.name_en')) !!}
-        {!! Form::text('name_en',old('name_en'),['class'=>'form-control' ]) !!}
+        {!! Form::text('name_en',old('name_en'),['class'=>'form-control','required'=>'required' ]) !!}
       </div>
     
        <div class="form-group">
         {!! Form::label('head_ar',trans('admin.head_ar')) !!}
-        {!! Form::text('head_ar',old('head_ar'),['class'=>'form-control']) !!}
+        {!! Form::text('head_ar',old('head_ar'),['class'=>'form-control','required'=>'required']) !!}
       </div>
       <div class="form-group">
         {!! Form::label('head_en',trans('admin.head_en')) !!}
-        {!! Form::text('head_en',old('head_en'),['class'=>'form-control' ]) !!}
+        {!! Form::text('head_en',old('head_en'),['class'=>'form-control','required'=>'required' ]) !!}
       </div>
      
 
@@ -45,7 +45,7 @@
 
  
      <div class="form-group">
-       <img name="img" class="image" src="{{ asset( 'storage/teachers/No_Image.jpg')}} "   > 
+       <img name="img" class="image" src="{{ asset( 'no_image/no-image.png')}} "   > 
      </div>
    
     

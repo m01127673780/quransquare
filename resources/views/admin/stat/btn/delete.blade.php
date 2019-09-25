@@ -16,11 +16,18 @@
          <h4>
 
         </h4>
-                <h4>{{ trans('admin.delete_this',['name'=> '$head-ar']) }}</h4>
-
-       
  
-           <img  src="{{ Storage::url($img) }}" style="width: 50px;height: 50px"></h4>
+ 
+       <h4>{{ trans('admin.delete_this') }}
+                  <?php
+                  $session = session('lang'); 
+                  if ($session  = 'en' ) {
+                  echo ': '.$head_en ;
+                  }else{
+                  echo  ': '.  $head_ar; 
+                  }
+                  ?>
+                 <br>       
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">{{ trans('admin.close') }}</button>

@@ -99,13 +99,9 @@ class BestStudentDatatable extends DataTable {
 				'data'  => 'id',
 				'title' => '#',
 			],[
-				'name'  => 'text_ar',
-				'data'  => 'text_ar',
-				'title' => trans('admin.text_ar'),
-			],[
-				'name'  => 'name_en',
-				'data'  => 'name_en',
-				'title' => trans('admin.name_en'),
+				'name'  => 'text_'.session('lang'),
+				'data'  => 'text_'.session('lang'),
+				'title' => trans('admin.text'),
 			], [
 				'name'  => 'image',
 				'data'  => 'image',

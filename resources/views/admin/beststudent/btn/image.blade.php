@@ -4,24 +4,8 @@ if (empty ($img)){?>
 <?php
 }else{ ?>    
   <img  id="imgfalg" src="{{ Storage::url($img) }}" id="imgfalg"> 
-<?php
+ <?php
  }
  ?> 
-
-
-
-
-  <style type="text/css">
-  	
-#imgfalg{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;  
-    display: block;
-    /* text-align: center; */
-    margin: auto;
  
-}
- </style>
-
  

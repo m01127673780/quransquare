@@ -1,7 +1,5 @@
 @extends('admin.index')
 @section('content')
-
-
 <div class="box">
   <div class="box-header">
     <h3 class="box-title">{{ $title }}</h3>
@@ -9,9 +7,7 @@
   <!-- /.box-header -->
   <div class="box-body">
     {!! Form::open(['url'=>aurl('whyus/'.$whyus->id),'method'=>'put','files'=>true ]) !!}
- 
-<!--   {{--================================================================== --}}-->
-       
+    <!--{{--================================================================== --}}-->
  <div class="form-group">
         {!! Form::label('head_ar',trans('admin.head_ar')) !!}
         {!! Form::text('head_ar',$whyus->head_ar,['class'=>'form-control','required'=>'required']) !!}
@@ -36,29 +32,19 @@
         {!! Form::label('color_diffe_en',trans('admin.color_diffe_en')) !!}
         {!! Form::text('color_diffe_en',$whyus->color_diffe_en,['class'=>'form-control','required'=>'required']) !!}
      </div>
-
-
      <div class="form-group">
         {!! Form::label('icon',trans('admin.image')) !!}
         {!! Form::file('icon',['class'=>'form-control','required'=>'required']) !!}
-
           @if(!empty($whyus->icon))
        <img src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png" class="img-create-Edit" />
       @endif
       <br>
       {!! Form::submit(trans('admin.save'),['class'=>'btn btn-primary']) !!}
-
      </div>
-<!--     {{--================================================================== --}} -->
-
-
-
+<!--{{--================================================================== --}} -->
     {!! Form::close() !!}
   </div>
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
-
-
-
 @endsection

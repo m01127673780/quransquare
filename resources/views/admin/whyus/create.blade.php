@@ -41,7 +41,11 @@
 
      <div class="form-group">
         {!! Form::label('icon',trans('admin.image')) !!}
+<<<<<<< HEAD
         {!! Form::file('icon',['class'=>'form-control icon','required'=>'required']) !!}
+=======
+        {!! Form::file('icon',['class'=>'form-control icon']) !!}
+>>>>>>> efbee0cc6b55447ca4f5f58966dfc98ec0ad49ac
  
      </div>
   
