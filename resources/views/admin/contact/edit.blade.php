@@ -44,7 +44,7 @@
         {!! Form::file('icon',['class'=>'form-control']) !!}
 
           @if(!empty($contact->icon))
-       <img src="{{ Storage::url($contact->icon) }}" style="width:50px;height: 50px;" />
+       <img  src="{{ asset( 'no_image/user.png')}} "  class="img-create-Edit" >  
       @endif
 
      </div>

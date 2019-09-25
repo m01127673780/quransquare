@@ -13,7 +13,20 @@
       </div>
       {!! Form::open(['route'=>['slider.destroy',$id],'method'=>'delete']) !!}
       <div class="modal-body">
-        <h4>{{ trans('admin.delete_this',['name'=>'link']) }}</h4>
+ 
+
+       <h4>{{ trans('admin.delete_this') }} : 
+        <br>
+                  <?php
+                  $session = session('lang'); 
+                  if ($session  = 'en' ) {
+                  echo $link ;
+                  }else{
+                  echo    $link; 
+                  }
+                  ?>
+                 <br>             
+  <img  src="{{ Storage::url($img) }}" class="img-are-you"></h4>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">{{ trans('admin.close') }}</button>

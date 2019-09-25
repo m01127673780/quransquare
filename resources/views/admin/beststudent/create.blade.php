@@ -1,7 +1,5 @@
 @extends('admin.index')
 @section('content')
-
-
 <div class="box">
   <div class="box-header">
     <h3 class="box-title">{{ $title }}</h3>
@@ -86,17 +84,4 @@
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
-
- <style type="text/css">
-    
-.image{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;  
-     /* text-align: center; */
-    margin: auto;
- 
-}
- </style>
-
 @endsection

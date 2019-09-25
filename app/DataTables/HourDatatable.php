@@ -98,18 +98,10 @@ class HourDatatable extends DataTable {
 				'name'  => 'id',
 				'data'  => 'id',
 				'title' => '#',
-			], [
-				'name'  => 'head_ar',
-				'data'  => 'head_ar',
-				'title' => trans('admin.head_ar'),
 			],[
-				'name'  => 'head_en',
-				'data'  => 'head_en',
-				'title' => trans('admin.head_en'),
-			], [
-				'name'  => 'image',
-				'data'  => 'image',
-				'title' => trans('admin.image'),
+				'name'  => 'head_'.session('lang'),
+				'data'  => 'head_'.session('lang'),
+				'title' => trans('admin.head'),
 			], [
 				'name'       => 'edit',
 				'data'       => 'edit',

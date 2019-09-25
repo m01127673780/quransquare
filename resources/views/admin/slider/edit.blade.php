@@ -22,7 +22,7 @@
 
 
      <div class="form-group">
-        {!! Form::label('img',trans('admin.slider_flag')) !!}
+        {!! Form::label('img',trans('admin.image')) !!}
         {!! Form::file('img',['class'=>'form-control']) !!}
 
           @if(!empty($slider->img))

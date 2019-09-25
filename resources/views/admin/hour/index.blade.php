@@ -13,10 +13,7 @@
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
-
-
 <!-- Trigger the modal with a button -->
-
 <!-- Modal -->
 <div id="mutlipleDelete" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -49,8 +46,6 @@
     </div>
   </div>
 </div>
-
-
 @push('js')
 <script>
 delete_all();

@@ -1,7 +1,5 @@
 @extends('admin.index')
 @section('content')
-
-
 <div class="box">
   <div class="box-header">
     <h3 class="box-title">{{ $title }}</h3>
@@ -10,16 +8,13 @@
   <div class="box-body">
     {!! Form::open(['url'=>aurl('halfhour'),'files'=>true]) !!}
    
-      
-
-    
        <div class="form-group">
         {!! Form::label('head_ar',trans('admin.head_ar')) !!}
-        {!! Form::text('head_ar',old('head_ar'),['class'=>'form-control']) !!}
+        {!! Form::text('head_ar',old('head_ar'),['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('head_en',trans('admin.head_en')) !!}
-        {!! Form::text('head_en',old('head_en'),['class'=>'form-control']) !!}
+        {!! Form::text('head_en',old('head_en'),['class'=>'form-control','required'=>'required']) !!}
      </div> 
          <div class="form-group">
         {!! Form::label('dateshow_ar',trans('admin.dateshow_ar')) !!}
@@ -31,12 +26,11 @@
      </div>
        <div class="form-group">
         {!! Form::label('content_ar',trans('admin.content_ar')) !!}
-        {!! Form::text('content_ar',old('content_ar'),['class'=>'form-control']) !!}
+        {!! Form::text('content_ar',old('content_ar'),['class'=>'form-control','required'=>'required']) !!}
      </div>
-
      <div class="form-group">
         {!! Form::label('content_en',trans('admin.content_en')) !!}
-        {!! Form::text('content_en',old('content_en'),['class'=>'form-control']) !!}
+        {!! Form::text('content_en',old('content_en'),['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('number',trans('admin.number')) !!}
@@ -83,38 +77,10 @@
         {!! Form::label('percentage12',trans('admin.percentage12')) !!}
         {!! Form::text('percentage12',old('percentage12'),['class'=>'form-control']) !!}
      </div>
-     <!-- --------- -->
-
-
-     <div class="form-group">
-        {!! Form::label('icon',trans('admin.halfhour')) !!}
-        {!! Form::file('icon',['class'=>'form-control icon']) !!}
- 
-     </div>
-
- 
-     <div class="form-group">
-       <img name="icon" class="image" src="{{ asset( 'storage/halfhour/No_Image.jpg')}} "   > 
-     </div>
-   
-    
      {!! Form::submit(trans('admin.add'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}
   </div>
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
-
- <style type="text/css">
-    
-.image{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;  
-     /* text-align: center; */
-    margin: auto;
- 
-}
- </style>
-
 @endsection

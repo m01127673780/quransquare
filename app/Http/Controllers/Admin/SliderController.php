@@ -37,7 +37,7 @@ class SliderController extends Controller {
 
 		$data = $this->validate(request(),
 			[
-				'link'                 => 'required',
+				'link'                 => 'sometimes|nullable',
 				'img'                 => 'sometimes|nullable|'.v_image(),
  
 			], [], [
@@ -93,7 +93,7 @@ class SliderController extends Controller {
 		
 		$data = $this->validate(request(),
 				[
-				'link'                 => 'required',
+				'link'                 => 'sometimes|nullable',
 				'img'                 => 'sometimes|nullable|'.v_image(),
  
 			], [], [

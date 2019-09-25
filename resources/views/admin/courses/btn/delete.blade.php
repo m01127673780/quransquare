@@ -16,27 +16,23 @@
       <div class="modal-body">
            <h4>{{ trans('admin.delete_this') }}
             <?php
-$session = session('lang'); 
- if ($session  = 'en' ) {
-     echo ': '.$head_en ;
-  }else{
-  echo  ': '.  $head_ar; 
-   }
-            ?>
+                $session = session('lang'); 
+                if ($session  = 'en' ) {
+                echo ': '.$head_en ;
+                }else{
+                echo  ': '.  $head_ar; 
+                }
+                ?>
                  <br>             
-   
-
-<?php 
-if (empty ($icon)){?>
-  <img id="imgfalg"  class="img-are-you" src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png"   >   
-<?php
-}else{ ?>    
-  <img  id="imgfalg" class="img-are-you" src="{{ Storage::url($icon) }}" id="imgfalg"> 
-<?php
- }
- ?> 
-
-
+              <?php 
+              if (empty ($icon)){?>
+                <img id="imgfalg"  class="img-are-you" src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png"   >   
+              <?php
+              }else{ ?>    
+                <img  id="imgfalg" class="img-are-you" src="{{ Storage::url($icon) }}" id="imgfalg"> 
+              <?php
+               }
+               ?> 
         </h4>
       </div>
       <div class="modal-footer">

@@ -15,19 +15,15 @@
     
        <div class="form-group">
         {!! Form::label('name',trans('admin.name')) !!}
-        {!! Form::text('name',old('name'),['class'=>'form-control']) !!}
+        {!! Form::text('name',old('name'),['class'=>'form-control','required'=>'required']) !!}
      </div>
         <div class="form-group">
         {!! Form::label('email',trans('admin.email')) !!}
-        {!! Form::email('email',old('email'),['class'=>'form-control']) !!}
+        {!! Form::email('email',old('email'),['class'=>'form-control','required'=>'required']) !!}
      </div>
         <div class="form-group">
         {!! Form::label('subject',trans('admin.subject')) !!}
         {!! Form::text('subject',old('subject'),['class'=>'form-control']) !!}
-     </div>
-        <div class="form-group">
-        {!! Form::label('name',trans('admin.name')) !!}
-        {!! Form::text('name',old('name'),['class'=>'form-control']) !!}
      </div>
         <div class="form-group">
         {!! Form::label('phone',trans('admin.phone')) !!}
@@ -37,36 +33,19 @@
         {!! Form::label('message',trans('admin.message')) !!}
         {!! Form::textarea('message',old('message'),['class'=>'form-control']) !!}
      </div>
-          
      <div class="form-group">
         {!! Form::label('icon',trans('admin.contact')) !!}
         {!! Form::file('icon',['class'=>'form-control icon']) !!}
- 
      </div>
-
- 
      <div class="form-group">
-       <img name="icon" class="image" src="{{ asset( 'storage/contact/No_Image.jpg')}} "   > 
+       <img  src="{{ asset( 'no_image/user.png')}} "  class="img-create-Edit" >  
      </div>
-   
-    
-     {!! Form::submit(trans('admin.add'),['class'=>'btn btn-primary']) !!}
+        {!! Form::submit(trans('admin.add'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}
   </div>
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
-
- <style type="text/css">
-    
-.image{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;  
-     /* text-align: center; */
-    margin: auto;
  
-}
- </style>
 
 @endsection

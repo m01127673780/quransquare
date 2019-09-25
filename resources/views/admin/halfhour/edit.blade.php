@@ -14,11 +14,11 @@
  -->     
   <div class="form-group">
         {!! Form::label('head_ar',trans('admin.head_ar')) !!}
-        {!! Form::text('head_ar',$halfhour->head_ar,['class'=>'form-control']) !!}
+        {!! Form::text('head_ar',$halfhour->head_ar,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('head_en',trans('admin.head_en')) !!}
-        {!! Form::text('head_en',$halfhour->head_en,['class'=>'form-control']) !!}
+        {!! Form::text('head_en',$halfhour->head_en,['class'=>'form-control','required'=>'required']) !!}
      </div> 
          <div class="form-group">
         {!! Form::label('dateshow_ar',trans('admin.dateshow_ar')) !!}
@@ -30,11 +30,11 @@
      </div>
        <div class="form-group">
         {!! Form::label('content_ar',trans('admin.content_ar')) !!}
-        {!! Form::text('content_ar',$halfhour->content_ar,['class'=>'form-control']) !!}
+        {!! Form::text('content_ar',$halfhour->content_ar,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('content_en',trans('admin.content_en')) !!}
-        {!! Form::text('content_en',$halfhour->content_en,['class'=>'form-control']) !!}
+        {!! Form::text('content_en',$halfhour->content_en,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('number',trans('admin.number')) !!}
@@ -81,16 +81,6 @@
         {!! Form::text('percentage12',$halfhour->percentage12,['class'=>'form-control']) !!}
      </div>
      <!-- --------- -->
-
-
-     <div class="form-group">
-        {!! Form::label('icon',trans('admin.halfhour_flag')) !!}
-        {!! Form::file('icon',['class'=>'form-control']) !!}
-
-          @if(!empty($halfhour->icon))
-       <img src="{{ Storage::url($halfhour->icon) }}" style="width:50px;height: 50px;" />
-      @endif
-
      </div>
 <!--     {{--================================================================== --}}
  -->
