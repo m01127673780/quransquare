@@ -15,7 +15,7 @@
     
        <div class="form-group">
         {!! Form::label('link',trans('admin.link')) !!}
-        {!! Form::url('link',old('link'),['class'=>'form-control','pattern'=>'https?://.+']) !!}
+        {!! Form::url('link',old('link'),['class'=>'form-control','pattern'=>'https?://.+','required'=>'required']) !!}
           <!-- <input type="url" pattern="https?://.+" required /> -->
 
      </div>
@@ -23,13 +23,14 @@
 
      <div class="form-group">
         {!! Form::label('img',trans('admin.image')) !!}
-        {!! Form::file('img',['class'=>'form-control img']) !!}
+         {!! Form::file('img',['class'=>'form-control img','required'=>'required']) !!}
+
  
      </div>
 
  
      <div class="form-group">
-       <img name="img" class="image" src="{{ asset( 'storage/videos/No_Image.jpg')}} "   > 
+       <img name="img" class="image" src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png "   > 
      </div>
    
     
@@ -39,17 +40,5 @@
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
-
- <style type="text/css">
-    
-.image{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;  
-     /* text-align: center; */
-    margin: auto;
  
-}
- </style>
-
 @endsection

@@ -13,7 +13,18 @@
       </div>
       {!! Form::open(['route'=>['whyus.destroy',$id],'method'=>'delete']) !!}
       <div class="modal-body">
-        <h4>{{ trans('admin.delete_this',['name'=> session('lang') == 'ar'?$head_ar:$head_en ]) }}</h4>
+           <h4>{{ trans('admin.delete_this') }}
+            <?php
+$session = session('lang'); 
+ if ($session  = 'en' ) {
+     echo ': '.$head_en ;
+  }else{
+  echo  ': '.  $head_ar; 
+   }
+            ?>
+                 <br>             
+  <img  src="{{ Storage::url($icon) }}" class="img-are-you"></h4>
+        </h4>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">{{ trans('admin.close') }}</button>

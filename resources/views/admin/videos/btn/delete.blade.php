@@ -14,6 +14,10 @@
       {!! Form::open(['route'=>['videos.destroy',$id],'method'=>'delete']) !!}
       <div class="modal-body">
         <h4>{{ trans('admin.delete_this',['name'=>'link']) }}</h4>
+
+                 <br>             
+  <img  src="{{ Storage::url($img) }}" class="img-are-you"></h4>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">{{ trans('admin.close') }}</button>

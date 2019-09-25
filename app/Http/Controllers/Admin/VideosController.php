@@ -94,7 +94,7 @@ class VideosController extends Controller {
 		$data = $this->validate(request(),
 				[
 				'link'                 => 'required',
-				'img'                 => 'sometimes|nullable|'.v_image(),
+				'img'                 => 'required|'.v_image(),
  
 			], [], [
 				'link'                 => trans('admin.link'),

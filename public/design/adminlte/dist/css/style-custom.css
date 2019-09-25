@@ -162,3 +162,10 @@ margin-bottom: 20px}
   border-bottom: 1px solid #000;
  }
  
+
+   /*================= style from backend  ================================*/
+   .img-50-h-w{
+  width: 50px!important;height: 50px!important;
+}
+   /*=================  End style from backend  ================================*/
+ 

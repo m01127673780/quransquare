@@ -209,8 +209,18 @@ return [
 	'Student4'              => '   الرابع',
 	'Student5'              => '  الخامس',
 	'how_aboutus'           => 'كيف عرفتنا  !؟ *',
-	'Student'              => 'Student',
-	'Student'              => 'Student',
+    
+	'create_videos'              =>'اضافه فديو ',
+   	'save'              => 'حفظ ',
+   	'save'              => 'Seve ',
+   	'save'              => 'Seve ',
+   	'save'              => 'Seve ',
+   	'save'              => 'Seve ',
+   	'save'              => 'Seve ',
+   	'save'              => 'Seve ',
+   	'save'              => 'Seve ',
+   	'save'              => 'Seve ',
+   	'save'              => 'Seve ',
     
              
    ];

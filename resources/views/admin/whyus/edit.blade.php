@@ -10,47 +10,49 @@
   <div class="box-body">
     {!! Form::open(['url'=>aurl('whyus/'.$whyus->id),'method'=>'put','files'=>true ]) !!}
  
-  {{--================================================================== --}}
-      <div class="form-group">
+<!--   {{--================================================================== --}}-->
+       
+ <div class="form-group">
         {!! Form::label('head_ar',trans('admin.head_ar')) !!}
-        {!! Form::text('head_ar',$whyus->head_ar,['class'=>'form-control']) !!}
+        {!! Form::text('head_ar',$whyus->head_ar,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('head_en',trans('admin.head_en')) !!}
-        {!! Form::text('head_en',$whyus->head_en,['class'=>'form-control']) !!}
+        {!! Form::text('head_en',$whyus->head_en,['class'=>'form-control','required'=>'required']) !!}
      </div> 
          <div class="form-group">
         {!! Form::label('text_ar',trans('admin.text_ar')) !!}
-        {!! Form::text('text_ar',$whyus->text_ar,['class'=>'form-control']) !!}
+        {!! Form::text('text_ar',$whyus->text_ar,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('text_en',trans('admin.text_en')) !!}
-        {!! Form::text('text_en',$whyus->text_en,['class'=>'form-control']) !!}
+        {!! Form::text('text_en',$whyus->text_en,['class'=>'form-control','required'=>'required']) !!}
      </div>
        <div class="form-group">
         {!! Form::label('color_diffe_ar',trans('admin.color_diffe_ar')) !!}
-        {!! Form::text('color_diffe_ar',$whyus->color_diffe_ar,['class'=>'form-control']) !!}
+        {!! Form::text('color_diffe_ar',$whyus->color_diffe_ar,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('color_diffe_en',trans('admin.color_diffe_en')) !!}
-        {!! Form::text('color_diffe_en',$whyus->color_diffe_en,['class'=>'form-control']) !!}
+        {!! Form::text('color_diffe_en',$whyus->color_diffe_en,['class'=>'form-control','required'=>'required']) !!}
      </div>
 
 
      <div class="form-group">
-        {!! Form::label('icon',trans('admin.whyus_flag')) !!}
-        {!! Form::file('icon',['class'=>'form-control']) !!}
+        {!! Form::label('icon',trans('admin.image')) !!}
+        {!! Form::file('icon',['class'=>'form-control','required'=>'required']) !!}
 
           @if(!empty($whyus->icon))
-       <img src="{{ Storage::url($whyus->icon) }}" style="width:50px;height: 50px;" />
+       <img src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png" class="img-create-Edit" />
       @endif
+      <br>
+      {!! Form::submit(trans('admin.save'),['class'=>'btn btn-primary']) !!}
 
      </div>
-    {{--================================================================== --}}
+<!--     {{--================================================================== --}} -->
 
 
 
-     {!! Form::submit(trans('admin.save'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}
   </div>
   <!-- /.box-body -->

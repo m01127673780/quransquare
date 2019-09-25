@@ -14,7 +14,7 @@
       {!! Form::open(['route'=>['beststudent.destroy',$id],'method'=>'delete']) !!}
       <div class="modal-body">
         <h4>{{ trans('admin.delete_this',['name'=> session('lang') == 'ar'?$name_ar:$name_en ]) }}</h4>
-                   <img  src="{{ Storage::url($img) }}" style="width: 50px;height: 50px"></h4>
+                   <img  src="{{ Storage::url($img) }}" class="img-are-you"  ></h4>
 
       </div>
       <div class="modal-footer">

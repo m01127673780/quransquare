@@ -14,36 +14,36 @@
  -->     
   <div class="form-group">
         {!! Form::label('head_ar',trans('admin.head_ar')) !!}
-        {!! Form::text('head_ar',$courses->head_ar,['class'=>'form-control']) !!}
+        {!! Form::text('head_ar',$courses->head_ar,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('head_en',trans('admin.head_en')) !!}
-        {!! Form::text('head_en',$courses->head_en,['class'=>'form-control']) !!}
+        {!! Form::text('head_en',$courses->head_en,['class'=>'form-control','required'=>'required']) !!}
      </div> 
          <div class="form-group">
         {!! Form::label('text_ar',trans('admin.text_ar')) !!}
-        {!! Form::text('text_ar',$courses->text_ar,['class'=>'form-control']) !!}
+        {!! Form::text('text_ar',$courses->text_ar,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('text_en',trans('admin.text_en')) !!}
-        {!! Form::text('text_en',$courses->text_en,['class'=>'form-control']) !!}
+        {!! Form::text('text_en',$courses->text_en,['class'=>'form-control','required'=>'required']) !!}
      </div>
        <div class="form-group">
         {!! Form::label('color_diffe_ar',trans('admin.color_diffe_ar')) !!}
-        {!! Form::text('color_diffe_ar',$courses->color_diffe_ar,['class'=>'form-control']) !!}
+        {!! Form::text('color_diffe_ar',$courses->color_diffe_ar,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('color_diffe_en',trans('admin.color_diffe_en')) !!}
-        {!! Form::text('color_diffe_en',$courses->color_diffe_en,['class'=>'form-control']) !!}
+        {!! Form::text('color_diffe_en',$courses->color_diffe_en,['class'=>'form-control','required'=>'required']) !!}
      </div>
 
 
      <div class="form-group">
         {!! Form::label('icon',trans('admin.courses_flag')) !!}
-        {!! Form::file('icon',['class'=>'form-control']) !!}
+        {!! Form::file('icon',['class'=>'form-control img-create-Edit','required'=>'required']) !!}
 
           @if(!empty($courses->icon))
-       <img src="{{ Storage::url($courses->icon) }}" style="width:50px;height: 50px;" />
+       <img src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png" class="img-create-Edit"  />
       @endif
 
      </div>

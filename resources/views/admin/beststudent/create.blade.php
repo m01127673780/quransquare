@@ -65,7 +65,7 @@
      <!-- -------------- -->
      <div class="form-group">
         {!! Form::label('img',trans('admin.image_st')) !!}
-        {!! Form::file('img',['class'=>'form-control img']) !!}
+        {!! Form::file('img',['class'=>'form-control img','required'=>'required']) !!}
  
      </div>
      <div class="form-group">
@@ -75,9 +75,8 @@
   <!-- -------------- -->
      <div class="form-group">
         {!! Form::label('img_Teacher',trans('admin.image_te')) !!}
-        {!! Form::file('img_Teacher',['class'=>'form-control img']) !!}
- 
-     </div>
+        {!! Form::file('img_Teacher',['class'=>'form-control img','required'=>'required']) !!}
+       </div>
      <div class="form-group">
        <img name="img_Teacher" class="image" src="{{ asset( 'storage/beststudent/img_Teacher/No_Image.jpg')}} "   > 
      </div>
