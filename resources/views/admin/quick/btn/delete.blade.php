@@ -13,6 +13,21 @@
       </div>
       {!! Form::open(['route'=>['quick.destroy',$id],'method'=>'delete']) !!}
       <div class="modal-body">
+        <h4>{{ trans('admin.delete_this') }} : 
+            <?php
+                echo  $name ;          
+               ?>
+                 <br>             
+              <?php 
+              if (empty ($icon)){?>
+                <img id="imgfalg"  class="img-are-you" src="{{ asset( 'no_image/user.png')}} "    >   
+              <?php
+              }else{ ?>    
+                <img  id="imgfalg" class="img-are-you" src="{{ Storage::url($icon) }}" id="imgfalg"> 
+              <?php
+               }
+               ?> 
+        </h4>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">{{ trans('admin.close') }}</button>

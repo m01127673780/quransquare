@@ -13,15 +13,27 @@
       </div>
       {!! Form::open(['route'=>['teachers.destroy',$id],'method'=>'delete']) !!}
       <div class="modal-body">
-         <h4>
-
+ 
+     <div class="modal-body">
+          <h4>{{ trans('admin.delete_this') }} : 
+            <?php
+                echo  $name ;          
+               ?>
+                 <br>             
+              <?php 
+              if (empty ($icon)){?>
+                <img id="imgfalg"  class="img-are-you" src="{{ asset( 'no_image/tee.png')}} "    >   
+              <?php
+              }else{ ?>    
+                <img  id="imgfalg" class="img-are-you" src="{{ Storage::url($icon) }}" id="imgfalg"> 
+              <?php
+               }
+               ?> 
         </h4>
-                <h4>{{ trans('admin.delete_this',['name'=> '$head-ar']) }}</h4>
-
+      </div>
        
  
-           <img  src="{{ Storage::url($img) }}" style="width: 50px;height: 50px"></h4>
-      </div>
+            </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">{{ trans('admin.close') }}</button>
         {!! Form::submit(trans('admin.yes'),['class'=>'btn btn-danger']) !!}

@@ -43,10 +43,12 @@
         {!! Form::label('icon',trans('admin.contact')) !!}
         {!! Form::file('icon',['class'=>'form-control']) !!}
 
-          @if(!empty($contact->icon))
-       <img  src="{{ asset( 'no_image/user.png')}} "  class="img-create-Edit" >  
+      
+    @if(!empty($contact->icon))
+       <img src="{{ Storage::url($contact->icon) }}" class="img-create-Edit"  />
+      @else 
+             <img src="{{ asset( 'no_image/user.png')}}" class="img-create-Edit" />
       @endif
-
      </div>
 <!--     {{--================================================================== --}}-->
  

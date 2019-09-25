@@ -15,43 +15,16 @@
     
        <div class="form-group">
         {!! Form::label('name',trans('admin.name')) !!}
-        {!! Form::text('name',old('name'),['class'=>'form-control']) !!}
+        {!! Form::text('name',old('name'),['class'=>'form-control' ,'required'=>'required','required'=>'required']) !!}
      </div>
         <div class="form-group">
         {!! Form::label('email',trans('admin.email')) !!}
-        {!! Form::email('email',old('email'),['class'=>'form-control']) !!}
+        {!! Form::email('email',old('email'),['class'=>'form-control' ,'required'=>'required','required'=>'required']) !!}
      </div>      
        <div class="form-group">
         {!! Form::label('phone',trans('admin.phone')) !!}
-        {!! Form::text('phone',old('phone'),['class'=>'form-control']) !!}
+        {!! Form::text('phone',old('phone'),['class'=>'form-control' ,'required'=>'required','required'=>'required']) !!}
      </div>
-
-
-
-
-
-
-
-
-
-<style type="text/css">
-   
-  /*-----------*/
-   .head-h3{
-/*  margin: 50px 0;
-*/  border-bottom: 2px solid #000;
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
- }
-    .box-body-student .col-lg-6{
-    margin-bottom: 20px;
- }    .box-body-student .row{
-    margin-bottom: 20px;
- }
- </style>
-              
-
     <div class="row"  >
       <!-- ======================================= --> <!-- ======================================= -->
             <center> <h3 class="head-h3"> {!! Form::label('Student1',trans('admin.Student1')) !!}   </h3>  </center>
@@ -1032,7 +1005,7 @@
 
 
      <div class="form-group">
-         <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  
+         <h3 class="head-h3"> {!! Form::label('message',trans('admin.message')) !!}   </h3>  
      <br><br>
      
         {!! Form::textarea('message',old('message'),['class'=>'form-control']) !!}
@@ -1045,7 +1018,7 @@
 
  
      <div class="form-group">
-       <img name="icon" class="image" src="{{ asset( 'storage/student/No_Image.jpg')}} "   > 
+         <img  src="{{ asset( 'no_image/te.png')}} "  class="img-create-Edit" > 
      </div>
    
     
@@ -1055,17 +1028,4 @@
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
-
- <style type="text/css">
-    
-.image{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;  
-     /* text-align: center; */
-    margin: auto;
- 
-}
- </style>
-
 @endsection

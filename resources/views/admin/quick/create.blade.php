@@ -1,7 +1,5 @@
 @extends('admin.index')
 @section('content')
-
-
 <div class="box">
   <div class="box-header">
     <h3 class="box-title">{{ $title }}</h3>
@@ -10,24 +8,17 @@
   <div class="box-body">
     {!! Form::open(['url'=>aurl('quick'),'files'=>true]) !!}
    
-      
-
-    
        <div class="form-group">
         {!! Form::label('name',trans('admin.name')) !!}
-        {!! Form::text('name',old('name'),['class'=>'form-control']) !!}
+        {!! Form::text('name',old('name'),['class'=>'form-control','required'=>'required']) !!}
      </div>
         <div class="form-group">
         {!! Form::label('email',trans('admin.email')) !!}
-        {!! Form::email('email',old('email'),['class'=>'form-control']) !!}
+        {!! Form::email('email',old('email'),['class'=>'form-control','required'=>'required']) !!}
      </div>
         <div class="form-group">
         {!! Form::label('subject',trans('admin.subject')) !!}
         {!! Form::text('subject',old('subject'),['class'=>'form-control']) !!}
-     </div>
-        <div class="form-group">
-        {!! Form::label('name',trans('admin.name')) !!}
-        {!! Form::text('name',old('name'),['class'=>'form-control']) !!}
      </div>
         <div class="form-group">
         {!! Form::label('phone',trans('admin.phone')) !!}
@@ -37,16 +28,12 @@
         {!! Form::label('message',trans('admin.message')) !!}
         {!! Form::textarea('message',old('message'),['class'=>'form-control']) !!}
      </div>
-          
      <div class="form-group">
         {!! Form::label('icon',trans('admin.image')) !!}
         {!! Form::file('icon',['class'=>'form-control icon']) !!}
- 
-     </div>
-
- 
+     </div> 
      <div class="form-group">
-       <img name="icon" class="image" src="{{ asset( 'storage/quick/No_Image.jpg')}} "   > 
+       <img name="icon" class="image" src="{{ asset( 'no_image/user.png')}}"  class="img-create-Edit" > 
      </div>
    
     

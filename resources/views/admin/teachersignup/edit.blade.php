@@ -364,9 +364,11 @@
         {!! Form::label('icon',trans('admin.teachersignup')) !!}
         {!! Form::file('icon',['class'=>'form-control']) !!}
 
-          @if(!empty($teachersignup->icon))
-       <img src="{{ Storage::url($teachersignup->icon) }}" style="width:50px;height: 50px;" />
-      @endif
+        @if(!empty($teachersignup->icon))
+             <img src="{{ Storage::url($teachersignup->icon) }}" class="img-create-Edit"  />
+            @else 
+                   <img src="{{ asset( 'no_image/te.png')}}" class="img-create-Edit" />
+            @endif
 
      </div>
 <!--     {{--================================================================== --}}-->

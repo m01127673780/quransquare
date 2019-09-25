@@ -349,48 +349,22 @@
   </div>
   </section><!--./portflio-->
  <!--======================================================--> 
-<!-- ====================================================== -->
-
-  
-<!-- ============================================================= -->
- 
-
-
      <div class="form-group">
          <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.Gender')) !!}   </h3>  
      <br><br>
-     
         {!! Form::textarea('message',old('message'),['class'=>'form-control']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('icon',trans('admin.teachersignup')) !!}
         {!! Form::file('icon',['class'=>'form-control icon']) !!}
- 
      </div>
-
- 
      <div class="form-group">
-       <img name="icon" class="image" src="{{ asset( 'storage/teachersignup/No_Image.jpg')}} "   > 
+       <img name="icon" class="image" src="{{ asset( 'no_image/te.png')}} "   > 
      </div>
-   
-    
      {!! Form::submit(trans('admin.add'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}
   </div>
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
-
- <style type="text/css">
-    
-.image{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;  
-     /* text-align: center; */
-    margin: auto;
- 
-}
- </style>
-
 @endsection

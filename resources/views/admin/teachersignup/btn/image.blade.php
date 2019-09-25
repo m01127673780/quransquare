@@ -1,6 +1,6 @@
 <?php 
 if (empty ($icon)){?>
-  <img id="imgfalg" src="{{ Storage::url('/teachersignup/No_Image.jpg') }}"   >   
+  <img id="imgfalg" src="{{ asset( 'no_image/te.png')}}"   >   
 <?php
 }else{ ?>    
   <img  id="imgfalg" src="{{ Storage::url($icon) }}" id="imgfalg"> 
@@ -8,20 +8,5 @@ if (empty ($icon)){?>
  }
  ?> 
 
-
-
-
-  <style type="text/css">
-  	
-#imgfalg{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;  
-    display: block;
-    /* text-align: center; */
-    margin: auto;
- 
-}
- </style>
 
  

@@ -13,40 +13,18 @@
 <!--   {{--================================================================== --}} --> 
      <div class="form-group">
         {!! Form::label('name',trans('admin.name')) !!}
-        {!! Form::text('name',$student->name,['class'=>'form-control']) !!}
+        {!! Form::text('name',$student->name,['class'=>'form-control','required'=>'required']) !!}
      </div>
 
      <div class="form-group">
         {!! Form::label('email',trans('admin.email')) !!}
-        {!! Form::email('email',$student->email,['class'=>'form-control']) !!}
+        {!! Form::email('email',$student->email,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('phone',trans('admin.phone')) !!}
-        {!! Form::text('phone',$student->phone,['class'=>'form-control']) !!}
+        {!! Form::text('phone',$student->phone,['class'=>'form-control','required'=>'required']) !!}
      </div>
       <!--====================================================-->
-      
-
-
-
-
-<style type="text/css">
-   
-  /*-----------*/
-   .head-h3{
-/*  margin: 50px 0;
-*/  border-bottom: 2px solid #000;
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
- }
-    .box-body-student .col-lg-6{
-    margin-bottom: 20px;
- }    .box-body-student .row{
-    margin-bottom: 20px;
- }
- </style>
-
     <div class="row"  >
          <!-- ---============================================--- -->          <!-- ---============================================--- -->  
         <center> <h3 class="head-h3"> {!! Form::label('Gender',trans('admin.name')) !!}   </h3>  </center>
@@ -1074,11 +1052,11 @@
      <div class="form-group">
         {!! Form::label('icon',trans('admin.student')) !!}
         {!! Form::file('icon',['class'=>'form-control']) !!}
-
-          @if(!empty($student->icon))
-       <img src="{{ Storage::url($student->icon) }}" style="width:50px;height: 50px;" />
-      @endif
-
+        @if(!empty($student->icon))
+             <img src="{{ Storage::url($student->icon) }}" class="img-create-Edit"  />
+            @else 
+                   <img src="{{ asset( 'no_image/te.png')}}" class="img-create-Edit" />
+            @endif
      </div>
 <!--     {{--================================================================== --}}-->
  

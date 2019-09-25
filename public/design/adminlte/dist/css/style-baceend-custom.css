@@ -33,6 +33,21 @@
     margin: auto;
  
 }
-   
+     
+  /*-----------*/
+   .head-h3{
+/*  margin: 50px 0;
+*/  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+ }
+    .box-body-student .col-lg-6{
+    margin-bottom: 20px;
+ }    .box-body-student .row{
+    margin-bottom: 20px;
+ }
+
+ 
    /*=================  End style from backend  ================================*/
  
