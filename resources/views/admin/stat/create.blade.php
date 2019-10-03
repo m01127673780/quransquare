@@ -9,7 +9,7 @@
     {!! Form::open(['url'=>aurl('stat'),'files'=>true]) !!}  
          <div class="form-group">
         {!! Form::label('number',trans('admin.number')) !!}
-        {!! Form::number('number',old('number'),['class'=>'form-control','pattern'=>'number.{6,}' ,S'required'=>'required']) !!}
+        {!! Form::number('number',old('number'),['class'=>'form-control','pattern'=>'number.{6,}' ,'required'=>'required']) !!}
       </div>  
        <div class="form-group">
         {!! Form::label('font_awesome',trans('admin.font_awesome')) !!}

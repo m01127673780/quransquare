@@ -14,7 +14,7 @@
      </div>
      <div class="form-group">
         {!! Form::label('img',trans('admin.image')) !!}
-        {!! Form::file('img',['class'=>'form-control','required'=>'required']) !!}s
+        {!! Form::file('img',['class'=>'form-control']) !!}s
           @if(!empty($videos->img))
        <img src="{{ Storage::url($videos->img) }}" class="img-create-Edit"  />
       @else 

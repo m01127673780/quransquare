@@ -5,9 +5,20 @@
     <title>insert_teacher</title>
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="16x16" href="blob:https://web.whatsapp.com/7e436eb7-f0b4-4524-b2a8-3aca9893df9c">
+      @foreach($setting as $sett)  
+    <link rel="icon" type="image/png" sizes="16x16" href="storage/{{$sett->icon}}"   >
+
+    @endforeach
+ 
     <meta name="msapplication-TileColor" content="#ffffff">
  
+<!-- 
+    <link rel="stylesheet" href="{{ url('design/style') }}/css/vendrs/select/style.css">
+    <link rel="stylesheet" href="{{ url('design/style') }}/css/vendrs/select/prism.css">
+    <link rel="stylesheet" href="{{ url('design/style') }}/css/vendrs/select/chosen.css">
+  -->
+
+
     <link rel="stylesheet" href="{{ url('design/style') }}/css/st_style.css">
     <link rel="stylesheet" href="{{ url('design/style') }}/css/style.css">
      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -29,12 +40,15 @@
 <!--====== start Slider =============================== -->
 <!--------------start section Welcom 1 ------------->
 <section style="height: 100vh">
-       <header class="header-nav "  >
+      <header class="header-nav" >
           <!--start nav Bar--> 
-        <nav class="navbar navbar-expand-lg    fixed-top  "style="    background: #2A333B;">
+        <nav class="navbar navbar-expand-lg    fixed-top  "style="    background: #444;">
           <div class="container">
            <a class="navbar-brand" href="#"> 
-              <img src="{{ url('design/style') }}/img/logo/logo.PNG" style="width: 50px;    margin-top: 9px;"></a> 
+               @foreach($setting as $sett)  
+                   <img src="storage/{{$sett->logo}}"  class="img-logo"></a> 
+ 
+               @endforeach  
               <span class="tybime"></span>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"> <i class="fa fa-list  fa-2x"></i></span>
@@ -45,26 +59,26 @@
                         <a class="nav-link" href="index-slider-border.html">Home</a>
                      </li> -->
                      <li class="nav-item ">
-                <a class="nav-link" href="#whyus">whyus<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./#whyus">whyus<span class="sr-only">(current)</span></a>
                    </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#courses">Courses</a>
+                    <a class="nav-link" href="./#courses">Courses</a>
                    </li> 
                   <li class="nav-item">
-                <a class="nav-link" href="#Videos">Videos</a>
+                <a class="nav-link" href="./#Videos">Videos</a>
                 </li>   
                     <li class="nav-item">
-                <a class="nav-link" href="#Teachers">Teachers</a>
+                <a class="nav-link" href="./#Teachers">Teachers</a>
                 </li> 
                     <li class="nav-item"  >
-                <a class="nav-link" href="#Package">Package</a>
+                <a class="nav-link" href="./#Package">Package</a>
                 </li>
 
                   <li class="nav-item">
-                  <a class="nav-link" href="#testimonial" target="_self">testimonial</a>
+                  <a class="nav-link" href="./#testimonial" target="_self">testimonial</a>
                       </li> 
                       <li class="nav-item">
-                        <a class="nav-link" href="#statistics">statistics</a>
+                        <a class="nav-link" href="./#statistics">statistics</a>
                      </li>  
             <li class="nav-item">
                         <a class="nav-link"  data-toggle="modal" data-target="#myModal" >contact</a>
@@ -81,24 +95,98 @@
   </li> 
        <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-     sunup as 
+     signup  as 
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="#">  student</a>
-      <a class="dropdown-item" href="#">  teacher</a>
+      <a class="dropdown-item" href="student" target="_blank">  student</a>
+      <a class="dropdown-item" href="teacher">  teacher</a>
       
-              </li> 
-                    <li class="nav-item"  >
-                <a class="nav-link" href="admin" target="_blank">ADMIN</a>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header><!-- </header>-->
+  </li> 
 
+   
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header><!-- </header>-->
+ 
         
 <!-- ==================================== -->
+
+
+
+ <!-- Button to Open the Modal -->
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Connect with us</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+
+ <form method="post"  class="form-contact"action ="{{url('user/register')}}" >
+  <input type="hidden" name="_token" value="{{ csrf_token ()}}"> 
+   <div class="row">
+    <div class="col-lg-6 left-3-input">
+      <input type="text" class="form-control"  name="name"    placeholder="name">
+      <input type="email" class="form-control" name="email"   placeholder="email">
+      <input type="text" class="form-control"  name="subject" placeholder="subject">
+     </div>
+    <div class="col-lg-6">
+       <input type="text" class="form-control" name="phone"    placeholder="phone">
+       <textarea class="form-control"          name="message"   placeholder="  message"></textarea> 
+ <!--    <div class="form-group">
+        {!! Form::label('icon',trans('admin.news')) !!}
+        {!! Form::file('icon',['class'=>'form-control icon']) !!}
+ 
+     </div>
+
+ 
+     <div class="form-group">
+       <img name="icon" class="image" src="{{ asset( 'storage/news/No_Image.jpg')}} "   > 
+     </div> -->
+   
+
+   </div>
+ </div>
+ <center style="margin: 20px 0;">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</center>
+ <style type="text/css">
+   
+  textarea{
+    height: 93px;
+   padding: 0!important;
+}  
+  .left-3-input input{
+  height: 33px;
+  margin: 6px 0;
+}  
+
+ </style>
+</form>     
+
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+<!--         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+ -->      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+ 
+ <!-- ===================================== -->
+
+
+
 <!-- ==================================== -->
 
 
@@ -137,7 +225,9 @@
  
  
  
-<!--====================================================-->
+<!--====================================================--><!--====================================================-->
+
+<!--====================================================--><!--====================================================-->
 <section class="margin portfolio"    >
                 <div class="form-group">
     <label for="exampleFormControlSelect1" class="head-smol"> select  your timezone</label>
@@ -686,6 +776,14 @@
  <script src="{{ url('design/style') }}/js/vendrs/jquery.js"></script>
  <script src="{{ url('design/style') }}/js/vendrs/owl.carousel.min.js"></script>
 <!-- isopte -->
+<!-- 
+
+ <script src="{{ url('design/style')}}/css/vendrs/select/prism.js"></script>
+ <script src="{{ url('design/style')}}/css/vendrs/select/init.js"></script>
+
+ -->
+
+
 <script src="{{ url('design/style') }}/js/vendrs/isotope.js"></script>
 <script src="{{ url('design/style') }}/js/vendrs/jquery.countTo.js"></script>
 <script src="{{ url('design/style') }}/js/vendrs/wow.min.js"></script>

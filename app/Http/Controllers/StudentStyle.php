@@ -16,7 +16,8 @@ use App\Model\Slider;
 use App\Model\News;
 use App\Model\Contact;
 use App\Model\Student;
- 
+ use App\Model\Setting;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -29,6 +30,8 @@ class StudentStyle extends Controller
 // $var = Courses::all();
 
 // echo $var;
+           $setting         =Setting::all();
+
 	   $whyus =Whyus::all();
 	   $courses =Courses::all();
 	   $videos =Videos::all();
@@ -50,6 +53,8 @@ class StudentStyle extends Controller
         'halfhour'=>$halfhour,
         'footer'=>$footer,
         'Slider'=>$Slider,
+        'setting' => $setting,
+
       ]);
  
     }

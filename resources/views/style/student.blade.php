@@ -29,12 +29,15 @@
 <!--====== start Slider =============================== -->
 <!--------------start section Welcom 1 ------------->
 <section style="height: 100vh">
-       <header class="header-nav "  >
+             <header class="header-nav" >
           <!--start nav Bar--> 
-        <nav class="navbar navbar-expand-lg    fixed-top  "style="    background: #2A333B;">
+        <nav class="navbar navbar-expand-lg    fixed-top  "style="    background: #444;">
           <div class="container">
            <a class="navbar-brand" href="#"> 
-              <img src="{{ url('design/style') }}/img/logo/logo.PNG" style="width: 50px;    margin-top: 9px;"></a> 
+               @foreach($setting as $sett)  
+                   <img src="storage/{{$sett->logo}}"  class="img-logo"></a> 
+ 
+               @endforeach  
               <span class="tybime"></span>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"> <i class="fa fa-list  fa-2x"></i></span>
@@ -45,26 +48,26 @@
                         <a class="nav-link" href="index-slider-border.html">Home</a>
                      </li> -->
                      <li class="nav-item ">
-                <a class="nav-link" href="#whyus">whyus<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./#whyus">whyus<span class="sr-only">(current)</span></a>
                    </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#courses">Courses</a>
+                    <a class="nav-link" href="./#courses">Courses</a>
                    </li> 
                   <li class="nav-item">
-                <a class="nav-link" href="#Videos">Videos</a>
+                <a class="nav-link" href="./#Videos">Videos</a>
                 </li>   
                     <li class="nav-item">
-                <a class="nav-link" href="#Teachers">Teachers</a>
+                <a class="nav-link" href="./#Teachers">Teachers</a>
                 </li> 
                     <li class="nav-item"  >
-                <a class="nav-link" href="#Package">Package</a>
+                <a class="nav-link" href="./#Package">Package</a>
                 </li>
 
                   <li class="nav-item">
-                  <a class="nav-link" href="#testimonial" target="_self">testimonial</a>
+                  <a class="nav-link" href="./#testimonial" target="_self">testimonial</a>
                       </li> 
                       <li class="nav-item">
-                        <a class="nav-link" href="#statistics">statistics</a>
+                        <a class="nav-link" href="./#statistics">statistics</a>
                      </li>  
             <li class="nav-item">
                         <a class="nav-link"  data-toggle="modal" data-target="#myModal" >contact</a>
@@ -81,29 +84,27 @@
   </li> 
        <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-     sunup as 
+     signup  as 
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="#">  student</a>
-      <a class="dropdown-item" href="#">  teacher</a>
+      <a class="dropdown-item" href="student" target="_blank">  student</a>
+      <a class="dropdown-item" href="teacher">  teacher</a>
       
-              </li> 
-                    <li class="nav-item"  >
-                <a class="nav-link" href="admin" target="_blank">ADMIN</a>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header><!-- </header>-->
+  </li> 
 
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header><!-- </header>-->
+ 
+        
+<!-- ==================================== -->
+ 
         
 <!-- ==================================== -->
 <!-- ==================================== -->
-
-
-
-
+<!-- ==================================== -->
 <div class="container-flud" style="padding-right: 55px;">
   <div class="row">
    <div class="col-lg-7 col-lg-7-box-shadow " >
@@ -111,8 +112,8 @@
  <form method="post"  action ="{{url('student/register')}}" >
   <input type="hidden" name="_token" value="{{ csrf_token ()}}">   
   <div class="form-group">
-     <h1 class="head-h1"><span style="border-bottom: 2px  solid #444;">STUDENT</span> <span >INFORMATION</span> </h1> 
-
+     <h1 class="head-h1"><span style="border-bottom: 2px  solid #444;">BASIC</span> <span >INFORMATION</span> </h1> 
+ 
     <div class="controls">
       <input type="text" id="name" class="floatLabel" name="name">
       <label for="name"> <i class="icon-happy fa fa-smile-o "></i> Name * </label>
@@ -132,7 +133,7 @@
       <br>
 
 
-     <h1 class="head-h1 info-stud-insert"><span style="border-bottom: 2px  solid #444;"> BASIC</span> <span >INFORMATION</span> </h1> 
+     <h1 class="head-h1 info-stud-insert"><span style="border-bottom: 2px  solid #444;"> STUDENT</span> <span >INFORMATION</span> </h1> 
        
        <br>
       <br>
@@ -789,7 +790,7 @@
  <!--======================================================-->  
  
      <h1 class="head-h1 PREFERRED"><span style="border-bottom: 2px  solid #444;">PREFERRED </span> <span >EVALUATION TIME</span> </h1> 
-<!-- ============================================================= -->
+ <!-- ============================================================= -->
 <div class="width-full  ">
    <div class="form-group">
      <div class="grid">

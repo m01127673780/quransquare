@@ -34,13 +34,30 @@
      </div>
      <div class="form-group">
         {!! Form::label('icon',trans('admin.image')) !!}
-        {!! Form::file('icon',['class'=>'form-control','required'=>'required']) !!}
-          @if(!empty($whyus->icon))
-       <img src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png" class="img-create-Edit" />
+        {!! Form::file('icon',['class'=>'form-control']) !!}
+       @if(!empty($whyus->icon))
+       <img src="{{ Storage::url($whyus->icon) }}" class="img-create-Edit"  />
+      @else 
+       <img name="img" class="image" src="{{ asset( 'no_image/no-image.png')}} "   > 
       @endif
       <br>
       {!! Form::submit(trans('admin.save'),['class'=>'btn btn-primary']) !!}
      </div>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 <!--{{--================================================================== --}} -->
     {!! Form::close() !!}
   </div>

@@ -1055,7 +1055,7 @@
         @if(!empty($student->icon))
              <img src="{{ Storage::url($student->icon) }}" class="img-create-Edit"  />
             @else 
-                   <img src="{{ asset( 'no_image/te.png')}}" class="img-create-Edit" />
+                   <img src="{{ asset( 'no_image/student.png')}}" class="img-create-Edit" />
             @endif
      </div>
 <!--     {{--================================================================== --}}-->

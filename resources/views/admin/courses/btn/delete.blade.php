@@ -26,7 +26,7 @@
                  <br>             
               <?php 
               if (empty ($icon)){?>
-                <img id="imgfalg"  class="img-are-you" src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png"   >   
+                <img name="img" class="image" src="{{ asset( 'no_image/no-image.png')}} "   >    
               <?php
               }else{ ?>    
                 <img  id="imgfalg" class="img-are-you" src="{{ Storage::url($icon) }}" id="imgfalg"> 

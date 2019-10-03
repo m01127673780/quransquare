@@ -17,7 +17,8 @@ use App\Model\News;
 use App\Model\Contact;
 use App\Model\Student;
 use App\Model\TeacherSignup;
- 
+     use App\Model\Setting;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -25,7 +26,9 @@ class TeacherSignupStyle extends Controller
 {
     public function show (){
 
-    
+
+
+
 
 // $var = Courses::all();
 
@@ -40,7 +43,10 @@ class TeacherSignupStyle extends Controller
      $hour     =Hour::all();
      $footer     =Footer::all();
      $Slider     =Slider::all();
+     $setting         =Setting::all();
+
       return view ('style.teachersignup',[
+        'setting' => $setting,
       	'whyus' => $whyus,
       	'courses'=>$courses,
       	'videos'=>$videos,

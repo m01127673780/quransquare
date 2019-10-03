@@ -1,7 +1,5 @@
 @extends('admin.index')
 @section('content')
-
-
 <div class="box">
   <div class="box-header">
     <h3 class="box-title">{{ $title }}</h3>
@@ -10,9 +8,6 @@
   <div class="box-body">
     {!! Form::open(['url'=>aurl('whyus'),'files'=>true]) !!}
    
-      
-
-    
        <div class="form-group">
         {!! Form::label('head_ar',trans('admin.head_ar')) !!}
         {!! Form::text('head_ar',old('head_ar'),['class'=>'form-control','required'=>'required']) !!}
@@ -41,36 +36,16 @@
 
      <div class="form-group">
         {!! Form::label('icon',trans('admin.image')) !!}
-<<<<<<< HEAD
-        {!! Form::file('icon',['class'=>'form-control icon','required'=>'required']) !!}
-=======
-        {!! Form::file('icon',['class'=>'form-control icon']) !!}
->>>>>>> efbee0cc6b55447ca4f5f58966dfc98ec0ad49ac
  
+        {!! Form::file('icon',['class'=>'form-control icon','required'=>'required']) !!}
      </div>
-  
      <div class="form-group">
-       <img name="icon" class="image img-create-Edit" src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png"   required="required" > 
+       <img name="img" class="image" src="{{ asset( 'no_image/no-image.png')}} "   > 
      </div>
-   
-    
      {!! Form::submit(trans('admin.add'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}
   </div>
   <!-- /.box-body -->
 </div>
-<!-- /.box -->
-
- <style type="text/css">
-    
-.image{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;  
-     /* text-align: center; */
-    margin: auto;
- 
-}
- </style>
-
+<!-- /.box --> 
 @endsection

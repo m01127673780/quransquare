@@ -95,9 +95,9 @@ class SliderDatatable extends DataTable {
 				'orderable'  => false,
 				'searchable' => false,
 			], [
-				'name'  => 'id',
-				'data'  => 'id',
-				'title' => '#',
+				'name'  => 'head_'.session('lang'),
+				'data'  => 'head_'.session('lang'),
+				'title' => trans('admin.head'),
 			],[
 				'name'  => 'link',
 				'data'  => 'link',

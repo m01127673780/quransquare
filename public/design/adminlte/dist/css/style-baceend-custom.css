@@ -48,6 +48,33 @@
     margin-bottom: 20px;
  }
 
- 
+    .modal-content{
+    top: -30px!important;
+ }
+
    /*=================  End style from backend  ================================*/
- 
+   .img_flag{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+   }
+     
+ .inner {
+margin-bottom: 32px!important;
+    color: #fff;
+    padding-right: 15px;
+    padding-top: 10px;    
+      }  
+ .fa-arrow-circle-right{
+    margin-right: 11px!important;  
+        -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;  
+      }
+     .small-box-footer:hover .fa-arrow-circle-right{
+    margin-right: 0px!important;
+        -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;    
+      }

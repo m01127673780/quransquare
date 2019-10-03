@@ -15,11 +15,10 @@
       </div>
        <div class="form-group">
         {!! Form::label('img',trans('admin.image')) !!}
-          {!! Form::file('img',['class'=>'form-control img','required'=>'required']) !!}
-        {!! Form::file('img',['class'=>'form-control img']) !!}
-     </div>
+          {!! Form::file('img',old('img'),['class'=>'form-control img','required'=>'required']) !!}
+      </div>
      <div class="form-group">
-       <img name="img" class="image" src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png "   > 
+       <img name="img" class="image" src="{{ asset( 'no_image/no-image.png')}} "   > 
      </div>
         {!! Form::submit(trans('admin.add'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}

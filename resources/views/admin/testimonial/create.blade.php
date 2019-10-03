@@ -1,7 +1,5 @@
 @extends('admin.index')
 @section('content')
-
-
 <div class="box">
   <div class="box-header">
     <h3 class="box-title">{{ $title }}</h3>
@@ -9,10 +7,6 @@
   <!-- /.box-header -->
   <div class="box-body">
     {!! Form::open(['url'=>aurl('testimonial'),'files'=>true]) !!}
-   
-      
-
-    
        <div class="form-group">
         {!! Form::label('head_ar',trans('admin.name_ar')) !!}
         {!! Form::text('name_ar',old('name_ar'),['class'=>'form-control','required'=>'required']) !!}
@@ -45,36 +39,18 @@
         {!! Form::label('country_en',trans('admin.country_en')) !!}
         {!! Form::text('country_en',old('country_en'),['class'=>'form-control','required'=>'required']) !!}
      </div>
-
-     <div class="form-group">
+      <div class="form-group">
         {!! Form::label('img',trans('admin.image')) !!}
-        {!! Form::file('img',['class'=>'form-control img','required'=>'required']) !!}
- 
-     </div>
-
- 
-     <div class="form-group">
+        {!! Form::file('img',old('img'),['class'=>'form-control img','required'=>'required']) !!}
+      </div>
+      <div class="form-group">
        <img  src="{{ asset( 'no_image/no-image.png')}} "  class="img-create-Edit" >  
      </div>
-   
-    
-     {!! Form::submit(trans('admin.add'),['class'=>'btn btn-primary']) !!}
+      {!! Form::submit(trans('admin.add'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}
   </div>
   <!-- /.box-body -->
 </div>
 <!-- /.box -->
-
- <style type="text/css">
-    
-.image{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;  
-     /* text-align: center; */
-    margin: auto;
- 
-}
- </style>
-
+  
 @endsection

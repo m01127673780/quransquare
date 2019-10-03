@@ -7,15 +7,15 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Dashboard
-        <small>Control panel</small>
+        {{trans('admin.dashboard') }}  
+        <small> {{trans('admin.control_panel') }}</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
+      <ol class="breadcrumb">      
+        <li class="active"> <i class="fa fa-dashboard"> <a href="{{ aurl('') }}">></i>{{trans('admin.dashboard') }} </a>    </li>
+         <li><a href="{{ aurl('') }}"><i class="fa fa-university"></i> {{trans('admin.visit_websit') }}  </a></li>
+          <a href="{{ url()->current() }}" class="dt-button buttons-reload btn btn-default"><span><i class="fa fa-refresh"></i></span></a>
+       </ol>
     </section>
-
     <!-- Main content -->
     <section class="content">
     	@include('admin.layouts.message')

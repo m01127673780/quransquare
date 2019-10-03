@@ -59,7 +59,8 @@
      </div>
      <!-- -------------- -->
      <div class="form-group">
-        {!! Form::label('img',trans('admin.image_st')) !!}        {!! Form::file('img',['class'=>'form-control img','required'=>'required']) !!}
+        {!! Form::label('img',trans('admin.image_st')) !!}  
+        {!! Form::file('img',old('img'),['class'=>'form-control img','required'=>'required']) !!}
      </div>
      <div class="form-group">
        <img  src="{{ asset( 'no_image/no-image.png')}} "  class="img-create-Edit" > 
@@ -69,7 +70,7 @@
      <div class="form-group">
         {!! Form::label('img_Teacher',trans('admin.image_te')) !!}
   
-        {!! Form::file('img_Teacher',['class'=>'form-control img','required'=>'required']) !!}
+        {!! Form::file('img_Teacher',old('img_Teacher'),['class'=>'form-control img','required'=>'required']) !!}
        </div>
  
   

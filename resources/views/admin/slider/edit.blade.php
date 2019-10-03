@@ -17,22 +17,19 @@
      <div class="form-group">
         {!! Form::label('link',trans('admin.link')) !!}
         {!! Form::url('link',$slider->link,['class'=>'form-control','pattern'=>'https?://.+']) !!}
- 
      </div>
-
-
      <div class="form-group">
         {!! Form::label('img',trans('admin.image')) !!}
         {!! Form::file('img',['class'=>'form-control']) !!}
-
-          @if(!empty($slider->img))
-       <img src="{{ Storage::url($slider->img) }}" style="width:50px;height: 50px;" />
+      @if(!empty($slider->img))
+       <img src="{{ Storage::url($slider->img) }}" class="img-create-Edit"  />
+      @else 
+             <img src="{{ asset( 'no_image/no-image.png')}}" class="img-create-Edit" />
       @endif
 
      </div>
-<!--     {{--================================================================== --}}
- -->
-
+<!--     {{--=========================================================== --}}-->
+ 
 
      {!! Form::submit(trans('admin.save'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}

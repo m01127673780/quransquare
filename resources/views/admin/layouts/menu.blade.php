@@ -15,6 +15,7 @@
                     <a href="#">
                       <div class="pull-left">
                         <img src="{{ url('design/adminlte') }}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
                       </div>
                       <h4>
                         Support Team
@@ -205,40 +206,63 @@
               <span class="hidden-xs"> </span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="{{ aurl('lang/ar') }}"><i class="fa fa-flag"></i> عربى</a></li>
-              <li><a href="{{ aurl('lang/en') }}"><i class="fa fa-flag"></i> English</a></li>
+              <li><a href="{{ aurl('lang/ar') }}"> 
+              <img  class ="img_flag"src="https://www.worldatlas.com/r/w480/img/flag/eg-flag.jpg" >
+               </i> عربى</a>
+                </li>
+              <li>
+                <a href="{{ aurl('lang/en') }}"> 
+                <img  class ="img_flag"src="https://4.bp.blogspot.com/-yqNOLxpV7_Q/WTxfxsIjD7I/AAAAAAAAMQI/AaZNXR-Ah-EAI9TIKCoI92w0UGfJTLVkACLcB/s1600/PinterestAmericanFlagripplinggifMay2017.gif" >
+              </i> English</a>
+            </li>
+                    <li>
+                <a onclick="myFunction()"> 
+                <img   class ="img_flag"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEX///8AI5XtKTkAFJJ6gbrzg4ntHTC7o1gDAAAA/klEQVR4nO3QSQ0AIAADsHH6l4yKPUhaCc2oWTs9586aOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHy4ckD5KrN4eD2boIAAAAASUVORK5CYII=" >
+              </i> French</a>
+            </li>
             </ul>
           </li>
+  <script type="text/javascript">
+ function myFunction() {
+  alert("    {{ trans('admin.this_language_not_available_now') }}");
+  
+}
+ </script>
           <!-- Control Sidebar Toggle Button -->
-
-
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="{{ url('design/adminlte') }}/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="{{ url('no_image') }}/Eng.png" class="user-image" alt="User Image">
               <span class="hidden-xs">{{ admin()->user()->name }}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="{{ url('design/adminlte') }}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{ url('no_image') }}/Eng.png" class="img-circle" alt="User Image">
+
+
 
                 <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
-                </p>
+              {{ trans('admin.Messenger_of_Allah_Mohamad') }}
+          
+<!--                   <small  class="margin">{{ trans('admin.ff55_mobile') }} </small>
+ -->                </p>
+
+                 
+ 
+
               </li>
               <!-- Menu Body -->
               <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">
-                    <a href="#">Followers</a>
+                    <a href="{{ url('/') }}">{{ trans('admin.website_main') }}</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Sales</a>
+                    <a href="{{ url('student') }}">{{ trans('admin.student') }}</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
+                    <a href="{{ url('teacher') }}">{{ trans('admin.teachersignup') }}</a>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -246,10 +270,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <p  class=" btn-flat btn btn-primary"> {{ trans('admin.profile') }}</p>
                 </div>
                 <div class="pull-right">
-                  <a href="{{ url('admin/logout') }}" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="{{ url('admin/logout') }}" class="btn btn-danger btn-flat">{{ trans('admin.signout') }}</a>
                 </div>
               </li>
             </ul>

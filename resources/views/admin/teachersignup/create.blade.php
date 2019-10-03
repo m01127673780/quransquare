@@ -15,15 +15,15 @@
     
        <div class="form-group">
         {!! Form::label('name',trans('admin.name')) !!}
-        {!! Form::text('name',old('name'),['class'=>'form-control']) !!}
+        {!! Form::text('name',old('name'),['class'=>'form-control','required'=>'required']) !!}
      </div>
         <div class="form-group">
         {!! Form::label('email',trans('admin.email')) !!}
-        {!! Form::email('email',old('email'),['class'=>'form-control']) !!}
+        {!! Form::email('email',old('email'),['class'=>'form-control','required'=>'required']) !!}
      </div>      
        <div class="form-group">
         {!! Form::label('phone',trans('admin.phone')) !!}
-        {!! Form::text('phone',old('phone'),['class'=>'form-control']) !!}
+        {!! Form::text('phone',old('phone'),['class'=>'form-control','required'=>'required']) !!}
      </div>
 
  
@@ -31,7 +31,7 @@
 <section class=" Example select"  >
   <div class="form-group">
     <label for="exampleFormControlSelect1" class="head-smol">How did you learn about us? *</label>
-      <select class="form-control" id="e " name="how_aboutus"  name="how_aboutus"><br><br>
+      <select class="form-control" required = "required" id="e " name="how_aboutus"  name="how_aboutus"><br><br>
       <option value="Word of mouth">Word of mouth</option>
       <option value="Facebook">Facebook</option>
       <option value="Instagram">Instagram</option>
@@ -46,7 +46,7 @@
  <section class="  portfolio  "    >
                 <div class="form-group">
     <label for="exampleFormControlSelect1" class="head-smol"> select  your timezone</label>
-    <select class="form-control" id="exampleFormControlSelect1" name="timezone">
+    <select class="form-control" required = "required" id="exampleFormControlSelect1" name="timezone">
 <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
             <option value="(GMT -11:00) Midway Island, Samoa">(GMT -11:00) Midway Island, Samoa</option>
             <option value="(GMT -10:00) Hawaii">(GMT -10:00) Hawaii</option>
@@ -88,7 +88,7 @@
 <section class="   "  >
                 <div class="form-group">
     <label for="exampleFormControlSelect1">Select your location *</label>
-    <select class="form-control"name="location">
+    <select class="form-control" required = "required"name="location">
  <option value="Australia">Australia</option>
  <option value="Canada">Canada</option>
  <option value="France">France</option>

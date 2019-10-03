@@ -10,6 +10,11 @@
 
 /*=========================== =========*/
      /*=========================== =========*/
+
+
+
+ 
+ 
     
  $('.toggle').on('click', function() {
   $('.container').stop().addClass('active');
@@ -18,70 +23,39 @@
 $('.close').on('click', function() {
   $('.container').stop().removeClass('active');
 });
-//  console.log($(".statistics").offset().top)
-    $(window).scroll(function(){
-    var sc = $(this).scrollTop();
-    if(sc > 501){
-    $('.timer').countTo();
-        
-         
- $('.coutn-one').countTo({
-    from:10,
-    to :10000,
-    speed:12000,
-    refreshInterval:80 
-});
-     $('.coutn-tow').countTo({
-    from:0,
-    to :15652,
-    speed:13000,
-    refreshInterval:80 
-});
-
-     $('.coutn-thre').countTo({
-    from:0,
-    to :80550,
-    speed:12000,
-    refreshInterval:80 
-});
-
-     $('.coutn-four').countTo({
-    from:0,
-    to :75000,
-    speed:12500,
-    refreshInterval:80 
-});
  
-        $(window).off("scroll");
-        
-    }   
-        //  تغير  الbackground- للناف بار 
-        if(sc >100)
-    {
-        console.log("window Max top")
-            $("header") .addClass("sticky");
-    }
-        else
-        {
-        $("header") .removeClass("sticky");
 
-        } 
-        
-        if(sc >2000)
-      {
-        console.log("window Max top")
-            $(".exprets") .css({
-            display:"block"
-            });
-     }
-        else
-        {
-            $(".exprets") .removeClass("show-section-stat");
 
-        } 
-    });
-    
-    
+ $(window) .scroll(function ( ) {
+  var SC = $(this).scrollTop();
+  if (SC > 200) {
+
+    $('.fixed-top') .addClass('sticky_head');
+  }else{
+    $('.fixed-top') .removeClass('sticky_head');
+
+  }
+  
+    if (SC > 200) {
+
+    $('.icon-up-to-top') .removeClass('noneimportant');
+  }else{
+    $('.icon-up-to-top') .addClass('noneimportant');
+
+  }
+// start countTo plugin
+
+
+if (SC > 4357.125) {
+
+        $('.timer').countTo();
+        $(window).off(scroll);
+
+}   
+
+// End countTo plugin
+
+});
  
     
 /*start shufil portofile */ //بديل لى plugin    shaflue .js
@@ -850,4 +824,3 @@ showPasswordButton.addEventListener('click', event => {
     });
   }
 });
-

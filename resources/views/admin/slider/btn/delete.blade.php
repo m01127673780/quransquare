@@ -14,19 +14,26 @@
       {!! Form::open(['route'=>['slider.destroy',$id],'method'=>'delete']) !!}
       <div class="modal-body">
  
-
-       <h4>{{ trans('admin.delete_this') }} : 
-        <br>
-                  <?php
-                  $session = session('lang'); 
-                  if ($session  = 'en' ) {
-                  echo $link ;
-                  }else{
-                  echo    $link; 
-                  }
-                  ?>
+          <h4>{{ trans('admin.delete_this') }}
+            <?php
+                $session = session('lang'); 
+                if ($session  = 'en' ) {
+                echo ': '.$head_en ;
+                }else{
+                echo  ': '.  $head_ar; 
+                }
+                ?>
                  <br>             
-  <img  src="{{ Storage::url($img) }}" class="img-are-you"></h4>
+              <?php 
+              if (empty ($img)){?>
+                <img id="imgfalg"  class="img-are-you" src="{{asset ('no_image/no-image.png')}}"   >   
+              <?php
+              }else{ ?>    
+                <img    class="img-are-you" src="{{ Storage::url($img) }}"  > 
+              <?php
+               }
+               ?> 
+        </h4>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">{{ trans('admin.close') }}</button>

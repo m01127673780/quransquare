@@ -541,11 +541,12 @@ height: 10px;
 
     }
 .descriptions h3 {
-    color: white;
+color: white;
     /* top: 0; */
     /* margin-top: -40px; */
-    font-size: 15px!important;
-        margin-top: -22px;
+    font-size: 18px!important;
+    margin-top: -25px;
+    font-weight: bold;
 }
 .haed-card-curce {
     top: 9px;
@@ -848,8 +849,7 @@ section > div.all-plans {
   left: -12px;
 }
 .price-package .package-price .price span {
-  font-size: 3.5rem;
-}
+font-size: 16px;}
 .price-package .package-price .term {
   display: inline-block;
   vertical-align: top;
@@ -860,11 +860,17 @@ section > div.all-plans {
   font-size: 1.7rem;
   display: block;
   padding: 0;
+      margin-top: -10px;
 }
-.price-package .package-price .term span {
-  font-size: 1rem;
-  display: block;
-  margin-top: -3px;
+  
+ 
+ .text-decoration-line-through{
+          text-decoration: line-through;
+          font-size: 16px ;
+     display: block;
+    margin-top: -21px;
+    display: block;
+  margin-top: -15px;
 }
 .price-package .package-features {
   -moz-border-radius-topleft: 10px;
@@ -929,6 +935,8 @@ section > div.all-plans {
   vertical-align: middle;
   width: 33%;
 }
+
+
 @media only screen and (max-width: 529px) {
   .all-plans .all-plans-features text {
     display: block;
@@ -2893,9 +2901,25 @@ color: #fff!important;
     width: 102%;
      margin-left: -1%;
 }
-<<<<<<< HEAD
-=======
+ .card-img-top{
+   height: 400px;
+    
+}
+ .img-logo{
+    width: 65px;
+    margin-top: 10px;
+    height: 35px;
+}
 
 
- 
->>>>>>> efbee0cc6b55447ca4f5f58966dfc98ec0ad49ac
+
+@media(max-width: 600px){
+  .wow.bounceIn,.span-clip-title.wow.animated.animated,.carousel-control-prev,.carousel-control-next{
+display: none;
+}
+ .man.fa.fa-angle-down{
+top: 40%;
+}
+  }
+}
+

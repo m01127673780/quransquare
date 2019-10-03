@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-
-use App\Model\Whyus;
+ use App\Model\Whyus;
 use App\Model\Courses;
 use App\Model\Videos;
 use App\Model\Teachers;
@@ -18,60 +19,46 @@ use App\Model\News;
 use App\Model\Contact;
 use App\Model\Quick;
  
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 class WhyusStyle extends Controller
 {
     public function show (){
 
-    
-
-// $var = Courses::all();
-
-// echo $var;
-	   $whyus =Whyus::all();
-	   $courses =Courses::all();
-	   $videos =Videos::all();
-	   $teachers =Teachers::all();
-     $stat =Stat::all();
-     $beststudent =BestStudent::all();
-     $testimonial =Testimonial::all();
-     $halfhour =Halfhour::all();
-     $hour     =Hour::all();
-     $footer     =Footer::all();
-     $Slider     =Slider::all();
-      return view ('style.index',[
-      	'whyus' => $whyus,
-      	'courses'=>$courses,
-      	'videos'=>$videos,
-      	'teachers'=>$teachers,
-        'stat'=>$stat,
-        'beststudent'=>$beststudent,
-        'testimonial'=>$testimonial,
-        'hour'=>$hour,
-        'halfhour'=>$halfhour,
-        'footer'=>$footer,
-        'Slider'=>$Slider,
+    	   $whyus            =Whyus::all();
+    	   $Courses          =Courses::all();
+    	   $videos           =Videos::all();
+    	   $teachers         =Teachers::all();
+         $stat             =Stat::all();
+         $BestStudent      =BestStudent::all();
+         $testimonial      =Testimonial::all();
+         $halfhour         =Halfhour::all();
+         $hour             =Hour::all();
+         $footer           =Footer::all();
+         $Slider           =Slider::all();
+    return view (
+        'style.index',[
+      	'whyus'        => $whyus,
+      	'courses'      =>$courses,
+      	'videos'       =>$videos,
+      	'teachers'     =>$teachers,
+        'stat'         =>$stat,
+        'beststudent'  =>$beststudent,
+        'testimonial'  =>$testimonial,
+        'hour'         =>$hour,
+        'halfhour'     =>$halfhour,
+        'footer'       =>$footer,
+        'Slider'       =>$Slider,
       ]);
- 
     }
-    public function insert (){
-      $add = new News;
-      $add->name = request('name');
-      $add->password  =  request ('password');
-      $add->save();
-      return back();
-}
-
+ 
     public function insert_contact (){
-      $add = new Contact;
-      $add->name = request('name');
-      $add->email = request('email');
-      $add->subject = request('subject');
-      $add->phone = request('phone');
-      $add->message = request('message');
-      $add->icon = request('icon'.v_image());
+      $add             = new Contact;
+      $add->name       = request('name');
+      $add->email      = request('email');
+      $add->subject    = request('subject');
+      $add->phone      = request('phone');
+      $add->message     = request('message');
+      $add->icon        = request('icon'.v_image());
  
         $add->save();
       return back();
@@ -87,12 +74,10 @@ class WhyusStyle extends Controller
        
     }
 }
-<<<<<<< HEAD
-=======
+ 
 
 
->>>>>>> efbee0cc6b55447ca4f5f58966dfc98ec0ad49ac
-    public function insert_quick (){
+     public function insert_quick (){
       $add = new Quick;
       $add->name = request('name');
       $add->email = request('email');
@@ -115,13 +100,8 @@ class WhyusStyle extends Controller
        
     }
 }
-<<<<<<< HEAD
- 
 
  
-=======
->>>>>>> efbee0cc6b55447ca4f5f58966dfc98ec0ad49ac
-
-
+ 
 
 }

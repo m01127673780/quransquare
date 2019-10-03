@@ -13,23 +13,23 @@
 <!--   {{--================================================================== --}} --> 
      <div class="form-group">
         {!! Form::label('name',trans('admin.name')) !!}
-        {!! Form::text('name',$teachersignup->name,['class'=>'form-control']) !!}
+        {!! Form::text('name',$teachersignup->name,['class'=>'form-control','required'=>'required']) !!}
      </div>
 
      <div class="form-group">
         {!! Form::label('email',trans('admin.email')) !!}
-        {!! Form::email('email',$teachersignup->email,['class'=>'form-control']) !!}
+        {!! Form::email('email',$teachersignup->email,['class'=>'form-control','required'=>'required']) !!}
      </div>
      <div class="form-group">
         {!! Form::label('phone',trans('admin.phone')) !!}
-        {!! Form::text('phone',$teachersignup->phone,['class'=>'form-control']) !!}
+        {!! Form::text('phone',$teachersignup->phone,['class'=>'form-control','required'=>'required']) !!}
      </div>
       <!--====================================================-->
 
     <section class=" Example select"  >
       <div class="form-group">
         <label for="exampleFormControlSelect1" class="head-smol">How did you learn about us? *</label>
-          <select class="form-control"  name="how_aboutus" ><br><br>
+          <select class="form-control" required="required"  name="how_aboutus" ><br><br>
            <option value="<?php echo $teachersignup->how_aboutus ; ?>"  selected="selected"><?php echo $teachersignup->how_aboutus ; ?></option>
           <option value="...............">  ............... </option>
           <option value="Word of mouth">Word of mouth</option>
@@ -46,7 +46,7 @@
                 <div class="form-group">
     <label for="exampleFormControlSelect1" class="head-smol">  timezone</label>
 
-    <select class="form-control" name="timezone">
+    <select class="form-control" required="required" name="timezone">
           <option   value="<?php echo $teachersignup->timezone ; ?>"  selected="selected"><?php echo $teachersignup->timezone ; ?></option>
             <option value="...................">................................... </option>
             <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
@@ -90,7 +90,7 @@
 <section class="   "  >
  <div class="form-group">
 <label for="location"></label>
- <select class="form-control" name="location">
+ <select class="form-control" required="required" name="location">
           <option   value="<?php echo $teachersignup->location ; ?>"  selected="selected"><?php echo $teachersignup->location ; ?></option>
  <option value="...................">................................... </option>  
  <option value="Australia">Australia</option>

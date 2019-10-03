@@ -15,24 +15,27 @@
       <div class="modal-body">
  
      <div class="modal-body">
-          <h4>{{ trans('admin.delete_this') }} : 
+            <h4>{{ trans('admin.delete_this') }}
             <?php
-                echo  $name ;          
-               ?>
+                $session = session('lang'); 
+                if ($session  = 'en' ) {
+                echo ': '.$name_en ;
+                }else{
+                echo  ': '.  $name_ar; 
+                }
+                ?>
                  <br>             
               <?php 
-              if (empty ($icon)){?>
-                <img id="imgfalg"  class="img-are-you" src="{{ asset( 'no_image/tee.png')}} "    >   
+              if (empty ($img)){?>
+                <img id="imgfalg"  class="img-are-you" src="{{asset ('no_image/no-image.png')}}"   >   
               <?php
               }else{ ?>    
-                <img  id="imgfalg" class="img-are-you" src="{{ Storage::url($icon) }}" id="imgfalg"> 
+                <img    class="img-are-you" src="{{ Storage::url($img) }}"  > 
               <?php
                }
                ?> 
         </h4>
       </div>
-       
- 
             </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">{{ trans('admin.close') }}</button>

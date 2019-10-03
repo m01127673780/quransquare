@@ -36,13 +36,35 @@ class SliderController extends Controller {
 	public function store() {
 
 		$data = $this->validate(request(),
-			[
-				'link'                 => 'sometimes|nullable',
-				'img'                 => 'sometimes|nullable|'.v_image(),
  
+				[
+				'link'                     => 'sometimes|nullable',
+				'head_ar'                  => 'sometimes|nullable',
+				'head_en'                  => 'sometimes|nullable',
+				'title_en'                 => 'sometimes|nullable',
+				'title_ar'                 => 'sometimes|nullable',
+				'text1_ar'                 => 'sometimes|nullable',
+				'text1_en'                 => 'sometimes|nullable',
+				'text2_ar'                 => 'sometimes|nullable',
+				'text2_en'                 => 'sometimes|nullable',
+				'text3_en'                 => 'sometimes|nullable',
+				'text3_ar'                 => 'sometimes|nullable',
+				'img'                      => 'sometimes|nullable|'.v_image(),
+				'link'                     => 'sometimes|nullable',
+				'img'                      => 'sometimes|nullable|'.v_image(),
 			], [], [
-				'link'                 => trans('admin.link'),
-				'img'                  => trans('admin.img'),
+	'link'                     => trans('admin.link'),
+				'head_ar'                  => trans('admin.head_ar'),
+				'head_en'                  => trans('admin.head_en'),
+				'title_en'                 => trans('admin.title_en'),
+				'title_ar'                 => trans('admin.title_ar'),
+				'text1_ar'                 => trans('admin.text1_ar'),
+				'text1_en'                 => trans('admin.text1_en'),
+				'text2_ar'                 => trans('admin.text2_ar'),
+				'text2_en'                 => trans('admin.text2_en'),
+				'text3_ar'                 => trans('admin.text3_ar'),
+				'text3_ar'                 => trans('admin.text3_ar'),
+				'img'                      => trans('admin.img'),
 				 
 			]);
 
@@ -92,13 +114,35 @@ class SliderController extends Controller {
 
 		
 		$data = $this->validate(request(),
-				[
-				'link'                 => 'sometimes|nullable',
-				'img'                 => 'sometimes|nullable|'.v_image(),
  
+				[
+				'link'                     => 'sometimes|nullable',
+				'head_ar'                  => 'sometimes|nullable',
+				'head_en'                  => 'sometimes|nullable',
+				'title_en'                 => 'sometimes|nullable',
+				'title_ar'                 => 'sometimes|nullable',
+				'text1_ar'                 => 'sometimes|nullable',
+				'text1_en'                 => 'sometimes|nullable',
+				'text2_ar'                 => 'sometimes|nullable',
+				'text2_en'                 => 'sometimes|nullable',
+				'text3_en'                 => 'sometimes|nullable',
+				'text3_ar'                 => 'sometimes|nullable',
+				'img'                      => 'sometimes|nullable|'.v_image(),
+				'link'                     => 'sometimes|nullable',
+				'img'                      => 'sometimes|nullable|'.v_image(),
 			], [], [
-				'link'                 => trans('admin.link'),
-				'img'                  => trans('admin.img'),
+	            'link'                     => trans('admin.link'),
+				'head_ar'                  => trans('admin.head_ar'),
+				'head_en'                  => trans('admin.head_en'),
+				'title_en'                 => trans('admin.title_en'),
+				'title_ar'                 => trans('admin.title_ar'),
+				'text1_ar'                 => trans('admin.text1_ar'),
+				'text1_en'                 => trans('admin.text1_en'),
+				'text2_ar'                 => trans('admin.text2_ar'),
+				'text2_en'                 => trans('admin.text2_en'),
+				'text3_ar'                 => trans('admin.text3_ar'),
+				'text3_ar'                 => trans('admin.text3_ar'),
+				'img'                      => trans('admin.img'),
 				 
 			]);
 		if (request()->hasFile('img')) {

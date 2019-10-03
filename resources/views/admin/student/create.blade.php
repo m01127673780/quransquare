@@ -1018,7 +1018,7 @@
 
  
      <div class="form-group">
-         <img  src="{{ asset( 'no_image/te.png')}} "  class="img-create-Edit" > 
+         <img  src="{{ asset( 'no_image/student.png')}} "  class="img-create-Edit" > 
      </div>
    
     

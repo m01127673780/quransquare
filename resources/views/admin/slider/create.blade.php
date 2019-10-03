@@ -10,7 +10,8 @@
        <div class="form-group">
         {!! Form::label('link',trans('admin.link')) !!}
         {!! Form::url('link',old('link'),['class'=>'form-control','pattern'=>'https?://.+']) !!}
-          <!-- <input type="url" pattern="https?://.+" required /> -->
+       </div> 
+      
      </div>
      <div class="form-group">
         {!! Form::label('img',trans('admin.slider')) !!}

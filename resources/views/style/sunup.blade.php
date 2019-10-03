@@ -157,6 +157,8 @@
  </div>
  <center style="margin: 20px 0;">
     <button class="btn btn-primary" type="submit">Submit form</button>
+    <button type="submit" value="Submit" class="col-1-4">Submit</button>
+
 </center>
  <style type="text/css">
    
