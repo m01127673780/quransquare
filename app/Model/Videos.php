@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Videos extends Model{
  
 
-	public $table    = 'Videos';
-	public $fillable = [
+	protected $table    = 'videos';
+	protected $fillable = [
 	      'link',
             'img',
 	];

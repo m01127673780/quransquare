@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class TeacherSignup extends Model{
  
 
-	public $table    = 'teachersignup';
-	public $fillable = [
+	protected $table    = 'teachersignup';
+	protected $fillable = [
         'name',         
        'email',         
        'phone',         

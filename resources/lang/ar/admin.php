@@ -186,7 +186,8 @@ return [
 	'font_awesome'              => 'كود ايقون فونت ',
 	'number'              => 'الارقام',
 	'news'              => 'الاخبار',
-    
+   'Job'                 => 'الوظيفه ',
+   'country'                 => 'الدوله ',
 	'job_ar'              => 'الوظيفه بالعربي',
 	'job_en'              => 'الوظيفه بالانجليزيه ',
 	'country_ar'              => 'الدوله بالعربيه ',
@@ -230,8 +231,9 @@ return [
 
          'text3_ar'             => 'النص   3 بالعربيه',
 
-         'text3_ar'             => 'النص 3 بالانجليزيه',
+         'text3_en'             => 'النص 3 بالانجليزيه',
         'create_slider'              =>  'انشاء معرض ا الصوار ',
+        'create_slidertext'              =>  ' انشاء نص  معرض الصور',
    	'create_quick'              => 'تسجيل سريع  ',
     	'create_teachersignup'              => 'انشاء معلم ',
     	'create_teachersignup'              => 'تسجيل  المعلمون',
@@ -245,9 +247,9 @@ return [
      'this_language_not_available_now'            =>'هذه اللغة غير متوفرة الآن *',
 
      'head'            =>'العنوان',
-     ''            =>'',
-     ''            =>'',
-     ''            =>'',
+     'create_contact'            =>'انشاء تواصل معنا',
+     'insert_teacher'            =>'اضافات معلم',
+    'create_news'       =>'انشاء خبر ',
      ''            =>'',
      ''            =>'',
      ''            =>'',

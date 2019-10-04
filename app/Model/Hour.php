@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Hour extends Model{
  
 
-	public $table    = 'Hour';
-	public $fillable = [
+	protected $table    = 'hour';
+	protected $fillable = [
 	      'head_ar',
             'head_en',
             'dateshow_ar',

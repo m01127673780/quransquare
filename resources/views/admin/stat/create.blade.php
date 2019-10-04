@@ -11,14 +11,25 @@
         {!! Form::label('number',trans('admin.number')) !!}
         {!! Form::number('number',old('number'),['class'=>'form-control','pattern'=>'number.{6,}' ,'required'=>'required']) !!}
       </div>  
+
        <div class="form-group">
         {!! Form::label('font_awesome',trans('admin.font_awesome')) !!}
         {!! Form::text('font_awesome',old('font_awesome'),['class'=>'form-control']) !!}
       </div>
        <div class="form-group">
+     <span><a target="_blank " href="sssssssssssss">sssssssssssss</a></span>
+     <span><a target="_blank " href="sssssssssssss">sssssssssssss</a></span>
+     <span><a target="_blank " href="sssssssssssss">sssssssssssss</a></span>
+     <span><a target="_blank " href="sssssssssssss">sssssssssssss</a></span>
+     <span><a target="_blank " href="sssssssssssss">sssssssssssss</a></span>
+     <span><a target="_blank " href="sssssssssssss">sssssssssssss</a></span>
+     <span><a target="_blank " href="sssssssssssss">sssssssssssss</a></span>
+      </div>  
+         <div class="form-group">
         {!! Form::label('head_ar',trans('admin.head_ar')) !!}
         {!! Form::text('head_ar',old('head_ar'),['class'=>'form-control','required'=>'required']) !!}
       </div>
+
       <div class="form-group">
         {!! Form::label('head_en',trans('admin.head_en')) !!}
         {!! Form::text('head_en',old('head_en'),['class'=>'form-control','required'=>'required' ]) !!}

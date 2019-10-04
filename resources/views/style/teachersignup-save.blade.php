@@ -2,7 +2,7 @@
 <html lang="en"> 
 <head>
     <meta charset="UTF-8" />
-    <title>insert_teacher</title>
+    <title>{{ trans('admin.insert_teacher') }}</title>
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="16x16" href="blob:https://web.whatsapp.com/7e436eb7-f0b4-4524-b2a8-3aca9893df9c">

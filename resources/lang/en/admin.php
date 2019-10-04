@@ -80,6 +80,7 @@ return [
   'font_awesome'              => 'font awesome  icon',
 	'how_aboutus'              => ' How did you learn about us!? * ',
 	'Job'              => 'Job',
+	'country'              => 'Country',
   	'create_stat'              => 'statistics ',
  	'name'              => 'Name',
 	'job_ar'              => 'Job ar ',
@@ -161,7 +162,9 @@ return [
     'this_language_not_available_now'       =>'This language not available now * !',
     'admin_name'       =>'Name',
     'admin_email'       =>'Email',
-    ''       =>'',
+    'create_contact'       =>'Create Contact',
+    'insert_teacher'       =>'Insert Teachr',
+    'create_news'       =>' Create News',
   ];
 
   

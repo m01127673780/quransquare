@@ -24,15 +24,7 @@
                 }
                 ?>
                  <br>             
-              <?php 
-              if (empty ($img)){?>
-                <img id="imgfalg"  class="img-are-you" src="{{asset ('no_image/no-image.png')}}"   >   
-              <?php
-              }else{ ?>    
-                <img    class="img-are-you" src="{{ Storage::url($img) }}"  > 
-              <?php
-               }
-               ?> 
+              
         </h4>
       </div>
       <div class="modal-footer">

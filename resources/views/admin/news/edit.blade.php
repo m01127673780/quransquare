@@ -16,8 +16,8 @@
         {!! Form::text('name',$news->name,['class'=>'form-control']) !!}
      </div>
      <div class="form-group">
-        {!! Form::label('password',trans('admin.password')) !!}
-        {!! Form::text('password',$news->password,['class'=>'form-control']) !!}
+        {!! Form::label('text',trans('admin.text')) !!}
+        {!! Form::text('text',$news->password,['class'=>'form-control']) !!}
      </div> 
  
 

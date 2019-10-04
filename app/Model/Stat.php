@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Stat extends Model{
  
 
-	public $table    = 'stat';
-	public $fillable = [
+	protected $table    = 'stat';
+	protected $fillable = [
 	      'number',
 	      'font_awesome',
  	      'head_ar',

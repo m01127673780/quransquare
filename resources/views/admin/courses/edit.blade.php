@@ -37,19 +37,19 @@
         {!! Form::text('color_diffe_en',$courses->color_diffe_en,['class'=>'form-control','required'=>'required']) !!}
      </div>
 
+ 
+
 
      <div class="form-group">
-        {!! Form::label('icon',trans('admin.courses_flag')) !!}
-        {!! Form::file('icon',['class'=>'form-control img-create-Edit','required'=>'required']) !!}
-
-          @if(!empty($courses->icon))
-       <img src="https://www.hicsohag.edu.eg/wp-content/uploads/2019/03/no-image.png" class="img-create-Edit"  />
+        {!! Form::label('icon',trans('admin.image')) !!}
+        {!! Form::file('icon',['class'=>'form-control']) !!}
+       @if(!empty($courses->icon))
+       <img src="{{ Storage::url($courses->icon) }}" class="img-create-Edit"  />
+      @else 
+       <img name="img" class="image" src="{{ asset( 'no_image/no-image.png')}} "   > 
       @endif
-
-     </div>
-<!--     {{--================================================================== --}}
- -->
-
+       </div>
+<!--     {{--================================================================== --}} -->
 
      {!! Form::submit(trans('admin.save'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}

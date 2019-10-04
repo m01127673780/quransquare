@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Testimonial extends Model{
  
 
-	public $table    = 'Testimonial';
-	public $fillable = [
+	protected $table    = 'testimonial';
+	protected $fillable = [
                   'name_ar',
                   'name_en',
                   'job_ar',

@@ -10,6 +10,7 @@ Route::group(['middleware' => 'Maintenance'], function () {
 					Route::post('user_quick/register','IndexStudentStyle@insert_quick');
  
  					Route::get('/','IndexStudentStyle@show');
+ 					Route::get('AR','IndexStudentStyleAR@show');
  
 		 			Route::get('student','StudentStyle@show');
                     Route::post('student/register','StudentStyle@insert_student');

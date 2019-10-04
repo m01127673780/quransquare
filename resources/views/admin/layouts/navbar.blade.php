@@ -78,6 +78,8 @@
     </a>
     <ul class="treeview-menu" style="{{ active_menu('admin')[1] }}">
       <li class=""><a href="{{ aurl('admin') }}"><i class="fa fa-users"></i> {{ trans('admin.admin') }}</a></li>
+      <li class=""><a href="{{ aurl('admin/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+          
     </ul>
   </li>
   <li class="treeview {{ active_menu('users')[0] }}">
@@ -94,6 +96,8 @@
 "></i> {{ trans('admin.user') }}</a></li>
       <li class=""><a href="{{ aurl('users') }}?level=vendor"><i class="fa fa-shopping-cart"></i> {{ trans('admin.vendor') }}</a></li>
       <li class=""><a href="{{ aurl('users') }}?level=company"><i class="fa fa-ship"></i> {{ trans('admin.company') }}</a></li>
+            <li class=""><a href="{{ aurl('users/create') }}"><i class="fa fa-plus"></i> {{ trans('admin.add') }}</a></li>
+
     </ul>
   </li>
 
@@ -315,7 +319,7 @@
   </li>
  <!-- ============================ -->
    <!-- ============================ -->
-   <li style="display: none;" class="treeview {{ active_menu('news')[0] }}">
+   <li style="display: block;" class="treeview {{ active_menu('news')[0] }}">
     <a href="#">
       <i class="fa fa-globe fa-spin"></i> <span>{{ trans('admin.news') }}</span>
       <span class="pull-right-container">

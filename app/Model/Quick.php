@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Quick extends Model{
  
 
-	public $table    = 'quick';
-	public $fillable = [
+	protected $table    = 'quick';
+	protected $fillable = [
         'name',         
        'email',         
        'subject',         

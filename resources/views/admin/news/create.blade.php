@@ -18,8 +18,8 @@
         {!! Form::text('name',old('name'),['class'=>'form-control']) !!}
      </div>
      <div class="form-group">
-        {!! Form::label('password',trans('admin.password')) !!}
-        {!! Form::text('password',old('password'),['class'=>'form-control']) !!}
+        {!! Form::label('text',trans('admin.text')) !!}
+        {!! Form::text('text',old('password'),['class'=>'form-control']) !!}
      </div> 
          
      <div class="form-group">

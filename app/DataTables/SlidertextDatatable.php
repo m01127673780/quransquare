@@ -102,11 +102,7 @@ class SlidertextDatatable extends DataTable {
 				'name'  => 'link',
 				'data'  => 'link',
 				'title' => trans('admin.link'),
-			], [
-				'name'  => 'image',
-				'data'  => 'image',
-				'title' => trans('admin.image'),
-			], [
+			],  [
 				'name'       => 'edit',
 				'data'       => 'edit',
 				'title'      => trans('admin.edit'),

@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class News extends Model{
  
 
-	public $table    = 'News';
-	public $fillable = [
+	protected $table    = 'news';
+	protected $fillable = [
 	      'name',
           'password',
           'icon',

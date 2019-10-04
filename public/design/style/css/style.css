@@ -8,6 +8,10 @@
 @import url(vendrs/owl.carousel.css);
 @import url(vendrs/owl.theme.default.min.css);
 /*  stare style componnt by ME------------------------------------------------*/
+    html,body ,h1,h2,h3,h4,h5,h6{
+      font-family: 'Cairo', sans-serif;
+      font-family: 'Mukta', sans-serif;
+    }
 body {
 /*   background: #f3f3f3;
 */}
@@ -1810,23 +1814,25 @@ footer .img-and-icon-footer {
 padding-top: 23px;
 }
 .icon-up-to-top {
-/* line-height: 40px; */
-cursor: pointer;
-width: 40px;
-background: #444444;
-color: #fff;
-position: fixed;
--webkit-box-shadow: 0 4px 4px rgba(0,0,0,.1);
-box-shadow: 0 4px 4px rgba(0,0,0,.1);
--webkit-border-radius: 50%;
-border-radius: 50%;
-right: -webkit-calc((100% - 1140px)/ 2);
-right: calc((100% - 1140px)/ 2);
-z-index: 111;
-bottom: 9px;
-margin-right: 0;
-text-align: center;
-right: 25px;
+    cursor: pointer;
+    width: 40px;
+    background: #444444;
+    color: #fff;
+    position: fixed;
+    -webkit-box-shadow: 0 4px 4px rgba(0,0,0,.1);
+    box-shadow: 0 4px 4px rgba(0,0,0,.1);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    right: -webkit-calc((100% - 1140px)/ 2);
+    right: calc((100% - 1140px)/ 2);
+    z-index: 111;
+    bottom: 9px;
+    margin-right: 0;
+    text-align: center;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
 }
 
 footer .by-me a>i {
@@ -2923,3 +2929,48 @@ top: 40%;
   }
 }
 
+/*-------------------------------------*/
+   
+  textarea{
+    height: 93px;
+   padding: 0!important;
+}  
+  .left-3-input input{
+  height: 33px;
+  margin: 6px 0;
+}  
+  .container-margin-top-50{
+ margin-top: 50px!important;
+}  
+  .bg-f3f3f3{
+  background: #f3f3f3!important
+}
+   .padding_19px{
+    padding: 0px 19px;
+ 
+   }
+         .color_ffcc00{ 
+        color:#ffcc00!important;
+         }
+
+  .sticky_head
+  {
+    background: #444!important;
+    color: #fff;
+  }
+
+  
+    .noneimportant.icon-up-to-top { 
+    display:none!important;
+  }
+  .dropdown-toggle::after {
+    display:none!important;
+    
+}
+.img_flag {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+        margin: 0 10px;
+}

@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Whyus extends Model{
  
 
-	public $table    = 'whyus';
-	public $fillable = [
+	protected $table    = 'whyus';
+	protected $fillable = [
 	      'head_ar',
             'head_en',
             'text_ar',

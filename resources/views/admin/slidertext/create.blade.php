@@ -53,13 +53,8 @@
       </div>
  
      </div>
-     <div class="form-group">
-        {!! Form::label('img',trans('admin.slidertext')) !!}
-        {!! Form::file('img',['class'=>'form-control img','required'=>'required']) !!}
-             </div>
-     <div class="form-group">
-       <img  src="{{ asset( 'no_image/no-image.png')}} "  class="img-create-Edit" > 
-     </div>
+     
+   
      {!! Form::submit(trans('admin.add'),['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}
   </div>

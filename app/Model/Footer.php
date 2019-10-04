@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Footer extends Model{
  
 
-      public $table    = 'Footer';
-      public $fillable = [
+      protected $table    = 'footer';
+      protected $fillable = [
 
                   'payment_ar',
                   'payment_en',

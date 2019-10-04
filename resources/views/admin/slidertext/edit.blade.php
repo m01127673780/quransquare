@@ -60,16 +60,7 @@
         {!! Form::label('text3_en',trans('admin.text3_en')) !!}
         {!! Form::text('text3_en',$slidertext->text3_en,['class'=>'form-control']) !!}
       </div>
-     <div class="form-group">
-        {!! Form::label('img',trans('admin.image')) !!}
-        {!! Form::file('img',['class'=>'form-control']) !!}
-      @if(!empty($slidertext->img))
-       <img src="{{ Storage::url($slidertext->img) }}" class="img-create-Edit"  />
-      @else 
-             <img src="{{ asset( 'no_image/no-image.png')}}" class="img-create-Edit" />
-      @endif
-
-     </div>
+ 
 <!--     {{--================================================================== --}}
  -->
 

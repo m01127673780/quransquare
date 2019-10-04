@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Courses extends Model{
  
 
-	public $table    = 'Courses';
-	public $fillable = [
+	protected $table    = 'courses';
+	protected $fillable = [
 	      'head_ar',
             'head_en',
             'text_ar',

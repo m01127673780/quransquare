@@ -7,9 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class BestStudent extends Model{
  
 
-      public $table    = 'BestStudent';
-      public $fillable = [
-
+      protected $table    = 'bestStudent';
+      protected $fillable = [
                   'name_ar',
                   'name_en',
                   'name_Teacher_ar',

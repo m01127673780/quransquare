@@ -49,11 +49,10 @@ class SlidertextController extends Controller {
 				'text2_en'                 => 'sometimes|nullable',
 				'text3_en'                 => 'sometimes|nullable',
 				'text3_ar'                 => 'sometimes|nullable',
-				'img'                      => 'sometimes|nullable|'.v_image(),
-				'link'                     => 'sometimes|nullable',
+ 				'link'                     => 'sometimes|nullable',
 				'img'                      => 'sometimes|nullable|'.v_image(),
 			], [], [
-	'link'                     => trans('admin.link'),
+              	'link'                     => trans('admin.link'),
 				'head_ar'                  => trans('admin.head_ar'),
 				'head_en'                  => trans('admin.head_en'),
 				'title_en'                 => trans('admin.title_en'),
@@ -127,8 +126,7 @@ class SlidertextController extends Controller {
 				'text2_en'                 => 'sometimes|nullable',
 				'text3_en'                 => 'sometimes|nullable',
 				'text3_ar'                 => 'sometimes|nullable',
-				'img'                      => 'sometimes|nullable|'.v_image(),
-				'link'                     => 'sometimes|nullable',
+ 				'link'                     => 'sometimes|nullable',
 				'img'                      => 'sometimes|nullable|'.v_image(),
 			], [], [
 	            'link'                     => trans('admin.link'),

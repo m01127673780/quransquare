@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Slider extends Model{
  
 
-	public $table    = 'slider';
-	public $fillable = [
+	protected $table    = 'slider';
+	protected $fillable = [
 	      'link',
            'img',
            'head_en',

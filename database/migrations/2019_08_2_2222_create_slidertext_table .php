@@ -26,7 +26,7 @@ class CreateSlidertextTable extends Migration
             $table->string('text2_en')->nullable(); 
             $table->string('text3_ar')->nullable(); 
             $table->string('text3_en')->nullable(); 
-             $table->string('img');
+             $table->string('img')->nullable();;
             $table->timestamps();
         });
     }
