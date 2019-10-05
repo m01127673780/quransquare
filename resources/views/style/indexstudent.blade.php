@@ -12,6 +12,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <link rel="stylesheet" href="{{ url('design/style') }}/css/style.css">
      <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&amp;subset=arabic,latin-ext" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+
  </head>
 <body class=" ">
 <!--====== start Slider =============================== -->
